@@ -1,0 +1,13 @@
+{
+  "name": "documentation",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "vite"
+  },
+  "devDependencies": {
+    "vite": "^5.0.10"
+  },
+  "dependencies": {
+    "@etchteam/diamond-ui": "^0.0.0"
+  }
+}
