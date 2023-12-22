@@ -9,6 +9,10 @@
   "keywords": [],
   "author": "etchteam",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "github:etchteam/diamond-ui"
+  },
   "dependencies": {
     "lit": "^3.1.0"
   },
