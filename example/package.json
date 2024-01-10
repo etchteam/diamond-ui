@@ -8,6 +8,6 @@
     "vite": "^5.0.10"
   },
   "dependencies": {
-    "@etchteam/diamond-ui": "^0.0.0"
+    "@etchteam/diamond-ui": "file:.."
   }
 }
