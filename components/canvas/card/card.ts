@@ -4,6 +4,9 @@ import { html, unsafeStatic } from 'lit/static-html.js';
 
 @customElement('diamond-card')
 export class Card extends LitElement {
+  /**
+   * The href of the card if it is a link
+   */
   @property() readonly href?: string;
 
   static styles = css`
@@ -15,6 +18,7 @@ export class Card extends LitElement {
       display: block;
       border: 1px solid black;
       color: black;
+      padding: var(--spacing);
     }
 
     :host([href]) .card {

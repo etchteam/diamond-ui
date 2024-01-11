@@ -6,7 +6,10 @@
   "scripts": {
     "start": "vite",
     "prepare": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "lint": "echo \"Error: no linting specified\" && exit 1"
   },
   "files": [
     "dist/**/*",
@@ -31,12 +34,21 @@
     "@etchteam/eslint-config": "^1.8.0",
     "@etchteam/stylelint-config": "^1.5.0",
     "@rollup/plugin-typescript": "^11.1.5",
+    "@storybook/addon-essentials": "7.6.7",
+    "@storybook/addon-links": "7.6.7",
+    "@storybook/blocks": "7.6.7",
+    "@storybook/web-components": "7.6.7",
+    "@storybook/web-components-vite": "7.6.7",
     "eslint": "^8.56.0",
     "eslint-plugin-lit-a11y": "^1.1.0-next.1",
+    "eslint-plugin-storybook": "0.6.15",
     "glob": "^10.3.10",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "prettier": "^3.1.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "storybook": "7.6.7",
     "stylelint": "^15.11.0",
     "typescript": "^5.3.3"
   }
