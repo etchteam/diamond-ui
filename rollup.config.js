@@ -9,7 +9,7 @@ const config = defineConfig({
   plugins: [typescript()],
   input: Object.fromEntries(
     glob.sync('components/**/*.ts').map((file) => [
-      // This remove `components/` as well as the file extension from each
+      // This removes `components/` as well as the file extension from each
       // file, so components/nested/foo.js becomes nested/foo
       path.relative(
         'components',
