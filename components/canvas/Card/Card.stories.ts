@@ -1,7 +1,7 @@
 import { StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 
-import './card';
+import './Card';
 
 export default {
   component: 'diamond-card',
