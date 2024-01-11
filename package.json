@@ -5,13 +5,16 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "prepare": "rollup -c",
+    "prepare": "rimraf dist && rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
     "dist/**/*",
     "README.md"
   ],
+  "exports": {
+    "./*": "./dist/*"
+  },
   "keywords": [],
   "author": "etchteam",
   "license": "MIT",
@@ -38,6 +41,7 @@
     "lint-staged": "^15.2.0",
     "prettier": "^3.1.1",
     "stylelint": "^15.11.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vite": "5.0.11"
   }
 }
