@@ -1,4 +1,4 @@
-import '@etchteam/diamond-ui/composition/container/container';
-import '@etchteam/diamond-ui/canvas/card/card';
-import '@etchteam/diamond-ui/content/img/img';
-import '@etchteam/diamond-ui/control/button/button';
+import '@etchteam/diamond-ui/composition/Container/Container';
+import '@etchteam/diamond-ui/canvas/Card/Card';
+import '@etchteam/diamond-ui/content/Img/Img';
+import '@etchteam/diamond-ui/control/Button/Button';
