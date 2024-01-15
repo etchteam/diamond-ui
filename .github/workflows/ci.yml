@@ -20,6 +20,7 @@
         - name: Lint Code Base
           uses: github/super-linter/slim@v5
           env:
+            DISABLE_V8_COMPILE_CACHE: true
             DEFAULT_BRANCH: 'main'
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.cjs
