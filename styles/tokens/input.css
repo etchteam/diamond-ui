@@ -1,0 +1,17 @@
+:root {
+  --diamond-input-background: var(--diamond-color-white);
+  --diamond-input-background-focus: var(--diamond-color-white);
+  --diamond-input-border: var(--diamond-color-black);
+  --diamond-input-border-hover: var(--diamond-color-black);
+  --diamond-input-border-radius: var(--diamond-border-radius);
+
+  --diamond-input-color: var(--diamond-color-black);
+
+  --diamond-input-checked: var(--diamond-color-black);
+  --diamond-input-checkradio-border-radius: var(--diamond-border-radius-xs);
+
+  --diamond-input-padding-vertical: var(--diamond-spacing-sm);
+  --diamond-input-padding-horizontal: var(--diamond-spacing);
+  --diamond-input-padding: var(--diamond-input-padding-vertical)
+    var(--diamond-input-padding-horizontal);
+}

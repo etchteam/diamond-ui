@@ -18,7 +18,7 @@ export class Card extends LitElement {
       display: block;
       border: 1px solid black;
       color: black;
-      padding: var(--spacing);
+      padding: var(--diamond-spacing);
     }
 
     :host([href]) .card {

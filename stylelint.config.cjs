@@ -1,3 +1,3 @@
-export default {
+module.exports = {
   extends: ['@etchteam/stylelint-config'],
 };
