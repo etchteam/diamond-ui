@@ -8,7 +8,8 @@
     "prepare": "rimraf dist && rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "lint:styles": "stylelint \"styles/**/*.css\""
   },
   "files": [
     "dist/**/*",

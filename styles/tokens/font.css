@@ -15,8 +15,6 @@
   --diamond-font-size-xxl: 2em;
   --diamond-font-size-xxxl: 3em;
 
-  --diamond-font-size-display1: 2rem;
-  --diamond-font-size-display2: 1.75rem;
   --diamond-font-size-h1: 2rem;
   --diamond-font-size-h2: 1.75rem;
   --diamond-font-size-h3: 1.5rem;
@@ -33,16 +31,7 @@
   :root {
     --diamond-font-size-base: 1rem;
 
-    --diamond-font-size-display1: 3rem;
-    --diamond-font-size-display2: 2rem;
     --diamond-font-size-h1: 3rem;
     --diamond-font-size-h2: 2rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  :root {
-    --diamond-font-size-display1: 4rem;
-    --diamond-font-size-display2: 3rem;
   }
 }
