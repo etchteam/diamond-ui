@@ -23,11 +23,15 @@
   --diamond-skin-background: var(--diamond-skin-background-light);
   --diamond-skin-background-muted: var(--diamond-skin-background-muted-light);
   --diamond-skin-border-color: var(--diamond-skin-border-color-light);
-  --diamond-skin-border-color-hover: var(--diamond-skin-border-color-hover-light);
+  --diamond-skin-border-color-hover: var(
+    --diamond-skin-border-color-hover-light
+  );
   --diamond-skin-color: var(--diamond-skin-color-light);
   --diamond-skin-heading-color: var(--diamond-skin-heading-color-light);
   --diamond-skin-link-color: var(--diamond-skin-link-color-light);
-  --diamond-skin-link-text-decoration: var(--diamond-skin-link-text-decoration-light);
+  --diamond-skin-link-text-decoration: var(
+    --diamond-skin-link-text-decoration-light
+  );
   --diamond-skin-link-text-decoration-hover: var(
     --diamond-skin-link-text-decoration-hover-light
   );
