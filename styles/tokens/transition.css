@@ -1,0 +1,14 @@
+:root {
+  --diamond-transition-duration: 0.2s;
+  --diamond-transition-timing: ease-in-out;
+  --diamond-transition: var(--diamond-transition-duration) var(--diamond-transition-timing);
+
+  --diamond-transition-duration-boing: 0.3s;
+  --diamond-transition-timing-boing: cubic-bezier(0.84, 0.05, 0.46, 1.78);
+  --diamond-transition-boing: var(--diamond-transition-duration-boing)
+    var(--diamond-transition-timing-boing);
+
+  --diamond-transition-enter-duration: 0.5s;
+  --diamond-transition-enter-timing: ease-in-out;
+  --diamond-transition-enter: var(--diamond-transition-enter-duration) var(--diamond-transition-enter-timing);
+}

@@ -1,0 +1,47 @@
+:root {
+  --diamond-font-family: -apple-system, system-ui, blinkmacsystemfont, roboto, helvetica, arial, sans-serif;
+
+  --diamond-font-line-height: 1.5;
+  --diamond-font-line-height-sm: 1.25;
+
+  --diamond-font-size-default: 1rem;
+  --diamond-font-size-xs: 0.75em;
+  --diamond-font-size-sm: 0.875em;
+  --diamond-font-size-base: 0.875rem;
+  --diamond-font-size-md: 1.125em;
+  --diamond-font-size-lg: 1.25em;
+  --diamond-font-size-xl: 1.5em;
+  --diamond-font-size-xxl: 2em;
+  --diamond-font-size-xxxl: 3em;
+
+  --diamond-font-size-display1: 2rem;
+  --diamond-font-size-display2: 1.75rem;
+  --diamond-font-size-h1: 2rem;
+  --diamond-font-size-h2: 1.75rem;
+  --diamond-font-size-h3: 1.5rem;
+  --diamond-font-size-h4: 1.25rem;
+
+  --diamond-font-weight-light: 300;
+  --diamond-font-weight-base: 400;
+  --diamond-font-weight-medium: 500;
+  --diamond-font-weight-bold: 700;
+  --diamond-font-weight-black: 900;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --diamond-font-size-base: 1rem;
+
+    --diamond-font-size-display1: 3rem;
+    --diamond-font-size-display2: 2rem;
+    --diamond-font-size-h1: 3rem;
+    --diamond-font-size-h2: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --diamond-font-size-display1: 4rem;
+    --diamond-font-size-display2: 3rem;
+  }
+}

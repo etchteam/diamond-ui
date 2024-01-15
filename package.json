@@ -28,7 +28,8 @@
     "access": "public"
   },
   "dependencies": {
-    "lit": "^3.1.0"
+    "lit": "^3.1.0",
+    "modern-normalize": "2.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",

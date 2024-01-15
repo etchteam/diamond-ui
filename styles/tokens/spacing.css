@@ -1,0 +1,9 @@
+:root {
+  --diamond-spacing-thumb: 3rem;
+
+  --diamond-spacing: 1rem;
+  --diamond-spacing-xs: calc(var(--diamond-spacing) / 4);
+  --diamond-spacing-sm: calc(var(--diamond-spacing) / 2);
+  --diamond-spacing-lg: calc(var(--diamond-spacing) * 2);
+  --diamond-spacing-xl: calc(var(--diamond-spacing) * 4);
+}

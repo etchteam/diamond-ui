@@ -1,0 +1,34 @@
+:root {
+  /*
+    light
+    medium
+    dark
+    neutral
+    positive
+    negative
+    attention
+
+    applied
+  */
+  --diamond-skin-background-light: var(--diamond-color-white);
+  --diamond-skin-background-muted-light: var(--diamond-color-white);
+  --diamond-skin-border-color-light: var(--diamond-color-black);
+  --diamond-skin-border-color-hover-light: var(--diamond-color-black);
+  --diamond-skin-color-light: var(--diamond-color-black);
+  --diamond-skin-heading-color-light: var(--diamond-color-black);
+  --diamond-skin-link-color-light: var(--diamond-color-black);
+  --diamond-skin-link-text-decoration-light: underline;
+  --diamond-skin-link-text-decoration-hover-light: underline;
+
+  --diamond-skin-background: var(--diamond-skin-background-light);
+  --diamond-skin-background-muted: var(--diamond-skin-background-muted-light);
+  --diamond-skin-border-color: var(--diamond-skin-border-color-light);
+  --diamond-skin-border-color-hover: var(--diamond-skin-border-color-hover-light);
+  --diamond-skin-color: var(--diamond-skin-color-light);
+  --diamond-skin-heading-color: var(--diamond-skin-heading-color-light);
+  --diamond-skin-link-color: var(--diamond-skin-link-color-light);
+  --diamond-skin-link-text-decoration: var(--diamond-skin-link-text-decoration-light);
+  --diamond-skin-link-text-decoration-hover: var(
+    --diamond-skin-link-text-decoration-hover-light
+  );
+}

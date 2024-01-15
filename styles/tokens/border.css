@@ -1,0 +1,10 @@
+:root {
+  --diamond-border-width: 1px;
+  --diamond-border-style: solid;
+  --diamond-border: var(--diamond-border-width) var(--diamond-border-style) var(--diamond-skin-border-color);
+
+  --diamond-border-radius-xs: 0.125rem;
+  --diamond-border-radius-sm: 0.25rem;
+  --diamond-border-radius: 0.5rem;
+  --diamond-border-radius-lg: 1rem;
+}
