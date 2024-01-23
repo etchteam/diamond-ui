@@ -24,7 +24,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "github:etchteam/diamond-ui"
+    "url": "git+https://github.com/etchteam/diamond-ui.git"
   },
   "publishConfig": {
     "access": "public"
