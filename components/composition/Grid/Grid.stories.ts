@@ -7,6 +7,12 @@ import '../GridItem/GridItem';
 export default {
   component: 'diamond-grid',
   argTypes: {
+    wrap: {
+      control: {
+        type: 'select',
+      },
+      options: ['wrap', 'nowrap', 'wrap-reverse'],
+    },
     direction: {
       control: {
         type: 'select',
@@ -51,7 +57,7 @@ export const Grid: StoryObj = {
     inline,
   }) => html`
     <diamond-grid
-      ?wrap=${wrap}
+      wrap="${wrap}"
       direction="${direction}"
       justify-content="${justifyContent}"
       align-items="${alignItems}"
@@ -74,28 +80,10 @@ export const Grid: StoryObj = {
 };
 
 Grid.args = {
-  wrap: false,
+  wrap: 'wrap',
   direction: 'row',
   justifyContent: 'flex-start',
   alignItems: 'flex-start',
   gap: 'md',
   inline: false,
-};
-
-export const GridItem: StoryObj = {
-  render: ({ grow, shrink }) => html`
-    <diamond-grid wrap>
-      ${[...Array(24).keys()].map(
-        (i) => html`
-          <diamond-grid-item ?grow=${grow} ?shrink=${shrink}>
-            <div
-              style="height: 100px; background-color: #eee; display: flex; align-items: center; justify-content: center;"
-            >
-              ${i + 1}
-            </div>
-          </diamond-grid-item>
-        `,
-      )}
-    </diamond-grid>
-  `,
 };

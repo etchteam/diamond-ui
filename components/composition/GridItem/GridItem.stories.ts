@@ -38,7 +38,7 @@ export const GridItem: StoryObj = {
     desktop,
     largeDesktop,
   }) => html`
-    <diamond-grid wrap>
+    <diamond-grid wrap="wrap">
       ${[...Array(24).keys()].map(
         (i) => html`
           <diamond-grid-item

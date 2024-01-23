@@ -17,7 +17,7 @@ const gap = ['xs', 'sm', 'lg', 'xl'];
 
 @customElement('diamond-grid')
 export class Grid extends LitElement {
-  @property({ type: Boolean }) readonly wrap?: boolean;
+  @property() readonly wrap?: 'wrap' | 'nowrap' | 'wrap-reverse';
   @property({ type: Boolean }) readonly inline?: boolean;
   @property() readonly direction?:
     | 'row'
@@ -45,8 +45,12 @@ export class Grid extends LitElement {
       display: inline-flex;
     }
 
-    :host([wrap]) {
+    :host([wrap='wrap']) {
       flex-wrap: wrap;
+    }
+
+    :host([wrap='wrap-reverse']) {
+      flex-wrap: wrap-reverse;
     }
 
     ${unsafeCSS(
