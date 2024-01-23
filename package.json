@@ -12,13 +12,6 @@
     "lint:styles": "stylelint \"styles/**/*.css\"",
     "release": "semantic-release"
   },
-  "files": [
-    "dist/**",
-    "README.md"
-  ],
-  "exports": {
-    "./*": "./dist/*"
-  },
   "keywords": [],
   "author": "etchteam",
   "license": "MIT",
