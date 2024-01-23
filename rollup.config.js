@@ -11,7 +11,12 @@ const config = defineConfig({
   plugins: [
     del({ targets: 'dist/*' }),
     typescript(),
-    copy({ targets: [{ src: 'styles', dest: 'dist' }] }),
+    copy({
+      targets: [
+        { src: 'styles', dest: 'dist' },
+        { src: 'package.json', dest: 'dist' },
+      ],
+    }),
   ],
   input: Object.fromEntries(
     glob.sync('components/**/*.ts').map((file) => [
