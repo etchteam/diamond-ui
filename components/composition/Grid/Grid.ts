@@ -1,9 +1,11 @@
-import { LitElement, css, html, unsafeCSS } from 'lit';
+import { LitElement, css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+
+import { cssMap } from '../../../lib/css-map';
 
 const directions = ['column', 'row-reverse', 'column-reverse'];
 
-const justify = [
+const justifys = [
   'flex-end',
   'center',
   'space-between',
@@ -11,9 +13,9 @@ const justify = [
   'space-evenly',
 ];
 
-const align = ['flex-end', 'center'];
+const aligns = ['flex-end', 'center'];
 
-const gap = ['xs', 'sm', 'lg', 'xl'];
+const gaps = ['xs', 'sm', 'lg', 'xl'];
 
 @customElement('diamond-grid')
 export class Grid extends LitElement {
@@ -53,40 +55,27 @@ export class Grid extends LitElement {
       flex-wrap: wrap-reverse;
     }
 
-    ${unsafeCSS(
-      directions
-        .map(
-          (direction) =>
-            `:host([direction="${direction}"]) { flex-direction: ${direction}; }`,
-        )
-        .join('\n'),
+    ${cssMap(
+      directions,
+      (direction) =>
+        `:host([direction="${direction}"]) { flex-direction: ${direction}; }`,
     )}
 
-    ${unsafeCSS(
-      justify
-        .map(
-          (justify) =>
-            `:host([justify-content="${justify}"]) { justify-content: ${justify}; }`,
-        )
-        .join('\n'),
+    ${cssMap(
+      justifys,
+      (justify) =>
+        `:host([justify-content="${justify}"]) { justify-content: ${justify}; }`,
     )}
 
-    ${unsafeCSS(
-      align
-        .map(
-          (align) =>
-            `:host([align-items="${align}"]) { align-items: ${align}; }`,
-        )
-        .join('\n'),
+    ${cssMap(
+      aligns,
+      (align) => `:host([align-items="${align}"]) { align-items: ${align}; }`,
     )}
 
-    ${unsafeCSS(
-      gap
-        .map(
-          (gap) =>
-            `:host([gap="${gap}"]) { --diamond-grid-gap: var(--diamond-spacing-${gap}); }`,
-        )
-        .join('\n'),
+    ${cssMap(
+      gaps,
+      (gap) =>
+        `:host([gap="${gap}"]) { --diamond-grid-gap: var(--diamond-spacing-${gap}); }`,
     )}
   `;
 

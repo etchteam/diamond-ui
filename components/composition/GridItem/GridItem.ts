@@ -1,6 +1,8 @@
 import { LitElement, css, html, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
+import { cssMap } from '../../../lib/css-map';
+
 const breakpoints = [
   { name: 'small-mobile', value: '0' },
   { name: 'mobile', value: '375px' },
@@ -19,13 +21,12 @@ const columns = (breakpoint: string) => {
   return `
     :host([${breakpoint}="auto"]) { width: auto; }
 
-    ${[...Array(12).keys()]
-      .map(
-        (i) => `
+    ${cssMap(
+      [...Array(12).keys()],
+      (i) => `
       :host([${breakpoint}="${i + 1}"]) { width: ${colWidth(i)}%; }
-    `,
-      )
-      .join('')}
+      `,
+    )}
   `;
 };
 
