@@ -3,6 +3,21 @@ import { customElement, property } from 'lit/decorators.js';
 
 import { cssMap } from '../../../lib/css-map';
 
+type Column =
+  | 'auto'
+  | '1'
+  | '2'
+  | '3'
+  | '4'
+  | '5'
+  | '6'
+  | '7'
+  | '8'
+  | '9'
+  | '10'
+  | '11'
+  | '12';
+
 const breakpoints = [
   { name: 'small-mobile', value: '0' },
   { name: 'mobile', value: '375px' },
@@ -49,17 +64,17 @@ export class GridItem extends LitElement {
   @property({ type: Boolean }) readonly grow?: boolean;
   @property({ type: Boolean }) readonly shrink?: boolean;
 
-  @property() readonly smallMobile?: string;
-  @property() readonly mobile?: string;
-  @property() readonly largeMobile?: string;
+  @property() readonly smallMobile?: Column;
+  @property() readonly mobile?: Column;
+  @property() readonly largeMobile?: Column;
 
-  @property() readonly smallTablet?: string;
-  @property() readonly tablet?: string;
-  @property() readonly largeTablet?: string;
+  @property() readonly smallTablet?: Column;
+  @property() readonly tablet?: Column;
+  @property() readonly largeTablet?: Column;
 
-  @property() readonly smallDesktop?: string;
-  @property() readonly desktop?: string;
-  @property() readonly largeDesktop?: string;
+  @property() readonly smallDesktop?: Column;
+  @property() readonly desktop?: Column;
+  @property() readonly largeDesktop?: Column;
 
   static styles = css`
     :host {
