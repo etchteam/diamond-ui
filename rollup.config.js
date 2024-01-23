@@ -5,9 +5,14 @@ import typescript from '@rollup/plugin-typescript';
 import { glob } from 'glob';
 import { defineConfig } from 'rollup';
 import copy from 'rollup-plugin-copy';
+import del from 'rollup-plugin-delete';
 
 const config = defineConfig({
-  plugins: [typescript(), copy({ targets: [{ src: 'styles', dest: 'dist' }] })],
+  plugins: [
+    del({ targets: 'dist/*' }),
+    typescript(),
+    copy({ targets: [{ src: 'styles', dest: 'dist' }] }),
+  ],
   input: Object.fromEntries(
     glob.sync('components/**/*.ts').map((file) => [
       // This removes `components/` as well as the file extension from each
