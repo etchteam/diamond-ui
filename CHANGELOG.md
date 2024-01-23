@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/etchteam/diamond-ui/compare/v1.0.0...v1.0.1) (2024-01-23)
+
+
+### Bug Fixes
+
+* correct repository.url ([4bdd856](https://github.com/etchteam/diamond-ui/commit/4bdd8569e6550fd0b0219d1e769f9f4c05b7083a))
+
 ## 1.0.0 (2024-01-23)
 
 
