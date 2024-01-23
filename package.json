@@ -9,7 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "lint:styles": "stylelint \"styles/**/*.css\""
+    "lint:styles": "stylelint \"styles/**/*.css\"",
+    "release": "semantic-release"
   },
   "files": [
     "dist/**/*",
