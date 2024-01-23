@@ -2,7 +2,7 @@ import { StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 
 import './Grid';
-import '../GridItem/GridItem';
+import './GridItem';
 
 export default {
   component: 'diamond-grid',
