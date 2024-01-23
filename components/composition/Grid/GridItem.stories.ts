@@ -1,7 +1,7 @@
 import { StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 
-import '../Grid/Grid';
+import './Grid';
 import './GridItem';
 
 const col = {
