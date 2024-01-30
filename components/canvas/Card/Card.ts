@@ -1,47 +1,67 @@
 import { LitElement, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { html, unsafeStatic } from 'lit/static-html.js';
+import { html } from 'lit/static-html.js';
+
+import { cssMap } from '../../../lib/css-map';
+
+const paddings = ['xs', 'sm', 'lg', 'xl'];
 
 @customElement('diamond-card')
 export class Card extends LitElement {
-  /**
-   * The href of the card if it is a link
-   */
-  @property() readonly href?: string;
+  @property({ type: Boolean }) readonly border?: boolean;
+  @property({ type: Boolean }) readonly shadow?: boolean;
+  @property({ type: Boolean }) readonly muted?: boolean;
+  @property({ type: Boolean }) readonly radius?: boolean;
+  @property() readonly padding?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'none' =
+    'md';
 
   static styles = css`
     :host {
-      display: block;
-    }
-
-    :host .card {
+      appearance: none;
       display: block;
       background: var(--diamond-theme-background);
-      border: 1px solid var(--diamond-theme-border-color);
+      border: 0 none;
       color: var(--diamond-theme-color);
       padding: var(--diamond-spacing);
+      text-decoration: none;
       transition: border-color var(--diamond-transition);
     }
 
-    :host([href]) .card {
-      text-decoration: none;
+    :host([shadow]) {
+      box-shadow: var(--diamond-shadow);
+    }
+
+    :host([muted]) {
+      background: var(--diamond-theme-background-muted);
+    }
+
+    :host([radius]) {
+      border-radius: var(--diamond-radius);
+    }
+
+    ${cssMap(
+      paddings,
+      (padding) =>
+        `:host([padding="${padding}"]) { padding: var(--diamond-spacing-${padding}); }`,
+    )}
+
+    :host([padding="none"]) {
+      padding: 0;
+    }
+
+    :host([border]) {
+      border: 1px solid var(--diamond-theme-border-color);
     }
 
     @media (hover: hover) {
-      :host([href]:hover) .card {
-        border: 1px solid var(--diamond-theme-border-color-hover);
+      :host([border][href]:hover) {
+        border-color: var(--diamond-theme-border-color-hover);
       }
     }
   `;
 
   render() {
-    const tag = this.href ? 'a' : 'div';
-
-    return html`
-      <${unsafeStatic(tag)} href=${this.href} class="card">
-        <slot></slot>
-      </${unsafeStatic(tag)}>
-    `;
+    return html`<slot></slot>`;
   }
 }
 
