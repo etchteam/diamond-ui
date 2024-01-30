@@ -1,0 +1,76 @@
+import { Meta, Source, Canvas } from '@storybook/addon-docs';
+import theme from '../styles/tokens/theme.css?inline';
+import themes from '../styles/themes.css?inline';
+import '../components/composition/Grid/Grid'
+import '../components/composition/Grid/GridItem'
+import '../components/canvas/Card/Card'
+
+<Meta title="Docs/Theming" />
+
+# Theming
+
+Diamond UI supports component theming, but does not provide any production ready themes out of the box.
+
+All themes are based around a core set of variables.
+
+<Source code={theme} language='css' />
+
+These can be overridden by setting the `:root` CSS variables to create a base theme, as well as creating theme classes which can wrap components or groups of components.
+
+This setup allows consuming apps to create an infinite number of themes to apply to components, as well as allowing those themes to be applied at different levels within a page or app, rather than requiring them to be global.
+
+## Examples
+
+Diamond UI optionally includes an example set of 3 basic themes: light, medium and dark. The theme tokens are set on the `:root` and then applied to the base theme via classes, such as `.theme-dark`.
+
+Components that support theming will apply the base theme tokens, such as setting background to `--diamond-theme-background`.
+
+<Source code={themes} language='css' />
+
+### Cards using demo themes
+
+Here is an example of 3 cards wrapped in the demo theme classes, which then apply the theme tokens.
+
+<Canvas>
+  <diamond-grid wrap="wrap">
+    <diamond-grid-item small-mobile="12" tablet="4">
+      <div class="diamond-theme-light">
+        <diamond-card>
+          <h3>Card title</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </diamond-card>
+      </div>
+    </diamond-grid-item>
+    <diamond-grid-item small-mobile="12" tablet="4">
+      <div class="diamond-theme-medium">
+        <diamond-card>
+          <h3>Card title</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </diamond-card>
+      </div>
+    </diamond-grid-item>
+    <diamond-grid-item small-mobile="12" tablet="4">
+      <div class="diamond-theme-dark">
+        <diamond-card>
+          <h3>Card title</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </diamond-card>
+      </div>
+    </diamond-grid-item>
+  </diamond-grid>
+</Canvas>
+
+## Recommended themes
+
+In most projects we recommend a base set of themes for light, medium and dark.
+
+We would also recommend creating some state based themes for states such as info, success, warning and error.

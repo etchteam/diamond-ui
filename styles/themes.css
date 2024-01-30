@@ -1,0 +1,87 @@
+:root {
+  --diamond-theme-background-light: var(--diamond-color-white);
+  --diamond-theme-background-muted-light: var(--diamond-color-grey-100);
+  --diamond-theme-border-color-light: var(--diamond-color-grey-200);
+  --diamond-theme-color-light: var(--diamond-color-grey-900);
+  --diamond-theme-color-muted-light: var(--diamond-color-grey-700);
+  --diamond-theme-heading-color-light: var(--diamond-color-grey-900);
+  --diamond-theme-icon-color-light: var(--diamond-color-grey-900);
+  --diamond-theme-link-color-light: #1a0dab;
+  --diamond-theme-link-text-decoration-light: underline;
+
+  --diamond-theme-background-medium: var(--diamond-color-grey-100);
+  --diamond-theme-background-muted-medium: var(--diamond-color-grey-200);
+  --diamond-theme-border-color-medium: var(--diamond-color-grey-300);
+  --diamond-theme-color-medium: var(--diamond-color-grey-900);
+  --diamond-theme-color-muted-medium: var(--diamond-color-grey-700);
+  --diamond-theme-heading-color-medium: var(--diamond-color-grey-900);
+  --diamond-theme-icon-color-medium: var(--diamond-color-grey-900);
+  --diamond-theme-link-color-medium: #1a0dab;
+  --diamond-theme-link-text-decoration-medium: underline;
+
+  --diamond-theme-background-dark: var(--diamond-color-grey-900);
+  --diamond-theme-background-muted-dark: var(--diamond-color-grey-800);
+  --diamond-theme-border-color-dark: var(--diamond-color-grey-900);
+  --diamond-theme-color-dark: var(--diamond-color-white);
+  --diamond-theme-color-muted-dark: var(--diamond-color-grey-100);
+  --diamond-theme-heading-color-dark: var(--diamond-color-white);
+  --diamond-theme-icon-color-dark: var(--diamond-color-white);
+  --diamond-theme-link-color-dark: var(--diamond-color-white);
+  --diamond-theme-link-text-decoration-dark: underline;
+
+  --diamond-theme-background: var(--diamond-theme-background-light);
+  --diamond-theme-background-muted: var(--diamond-theme-background-muted-light);
+  --diamond-theme-border-color: var(--diamond-theme-border-color-light);
+  --diamond-theme-color: var(--diamond-theme-color-light);
+  --diamond-theme-color-muted: var(--diamond-theme-color-muted-light);
+  --diamond-theme-heading-color: var(--diamond-theme-heading-color-light);
+  --diamond-theme-icon-color: var(--diamond-theme-icon-color-light);
+  --diamond-theme-link-color: var(--diamond-theme-link-color-light);
+  --diamond-theme-link-text-decoration: var(
+    --diamond-theme-link-text-decoration-light
+  );
+}
+
+.diamond-theme-light {
+  --diamond-theme-background: var(--diamond-theme-background-light);
+  --diamond-theme-background-muted: var(--diamond-theme-background-muted-light);
+  --diamond-theme-border-color: var(--diamond-theme-border-color-light);
+  --diamond-theme-color: var(--diamond-theme-color-light);
+  --diamond-theme-color-muted: var(--diamond-theme-color-muted-light);
+  --diamond-theme-heading-color: var(--diamond-theme-heading-color-light);
+  --diamond-theme-icon-color: var(--diamond-theme-icon-color-light);
+  --diamond-theme-link-color: var(--diamond-theme-link-color-light);
+  --diamond-theme-link-text-decoration: var(
+    --diamond-theme-link-text-decoration-light
+  );
+}
+
+.diamond-theme-medium {
+  --diamond-theme-background: var(--diamond-theme-background-medium);
+  --diamond-theme-background-muted: var(
+    --diamond-theme-background-muted-medium
+  );
+  --diamond-theme-border-color: var(--diamond-theme-border-color-medium);
+  --diamond-theme-color: var(--diamond-theme-color-medium);
+  --diamond-theme-color-muted: var(--diamond-theme-color-muted-medium);
+  --diamond-theme-heading-color: var(--diamond-theme-heading-color-medium);
+  --diamond-theme-icon-color: var(--diamond-theme-icon-color-medium);
+  --diamond-theme-link-color: var(--diamond-theme-link-color-medium);
+  --diamond-theme-link-text-decoration: var(
+    --diamond-theme-link-text-decoration-medium
+  );
+}
+
+.diamond-theme-dark {
+  --diamond-theme-background: var(--diamond-theme-background-dark);
+  --diamond-theme-background-muted: var(--diamond-theme-background-muted-dark);
+  --diamond-theme-border-color: var(--diamond-theme-border-color-dark);
+  --diamond-theme-color: var(--diamond-theme-color-dark);
+  --diamond-theme-color-muted: var(--diamond-theme-color-muted-dark);
+  --diamond-theme-heading-color: var(--diamond-theme-heading-color-dark);
+  --diamond-theme-icon-color: var(--diamond-theme-icon-color-dark);
+  --diamond-theme-link-color: var(--diamond-theme-link-color-dark);
+  --diamond-theme-link-text-decoration: var(
+    --diamond-theme-link-text-decoration-dark
+  );
+}

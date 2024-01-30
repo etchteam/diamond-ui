@@ -16,9 +16,11 @@ export class Card extends LitElement {
 
     :host .card {
       display: block;
-      border: 1px solid black;
-      color: black;
+      background: var(--diamond-theme-background);
+      border: 1px solid var(--diamond-theme-border-color);
+      color: var(--diamond-theme-color);
       padding: var(--diamond-spacing);
+      transition: border-color var(--diamond-transition);
     }
 
     :host([href]) .card {
@@ -27,7 +29,7 @@ export class Card extends LitElement {
 
     @media (hover: hover) {
       :host([href]:hover) .card {
-        border: 1px solid blue;
+        border: 1px solid var(--diamond-theme-link-color);
       }
     }
   `;
@@ -36,7 +38,7 @@ export class Card extends LitElement {
     const tag = this.href ? 'a' : 'div';
 
     return html`
-      <${unsafeStatic(tag)} href=${this.href} part="card" class="card">
+      <${unsafeStatic(tag)} href=${this.href} class="card">
         <slot></slot>
       </${unsafeStatic(tag)}>
     `;

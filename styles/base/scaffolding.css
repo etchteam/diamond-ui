@@ -3,8 +3,8 @@
 }
 
 body {
-  background: var(--diamond-skin-background);
-  color: var(--diamond-skin-color);
+  background: var(--diamond-theme-background);
+  color: var(--diamond-theme-color);
   margin: 0;
   padding: 0;
 }
@@ -17,7 +17,7 @@ img {
 
 hr {
   border: 0 none;
-  border-bottom: 1px solid var(--diamond-skin-border-color);
+  border-bottom: 1px solid var(--diamond-theme-border-color);
   margin: 0;
   padding: 0;
 }
