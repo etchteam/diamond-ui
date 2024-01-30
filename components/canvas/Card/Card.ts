@@ -29,7 +29,7 @@ export class Card extends LitElement {
 
     @media (hover: hover) {
       :host([href]:hover) .card {
-        border: 1px solid var(--diamond-theme-link-color);
+        border: 1px solid var(--diamond-theme-border-color-hover);
       }
     }
   `;

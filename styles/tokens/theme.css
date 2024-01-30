@@ -3,6 +3,7 @@
   --diamond-theme-background-muted: var(--diamond-color-grey-100);
 
   --diamond-theme-border-color: var(--diamond-color-grey-200);
+  --diamond-theme-border-color-hover: #1a0dab;
 
   --diamond-theme-color: var(--diamond-color-grey-900);
   --diamond-theme-color-muted: var(--diamond-color-grey-700);

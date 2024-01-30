@@ -58,10 +58,6 @@ a {
   text-decoration: var(--diamond-theme-link-text-decoration);
 }
 
-a:hover {
-  text-decoration: var(--diamond-theme-link-text-decoration-hover);
-}
-
 b,
 strong {
   font-weight: var(--diamond-font-weight-bold);
