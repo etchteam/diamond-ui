@@ -1,4 +1,6 @@
-import '@etchteam/diamond-ui/composition/Wrap/Wrap';
-import '@etchteam/diamond-ui/canvas/Card/Card';
-import '@etchteam/diamond-ui/content/Img/Img';
-import '@etchteam/diamond-ui/control/Button/Button';
+import '@etchteam/diamond-ui/styles/diamond-ui.css';
+
+import '@etchteam/diamond-ui/dist/composition/Wrap/Wrap';
+import '@etchteam/diamond-ui/dist/canvas/Card/Card';
+import '@etchteam/diamond-ui/dist/content/Img/Img';
+import '@etchteam/diamond-ui/dist/control/Button/Button';

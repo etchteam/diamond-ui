@@ -4,8 +4,6 @@ import { html } from 'lit';
 import { breakpoints } from '../../../lib/breakpoints';
 
 import './Wrap';
-import './WrapGlobal';
-import './WrapNojs';
 
 export default {
   component: 'diamond-wrap',
@@ -47,59 +45,6 @@ export const Wrap: StoryObj = {
 };
 
 Wrap.args = {
-  size: 'tablet',
-  gutter: 'md',
-};
-
-export const NoJs: StoryObj = {
-  render: (args) => html`
-    <diamond-nojs-wrap size="${args.size}" gutter="${args.gutter}">
-      <div
-        style="height: 100px; background-color: #eee; display: flex; align-items: center; justify-content: center;"
-      >
-        Wrapped content
-      </div>
-    </diamond-nojs-wrap>
-  `,
-};
-
-NoJs.args = {
-  size: 'tablet',
-  gutter: 'md',
-};
-
-export const TypedWithGlobalCss: StoryObj = {
-  render: (args) => html`
-    <diamond-global-wrap size="${args.size}" gutter="${args.gutter}">
-      <div
-        style="height: 100px; background-color: #eee; display: flex; align-items: center; justify-content: center;"
-      >
-        Wrapped content
-      </div>
-    </diamond-global-wrap>
-  `,
-};
-
-TypedWithGlobalCss.args = {
-  size: 'tablet',
-  gutter: 'md',
-};
-
-export const GlobalCss: StoryObj = {
-  render: (args) => html`
-    <div
-      class="diamond-wrap diamond-wrap--size-${args.size} diamond-wrap--gutter-${args.gutter}"
-    >
-      <div
-        style="height: 100px; background-color: #eee; display: flex; align-items: center; justify-content: center;"
-      >
-        Wrapped content
-      </div>
-    </div>
-  `,
-};
-
-GlobalCss.args = {
   size: 'tablet',
   gutter: 'md',
 };
