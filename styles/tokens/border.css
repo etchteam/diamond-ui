@@ -2,7 +2,7 @@
   --diamond-border-width: 1px;
   --diamond-border-style: solid;
   --diamond-border: var(--diamond-border-width) var(--diamond-border-style)
-    var(--diamond-skin-border-color);
+    var(--diamond-theme-border-color);
 
   --diamond-border-radius-xs: 0.125rem;
   --diamond-border-radius-sm: 0.25rem;

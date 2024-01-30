@@ -9,7 +9,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: var(--diamond-skin-heading-color);
+  color: var(--diamond-theme-heading-color);
   font-weight: var(--diamond-font-weight-bold);
   line-height: var(--diamond-font-line-height-sm);
   margin-bottom: var(--diamond-spacing-sm);
@@ -54,12 +54,8 @@ ol:last-child {
 }
 
 a {
-  color: var(--diamond-skin-link-color);
-  text-decoration: var(--diamond-skin-link-text-decoration);
-}
-
-a:hover {
-  text-decoration: var(--diamond-skin-link-text-decoration-hover);
+  color: var(--diamond-theme-link-color);
+  text-decoration: var(--diamond-theme-link-text-decoration);
 }
 
 b,

@@ -1,14 +1,15 @@
 :root {
   --diamond-color-white: #fff;
+
+  --diamond-color-grey-100: #e6e6e6;
+  --diamond-color-grey-200: #ccc;
+  --diamond-color-grey-300: #b3b3b3;
+  --diamond-color-grey-400: #999;
+  --diamond-color-grey-500: #808080;
+  --diamond-color-grey-600: #666;
+  --diamond-color-grey-700: #4d4d4d;
+  --diamond-color-grey-800: #333;
+  --diamond-color-grey-900: #1a1a1a;
+
   --diamond-color-black: #000;
-
-  /*
-    Grey palette
-
-    How do we handle primary, secondary, etc?
-
-    Background, text, link
-    Positive, negative, neutral
-    Overlay
-  */
 }

@@ -1,0 +1,18 @@
+:root {
+  --diamond-theme-background: var(--diamond-color-white);
+  --diamond-theme-background-muted: var(--diamond-color-grey-100);
+
+  --diamond-theme-border-color: var(--diamond-color-grey-200);
+  --diamond-theme-border-color-hover: #1a0dab;
+
+  --diamond-theme-color: var(--diamond-color-grey-900);
+  --diamond-theme-color-muted: var(--diamond-color-grey-700);
+
+  --diamond-theme-heading-color: var(--diamond-theme-color);
+
+  --diamond-theme-icon-color: var(--diamond-theme-color);
+
+  --diamond-theme-link-color: #1a0dab;
+
+  --diamond-theme-link-text-decoration: underline;
+}

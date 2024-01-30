@@ -1,9 +1,21 @@
 import type { Preview } from '@storybook/web-components'
 
 import '../styles/diamond-ui.css';
+import '../styles/themes.css';
 
 const preview: Preview = {
   parameters: {
+    options: {
+      storySort: {
+        order: [
+          'Docs',
+          'Composition',
+          'Canvas',
+          'Content',
+          'Controls',
+        ],
+      },
+    },
     actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
       matchers: {
