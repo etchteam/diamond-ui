@@ -1,3 +1,11 @@
+## [1.1.0](https://github.com/etchteam/diamond-ui/compare/v1.0.3...v1.1.0) (2024-01-30)
+
+
+### Features
+
+* border color hover ([983455a](https://github.com/etchteam/diamond-ui/commit/983455a8513d05cf7946e8b1c04e13bb5a5bfa10))
+* theming ([9ad2dca](https://github.com/etchteam/diamond-ui/commit/9ad2dca4b0204087771a80fa3026ab2c0a36af5e))
+
 ## [1.0.3](https://github.com/etchteam/diamond-ui/compare/v1.0.2...v1.0.3) (2024-01-23)
 
 
