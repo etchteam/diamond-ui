@@ -23,6 +23,7 @@ export class Card extends LitElement {
       border: 0 none;
       color: var(--diamond-theme-color);
       padding: var(--diamond-spacing);
+      text-align: inherit;
       text-decoration: none;
       transition: border-color var(--diamond-transition);
     }
