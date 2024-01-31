@@ -1,5 +1,8 @@
 import { StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
+import camelCase from 'lodash/camelCase';
+
+import { breakpoints } from '../../../lib/breakpoints';
 
 import './Grid';
 import './GridItem';
@@ -9,18 +12,14 @@ const col = {
   options: ['auto', ...[...Array(12).keys()].map((i) => `${i + 1}`)],
 };
 
+const breakpointArgs = Object.fromEntries(
+  breakpoints.map((bp) => [camelCase(bp.name), col]),
+);
+
 export default {
   component: 'diamond-grid-item',
   argTypes: {
-    smallMobile: col,
-    mobile: col,
-    largeMobile: col,
-    smallTablet: col,
-    tablet: col,
-    largeTablet: col,
-    smallDesktop: col,
-    desktop: col,
-    largeDesktop: col,
+    ...breakpointArgs,
   },
 };
 

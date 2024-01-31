@@ -1,3 +1,15 @@
+## [1.1.1](https://github.com/etchteam/diamond-ui/compare/v1.1.0...v1.1.1) (2024-01-31)
+
+
+### Features
+
+* 4 wrap variants ([4028d4c](https://github.com/etchteam/diamond-ui/commit/4028d4c813563f674c94e46b008f284ee42e5aba))
+
+
+### Bug Fixes
+
+* missing import ([a4cf4dd](https://github.com/etchteam/diamond-ui/commit/a4cf4ddbc06009e34a1f59743d372dfd59d08a72))
+
 ## [1.1.0](https://github.com/etchteam/diamond-ui/compare/v1.0.3...v1.1.0) (2024-01-30)
 
 
