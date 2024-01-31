@@ -16,6 +16,7 @@
             node-version-file: .nvmrc
             cache: 'npm'
         - run: npm ci
+        - run: npm run build
         - run: cd example && npm ci
         - name: Lint Code Base
           uses: github/super-linter/slim@v5
