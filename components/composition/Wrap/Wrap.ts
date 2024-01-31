@@ -2,7 +2,7 @@ export {};
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-nojs-wrap': {
+    'diamond-wrap': {
       size:
         | 'small-mobile'
         | 'mobile'
