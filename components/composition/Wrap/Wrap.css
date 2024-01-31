@@ -30,33 +30,33 @@ diamond-wrap[gutter='none'] {
 }
 
 diamond-wrap[size='xs'] {
-  max-width: 320px;
+  max-width: var(--diamond-wrap-xs);
 }
 
 diamond-wrap[size='sm'] {
-  max-width: 480px;
+  max-width: var(--diamond-wrap-sm);
 }
 
 diamond-wrap[size='md'] {
-  max-width: 600px;
+  max-width: var(--diamond-wrap-md);
 }
 
 diamond-wrap[size='lg'] {
-  max-width: 768px;
+  max-width: var(--diamond-wrap-lg);
 }
 
 diamond-wrap[size='xl'] {
-  max-width: 1024px;
+  max-width: var(--diamond-wrap-xl);
 }
 
 diamond-wrap[size='xxl'] {
-  max-width: 1280px;
+  max-width: var(--diamond-wrap-xxl);
 }
 
 diamond-wrap[size='xxxl'] {
-  max-width: 1440px;
+  max-width: var(--diamond-wrap-xxxl);
 }
 
 diamond-wrap[size='xxxxl'] {
-  max-width: 1920px;
+  max-width: var(--diamond-wrap-xxxxl);
 }
