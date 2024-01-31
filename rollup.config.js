@@ -6,13 +6,9 @@ import { glob } from 'glob';
 import { defineConfig } from 'rollup';
 import copy from 'rollup-plugin-copy';
 import del from 'rollup-plugin-delete';
-import postcss from 'rollup-plugin-postcss';
 
 const config = defineConfig({
   plugins: [
-    postcss({
-      plugins: [],
-    }),
     del({ targets: 'dist/*' }),
     typescript(),
     copy({

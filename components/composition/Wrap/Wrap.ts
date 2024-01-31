@@ -1,5 +1,3 @@
-import './Wrap.css';
-
 export {};
 
 declare global {
