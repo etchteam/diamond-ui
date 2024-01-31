@@ -1,12 +1,9 @@
 diamond-card {
-  appearance: none;
   background: var(--diamond-theme-background);
   border: 0 none;
   color: var(--diamond-theme-color);
   display: block;
   padding: var(--diamond-spacing);
-  text-align: inherit;
-  text-decoration: none;
   transition: border-color var(--diamond-transition);
 
   &[shadow] {
