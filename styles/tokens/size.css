@@ -1,0 +1,10 @@
+:root {
+  --diamond-size-xs: 320px;
+  --diamond-size-sm: 480px;
+  --diamond-size-md: 600px;
+  --diamond-size-lg: 768px;
+  --diamond-size-xl: 1024px;
+  --diamond-size-xxl: 1280px;
+  --diamond-size-xxxl: 1440px;
+  --diamond-size-xxxxl: 1920px;
+}

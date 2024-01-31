@@ -29,38 +29,34 @@ diamond-wrap[gutter='none'] {
   padding-inline: 0;
 }
 
-diamond-wrap[size='small-mobile'] {
+diamond-wrap[size='xs'] {
   max-width: 320px;
 }
 
-diamond-wrap[size='mobile'] {
-  max-width: 375px;
-}
-
-diamond-wrap[size='large-mobile'] {
+diamond-wrap[size='sm'] {
   max-width: 480px;
 }
 
-diamond-wrap[size='small-tablet'] {
+diamond-wrap[size='md'] {
   max-width: 600px;
 }
 
-diamond-wrap[size='tablet'] {
+diamond-wrap[size='lg'] {
   max-width: 768px;
 }
 
-diamond-wrap[size='large-tablet'] {
+diamond-wrap[size='xl'] {
   max-width: 1024px;
 }
 
-diamond-wrap[size='small-desktop'] {
+diamond-wrap[size='xxl'] {
   max-width: 1280px;
 }
 
-diamond-wrap[size='desktop'] {
+diamond-wrap[size='xxxl'] {
   max-width: 1440px;
 }
 
-diamond-wrap[size='large-desktop'] {
+diamond-wrap[size='xxxxl'] {
   max-width: 1920px;
 }

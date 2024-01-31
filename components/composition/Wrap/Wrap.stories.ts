@@ -1,8 +1,6 @@
 import { StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 
-import { breakpoints } from '../../../lib/breakpoints';
-
 import './Wrap';
 
 export default {
@@ -21,7 +19,7 @@ export default {
       control: {
         type: 'select',
       },
-      options: breakpoints.map((bp) => bp.name),
+      options: ['xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'xxxl', 'xxxxl'],
     },
     gutter: {
       control: {
@@ -46,5 +44,5 @@ export const Wrap: StoryObj = {
 
 Wrap.args = {
   size: 'tablet',
-  gutter: 'md',
+  gutter: 'lg',
 };
