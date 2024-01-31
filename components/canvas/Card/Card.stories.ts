@@ -55,21 +55,25 @@ export const Interactive: StoryObj = {
   render: () => html`
     <diamond-grid wrap="wrap">
       <diamond-grid-item mobile="12" tablet="6">
-        <a is="diamond-card" href="https://etch.co">
-          <h3>Card title</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+        <a href="https://etch.co">
+          <diamond-card border>
+            <h3>Card title</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </diamond-card>
         </a>
       </diamond-grid-item>
       <diamond-grid-item mobile="12" tablet="6">
-        <button is="diamond-card" type="button">
-          <h3>Card title</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+        <button type="button">
+          <diamond-card border>
+            <h3>Card title</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </diamond-card>
         </button>
       </diamond-grid-item>
     </diamond-grid>

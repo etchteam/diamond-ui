@@ -1,0 +1,63 @@
+diamond-card {
+  appearance: none;
+  background: var(--diamond-theme-background);
+  border: 0 none;
+  color: var(--diamond-theme-color);
+  display: block;
+  padding: var(--diamond-spacing);
+  text-align: inherit;
+  text-decoration: none;
+  transition: border-color var(--diamond-transition);
+
+  &[shadow] {
+    box-shadow: var(--diamond-shadow);
+  }
+
+  &[muted] {
+    background: var(--diamond-theme-background-muted);
+  }
+
+  &[radius] {
+    border-radius: var(--diamond-radius);
+  }
+
+  &[padding='xs'] {
+    padding: var(--diamond-spacing-xs);
+  }
+
+  &[padding='sm'] {
+    padding: var(--diamond-spacing-sm);
+  }
+
+  &[padding='lg'] {
+    padding: var(--diamond-spacing-lg);
+  }
+
+  &[padding='xl'] {
+    padding: var(--diamond-spacing-xl);
+  }
+
+  &[padding='none'] {
+    padding: 0;
+  }
+
+  &[border] {
+    border: 1px solid var(--diamond-theme-border-color);
+  }
+
+  @media (hover: hover) {
+    &[border][href]:hover {
+      border-color: var(--diamond-theme-border-color-hover);
+    }
+  }
+}
+
+button,
+a {
+  &:hover,
+  &:focus-visible {
+    diamond-card {
+      border-color: var(--diamond-theme-border-color-hover);
+    }
+  }
+}
