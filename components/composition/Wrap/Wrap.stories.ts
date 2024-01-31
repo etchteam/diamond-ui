@@ -43,6 +43,6 @@ export const Wrap: StoryObj = {
 };
 
 Wrap.args = {
-  size: 'tablet',
-  gutter: 'lg',
+  size: 'lg',
+  gutter: 'md',
 };

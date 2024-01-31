@@ -3,60 +3,60 @@ diamond-wrap {
   display: block;
   margin: auto;
   padding-inline: var(--diamond-spacing);
-}
 
-diamond-wrap[gutter='xs'] {
-  padding-inline: var(--diamond-spacing-xs);
-}
+  &[gutter='xs'] {
+    padding-inline: var(--diamond-spacing-xs);
+  }
 
-diamond-wrap[gutter='sm'] {
-  padding-inline: var(--diamond-spacing-sm);
-}
+  &[gutter='sm'] {
+    padding-inline: var(--diamond-spacing-sm);
+  }
 
-diamond-wrap[gutter='md'] {
-  padding-inline: var(--diamond-spacing);
-}
+  &[gutter='md'] {
+    padding-inline: var(--diamond-spacing);
+  }
 
-diamond-wrap[gutter='lg'] {
-  padding-inline: var(--diamond-spacing-lg);
-}
+  &[gutter='lg'] {
+    padding-inline: var(--diamond-spacing-lg);
+  }
 
-diamond-wrap[gutter='xl'] {
-  padding-inline: var(--diamond-spacing-xl);
-}
+  &[gutter='xl'] {
+    padding-inline: var(--diamond-spacing-xl);
+  }
 
-diamond-wrap[gutter='none'] {
-  padding-inline: 0;
-}
+  &[gutter='none'] {
+    padding-inline: 0;
+  }
 
-diamond-wrap[size='xs'] {
-  max-width: var(--diamond-wrap-xs);
-}
+  &[size='xs'] {
+    max-width: var(--diamond-wrap-xs);
+  }
 
-diamond-wrap[size='sm'] {
-  max-width: var(--diamond-wrap-sm);
-}
+  &[size='sm'] {
+    max-width: var(--diamond-wrap-sm);
+  }
 
-diamond-wrap[size='md'] {
-  max-width: var(--diamond-wrap-md);
-}
+  &[size='md'] {
+    max-width: var(--diamond-wrap-md);
+  }
 
-diamond-wrap[size='lg'] {
-  max-width: var(--diamond-wrap-lg);
-}
+  &[size='lg'] {
+    max-width: var(--diamond-wrap-lg);
+  }
 
-diamond-wrap[size='xl'] {
-  max-width: var(--diamond-wrap-xl);
-}
+  &[size='xl'] {
+    max-width: var(--diamond-wrap-xl);
+  }
 
-diamond-wrap[size='xxl'] {
-  max-width: var(--diamond-wrap-xxl);
-}
+  &[size='xxl'] {
+    max-width: var(--diamond-wrap-xxl);
+  }
 
-diamond-wrap[size='xxxl'] {
-  max-width: var(--diamond-wrap-xxxl);
-}
+  &[size='xxxl'] {
+    max-width: var(--diamond-wrap-xxxl);
+  }
 
-diamond-wrap[size='xxxxl'] {
-  max-width: var(--diamond-wrap-xxxxl);
+  &[size='xxxxl'] {
+    max-width: var(--diamond-wrap-xxxxl);
+  }
 }
