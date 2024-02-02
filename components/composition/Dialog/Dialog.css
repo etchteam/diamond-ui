@@ -1,0 +1,42 @@
+dialog {
+  background: none;
+  border: 0 none;
+  opacity: 0;
+  padding: 0;
+  transform: translateY(1rem);
+  transition:
+    opacity var(--diamond-transition),
+    display var(--diamond-transition) allow-discrete,
+    overlay var(--diamond-transition) allow-discrete,
+    transform var(--diamond-transition);
+
+  &::backdrop {
+    background-color: var(--diamond-backdrop, var(--diamond-color-grey-600));
+    opacity: 0;
+    transition:
+      opacity var(--diamond-transition),
+      display var(--diamond-transition) allow-discrete,
+      overlay var(--diamond-transition) allow-discrete;
+  }
+
+  &[open] {
+    opacity: 1;
+    transform: none;
+    transition-delay: calc(var(--diamond-transition-duration) * 0.5);
+  }
+
+  &[open]::backdrop {
+    opacity: var(--diamond-backdrop-opacity, 0.4);
+  }
+}
+
+@starting-style {
+  dialog[open] {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  dialog[open]::backdrop {
+    opacity: 0;
+  }
+}

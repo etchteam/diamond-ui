@@ -7,5 +7,17 @@ module.exports = {
         ignore: ['attribute'],
       },
     ],
+    'scss/at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: ['starting-style'],
+      },
+    ],
+    'at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: ['starting-style'],
+      },
+    ],
   },
 };
