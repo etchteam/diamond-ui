@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/etchteam/diamond-ui/compare/v1.2.0...v1.3.0) (2024-02-02)
+
+
+### Features
+
+* modal ([8ed0785](https://github.com/etchteam/diamond-ui/commit/8ed078595535b8bc31059bb8b651c3b44c756b0a))
+
 ## [1.2.0](https://github.com/etchteam/diamond-ui/compare/v1.1.1...v1.2.0) (2024-01-31)
 
 
