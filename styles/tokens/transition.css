@@ -1,4 +1,5 @@
-:root {
+:root,
+::backdrop {
   --diamond-transition-duration: 0.2s;
   --diamond-transition-timing: ease-in-out;
   --diamond-transition: var(--diamond-transition-duration)

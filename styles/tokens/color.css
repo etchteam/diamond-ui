@@ -1,4 +1,5 @@
-:root {
+:root,
+::backdrop {
   --diamond-color-white: #fff;
 
   --diamond-color-grey-100: #e6e6e6;
