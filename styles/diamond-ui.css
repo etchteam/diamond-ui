@@ -3,6 +3,7 @@
 @import url('./base.css');
 
 @import url('../components/composition/Dialog/Dialog.css');
+@import url('../components/composition/Spacing/Spacing.css');
 @import url('../components/composition/Wrap/Wrap.css');
 
 @import url('../components/canvas/Card/Card.css');
