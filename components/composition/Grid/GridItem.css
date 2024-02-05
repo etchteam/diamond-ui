@@ -1,0 +1,229 @@
+/*
+  Prettier tried to put everything on new lines, but we don't want that in this file.
+  Can't see how to disable just that rule.
+*/
+/* stylelint-disable prettier/prettier */
+
+diamond-grid-item {
+  display: block;
+  flex: 0 0 auto;
+  min-width: 0;
+  padding: calc(var(--diamond-grid-gap) / 2);
+
+  &[grow] {
+    flex-grow: 1;
+  }
+
+  &[shrink] {
+    flex-shrink: 1;
+  }
+
+  /*
+    The conversion of attribute value to css variable can be removed once
+    attr type-or-unit is supported https://caniuse.com/mdn-css_types_attr_type-or-unit
+  */
+  &[small-mobile='1'] { --diamond-small-mobile-cols: 1; }
+  &[small-mobile='2'] { --diamond-small-mobile-cols: 2; }
+  &[small-mobile='3'] { --diamond-small-mobile-cols: 3; }
+  &[small-mobile='4'] { --diamond-small-mobile-cols: 4; }
+  &[small-mobile='5'] { --diamond-small-mobile-cols: 5; }
+  &[small-mobile='6'] { --diamond-small-mobile-cols: 6; }
+  &[small-mobile='7'] { --diamond-small-mobile-cols: 7; }
+  &[small-mobile='8'] { --diamond-small-mobile-cols: 8; }
+  &[small-mobile='9'] { --diamond-small-mobile-cols: 9; }
+  &[small-mobile='10'] { --diamond-small-mobile-cols: 10; }
+  &[small-mobile='11'] { --diamond-small-mobile-cols: 11; }
+  &[small-mobile='12'] { --diamond-small-mobile-cols: 12; }
+
+  &[small-mobile] {
+    width: calc(var(--diamond-small-mobile-cols) * 100% / 12);
+  }
+
+  &[small-mobile='auto'] {
+    width: auto;
+  }
+
+  @media (min-width: 375px) {
+    &[mobile='1'] { --diamond-mobile-cols: 1; }
+    &[mobile='2'] { --diamond-mobile-cols: 2; }
+    &[mobile='3'] { --diamond-mobile-cols: 3; }
+    &[mobile='4'] { --diamond-mobile-cols: 4; }
+    &[mobile='5'] { --diamond-mobile-cols: 5; }
+    &[mobile='6'] { --diamond-mobile-cols: 6; }
+    &[mobile='7'] { --diamond-mobile-cols: 7; }
+    &[mobile='8'] { --diamond-mobile-cols: 8; }
+    &[mobile='9'] { --diamond-mobile-cols: 9; }
+    &[mobile='10'] { --diamond-mobile-cols: 10; }
+    &[mobile='11'] { --diamond-mobile-cols: 11; }
+    &[mobile='12'] { --diamond-mobile-cols: 12; }
+
+    &[mobile] {
+      width: calc(var(--diamond-mobile-cols) * 100% / 12);
+    }
+
+    &[mobile='auto'] {
+      width: auto;
+    }
+  }
+
+  @media (min-width: 480px) {
+    &[large-mobile='1'] { --diamond-large-mobile-cols: 1; }
+    &[large-mobile='2'] { --diamond-large-mobile-cols: 2; }
+    &[large-mobile='3'] { --diamond-large-mobile-cols: 3; }
+    &[large-mobile='4'] { --diamond-large-mobile-cols: 4; }
+    &[large-mobile='5'] { --diamond-large-mobile-cols: 5; }
+    &[large-mobile='6'] { --diamond-large-mobile-cols: 6; }
+    &[large-mobile='7'] { --diamond-large-mobile-cols: 7; }
+    &[large-mobile='8'] { --diamond-large-mobile-cols: 8; }
+    &[large-mobile='9'] { --diamond-large-mobile-cols: 9; }
+    &[large-mobile='10'] { --diamond-large-mobile-cols: 10; }
+    &[large-mobile='11'] { --diamond-large-mobile-cols: 11; }
+    &[large-mobile='12'] { --diamond-large-mobile-cols: 12; }
+
+    &[large-mobile] {
+      width: calc(var(--diamond-large-mobile-cols) * 100% / 12);
+    }
+
+    &[large-mobile='auto'] {
+      width: auto;
+    }
+  }
+
+  @media (min-width: 600px) {
+    &[small-tablet='1'] { --diamond-small-tablet-cols: 1; }
+    &[small-tablet='2'] { --diamond-small-tablet-cols: 2; }
+    &[small-tablet='3'] { --diamond-small-tablet-cols: 3; }
+    &[small-tablet='4'] { --diamond-small-tablet-cols: 4; }
+    &[small-tablet='5'] { --diamond-small-tablet-cols: 5; }
+    &[small-tablet='6'] { --diamond-small-tablet-cols: 6; }
+    &[small-tablet='7'] { --diamond-small-tablet-cols: 7; }
+    &[small-tablet='8'] { --diamond-small-tablet-cols: 8; }
+    &[small-tablet='9'] { --diamond-small-tablet-cols: 9; }
+    &[small-tablet='10'] { --diamond-small-tablet-cols: 10; }
+    &[small-tablet='11'] { --diamond-small-tablet-cols: 11; }
+    &[small-tablet='12'] { --diamond-small-tablet-cols: 12; }
+
+    &[small-tablet] {
+      width: calc(var(--diamond-small-tablet-cols) * 100% / 12);
+    }
+
+    &[small-tablet='auto'] {
+      width: auto;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &[tablet='1'] { --diamond-tablet-cols: 1; }
+    &[tablet='2'] { --diamond-tablet-cols: 2; }
+    &[tablet='3'] { --diamond-tablet-cols: 3; }
+    &[tablet='4'] { --diamond-tablet-cols: 4; }
+    &[tablet='5'] { --diamond-tablet-cols: 5; }
+    &[tablet='6'] { --diamond-tablet-cols: 6; }
+    &[tablet='7'] { --diamond-tablet-cols: 7; }
+    &[tablet='8'] { --diamond-tablet-cols: 8; }
+    &[tablet='9'] { --diamond-tablet-cols: 9; }
+    &[tablet='10'] { --diamond-tablet-cols: 10; }
+    &[tablet='11'] { --diamond-tablet-cols: 11; }
+    &[tablet='12'] { --diamond-tablet-cols: 12; }
+
+    &[tablet] {
+      width: calc(var(--diamond-tablet-cols) * 100% / 12);
+    }
+
+    &[tablet='auto'] {
+      width: auto;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    &[large-tablet='1'] { --diamond-large-tablet-cols: 1; }
+    &[large-tablet='2'] { --diamond-large-tablet-cols: 2; }
+    &[large-tablet='3'] { --diamond-large-tablet-cols: 3; }
+    &[large-tablet='4'] { --diamond-large-tablet-cols: 4; }
+    &[large-tablet='5'] { --diamond-large-tablet-cols: 5; }
+    &[large-tablet='6'] { --diamond-large-tablet-cols: 6; }
+    &[large-tablet='7'] { --diamond-large-tablet-cols: 7; }
+    &[large-tablet='8'] { --diamond-large-tablet-cols: 8; }
+    &[large-tablet='9'] { --diamond-large-tablet-cols: 9; }
+    &[large-tablet='10'] { --diamond-large-tablet-cols: 10; }
+    &[large-tablet='11'] { --diamond-large-tablet-cols: 11; }
+    &[large-tablet='12'] { --diamond-large-tablet-cols: 12; }
+
+    &[large-tablet] {
+      width: calc(var(--diamond-large-tablet-cols) * 100% / 12);
+    }
+
+    &[large-tablet='auto'] {
+      width: auto;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    &[small-desktop='1'] { --diamond-small-desktop-cols: 1; }
+    &[small-desktop='2'] { --diamond-small-desktop-cols: 2; }
+    &[small-desktop='3'] { --diamond-small-desktop-cols: 3; }
+    &[small-desktop='4'] { --diamond-small-desktop-cols: 4; }
+    &[small-desktop='5'] { --diamond-small-desktop-cols: 5; }
+    &[small-desktop='6'] { --diamond-small-desktop-cols: 6; }
+    &[small-desktop='7'] { --diamond-small-desktop-cols: 7; }
+    &[small-desktop='8'] { --diamond-small-desktop-cols: 8; }
+    &[small-desktop='9'] { --diamond-small-desktop-cols: 9; }
+    &[small-desktop='10'] { --diamond-small-desktop-cols: 10; }
+    &[small-desktop='11'] { --diamond-small-desktop-cols: 11; }
+    &[small-desktop='12'] { --diamond-small-desktop-cols: 12; }
+
+    &[small-desktop] {
+      width: calc(var(--diamond-small-desktop-cols) * 100% / 12);
+    }
+
+    &[small-desktop='auto'] {
+      width: auto;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    &[desktop='1'] { --diamond-desktop-cols: 1; }
+    &[desktop='2'] { --diamond-desktop-cols: 2; }
+    &[desktop='3'] { --diamond-desktop-cols: 3; }
+    &[desktop='4'] { --diamond-desktop-cols: 4; }
+    &[desktop='5'] { --diamond-desktop-cols: 5; }
+    &[desktop='6'] { --diamond-desktop-cols: 6; }
+    &[desktop='7'] { --diamond-desktop-cols: 7; }
+    &[desktop='8'] { --diamond-desktop-cols: 8; }
+    &[desktop='9'] { --diamond-desktop-cols: 9; }
+    &[desktop='10'] { --diamond-desktop-cols: 10; }
+    &[desktop='11'] { --diamond-desktop-cols: 11; }
+    &[desktop='12'] { --diamond-desktop-cols: 12; }
+
+    &[desktop] {
+      width: calc(var(--diamond-desktop-cols) * 100% / 12);
+    }
+
+    &[desktop='auto'] {
+      width: auto;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    &[large-desktop='1'] { --diamond-large-desktop-cols: 1; }
+    &[large-desktop='2'] { --diamond-large-desktop-cols: 2; }
+    &[large-desktop='3'] { --diamond-large-desktop-cols: 3; }
+    &[large-desktop='4'] { --diamond-large-desktop-cols: 4; }
+    &[large-desktop='5'] { --diamond-large-desktop-cols: 5; }
+    &[large-desktop='6'] { --diamond-large-desktop-cols: 6; }
+    &[large-desktop='7'] { --diamond-large-desktop-cols: 7; }
+    &[large-desktop='8'] { --diamond-large-desktop-cols: 8; }
+    &[large-desktop='9'] { --diamond-large-desktop-cols: 9; }
+    &[large-desktop='10'] { --diamond-large-desktop-cols: 10; }
+    &[large-desktop='11'] { --diamond-large-desktop-cols: 11; }
+    &[large-desktop='12'] { --diamond-large-desktop-cols: 12; }
+
+    &[large-desktop] {
+      width: calc(var(--diamond-large-desktop-cols) * 100% / 12);
+    }
+
+    &[large-desktop='auto'] {
+      width: auto;
+    }
+  }
+}
