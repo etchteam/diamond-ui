@@ -30,15 +30,15 @@ export default {
 export const Spacing: StoryObj = {
   render: (args) => html`
     <div
-      class="diamond-spacing--bottom-${args.size}"
+      class="diamond-spacing-bottom-${args.size}"
       style="height: 100px; background-color: #eee;"
     ></div>
     <div
-      class="diamond-spacing--bottom-${args.size}"
+      class="diamond-spacing-bottom-${args.size}"
       style="height: 100px; background-color: #eee;"
     ></div>
     <div
-      class="diamond-spacing--bottom-${args.size}"
+      class="diamond-spacing-bottom-${args.size}"
       style="height: 100px; background-color: #eee;"
     ></div>
   `,
