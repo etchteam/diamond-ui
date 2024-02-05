@@ -1,8 +1,4 @@
-import { LitElement, css, html, unsafeCSS } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
-
-import { breakpoints } from '../../../lib/breakpoints';
-import { cssMap } from '../../../lib/css-map';
+export {};
 
 type Column =
   | 'auto'
@@ -19,82 +15,20 @@ type Column =
   | '11'
   | '12';
 
-const colWidth = (i: number) => (100 / 12) * (i + 1);
-
-const columns = (breakpoint: string) => {
-  return `
-    :host([${breakpoint}="auto"]) { width: auto; }
-
-    ${cssMap(
-      [...Array(12).keys()],
-      (i) => `
-      :host([${breakpoint}="${i + 1}"]) { width: ${colWidth(i)}%; }
-      `,
-    )}
-  `;
-};
-
-const columnBreakpoints = () => {
-  return unsafeCSS(
-    breakpoints
-      .map(
-        (bp) => `
-        @media (min-width: ${bp.value}) {
-          ${columns(bp.name)}
-        }
-      `,
-      )
-      .join(''),
-  );
-};
-
-@customElement('diamond-grid-item')
-export class GridItem extends LitElement {
-  @property({ type: Boolean }) readonly grow?: boolean;
-  @property({ type: Boolean }) readonly shrink?: boolean;
-
-  @property() readonly smallMobile?: Column;
-  @property() readonly mobile?: Column;
-  @property() readonly largeMobile?: Column;
-
-  @property() readonly smallTablet?: Column;
-  @property() readonly tablet?: Column;
-  @property() readonly largeTablet?: Column;
-
-  @property() readonly smallDesktop?: Column;
-  @property() readonly desktop?: Column;
-  @property() readonly largeDesktop?: Column;
-
-  static styles = css`
-    :host {
-      display: block;
-      flex: 0 0 auto;
-      min-width: 0;
-      padding: calc(var(--diamond-grid-gap) / 2);
-    }
-
-    :host([grow]) {
-      flex-grow: 1;
-    }
-
-    :host([shrink]) {
-      flex-shrink: 1;
-    }
-
-    :host[small-mobile='12'] {
-      width: 100%;
-    }
-
-    ${columnBreakpoints()}
-  `;
-
-  render() {
-    return html`<slot></slot>`;
-  }
-}
-
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-grid-item': GridItem;
+    'diamond-grid-item': {
+      grow?: boolean;
+      shrink?: boolean;
+      smallMobile?: Column;
+      mobile?: Column;
+      largeMobile?: Column;
+      smallTablet?: Column;
+      tablet?: Column;
+      largeTablet?: Column;
+      smallDesktop?: Column;
+      desktop?: Column;
+      largeDesktop?: Column;
+    };
   }
 }
