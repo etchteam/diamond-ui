@@ -26,22 +26,23 @@ export default {
       control: {
         type: 'select',
       },
-      options: ['primary', 'secondary', 'tertiary'],
+      options: ['primary', 'secondary', 'text'],
+    },
+    width: {
+      control: {
+        type: 'select',
+      },
+      options: ['full-width', 'full-width-mobile', 'square'],
     },
   },
 };
 
 export const Button: StoryObj = {
   render: (args) => html`
-    <diamond-button size="${args.size}" gutter="${args.gutter}">
-      <button>Button</button>
+    <diamond-button size="${args.size}" variant="${args.variant}" width="${args.width}">
+      <button type="button">Button</button>
     </diamond-wrap>
   `,
-};
-
-Button.args = {
-  size: 'md',
-  variant: 'primary',
 };
 
 export const AnchorButton: StoryObj = {
@@ -49,6 +50,128 @@ export const AnchorButton: StoryObj = {
     <diamond-button>
       <a href="#" onclick="return false;">Anchor</a>
     </diamond-button>
+  `,
+};
+
+export const Primary: StoryObj = {
+  render: () => html`
+    <diamond-grid wrap="wrap">
+      <diamond-grid-item>
+        <diamond-button variant="primary">
+          <button>Primary</button>
+        </diamond-button>
+      </diamond-grid-item>
+      <diamond-grid-item>
+        <diamond-button variant="primary">
+          <button disabled>Disabled</button>
+        </diamond-button>
+      </diamond-grid-item>
+    </diamond-grid>
+  `,
+};
+
+export const Secondary: StoryObj = {
+  render: () => html`
+    <diamond-grid wrap="wrap">
+      <diamond-grid-item>
+        <diamond-button variant="secondary">
+          <button>Secondary</button>
+        </diamond-button>
+      </diamond-grid-item>
+      <diamond-grid-item>
+        <diamond-button variant="secondary">
+          <button disabled>Disabled</button>
+        </diamond-button>
+      </diamond-grid-item>
+    </diamond-grid>
+  `,
+};
+
+export const TextButton: StoryObj = {
+  render: () => html`
+    <diamond-grid wrap="wrap">
+      <diamond-grid-item>
+        <diamond-button variant="text">
+          <button>Text</button>
+        </diamond-button>
+      </diamond-grid-item>
+      <diamond-grid-item>
+        <diamond-button variant="text">
+          <button disabled>Disabled</button>
+        </diamond-button>
+      </diamond-grid-item>
+    </diamond-grid>
+  `,
+};
+
+export const IconOnlyButton: StoryObj = {
+  render: () => html`
+    <diamond-grid wrap="wrap">
+      <diamond-grid-item>
+        <diamond-button width="square">
+          <button type="button">
+            <svg
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              width="24"
+              height="24"
+              aria-label="Send mail"
+            >
+              <path
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+          </button>
+        </diamond-button>
+      </diamond-grid-item>
+      <diamond-grid-item>
+        <diamond-button variant="text">
+          <button type="button">
+            <svg
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              width="24"
+              height="24"
+              aria-label="Send mail"
+            >
+              <path
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+          </button>
+        </diamond-button>
+      </diamond-grid-item>
+    </diamond-grid>
+  `,
+};
+
+export const CustomButton: StoryObj = {
+  render: () => html`
+    <style>
+      .custom-button {
+        --diamond-button-background: hotpink;
+        --diamond-button-background-hover: pink;
+        --diamond-button-background-disabled: lightgray;
+        --diamond-button-border-color: hotpink;
+        --diamond-button-border-color-hover: hotpink;
+        --diamond-button-border-color-disabled: lightgray;
+        --diamond-button-color: white;
+        --diamond-button-color-hover: white;
+        --diamond-button-color-disabled: white;
+      }
+    </style>
+    <diamond-grid wrap="wrap">
+      <diamond-grid-item>
+        <diamond-button class="custom-button">
+          <button>Custom button</button>
+        </diamond-button>
+      </diamond-grid-item>
+      <diamond-grid-item class="custom-button">
+        <diamond-button>
+          <button disabled>Disabled</button>
+        </diamond-button>
+      </diamond-grid-item>
+    </diamond-grid>
   `,
 };
 
