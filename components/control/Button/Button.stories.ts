@@ -179,7 +179,7 @@ CustomButton.parameters = {
   docs: {
     description: {
       story:
-        'Customise buttons by altering the CSS variables, if more variations than the ones provided then extra classes can be used.',
+        'Customise buttons by altering the CSS variables, extra classes can be used to create more variations than the primary, secondary and text ones provided.',
     },
   },
 };
