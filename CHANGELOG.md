@@ -1,3 +1,15 @@
+## [1.4.0](https://github.com/etchteam/diamond-ui/compare/v1.3.0...v1.4.0) (2024-02-05)
+
+
+### Features
+
+* spacing utility class ([7c5ecca](https://github.com/etchteam/diamond-ui/commit/7c5ecca735edf9ed294061b56432586a133af8da))
+
+
+### Bug Fixes
+
+* var typos ([10a306a](https://github.com/etchteam/diamond-ui/commit/10a306a468d0e02dbd5bab809c4f2fcc94f6a770))
+
 ## [1.3.0](https://github.com/etchteam/diamond-ui/compare/v1.2.0...v1.3.0) (2024-02-02)
 
 
