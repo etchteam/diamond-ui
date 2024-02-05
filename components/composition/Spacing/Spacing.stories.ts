@@ -21,24 +21,24 @@ export default {
   },
   argTypes: {
     size: {
-      control: { type: 'inline-radio' },
+      control: { type: 'select' },
+      options: ['xs', 'sm', 'md', 'lg', 'xl'],
     },
-    options: ['xs', 'sm', 'md', 'lg', 'xl'],
   },
 };
 
 export const Spacing: StoryObj = {
   render: (args) => html`
     <div
-      class="diamond-spacing-bottom-${args.size}"
+      class="diamond-spacing--bottom-${args.size}"
       style="height: 100px; background-color: #eee;"
     ></div>
     <div
-      class="diamond-spacing-bottom-${args.size}"
+      class="diamond-spacing--bottom-${args.size}"
       style="height: 100px; background-color: #eee;"
     ></div>
     <div
-      class="diamond-spacing-bottom-${args.size}"
+      class="diamond-spacing--bottom-${args.size}"
       style="height: 100px; background-color: #eee;"
     ></div>
   `,
