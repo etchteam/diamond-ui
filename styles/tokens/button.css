@@ -4,7 +4,7 @@
   --diamond-button-file-background: var(--diamond-color-grey-100);
   --diamond-button-padding-inline: var(--diamond-spacing);
   --diamond-button-padding-block: var(--diamond-spacing-sm);
-  --diamond-button-gap: 1ch;
+  --diamond-button-gap: 0.75ch;
   --diamond-button-outline-offset: 5px;
   --diamond-button-font-weight: var(--diamond-font-size-base);
   --diamond-button-icon-size: 2ch;

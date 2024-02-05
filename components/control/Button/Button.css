@@ -21,11 +21,11 @@ input[type='file']::file-selector-button {
   --_size: 1rem;
   --_padding-block: var(--diamond-button-padding-block);
   --_padding-inline: var(--diamond-button-padding-inline);
+  border-radius: var(--diamond-button-border-radius);
 
   font: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  border-radius: var(--diamond-button-border-radius);
 }
 
 button,
@@ -34,34 +34,30 @@ input[type='button'],
 input[type='submit'],
 input[type='reset'],
 input[type='file']::file-selector-button {
-  cursor: pointer;
-  touch-action: manipulation;
-
-  font-size: var(--_size, 1rem);
+  align-items: center;
   background: var(--_background);
-  color: var(--_color);
   border: var(--diamond-border);
   border-color: var(--_border-color);
+  color: var(--_color);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: var(--_size, 1rem);
+  font-weight: var(--diamond-button-font-weight);
+  gap: var(--diamond-button-gap);
+  justify-content: center;
+  padding-block: var(--_padding-block);
+  padding-inline: var(--_padding-inline);
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
   text-shadow: var(--diamond-button-text-shadow);
+  touch-action: manipulation;
+  -webkit-touch-callout: none;
   transition:
     background var(--diamond-transition),
     color var(--diamond-transition),
     border-color var(--diamond-transition),
     outline-offset var(--diamond-transition);
-
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: var(--diamond-button-gap);
-
-  font-weight: var(--diamond-button-font-weight);
-  padding-block: var(--_padding-block);
-  padding-inline: var(--_padding-inline);
-
   user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
 
   @media (hover: hover) {
     &:hover {
@@ -88,9 +84,9 @@ input[type='file']::file-selector-button {
 }
 
 input[type='file'] {
+  background-color: var(--diamond-button-file-background);
   inline-size: 100%;
   max-inline-size: max-content;
-  background-color: var(--diamond-button-file-background);
 
   &::file-selector-button {
     appearance: none;
@@ -105,12 +101,12 @@ input[type='submit'],
 input[type='reset'] {
   svg {
     block-size: var(--diamond-button-icon-size);
-    inline-size: var(--diamond-button-icon-size);
-    stroke: currentColor;
+    fill: none;
     filter: drop-shadow(var(--diamond-button-text-shadow));
 
     flex-shrink: 0;
-    fill: none;
+    inline-size: var(--diamond-button-icon-size);
+    stroke: currentColor;
     stroke-linecap: round;
     stroke-linejoin: round;
   }
@@ -120,8 +116,8 @@ input[type='reset'] {
  * diamond-button specific styles
  */
 diamond-button a {
-  text-decoration: none;
   color: var(--_color);
+  text-decoration: none;
 }
 
 diamond-button :where(button),

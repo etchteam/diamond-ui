@@ -53,7 +53,7 @@ export const AnchorButton: StoryObj = {
   `,
 };
 
-export const Primary: StoryObj = {
+export const PrimaryButton: StoryObj = {
   render: () => html`
     <diamond-grid wrap="wrap">
       <diamond-grid-item>
@@ -70,7 +70,7 @@ export const Primary: StoryObj = {
   `,
 };
 
-export const Secondary: StoryObj = {
+export const SecondaryButton: StoryObj = {
   render: () => html`
     <diamond-grid wrap="wrap">
       <diamond-grid-item>
@@ -148,7 +148,7 @@ export const IconOnlyButton: StoryObj = {
 export const CustomButton: StoryObj = {
   render: () => html`
     <style>
-      .custom-button {
+      .positive-button {
         --diamond-button-background: hotpink;
         --diamond-button-background-hover: pink;
         --diamond-button-background-disabled: lightgray;
@@ -162,17 +162,26 @@ export const CustomButton: StoryObj = {
     </style>
     <diamond-grid wrap="wrap">
       <diamond-grid-item>
-        <diamond-button class="custom-button">
+        <diamond-button class="positive-button">
           <button>Custom button</button>
         </diamond-button>
       </diamond-grid-item>
-      <diamond-grid-item class="custom-button">
+      <diamond-grid-item class="positive-button">
         <diamond-button>
           <button disabled>Disabled</button>
         </diamond-button>
       </diamond-grid-item>
     </diamond-grid>
   `,
+};
+
+CustomButton.parameters = {
+  docs: {
+    description: {
+      story:
+        'Customise buttons by altering the CSS variables, if more variations than the ones provided then extra classes can be used.',
+    },
+  },
 };
 
 export const HtmlButton: StoryObj = {
@@ -217,4 +226,13 @@ export const HtmlButton: StoryObj = {
       </diamond-grid-item>
     </diamond-grid>
   `,
+};
+
+HtmlButton.parameters = {
+  docs: {
+    description: {
+      story:
+        'Default Diamond button styles apply to all button-like HTML elements',
+    },
+  },
 };
