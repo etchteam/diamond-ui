@@ -1,8 +1,6 @@
 import { StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 
-import '../../canvas/Card/Card';
-
 const description = `
 Diamond spacing is a set of utility classes that can be added to any component or element.
 
