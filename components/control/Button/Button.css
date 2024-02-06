@@ -1,0 +1,171 @@
+diamond-button {
+  --_background: var(--diamond-button-background);
+  --_background-hover: var(--diamond-button-background-hover);
+  --_background-disabled: var(--diamond-button-background-disabled);
+  --_border-color: var(--diamond-button-border-color);
+  --_border-color-hover: var(--diamond-button-border-color-hover);
+  --_border-color-disabled: var(--diamond-button-border-color-disabled);
+  --_color: var(--diamond-button-color);
+  --_color-hover: var(--diamond-button-color-hover);
+  --_color-disabled: var(--diamond-button-color-disabled);
+  --_size: 1rem;
+  --_padding-block: var(--diamond-button-padding-block);
+  --_padding-inline: var(--diamond-button-padding-inline);
+
+  button,
+  a,
+  input:not([type='file']),
+  input[type='file']::file-selector-button {
+    align-items: center;
+    appearance: none;
+    background: var(--_background);
+    border: var(--diamond-border);
+    border-color: var(--_border-color);
+    border-radius: var(--diamond-button-border-radius);
+    color: var(--_color);
+    cursor: pointer;
+    display: inline-flex;
+    font: inherit;
+    font-size: var(--_size, 1rem);
+    font-weight: var(--diamond-button-font-weight);
+    gap: var(--diamond-button-gap);
+    justify-content: center;
+    letter-spacing: inherit;
+    line-height: var(--diamond-font-line-height);
+    padding-block: var(--_padding-block);
+    padding-inline: var(--_padding-inline);
+    -webkit-tap-highlight-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: var(--diamond-button-text-shadow);
+    touch-action: manipulation;
+    -webkit-touch-callout: none;
+    transition:
+      background var(--diamond-transition),
+      color var(--diamond-transition),
+      border-color var(--diamond-transition),
+      outline-offset var(--diamond-transition);
+    user-select: none;
+
+    @media (hover: hover) {
+      &:hover {
+        --_background: var(--_background-hover);
+        --_border-color: var(--_border-color-hover);
+        --_color: var(--_color-hover);
+      }
+    }
+
+    &:not(:active):focus-visible {
+      outline-offset: var(--diamond-button-outline-offset);
+    }
+
+    &[disabled] {
+      --_background: var(--_background-disabled);
+      --_color: var(--_color-disabled);
+      --_border-color: var(--_border-color-disabled);
+      cursor: not-allowed;
+    }
+
+    svg {
+      block-size: var(--diamond-button-icon-size);
+      fill: none;
+      filter: drop-shadow(var(--diamond-button-text-shadow));
+
+      flex-shrink: 0;
+      inline-size: var(--diamond-button-icon-size);
+      stroke: currentColor;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  }
+
+  &[size='sm'] {
+    --_size: 0.875rem;
+  }
+
+  &[size='lg'] {
+    --_size: 1.25rem;
+  }
+
+  &[width='full-width'] {
+    button,
+    a,
+    input {
+      width: 100%;
+    }
+  }
+
+  @media (width < 480px) {
+    &[width='full-width-mobile'] {
+      button,
+      a,
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  &[width='square'] {
+    --_padding-inline: var(--diamond-button-padding-block);
+  }
+
+  &[variant='primary'] {
+    --_background: var(--diamond-button-primary-background);
+    --_background-hover: var(--diamond-button-primary-background-hover);
+    --_background-disabled: var(--diamond-button-primary-background-disabled);
+    --_border-color: var(--diamond-button-primary-border-color);
+    --_border-color-hover: var(--diamond-button-primary-border-color-hover);
+    --_border-color-disabled: var(
+      --diamond-button-primary-border-color-disabled
+    );
+    --_color: var(--diamond-button-primary-color);
+    --_color-hover: var(--diamond-button-primary-color-hover);
+    --_color-disabled: var(--diamond-button-primary-color-disabled);
+  }
+
+  &[variant='secondary'] {
+    --_background: var(--diamond-button-secondary-background);
+    --_background-hover: var(--diamond-button-secondary-background-hover);
+    --_background-disabled: var(--diamond-button-secondary-background-disabled);
+    --_border-color: var(--diamond-button-secondary-border-color);
+    --_border-color-hover: var(--diamond-button-secondary-border-color-hover);
+    --_border-color-disabled: var(
+      --diamond-button-secondary-border-color-disabled
+    );
+    --_color: var(--diamond-button-secondary-color);
+    --_color-hover: var(--diamond-button-secondary-color-hover);
+    --_color-disabled: var(--diamond-button-secondary-color-disabled);
+  }
+
+  &[variant='text'] {
+    --_background: var(--diamond-button-text-background);
+    --_background-hover: var(--diamond-button-text-background-hover);
+    --_background-disabled: var(--diamond-button-text-background-disabled);
+    --_border-color: var(--diamond-button-text-border-color);
+    --_border-color-hover: var(--diamond-button-text-border-color-hover);
+    --_border-color-disabled: var(--diamond-button-text-border-color-disabled);
+    --_color: var(--diamond-button-text-color);
+    --_color-hover: var(--diamond-button-text-color-hover);
+    --_color-disabled: var(--diamond-button-text-color-disabled);
+    /* Text button is square */
+    --_padding-inline: var(--diamond-button-padding-block);
+
+    button,
+    a,
+    input {
+      /* Remove padding whilst retaining a clickable area large enough for thumbs  */
+      margin: calc(var(--_padding-block) * -1);
+    }
+  }
+
+  input[type='file'] {
+    background-color: var(--diamond-button-file-background);
+    border-radius: var(--diamond-button-border-radius);
+    inline-size: 100%;
+    max-inline-size: max-content;
+
+    &::file-selector-button {
+      margin-inline-end: var(--diamond-spacing);
+    }
+  }
+}
