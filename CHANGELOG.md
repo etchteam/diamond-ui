@@ -1,3 +1,10 @@
+## [1.6.0](https://github.com/etchteam/diamond-ui/compare/v1.5.0...v1.6.0) (2024-02-06)
+
+
+### Features
+
+* hidden utility class ([4c2cd44](https://github.com/etchteam/diamond-ui/commit/4c2cd443f0c298613faca60117f97e62d18015bd))
+
 ## [1.5.0](https://github.com/etchteam/diamond-ui/compare/v1.4.0...v1.5.0) (2024-02-06)
 
 
