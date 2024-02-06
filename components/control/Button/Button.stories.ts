@@ -184,55 +184,70 @@ CustomButton.parameters = {
   },
 };
 
-export const HtmlButton: StoryObj = {
+export const HtmlButtonTypes: StoryObj = {
   render: () => html`
     <diamond-grid wrap="wrap">
       <diamond-grid-item>
-        <button>Default</button>
+        <diamond-button>
+          <button>Default</button>
+        </diamond-button>
       </diamond-grid-item>
       <diamond-grid-item>
-        <input type="button" value="<input>" />
+        <diamond-button>
+          <input type="button" value="<input>" />
+        </diamond-button>
       </diamond-grid-item>
       <diamond-grid-item>
-        <button>
-          <svg
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            width="24"
-            height="24"
-            aria-hidden="true"
-          >
-            <path
-              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-            />
-          </svg>
-          Icon
-        </button>
+        <diamond-button>
+          <button>
+            <svg
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              width="24"
+              height="24"
+              aria-hidden="true"
+            >
+              <path
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+            Icon
+          </button>
+        </diamond-button>
       </diamond-grid-item>
       <diamond-grid-item>
-        <button type="submit">Submit</button>
+        <diamond-button>
+          <button type="submit">Submit</button>
+        </diamond-button>
       </diamond-grid-item>
       <diamond-grid-item>
-        <button type="button">Type Button</button>
+        <diamond-button>
+          <button type="button">Type Button</button>
+        </diamond-button>
       </diamond-grid-item>
       <diamond-grid-item>
-        <button type="reset">Reset</button>
+        <diamond-button>
+          <button type="reset">Reset</button>
+        </diamond-button>
       </diamond-grid-item>
       <diamond-grid-item>
-        <button disabled>Disabled</button>
+        <diamond-button>
+          <button disabled>Disabled</button>
+        </diamond-button>
       </diamond-grid-item>
       <diamond-grid-item>
-        <input type="file" />
+        <diamond-button>
+          <input type="file" />
+        </diamond-button>
       </diamond-grid-item>
     </diamond-grid>
   `,
 };
 
-HtmlButton.parameters = {
+HtmlButtonTypes.parameters = {
   docs: {
     description: {
-      story:
-        'Default Diamond button styles apply to all button-like HTML elements',
+      story: 'Diamond button styles can apply to all button-like HTML elements',
     },
   },
 };
