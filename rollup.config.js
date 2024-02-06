@@ -49,14 +49,18 @@ const config = defineConfig([
         extract: true,
       }),
       copy({
-        // Still copy the styles directory for people who want to import them directly
-        targets: [{ src: 'styles', dest: 'dist' }],
+        // Copy other styles for people who want to import them directly
+        targets: [
+          { src: ['styles/*', '!styles/diamond-ui.css'], dest: 'dist/styles' },
+          { src: 'styles/base/*', dest: 'dist/styles/base' },
+          { src: 'styles/tokens/*', dest: 'dist/styles/tokens' },
+        ],
       }),
     ],
     input: 'styles/diamond-ui.css',
     output: {
       format: 'es',
-      dir: 'dist',
+      file: 'dist/diamond-ui.css',
     },
   },
 ]);
