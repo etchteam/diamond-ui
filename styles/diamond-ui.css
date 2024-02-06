@@ -2,13 +2,5 @@
 @import url('./tokens.css');
 @import url('./base.css');
 
-@import url('../components/composition/Dialog/Dialog.css');
-@import url('../components/composition/Grid/Grid.css');
-@import url('../components/composition/Grid/GridItem.css');
-@import url('../components/composition/Hidden/Hidden.css');
-@import url('../components/composition/Spacing/Spacing.css');
-@import url('../components/composition/Wrap/Wrap.css');
-
-@import url('../components/canvas/Card/Card.css');
-
-@import url('../components/control/Button/Button.css');
+/* stylelint-disable-next-line at-rule-no-unknown, scss/at-rule-no-unknown */
+@import-glob '../components/**/*.css';
