@@ -27,7 +27,7 @@
   --diamond-font-weight-black: 900;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   :root {
     --diamond-font-size-base: 1rem;
 

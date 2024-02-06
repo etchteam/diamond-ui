@@ -43,7 +43,7 @@ diamond-grid-item {
     width: auto;
   }
 
-  @media (min-width: 375px) {
+  @media (width >= 375px) {
     &[mobile='1'] { --diamond-mobile-cols: 1; }
     &[mobile='2'] { --diamond-mobile-cols: 2; }
     &[mobile='3'] { --diamond-mobile-cols: 3; }
@@ -66,7 +66,7 @@ diamond-grid-item {
     }
   }
 
-  @media (min-width: 480px) {
+  @media (width >= 480px) {
     &[large-mobile='1'] { --diamond-large-mobile-cols: 1; }
     &[large-mobile='2'] { --diamond-large-mobile-cols: 2; }
     &[large-mobile='3'] { --diamond-large-mobile-cols: 3; }
@@ -89,7 +89,7 @@ diamond-grid-item {
     }
   }
 
-  @media (min-width: 600px) {
+  @media (width >= 600px) {
     &[small-tablet='1'] { --diamond-small-tablet-cols: 1; }
     &[small-tablet='2'] { --diamond-small-tablet-cols: 2; }
     &[small-tablet='3'] { --diamond-small-tablet-cols: 3; }
@@ -112,7 +112,7 @@ diamond-grid-item {
     }
   }
 
-  @media (min-width: 768px) {
+  @media (width >= 768px) {
     &[tablet='1'] { --diamond-tablet-cols: 1; }
     &[tablet='2'] { --diamond-tablet-cols: 2; }
     &[tablet='3'] { --diamond-tablet-cols: 3; }
@@ -135,7 +135,7 @@ diamond-grid-item {
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (width >= 1024px) {
     &[large-tablet='1'] { --diamond-large-tablet-cols: 1; }
     &[large-tablet='2'] { --diamond-large-tablet-cols: 2; }
     &[large-tablet='3'] { --diamond-large-tablet-cols: 3; }
@@ -158,7 +158,7 @@ diamond-grid-item {
     }
   }
 
-  @media (min-width: 1280px) {
+  @media (width >= 1280px) {
     &[small-desktop='1'] { --diamond-small-desktop-cols: 1; }
     &[small-desktop='2'] { --diamond-small-desktop-cols: 2; }
     &[small-desktop='3'] { --diamond-small-desktop-cols: 3; }
@@ -181,7 +181,7 @@ diamond-grid-item {
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (width >= 1440px) {
     &[desktop='1'] { --diamond-desktop-cols: 1; }
     &[desktop='2'] { --diamond-desktop-cols: 2; }
     &[desktop='3'] { --diamond-desktop-cols: 3; }
@@ -204,7 +204,7 @@ diamond-grid-item {
     }
   }
 
-  @media (min-width: 1920px) {
+  @media (width >= 1920px) {
     &[large-desktop='1'] { --diamond-large-desktop-cols: 1; }
     &[large-desktop='2'] { --diamond-large-desktop-cols: 2; }
     &[large-desktop='3'] { --diamond-large-desktop-cols: 3; }
