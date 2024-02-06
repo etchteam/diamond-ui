@@ -1,3 +1,13 @@
+## [1.5.0](https://github.com/etchteam/diamond-ui/compare/v1.4.0...v1.5.0) (2024-02-06)
+
+
+### Features
+
+* base button styles and story ([289c368](https://github.com/etchteam/diamond-ui/commit/289c36834faa7ffbbf6654875ee5ce5e545558d6))
+* button styles ([c7c4eda](https://github.com/etchteam/diamond-ui/commit/c7c4edaac9a342703e84b77218d1e7111cff451c))
+* extra docs and tweaks ([0b4b82d](https://github.com/etchteam/diamond-ui/commit/0b4b82d226c52255afbc5f8fa0b5c92b17a4151e))
+* re-organise the styles under the diamond-button selector ([5f7c762](https://github.com/etchteam/diamond-ui/commit/5f7c7623fdff9742b7f92357ac0cea10a040c471))
+
 ## [1.4.0](https://github.com/etchteam/diamond-ui/compare/v1.3.0...v1.4.0) (2024-02-05)
 
 
