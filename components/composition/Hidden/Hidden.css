@@ -1,50 +1,87 @@
-/*
-  Prettier tried to put everything on new lines, but we don't want that in this file.
-  Can't see how to disable just that rule.
-*/
-/* stylelint-disable prettier/prettier */
+.diamond-hidden-small-mobile {
+  display: none;
+}
 
-.diamond-hidden-small-mobile { display: none; }
-.diamond-visible-small-mobile { display: block; }
+.diamond-visible-small-mobile {
+  display: block;
+}
 
 @media (min-width: 375px) {
-  .diamond-hidden-mobile { display: none; }
-  .diamond-visible-mobile {  display: block; }
+  .diamond-hidden-mobile {
+    display: none;
+  }
+
+  .diamond-visible-mobile {
+    display: block;
+  }
 }
 
 @media (min-width: 480px) {
-  .diamond-hidden-large-mobile { display: none; }
-  .diamond-visible-large-mobile { display: block; }
+  .diamond-hidden-large-mobile {
+    display: none;
+  }
+
+  .diamond-visible-large-mobile {
+    display: block;
+  }
 }
 
 @media (min-width: 600px) {
-  .diamond-hidden-small-tablet { display: none; }
-  .diamond-visible-small-tablet { display: block; }
+  .diamond-hidden-small-tablet {
+    display: none;
+  }
+
+  .diamond-visible-small-tablet {
+    display: block;
+  }
 }
 
 @media (min-width: 768px) {
-  .diamond-hidden-tablet { display: none; }
-  .diamond-visible-tablet { display: block; }
+  .diamond-hidden-tablet {
+    display: none;
+  }
+
+  .diamond-visible-tablet {
+    display: block;
+  }
 }
 
 @media (min-width: 1024px) {
-  .diamond-hidden-large-tablet { display: none; }
-  .diamond-visible-large-tablet { display: block; }
+  .diamond-hidden-large-tablet {
+    display: none;
+  }
+
+  .diamond-visible-large-tablet {
+    display: block;
+  }
 }
 
 @media (min-width: 1280px) {
-  .diamond-hidden-small-desktop { display: none; }
-  .diamond-visible-small-desktop { display: block; }
+  .diamond-hidden-small-desktop {
+    display: none;
+  }
+
+  .diamond-visible-small-desktop {
+    display: block;
+  }
 }
 
 @media (min-width: 1440px) {
-  .diamond-hidden-desktop { display: none; }
-  .diamond-visible-desktop { display: block; }
+  .diamond-hidden-desktop {
+    display: none;
+  }
+
+  .diamond-visible-desktop {
+    display: block;
+  }
 }
 
 @media (min-width: 1920px) {
-  .diamond-hidden-large-desktop { display: none; }
-  .diamond-visible-large-desktop { display: block; }
+  .diamond-hidden-large-desktop {
+    display: none;
+  }
+
+  .diamond-visible-large-desktop {
+    display: block;
+  }
 }
-
-
