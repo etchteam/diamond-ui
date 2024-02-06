@@ -49,7 +49,7 @@ const generateClasses = (args: { [key: string]: boolean }) => {
     .join(' ');
 };
 
-export const Spacing: StoryObj = {
+export const Hidden: StoryObj = {
   render: (args) => html`
     <div class="${generateClasses(args)}">
       Hide this content at different breakpoints.
