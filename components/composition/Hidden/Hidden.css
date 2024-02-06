@@ -6,7 +6,7 @@
   display: block;
 }
 
-@media (min-width: 375px) {
+@media (width >= 375px) {
   .diamond-hidden-mobile {
     display: none;
   }
@@ -16,7 +16,7 @@
   }
 }
 
-@media (min-width: 480px) {
+@media (width >= 480px) {
   .diamond-hidden-large-mobile {
     display: none;
   }
@@ -26,7 +26,7 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (width >= 600px) {
   .diamond-hidden-small-tablet {
     display: none;
   }
@@ -36,7 +36,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .diamond-hidden-tablet {
     display: none;
   }
@@ -46,7 +46,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .diamond-hidden-large-tablet {
     display: none;
   }
@@ -56,7 +56,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (width >= 1280px) {
   .diamond-hidden-small-desktop {
     display: none;
   }
@@ -66,7 +66,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (width >= 1440px) {
   .diamond-hidden-desktop {
     display: none;
   }
@@ -76,7 +76,7 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media (width >= 1920px) {
   .diamond-hidden-large-desktop {
     display: none;
   }
