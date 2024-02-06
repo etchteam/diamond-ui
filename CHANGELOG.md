@@ -1,3 +1,11 @@
+## [1.7.0](https://github.com/etchteam/diamond-ui/compare/v1.6.0...v1.7.0) (2024-02-06)
+
+
+### Features
+
+* disable stylint error on unknown @ ([705ef2c](https://github.com/etchteam/diamond-ui/commit/705ef2cfdb21b2ebab7be798c73551204f596ce9))
+* rollup diamond-ui.css ([54985fe](https://github.com/etchteam/diamond-ui/commit/54985fe0829dc69c7b4f299d3b547f668dac7b99))
+
 ## [1.6.0](https://github.com/etchteam/diamond-ui/compare/v1.5.0...v1.6.0) (2024-02-06)
 
 
