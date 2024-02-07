@@ -1,5 +1,4 @@
 import type { StorybookConfig } from '@storybook/web-components-vite';
-import path from 'node:path';
 
 const config: StorybookConfig = {
   stories: [
