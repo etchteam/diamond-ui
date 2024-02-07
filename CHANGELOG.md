@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/etchteam/diamond-ui/compare/v1.7.0...v1.7.1) (2024-02-07)
+
+
+### Bug Fixes
+
+* add types for jsx ([a984e15](https://github.com/etchteam/diamond-ui/commit/a984e15a1a1debfdb64e07e19e1594f5f2bc070d))
+
 ## [1.7.0](https://github.com/etchteam/diamond-ui/compare/v1.6.0...v1.7.0) (2024-02-06)
 
 
