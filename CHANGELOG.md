@@ -1,3 +1,16 @@
+## [1.8.0](https://github.com/etchteam/diamond-ui/compare/v1.7.1...v1.8.0) (2024-02-07)
+
+
+### Features
+
+* input component ([4dc71df](https://github.com/etchteam/diamond-ui/commit/4dc71df112fca6b5a9537230875742f9cc00d30f))
+* remove unecessary config ([af0a61d](https://github.com/etchteam/diamond-ui/commit/af0a61d217b74e63f04012dc42185222dddb2c07))
+
+
+### Bug Fixes
+
+* missing var and unused import ([45a37c1](https://github.com/etchteam/diamond-ui/commit/45a37c11eaf9d87aa45afdb72f2bc2b7b1ad88a8))
+
 ## [1.7.1](https://github.com/etchteam/diamond-ui/compare/v1.7.0...v1.7.1) (2024-02-07)
 
 
