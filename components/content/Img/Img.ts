@@ -38,3 +38,11 @@ declare global {
     'diamond-img': Img;
   }
 }
+
+declare module 'react' {
+  namespace JSX {
+    interface IntrinsicElements {
+      'diamond-img': Img & React.HTMLAttributes<HTMLElement>;
+    }
+  }
+}

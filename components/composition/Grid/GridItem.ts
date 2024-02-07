@@ -15,20 +15,31 @@ type Column =
   | '11'
   | '12';
 
+interface GridItemAttributes {
+  grow?: boolean;
+  shrink?: boolean;
+  smallMobile?: Column;
+  mobile?: Column;
+  largeMobile?: Column;
+  smallTablet?: Column;
+  tablet?: Column;
+  largeTablet?: Column;
+  smallDesktop?: Column;
+  desktop?: Column;
+  largeDesktop?: Column;
+}
+
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-grid-item': {
-      grow?: boolean;
-      shrink?: boolean;
-      smallMobile?: Column;
-      mobile?: Column;
-      largeMobile?: Column;
-      smallTablet?: Column;
-      tablet?: Column;
-      largeTablet?: Column;
-      smallDesktop?: Column;
-      desktop?: Column;
-      largeDesktop?: Column;
-    };
+    'diamond-grid-item': GridItemAttributes;
+  }
+}
+
+declare module 'react' {
+  namespace JSX {
+    interface IntrinsicElements {
+      'diamond-grid-item': GridItemAttributes &
+        React.HTMLAttributes<HTMLElement>;
+    }
   }
 }
