@@ -113,6 +113,7 @@ export const IconOnlyButton: StoryObj = {
             <svg
               viewBox="0 0 24 24"
               stroke="currentColor"
+              fill="none"
               width="24"
               height="24"
               aria-label="Send mail"
@@ -130,6 +131,7 @@ export const IconOnlyButton: StoryObj = {
             <svg
               viewBox="0 0 24 24"
               stroke="currentColor"
+              fill="none"
               width="24"
               height="24"
               aria-label="Send mail"

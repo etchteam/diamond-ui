@@ -1,7 +1,13 @@
 import type { Preview } from '@storybook/web-components'
 
-import '../styles/diamond-ui.css';
+// Vite builder doesn't like the glob import in diamond-ui.css
+// importing the individual css files here instead.
+import 'modern-normalize/modern-normalize.css';
+import '../styles/tokens.css';
+import '../styles/base.css';
 import '../styles/themes.css';
+// @ts-ignore-next-line
+import.meta.glob('../components/**/*.css', { eager: true });
 
 const preview: Preview = {
   parameters: {
