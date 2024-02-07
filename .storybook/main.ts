@@ -11,16 +11,9 @@ const config: StorybookConfig = {
     '@storybook/addon-links',
     '@storybook/addon-essentials'
   ],
-  core: {
-    builder: '@storybook/builder-vite', // 👈 The builder enabled here.
-  },
   framework: {
     name: '@storybook/web-components-vite',
-    options: {
-      builder: {
-        viteConfigPath: path.resolve('./.storybook/vite.config.ts')
-      }
-    }
+    options: {}
   },
   docs: {
     autodocs: true
