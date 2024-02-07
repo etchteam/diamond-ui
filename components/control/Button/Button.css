@@ -68,14 +68,8 @@ diamond-button {
 
     svg {
       block-size: var(--diamond-button-icon-size);
-      fill: none;
-      filter: drop-shadow(var(--diamond-button-text-shadow));
-
       flex-shrink: 0;
       inline-size: var(--diamond-button-icon-size);
-      stroke: currentColor;
-      stroke-linecap: round;
-      stroke-linejoin: round;
     }
   }
 

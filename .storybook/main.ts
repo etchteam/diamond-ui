@@ -1,4 +1,5 @@
 import type { StorybookConfig } from '@storybook/web-components-vite';
+import path from 'node:path';
 
 const config: StorybookConfig = {
   stories: [
@@ -10,9 +11,16 @@ const config: StorybookConfig = {
     '@storybook/addon-links',
     '@storybook/addon-essentials'
   ],
+  core: {
+    builder: '@storybook/builder-vite', // 👈 The builder enabled here.
+  },
   framework: {
     name: '@storybook/web-components-vite',
-    options: {}
+    options: {
+      builder: {
+        viteConfigPath: path.resolve('./.storybook/vite.config.ts')
+      }
+    }
   },
   docs: {
     autodocs: true
