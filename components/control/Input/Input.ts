@@ -1,3 +1,5 @@
+import { JSXCustomElement } from '../../../types/jsx-custom-element';
+
 export interface InputAttributes {
   state?: 'valid' | 'invalid';
 }
@@ -11,7 +13,7 @@ declare global {
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-input': InputAttributes & React.HTMLAttributes<HTMLElement> & { key?: string };
+      'diamond-input': InputAttributes & JSXCustomElement;
     }
   }
 }

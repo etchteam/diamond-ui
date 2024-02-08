@@ -1,3 +1,5 @@
+import { JSXCustomElement } from '../../../types/jsx-custom-element';
+
 export interface GridAttributes {
   wrap?: 'wrap' | 'nowrap' | 'wrap-reverse';
   inline?: boolean;
@@ -22,7 +24,7 @@ declare global {
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-grid': GridAttributes & React.HTMLAttributes<HTMLElement> & { key?: string };
+      'diamond-grid': GridAttributes & JSXCustomElement;
     }
   }
 }

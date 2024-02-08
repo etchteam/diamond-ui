@@ -1,3 +1,5 @@
+import { JSXCustomElement } from '../../../types/jsx-custom-element';
+
 type Column =
   | 'auto'
   | '1'
@@ -36,8 +38,7 @@ declare global {
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-grid-item': GridItemAttributes &
-        React.HTMLAttributes<HTMLElement> & { key?: string };
+      'diamond-grid-item': GridItemAttributes & JSXCustomElement;
     }
   }
 }
