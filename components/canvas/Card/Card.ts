@@ -1,6 +1,4 @@
-export {};
-
-interface CardAttributes {
+export interface CardAttributes {
   border?: boolean;
   shadow?: boolean;
   muted?: boolean;

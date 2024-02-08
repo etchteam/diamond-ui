@@ -1,6 +1,4 @@
-export {};
-
-interface GridAttributes {
+export interface GridAttributes {
   wrap?: 'wrap' | 'nowrap' | 'wrap-reverse';
   inline?: boolean;
   direction?: 'row' | 'column' | 'row-reverse' | 'column-reverse';
