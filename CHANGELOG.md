@@ -1,3 +1,11 @@
+## [1.9.0](https://github.com/etchteam/diamond-ui/compare/v1.8.0...v1.9.0) (2024-02-08)
+
+
+### Features
+
+* export attribute types ([af0922a](https://github.com/etchteam/diamond-ui/commit/af0922ae9f4ed41081a5596def138a55e5fed78b))
+* remove input export ([13bb76e](https://github.com/etchteam/diamond-ui/commit/13bb76e20f05e85213bf1f8beacc1085157a0880))
+
 ## [1.8.0](https://github.com/etchteam/diamond-ui/compare/v1.7.1...v1.8.0) (2024-02-07)
 
 
