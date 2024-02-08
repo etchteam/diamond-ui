@@ -7,7 +7,6 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "strict": true,
-    "outDir": "./dist",
     "allowSyntheticDefaultImports": true
   },
   "exclude": [
