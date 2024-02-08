@@ -1,3 +1,10 @@
+## [1.10.0](https://github.com/etchteam/diamond-ui/compare/v1.9.1...v1.10.0) (2024-02-08)
+
+
+### Features
+
+* add key to jsx type ([8a92761](https://github.com/etchteam/diamond-ui/commit/8a92761f24cc472a880f3c8193e1cb787b5cbe3e))
+
 ## [1.9.1](https://github.com/etchteam/diamond-ui/compare/v1.9.0...v1.9.1) (2024-02-08)
 
 
