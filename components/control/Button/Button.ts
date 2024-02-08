@@ -1,3 +1,5 @@
+import { JSXCustomElement } from '../../../types/jsx-custom-element';
+
 export interface ButtonAttributes {
   size?: 'sm' | 'md' | 'lg';
   variant?: 'primary' | 'secondary' | 'text';
@@ -13,7 +15,7 @@ declare global {
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-button': ButtonAttributes & React.HTMLAttributes<HTMLElement>;
+      'diamond-button': ButtonAttributes & JSXCustomElement;
     }
   }
 }

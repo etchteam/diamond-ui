@@ -1,6 +1,8 @@
 import { LitElement, css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
+import { JSXCustomElement } from '../../../types/jsx-custom-element';
+
 @customElement('diamond-img')
 export class Img extends LitElement {
   @property({ reflect: true }) readonly fit?: 'contain' | 'cover' | 'fill';
@@ -42,7 +44,7 @@ declare global {
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-img': Img & React.HTMLAttributes<HTMLElement>;
+      'diamond-img': Img & JSXCustomElement;
     }
   }
 }

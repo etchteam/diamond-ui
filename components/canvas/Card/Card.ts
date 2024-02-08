@@ -1,3 +1,5 @@
+import { JSXCustomElement } from '../../../types/jsx-custom-element';
+
 export interface CardAttributes {
   border?: boolean;
   shadow?: boolean;
@@ -15,7 +17,7 @@ declare global {
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-card': CardAttributes & React.HTMLAttributes<HTMLElement>;
+      'diamond-card': CardAttributes & JSXCustomElement;
     }
   }
 }
