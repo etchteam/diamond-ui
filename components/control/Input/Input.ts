@@ -1,5 +1,3 @@
-export {};
-
 export interface InputAttributes {
   state?: 'valid' | 'invalid';
 }
