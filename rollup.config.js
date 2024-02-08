@@ -13,7 +13,7 @@ import postcss from 'rollup-plugin-postcss';
 const config = defineConfig([
   {
     plugins: [
-      del({ targets: 'dist/*' }),
+      del({ targets: 'dist/**' }),
       typescript(),
       copy({
         targets: [{ src: 'package.json', dest: 'dist' }],
