@@ -22,7 +22,7 @@ declare global {
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-grid': GridAttributes & React.HTMLAttributes<HTMLElement>;
+      'diamond-grid': GridAttributes & React.HTMLAttributes<HTMLElement> & { key?: string };
     }
   }
 }

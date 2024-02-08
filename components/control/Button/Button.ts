@@ -13,7 +13,7 @@ declare global {
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-button': ButtonAttributes & React.HTMLAttributes<HTMLElement>;
+      'diamond-button': ButtonAttributes & React.HTMLAttributes<HTMLElement> & { key?: string };
     }
   }
 }

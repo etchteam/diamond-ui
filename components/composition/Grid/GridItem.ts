@@ -37,7 +37,7 @@ declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
       'diamond-grid-item': GridItemAttributes &
-        React.HTMLAttributes<HTMLElement>;
+        React.HTMLAttributes<HTMLElement> & { key?: string };
     }
   }
 }

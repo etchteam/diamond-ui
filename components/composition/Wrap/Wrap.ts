@@ -12,7 +12,8 @@ declare global {
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-wrap': WrapAttributes & React.HTMLAttributes<HTMLElement>;
+      'diamond-wrap': WrapAttributes &
+        React.HTMLAttributes<HTMLElement> & { key?: string } & { key?: string };
     }
   }
 }
