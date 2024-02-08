@@ -44,7 +44,7 @@ export const Section: StoryObj = {
             </diamond-button>
           </diamond-grid-item>
           <diamond-grid-item mobile="6" tablet="auto">
-            <diamond-button variant="primary">
+            <diamond-button>
               <button type="button">Button</button>
             </diamond-button>
           </diamond-grid-item>
