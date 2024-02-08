@@ -1,3 +1,17 @@
+## [1.11.0](https://github.com/etchteam/diamond-ui/compare/v1.10.0...v1.11.0) (2024-02-08)
+
+
+### Features
+
+* add concurrency ([5415256](https://github.com/etchteam/diamond-ui/commit/5415256b7ad7eb332cc063ed9b68dc334834d8a6))
+* link to sonarcloud ([c775c42](https://github.com/etchteam/diamond-ui/commit/c775c4230b49e39e09e5b02158746cb6a6d8a8d4))
+* remove fetch-depth for build task ([3eb75bf](https://github.com/etchteam/diamond-ui/commit/3eb75bf67a4b4371847226376fd0c2da960c8387))
+
+
+### Bug Fixes
+
+* split build and lint to speed up feedback loop and martch mergify ([bd512fc](https://github.com/etchteam/diamond-ui/commit/bd512fcb6b7f57070795729113ad7a672c0c2b7f))
+
 ## [1.10.0](https://github.com/etchteam/diamond-ui/compare/v1.9.1...v1.10.0) (2024-02-08)
 
 
