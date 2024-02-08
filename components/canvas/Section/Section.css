@@ -1,9 +1,8 @@
 diamond-section {
   background: var(--diamond-theme-background);
   color: var(--diamond-theme-color);
-  height: auto;
+  display: block;
   padding-block: var(--diamond-spacing);
-  width: 100%;
 
   &[padding='xs'] {
     padding-block: var(--diamond-spacing-xs);
