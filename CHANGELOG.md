@@ -1,3 +1,11 @@
+## [1.9.1](https://github.com/etchteam/diamond-ui/compare/v1.9.0...v1.9.1) (2024-02-08)
+
+
+### Bug Fixes
+
+* delete dist files and directories ([aa88a50](https://github.com/etchteam/diamond-ui/commit/aa88a50f33d69fa469b8ec9c8420e31aa8bb4802))
+* type definition location ([ab4e4ed](https://github.com/etchteam/diamond-ui/commit/ab4e4ed368f7ad71f06bc215aea8c8924d559e4d))
+
 ## [1.9.0](https://github.com/etchteam/diamond-ui/compare/v1.8.0...v1.9.0) (2024-02-08)
 
 
