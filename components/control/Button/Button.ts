@@ -1,6 +1,4 @@
-export {};
-
-interface ButtonAttributes {
+export interface ButtonAttributes {
   size?: 'sm' | 'md' | 'lg';
   variant?: 'primary' | 'secondary' | 'text';
   width?: 'full-width' | 'full-width-mobile' | 'square';

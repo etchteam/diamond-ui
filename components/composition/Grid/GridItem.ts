@@ -1,5 +1,3 @@
-export {};
-
 type Column =
   | 'auto'
   | '1'
@@ -15,7 +13,7 @@ type Column =
   | '11'
   | '12';
 
-interface GridItemAttributes {
+export interface GridItemAttributes {
   grow?: boolean;
   shrink?: boolean;
   smallMobile?: Column;
