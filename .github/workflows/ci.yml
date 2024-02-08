@@ -1,36 +1,54 @@
 ---
-  name: CI
-  on:
-    pull_request:
-      branches: ['main']
-  jobs:
-    lint:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout code
-          uses: actions/checkout@v4
-          with:
-            fetch-depth: 0
-        - uses: actions/setup-node@v4
-          with:
-            node-version-file: .nvmrc
-            cache: 'npm'
-        - run: npm ci
-        - run: npm run build
-        - run: cd example && npm ci
-        - name: Lint Code Base
-          uses: github/super-linter/slim@v5
-          env:
-            DISABLE_V8_COMPILE_CACHE: true
-            DEFAULT_BRANCH: 'main'
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.cjs
-            LINTER_RULES_PATH: /
-            TYPESCRIPT_ES_CONFIG_FILE: .eslintrc.cjs
-            CSS_FILE_NAME: stylelint.config.cjs
-            VALIDATE_ALL_CODEBASE: false
-            VALIDATE_JAVASCRIPT_STANDARD: false
-            VALIDATE_JSCPD: false
-            VALIDATE_JSX: false
-            VALIDATE_TSX: false
-            VALIDATE_TYPESCRIPT_STANDARD: false
+name: CI
+on:
+  pull_request:
+    branches: ['main']
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: 'npm'
+      - name: Install Dependencies
+        run: npm ci
+      - name: Build Diamond
+        run: npm run build
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: 'npm'
+      - name: Install Dependencies
+        run: npm ci && cd example && npm ci
+      - name: Lint Code Base
+        uses: github/super-linter/slim@v5
+        env:
+          DISABLE_V8_COMPILE_CACHE: true
+          DEFAULT_BRANCH: 'main'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.cjs
+          LINTER_RULES_PATH: /
+          TYPESCRIPT_ES_CONFIG_FILE: .eslintrc.cjs
+          CSS_FILE_NAME: stylelint.config.cjs
+          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_JAVASCRIPT_STANDARD: false
+          VALIDATE_JSCPD: false
+          VALIDATE_JSX: false
+          VALIDATE_TSX: false
+          VALIDATE_TYPESCRIPT_STANDARD: false
