@@ -1,0 +1,6 @@
+:root {
+  --diamond-label-color: var(--diamond-theme-color);
+  --diamond-label-font-weight: var(--diamond-font-weight-base);
+  --diamond-label-font-size: var(--diamond-font-size-base);
+  --diamond-label-height: var(--diamond-spacing-thumb);
+}

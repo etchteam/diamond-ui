@@ -1,0 +1,9 @@
+label,
+legend {
+  align-items: center;
+  color: var(--diamond-label-color);
+  display: flex;
+  font-size: var(--diamond-label-font-size);
+  font-weight: var(--diamond-label-font-weight);
+  min-height: var(--diamond-label-height);
+}
