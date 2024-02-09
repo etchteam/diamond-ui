@@ -1,0 +1,26 @@
+diamond-section {
+  background: var(--diamond-theme-background);
+  color: var(--diamond-theme-color);
+  display: block;
+  padding-block: var(--diamond-spacing);
+
+  &[padding='xs'] {
+    padding-block: var(--diamond-spacing-xs);
+  }
+
+  &[padding='sm'] {
+    padding-block: var(--diamond-spacing-sm);
+  }
+
+  &[padding='lg'] {
+    padding-block: var(--diamond-spacing-lg);
+  }
+
+  &[padding='xl'] {
+    padding-block: var(--diamond-spacing-xl);
+  }
+
+  &[padding='none'] {
+    padding-block: 0;
+  }
+}
