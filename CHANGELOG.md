@@ -1,3 +1,11 @@
+## [1.15.0](https://github.com/etchteam/diamond-ui/compare/v1.14.0...v1.15.0) (2024-02-09)
+
+
+### Features
+
+* form group component ([0164533](https://github.com/etchteam/diamond-ui/commit/016453314daf39375077b66857524e79352dc315))
+* form group spacing tidy ([1b5d080](https://github.com/etchteam/diamond-ui/commit/1b5d0800737b58d74f6dd3b609f3bee7dba22b78))
+
 ## [1.14.0](https://github.com/etchteam/diamond-ui/compare/v1.13.0...v1.14.0) (2024-02-09)
 
 
