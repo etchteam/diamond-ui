@@ -1,0 +1,16 @@
+diamond-form-group {
+  display: grid;
+  gap: var(--diamond-spacing);
+
+  &[orientation='horizontal'] {
+    grid-template-columns: 1fr 1fr;
+
+    :first-child {
+      grid-column: 1;
+    }
+
+    :not(:first-child) {
+      grid-column: 2;
+    }
+  }
+}
