@@ -1,3 +1,10 @@
+## [1.12.0](https://github.com/etchteam/diamond-ui/compare/v1.11.1...v1.12.0) (2024-02-09)
+
+
+### Features
+
+* label css ([38f2ec1](https://github.com/etchteam/diamond-ui/commit/38f2ec1f823993574bdda0bc58dc2c50d0ebfdd6))
+
 ## [1.11.1](https://github.com/etchteam/diamond-ui/compare/v1.11.0...v1.11.1) (2024-02-09)
 
 
