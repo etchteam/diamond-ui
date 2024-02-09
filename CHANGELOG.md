@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/etchteam/diamond-ui/compare/v1.11.0...v1.11.1) (2024-02-09)
+
+
+### Bug Fixes
+
+* replace card with wrap, display block over explicit width ([808b585](https://github.com/etchteam/diamond-ui/commit/808b58548c559343acec0332a9ca4328a3513d9c))
+
 ## [1.11.0](https://github.com/etchteam/diamond-ui/compare/v1.10.0...v1.11.0) (2024-02-08)
 
 
