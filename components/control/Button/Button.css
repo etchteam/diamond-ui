@@ -67,9 +67,9 @@ diamond-button {
     }
 
     svg {
-      block-size: var(--diamond-button-icon-size);
+      block-size: var(--diamond-icon-size);
       flex-shrink: 0;
-      inline-size: var(--diamond-button-icon-size);
+      inline-size: var(--diamond-icon-size);
     }
   }
 

@@ -7,7 +7,6 @@
   --diamond-button-gap: 0.75ch;
   --diamond-button-outline-offset: 5px;
   --diamond-button-font-weight: var(--diamond-font-size-base);
-  --diamond-button-icon-size: 2ch;
 
   /* Default variant */
   --diamond-button-background: var(--diamond-theme-background);

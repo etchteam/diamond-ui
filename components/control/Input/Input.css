@@ -58,12 +58,11 @@ diamond-input {
   select {
     cursor: pointer;
     margin-right: calc(
-      var(--diamond-input-icon-size) * -1 -
-        var(--diamond-input-padding-horizontal) * 0.5
+      var(--diamond-icon-size) * -1 - var(--diamond-input-padding-horizontal) *
+        0.5
     );
     padding-right: calc(
-      var(--diamond-input-icon-size) + var(--diamond-input-padding-horizontal) *
-        1.5
+      var(--diamond-icon-size) + var(--diamond-input-padding-horizontal) * 1.5
     );
   }
 
@@ -73,10 +72,10 @@ diamond-input {
 
   svg {
     align-self: center;
-    block-size: var(--diamond-input-icon-size);
+    block-size: var(--diamond-icon-size);
     box-sizing: content-box;
     flex-shrink: 0;
-    inline-size: var(--diamond-input-icon-size);
+    inline-size: var(--diamond-icon-size);
   }
 
   /* Prefix */
