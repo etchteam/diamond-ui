@@ -1,3 +1,17 @@
+## [1.18.0](https://github.com/etchteam/diamond-ui/compare/v1.17.0...v1.18.0) (2024-02-09)
+
+
+### Features
+
+* consistent icon size ([aff7a03](https://github.com/etchteam/diamond-ui/commit/aff7a03e8d4fbcee2460201e22adef9145e15229))
+* demos for textarea, select, input affix ([acd91d4](https://github.com/etchteam/diamond-ui/commit/acd91d45b60d8d301dd87d8d519c7f4109690564))
+* icon size variables ([2e6fdbc](https://github.com/etchteam/diamond-ui/commit/2e6fdbc6b3f0783fe7d43a508f21c146379147e3))
+
+
+### Bug Fixes
+
+* only modify direct descending first child ([c53b334](https://github.com/etchteam/diamond-ui/commit/c53b3346989faa0585d111e529fd5fe34409e2f9))
+
 ## [1.17.0](https://github.com/etchteam/diamond-ui/compare/v1.16.0...v1.17.0) (2024-02-09)
 
 
