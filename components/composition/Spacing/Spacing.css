@@ -20,6 +20,18 @@
   margin-top: var(--diamond-spacing-xl);
 }
 
+.diamond-spacing-top-fluid {
+  margin-top: var(--diamond-spacing-fluid);
+}
+
+.diamond-spacing-top-fluid-sm {
+  margin-top: var(--diamond-spacing-fluid-sm);
+}
+
+.diamond-spacing-top-fluid-lg {
+  margin-top: var(--diamond-spacing-fluid-lg);
+}
+
 /* bottom */
 
 .diamond-spacing-bottom-xs {
@@ -40,4 +52,16 @@
 
 .diamond-spacing-bottom-xl {
   margin-bottom: var(--diamond-spacing-xl);
+}
+
+.diamond-spacing-bottom-fluid {
+  margin-bottom: var(--diamond-spacing-fluid);
+}
+
+.diamond-spacing-bottom-fluid-sm {
+  margin-bottom: var(--diamond-spacing-fluid-sm);
+}
+
+.diamond-spacing-bottom-fluid-lg {
+  margin-bottom: var(--diamond-spacing-fluid-lg);
 }
