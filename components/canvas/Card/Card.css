@@ -16,6 +16,7 @@ diamond-card {
 
   &[radius] {
     border-radius: var(--diamond-radius);
+    overflow: hidden;
   }
 
   &[padding='xs'] {
