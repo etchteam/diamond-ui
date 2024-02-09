@@ -80,7 +80,7 @@ diamond-input {
   }
 
   /* Prefix */
-  &:has(* + :is(input, textarea, select)) :first-child {
+  &:has(* + :is(input, textarea, select)) > :first-child {
     margin-right: calc(var(--diamond-input-padding-horizontal) / 2 * -1);
     padding: 0 0 0 var(--diamond-input-padding-horizontal);
   }
