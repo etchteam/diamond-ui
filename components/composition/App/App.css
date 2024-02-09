@@ -1,0 +1,19 @@
+diamond-app {
+  display: grid;
+  grid-template-areas: 'header' 'main' 'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+
+  &::part(header) {
+    grid-area: header;
+  }
+
+  &::part(main) {
+    grid-area: main;
+  }
+
+  &::part(footer) {
+    grid-area: footer;
+  }
+}
