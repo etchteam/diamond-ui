@@ -1,3 +1,10 @@
+## [1.13.0](https://github.com/etchteam/diamond-ui/compare/v1.12.0...v1.13.0) (2024-02-09)
+
+
+### Features
+
+* app ([337ffe2](https://github.com/etchteam/diamond-ui/commit/337ffe23cd737cf10f82ddff7648d515967dfeb5))
+
 ## [1.12.0](https://github.com/etchteam/diamond-ui/compare/v1.11.1...v1.12.0) (2024-02-09)
 
 
