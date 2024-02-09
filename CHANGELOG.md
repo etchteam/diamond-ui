@@ -1,3 +1,10 @@
+## [1.17.0](https://github.com/etchteam/diamond-ui/compare/v1.16.0...v1.17.0) (2024-02-09)
+
+
+### Features
+
+* sticky app ([9eb0580](https://github.com/etchteam/diamond-ui/commit/9eb05803a2b19ce5198facf175b63e27cf12e042))
+
 ## [1.16.0](https://github.com/etchteam/diamond-ui/compare/v1.15.0...v1.16.0) (2024-02-09)
 
 
