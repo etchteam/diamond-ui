@@ -1,3 +1,10 @@
+## [1.16.0](https://github.com/etchteam/diamond-ui/compare/v1.15.0...v1.16.0) (2024-02-09)
+
+
+### Features
+
+* allow class on diamond custom elements in jsx ([d6b2b51](https://github.com/etchteam/diamond-ui/commit/d6b2b510553f73a105cf827a4cca49798a315424))
+
 ## [1.15.0](https://github.com/etchteam/diamond-ui/compare/v1.14.0...v1.15.0) (2024-02-09)
 
 
