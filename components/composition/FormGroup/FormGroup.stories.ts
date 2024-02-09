@@ -21,10 +21,11 @@ export default {
 export const FormGroup: StoryObj = {
   render: (args) => html`
     <diamond-form-group orientation="${args.orientation}">
-      <label for="name">Form group</label>
+      <label for="name">Form group label</label>
       <diamond-input>
         <input id="name" type="text" />
       </diamond-input>
+      <p>Help text</p>
     </diamond-form-group>
   `,
 };
@@ -32,17 +33,18 @@ export const FormGroup: StoryObj = {
 export const ComposingElements: StoryObj = {
   render: () => html`
     <diamond-form-group orientation="horizontal">
-      <diamond-grid>
+      <diamond-grid align-items="center">
         <diamond-grid-item grow="grow">
-          <label for="name">Form group</label>
+          <label for="composing-elements">Form group label</label>
         </diamond-grid-item>
         <diamond-grid-item>
           <svg
             viewBox="0 0 24 24"
             stroke="currentColor"
+            fill="none"
             width="24"
             height="24"
-            aria-hidden="true"
+            aria-label="A random icon for example placement"
           >
             <path
               d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
@@ -51,7 +53,7 @@ export const ComposingElements: StoryObj = {
         </diamond-grid-item>
       </diamond-grid>
       <diamond-input>
-        <input id="name" type="text" />
+        <input id="composing-elements" type="text" />
       </diamond-input>
       <p>Help text</p>
     </diamond-form-group>
