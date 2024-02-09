@@ -18,7 +18,17 @@ export default {
       control: {
         type: 'select',
       },
-      options: ['xs', 'sm', 'md', 'lg', 'xl', 'none'],
+      options: [
+        'xs',
+        'sm',
+        'md',
+        'lg',
+        'xl',
+        'fluid-sm',
+        'fluid',
+        'fluid-lg',
+        'none',
+      ],
     },
   },
 };

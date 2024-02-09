@@ -35,6 +35,18 @@ diamond-card {
     padding: var(--diamond-spacing-xl);
   }
 
+  &[padding='fluid-sm'] {
+    padding: var(--diamond-spacing-fluid-sm);
+  }
+
+  &[padding='fluid'] {
+    padding: var(--diamond-spacing-fluid);
+  }
+
+  &[padding='fluid-lg'] {
+    padding: var(--diamond-spacing-fluid-lg);
+  }
+
   &[padding='none'] {
     padding: 0;
   }
