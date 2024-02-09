@@ -20,6 +20,4 @@
     var(--diamond-input-padding-horizontal);
 
   --diamond-input-line-height: var(--diamond-font-line-height);
-
-  --diamond-input-icon-size: 2ch;
 }
