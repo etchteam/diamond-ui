@@ -21,5 +21,7 @@
 
   --diamond-input-line-height: var(--diamond-font-line-height);
 
-  --diamond-input-icon-size: 2ch;
+  --diamond-input-icon-size: calc(
+    var(--diamond-font-size-default) * var(--diamond-font-line-height)
+  );
 }

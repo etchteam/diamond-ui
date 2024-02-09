@@ -37,36 +37,56 @@ diamond-input {
     pointer-events: none;
   }
 
-  input {
+  input,
+  textarea,
+  select {
     appearance: none;
     background: none;
     border: 0 none;
     color: inherit;
     display: block;
+    flex: 1 1 auto;
     line-height: var(--diamond-input-line-height);
     min-height: var(--diamond-spacing-thumb);
     padding: var(--diamond-input-padding);
-    width: 100%;
 
     &:focus {
       outline: none;
     }
   }
 
+  select {
+    cursor: pointer;
+    margin-right: calc(
+      var(--diamond-input-icon-size) * -1 -
+        var(--diamond-input-padding-horizontal) * 0.5
+    );
+    padding-right: calc(
+      var(--diamond-input-icon-size) + var(--diamond-input-padding-horizontal) *
+        1.5
+    );
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
   svg {
+    align-self: center;
     block-size: var(--diamond-input-icon-size);
+    box-sizing: content-box;
     flex-shrink: 0;
     inline-size: var(--diamond-input-icon-size);
   }
 
   /* Prefix */
-  &:has(* + input) :first-child {
+  &:has(* + :is(input, textarea, select)) :first-child {
     margin-right: calc(var(--diamond-input-padding-horizontal) / 2 * -1);
     padding: 0 0 0 var(--diamond-input-padding-horizontal);
   }
 
   /* Suffix */
-  input + * {
+  :is(input, textarea, select) + * {
     margin-left: calc(var(--diamond-input-padding-horizontal) / 2 * -1);
     padding: 0 var(--diamond-input-padding-horizontal) 0 0;
   }
