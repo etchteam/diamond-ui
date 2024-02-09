@@ -1,3 +1,16 @@
+## [1.14.0](https://github.com/etchteam/diamond-ui/compare/v1.13.0...v1.14.0) (2024-02-09)
+
+
+### Features
+
+* add fluid padding to section and card ([e61da02](https://github.com/etchteam/diamond-ui/commit/e61da02723f50092c960bf3c840b3b91ea073a5c))
+* fluid spacing ([fad76f6](https://github.com/etchteam/diamond-ui/commit/fad76f6a68327f179e2e696ff05381f9c5f664e6))
+
+
+### Bug Fixes
+
+* radius card overflow ([fe6f6a4](https://github.com/etchteam/diamond-ui/commit/fe6f6a484cfd0325060ee3caa39cd3b79c401108))
+
 ## [1.13.0](https://github.com/etchteam/diamond-ui/compare/v1.12.0...v1.13.0) (2024-02-09)
 
 
