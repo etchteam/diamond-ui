@@ -1,10 +1,12 @@
 import { LitElement, html } from 'lit';
-import { customElement } from 'lit/decorators.js';
+import { customElement, property } from 'lit/decorators.js';
 
 import { JSXCustomElement } from '../../../types/jsx-custom-element';
 
 @customElement('diamond-app')
 export class App extends LitElement {
+  @property({ reflect: true }) header: 'sticky' | 'static' = 'static';
+
   render() {
     return html`
       <div part="header">
@@ -29,7 +31,7 @@ declare global {
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-app': App & JSXCustomElement;
+      'diamond-app': JSXCustomElement;
     }
   }
 }

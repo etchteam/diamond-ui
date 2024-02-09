@@ -16,4 +16,12 @@ diamond-app {
   &::part(footer) {
     grid-area: footer;
   }
+
+  &[header='sticky'] {
+    &::part(header) {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+  }
 }
