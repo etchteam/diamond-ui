@@ -20,6 +20,10 @@
   --diamond-font-size-h3: 1.5rem;
   --diamond-font-size-h4: 1.25rem;
 
+  --diamond-icon-size: calc(
+    var(--diamond-font-size-default) * var(--diamond-font-line-height)
+  );
+
   --diamond-font-weight-light: 300;
   --diamond-font-weight-base: 400;
   --diamond-font-weight-medium: 500;
