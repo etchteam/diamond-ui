@@ -1,0 +1,21 @@
+diamond-form-group {
+  display: grid;
+  gap: var(--diamond-spacing-sm);
+
+  label {
+    /* Negate the extra label height to account for the form group gap */
+    margin-block: calc(
+      (var(--diamond-label-height) / var(--diamond-font-line-height) / 4) * -1
+    );
+  }
+
+  @media (width >= 768px) {
+    &[orientation='horizontal'] {
+      grid-template-columns: 1fr 1fr;
+
+      :not(:first-child) {
+        grid-column: 2;
+      }
+    }
+  }
+}
