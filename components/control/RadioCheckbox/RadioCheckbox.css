@@ -4,7 +4,8 @@ diamond-radio-checkbox {
   --_border-radius: var(--diamond-input-checkbox-border-radius);
   --_inner-border-radius: 0;
   --_indicator-padding: 0;
-  --_indicator-width: 100%;
+  --_indicator-width: calc(var(--diamond-font-line-height) * 1em);
+  --_indicator-inner-width: 100%;
 
   color: inherit;
   cursor: pointer;
@@ -47,7 +48,11 @@ diamond-radio-checkbox {
     font-size: inherit;
     font-weight: inherit;
     line-height: inherit;
+    margin-left: calc(
+      (var(--_indicator-width) + var(--diamond-spacing-sm)) * -1
+    );
     min-height: 0;
+    padding-left: calc((var(--_indicator-width) + var(--diamond-spacing-sm)));
   }
 
   svg,
@@ -77,11 +82,12 @@ diamond-radio-checkbox {
     justify-content: center;
     overflow: hidden;
     padding: var(--_indicator-padding);
+    pointer-events: none;
     position: relative;
     transition:
       border-color var(--diamond-transition),
       background-color var(--diamond-transition);
-    width: calc(var(--diamond-font-line-height) * 1em);
+    width: var(--_indicator-width);
   }
 
   &::part(indicator)::before {
@@ -98,14 +104,14 @@ diamond-radio-checkbox {
       background-color var(--diamond-transition),
       opacity var(--diamond-transition),
       transform var(--diamond-transition);
-    width: var(--_indicator-width);
+    width: var(--_indicator-inner-width);
   }
 
   &:has(input[type='radio']) {
     --_border-radius: 50%;
     --_inner-border-radius: 50%;
     --_indicator-padding: var(--diamond-input-radio-checkbox-padding);
-    --_indicator-width: calc(100% - (var(--_indicator-padding) * 2));
+    --_indicator-inner-width: calc(100% - (var(--_indicator-padding) * 2));
 
     &::part(fallback-icon) {
       display: none;
