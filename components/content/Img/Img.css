@@ -1,0 +1,35 @@
+diamond-img {
+  display: inline-block;
+
+  &[block],
+  &[block] img {
+    display: block;
+  }
+
+  &[responsive] {
+    width: 100%;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &[radius] {
+    border-radius: var(--diamond-radius);
+    overflow: hidden;
+  }
+
+  &[aspect-ratio],
+  &[aspect-ratio] img {
+    aspect-ratio: var(--diamond-img-aspect-ratio);
+  }
+
+  &[object-fit] img {
+    object-fit: var(--diamond-img-object-fit);
+  }
+
+  &[object-position] img {
+    object-position: var(--diamond-img-object-position);
+  }
+}

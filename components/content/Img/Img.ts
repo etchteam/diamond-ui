@@ -1,50 +1,54 @@
-import { LitElement, css, html } from 'lit';
+import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
 import { JSXCustomElement } from '../../../types/jsx-custom-element';
 
+export interface ImgAttributes {
+  block?: boolean;
+  responsive?: boolean;
+  aspectRatio?: string;
+  radius?: boolean;
+  objectFit?: 'cover' | 'contain';
+  objectPosition?: string;
+}
+
 @customElement('diamond-img')
 export class Img extends LitElement {
-  @property({ reflect: true }) readonly fit?: 'contain' | 'cover' | 'fill';
-
-  static styles = css`
-    :host {
-      display: block;
-    }
-
-    ::slotted(img) {
-      width: 100%;
-      height: auto;
-    }
-
-    ::slotted(img[fit='contain']) {
-      object-fit: contain;
-    }
-
-    ::slotted(img[fit='cover']) {
-      object-fit: cover;
-    }
-
-    ::slotted(img[fit='fill']) {
-      object-fit: fill;
-    }
-  `;
+  @property({ type: Boolean, reflect: true }) block = false;
+  @property({ type: Boolean, reflect: true }) responsive = false;
+  @property({ reflect: true, attribute: 'aspect-ratio' }) aspectRatio = 'auto';
+  @property({ type: Boolean, reflect: true }) radius = false;
+  @property({ reflect: true, attribute: 'object-fit' }) objectFit?:
+    | 'fill'
+    | 'cover'
+    | 'contain' = 'fill';
+  @property({ reflect: true, attribute: 'object-position' })
+  objectPosition = '50% 50%';
 
   render() {
-    return html`<slot></slot>`;
+    return html`
+      <style>
+        :host {
+          --diamond-img-aspect-ratio: ${this.aspectRatio};
+          --diamond-img-object-fit: ${this.objectFit};
+          --diamond-img-object-position: ${this.objectPosition};
+        }
+      </style>
+      <slot></slot>
+    `;
   }
 }
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-img': Img;
+    'diamond-img': ImgAttributes;
   }
 }
 
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-img': Img & JSXCustomElement;
+      'diamond-img': ImgAttributes & JSXCustomElement;
     }
   }
 }
