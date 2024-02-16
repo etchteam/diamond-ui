@@ -45,8 +45,8 @@ export const Radio: StoryObj = {
     </diamond-radio-checkbox>
     <diamond-radio-checkbox state="${args.state}">
       <label>
-        <input type="radio" name="my-radio" value="no" disabled />
-        Item label two
+        <input type="radio" name="my-radio" value="maybe" disabled />
+        Item label three
       </label>
     </diamond-radio-checkbox>
   `,
@@ -74,8 +74,8 @@ export const Checkbox: StoryObj = {
     </diamond-radio-checkbox>
     <diamond-radio-checkbox state="${args.state}">
       <label>
-        <input type="checkbox" name="my-checkbox" value="no" disabled />
-        Item label two
+        <input type="checkbox" name="my-checkbox" value="maybe" disabled />
+        Item label three
       </label>
     </diamond-radio-checkbox>
   `,
