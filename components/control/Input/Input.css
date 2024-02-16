@@ -7,7 +7,6 @@ diamond-input {
   border-radius: var(--diamond-input-border-radius);
   color: var(--diamond-input-color);
   display: flex;
-  overflow: hidden;
   position: relative;
   transition:
     border-color var(--diamond-transition),
@@ -20,6 +19,9 @@ diamond-input {
 
   &:focus-within {
     --_background: var(--diamond-input-background-focus);
+    /* https://css-tricks.com/copy-the-browsers-native-focus-styles/ */
+    outline: 5px auto Highlight;
+    outline: 5px auto -webkit-focus-ring-color;
   }
 
   &[state='valid'] {
