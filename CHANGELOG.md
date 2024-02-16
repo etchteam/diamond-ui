@@ -1,3 +1,11 @@
+## [1.20.0](https://github.com/etchteam/diamond-ui/compare/v1.19.0...v1.20.0) (2024-02-16)
+
+
+### Features
+
+* clickable indicator ([dfa406d](https://github.com/etchteam/diamond-ui/commit/dfa406d08448b40113559080e8ab916088437392))
+* radio checkbox component ([2065b85](https://github.com/etchteam/diamond-ui/commit/2065b85b50eb6746ee47ff9985bb9b7b61b52993))
+
 ## [1.19.0](https://github.com/etchteam/diamond-ui/compare/v1.18.0...v1.19.0) (2024-02-16)
 
 
