@@ -16,18 +16,16 @@ export interface ImgAttributes {
 export class Img extends LitElement {
   @property({ type: Boolean, reflect: true }) block = false;
   @property({ type: Boolean, reflect: true }) responsive = false;
-  @property({ reflect: true, attribute: 'aspect-ratio' }) aspectRatio: string =
-    'auto';
+  @property({ reflect: true, attribute: 'aspect-ratio' }) aspectRatio = 'auto';
   @property({ type: Boolean, reflect: true }) radius = false;
-  @property({ reflect: true, attribute: 'object-fit' }) objectFit:
+  @property({ reflect: true, attribute: 'object-fit' }) objectFit?:
     | 'fill'
     | 'cover'
     | 'contain' = 'fill';
   @property({ reflect: true, attribute: 'object-position' })
-  objectPosition: string = '50% 50%';
+  objectPosition = '50% 50%';
 
   render() {
-    console.info(this.aspectRatio);
     return html`
       <style>
         :host {

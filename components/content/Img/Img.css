@@ -1,12 +1,9 @@
 diamond-img {
   display: inline-block;
 
-  &[block] {
+  &[block],
+  &[block] img {
     display: block;
-
-    img {
-      display: block;
-    }
   }
 
   &[responsive] {
