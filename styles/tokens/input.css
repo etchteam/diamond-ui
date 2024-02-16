@@ -12,7 +12,8 @@
   --diamond-input-color: var(--diamond-theme-color);
 
   --diamond-input-checked: var(--diamond-color-black);
-  --diamond-input-checkradio-border-radius: var(--diamond-border-radius-xs);
+  --diamond-input-checkbox-border-radius: var(--diamond-border-radius-sm);
+  --diamond-input-radio-checkbox-padding: 0.1875rem;
 
   --diamond-input-padding-vertical: var(--diamond-spacing-sm);
   --diamond-input-padding-horizontal: var(--diamond-spacing);
