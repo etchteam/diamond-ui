@@ -1,3 +1,10 @@
+## [1.19.0](https://github.com/etchteam/diamond-ui/compare/v1.18.0...v1.19.0) (2024-02-16)
+
+
+### Features
+
+* img ([03218c6](https://github.com/etchteam/diamond-ui/commit/03218c6f095ad9ad24c5ecf81c49ec206d8f10e4))
+
 ## [1.18.0](https://github.com/etchteam/diamond-ui/compare/v1.17.0...v1.18.0) (2024-02-09)
 
 
