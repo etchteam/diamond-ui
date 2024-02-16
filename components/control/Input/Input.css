@@ -17,7 +17,7 @@ diamond-input {
     --_border-color: var(--diamond-input-border-color-hover);
   }
 
-  &:focus-within {
+  &:has(input:focus-visible) {
     --_background: var(--diamond-input-background-focus);
     /* https://css-tricks.com/copy-the-browsers-native-focus-styles/ */
     outline: 5px auto Highlight;
