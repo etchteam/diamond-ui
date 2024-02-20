@@ -1,3 +1,10 @@
+## [1.21.0](https://github.com/etchteam/diamond-ui/compare/v1.20.0...v1.21.0) (2024-02-20)
+
+
+### Features
+
+* set default button text shadow to none ([a1653bb](https://github.com/etchteam/diamond-ui/commit/a1653bb4d93c8659c38ce3f909020f1c07929baa))
+
 ## [1.20.0](https://github.com/etchteam/diamond-ui/compare/v1.19.0...v1.20.0) (2024-02-16)
 
 
