@@ -1,6 +1,6 @@
 :root {
   --diamond-button-border-radius: var(--diamond-border-radius);
-  --diamond-button-text-shadow: 0 1px 0 var(--diamond-color-grey-100);
+  --diamond-button-text-shadow: none;
   --diamond-button-file-background: var(--diamond-color-grey-100);
   --diamond-button-padding-inline: var(--diamond-spacing);
   --diamond-button-padding-block: var(--diamond-spacing-sm);
