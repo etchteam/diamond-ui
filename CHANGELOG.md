@@ -1,3 +1,20 @@
+## [1.24.0](https://github.com/etchteam/diamond-ui/compare/v1.23.2...v1.24.0) (2024-02-21)
+
+
+### Features
+
+* global text wrap styles ([c69f329](https://github.com/etchteam/diamond-ui/commit/c69f32997ed45b64e89eae0a73a75bc357ff43e2))
+* line height heading token ([d18900f](https://github.com/etchteam/diamond-ui/commit/d18900f8533f2e9bb50bf4f941d820f3d79c95cc))
+* text class stories ([b54746a](https://github.com/etchteam/diamond-ui/commit/b54746aa4cde5b1a872abd5a05cf73ce6279336b))
+* text utility classes ([e7c0c34](https://github.com/etchteam/diamond-ui/commit/e7c0c34a2c6e3d604375e91f3b1629246ff14718))
+
+
+### Bug Fixes
+
+* alter -text-font-* classes ([00ab48f](https://github.com/etchteam/diamond-ui/commit/00ab48f9c89703131904f968ecfde14c189a5641))
+* hidden class story args ([440df46](https://github.com/etchteam/diamond-ui/commit/440df4689988c807ba963207a5108a7e2b0a9485))
+* remove line height from -text-size-* classes ([ec0c30b](https://github.com/etchteam/diamond-ui/commit/ec0c30b580a835bc4138e1ad1540d2d16072471b))
+
 ## [1.23.2](https://github.com/etchteam/diamond-ui/compare/v1.23.1...v1.23.2) (2024-02-21)
 
 
