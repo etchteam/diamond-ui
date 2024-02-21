@@ -75,6 +75,10 @@ diamond-grid {
     align-items: center;
   }
 
+  &[align-items='baseline'] {
+    align-items: baseline;
+  }
+
   /* gap */
 
   &[gap='none'] {

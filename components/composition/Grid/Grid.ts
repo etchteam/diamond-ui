@@ -11,7 +11,7 @@ export interface GridAttributes {
     | 'space-between'
     | 'space-around'
     | 'space-evenly';
-  alignItems?: 'flex-start' | 'flex-end' | 'center';
+  alignItems?: 'flex-start' | 'flex-end' | 'center' | 'baseline';
   gap?: 'xs' | 'sm' | 'lg' | 'xl';
 }
 
