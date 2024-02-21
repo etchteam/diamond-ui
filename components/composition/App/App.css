@@ -1,7 +1,7 @@
 diamond-app {
   display: grid;
   grid-template-areas: 'header' 'main' 'footer';
-  grid-template-columns: 1fr;
+  grid-template-columns: 100%;
   grid-template-rows: auto 1fr auto;
   min-height: 100dvh;
 
