@@ -1,3 +1,10 @@
+## [1.23.1](https://github.com/etchteam/diamond-ui/compare/v1.23.0...v1.23.1) (2024-02-21)
+
+
+### Bug Fixes
+
+* app width ([920699a](https://github.com/etchteam/diamond-ui/commit/920699afdd742630343b37647e44b5d018357e52))
+
 ## [1.23.0](https://github.com/etchteam/diamond-ui/compare/v1.22.0...v1.23.0) (2024-02-21)
 
 
