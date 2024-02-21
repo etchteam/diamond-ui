@@ -3,9 +3,13 @@ import { customElement, property } from 'lit/decorators.js';
 
 import { JSXCustomElement } from '../../../types/jsx-custom-element';
 
+export interface AppAttributes {
+  header?: 'sticky' | 'static';
+}
+
 @customElement('diamond-app')
 export class App extends LitElement {
-  @property({ reflect: true }) header: 'sticky' | 'static' = 'static';
+  @property({ reflect: true }) header?: 'sticky' | 'static' = 'static';
 
   render() {
     return html`
@@ -24,14 +28,14 @@ export class App extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-app': App;
+    'diamond-app': AppAttributes;
   }
 }
 
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-app': JSXCustomElement;
+      'diamond-app': AppAttributes & JSXCustomElement;
     }
   }
 }
