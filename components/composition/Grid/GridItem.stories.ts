@@ -68,6 +68,7 @@ export const GridItem: StoryObj = {
 GridItem.args = {
   grow: false,
   shrink: false,
+  fill: false,
   smallMobile: '12',
   mobile: '12',
   largeMobile: '6',

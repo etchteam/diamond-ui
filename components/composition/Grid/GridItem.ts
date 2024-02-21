@@ -18,6 +18,10 @@ type Column =
 export interface GridItemAttributes {
   grow?: boolean;
   shrink?: boolean;
+  /**
+   * Applies display grid so that children fill the height and width of the grid item
+   */
+  fill?: boolean;
   smallMobile?: Column;
   mobile?: Column;
   largeMobile?: Column;

@@ -18,6 +18,10 @@ diamond-grid-item {
     flex-shrink: 1;
   }
 
+  &[fill] {
+    display: grid;
+  }
+
   /*
     The conversion of attribute value to css variable can be removed once
     attr type-or-unit is supported https://caniuse.com/mdn-css_types_attr_type-or-unit
