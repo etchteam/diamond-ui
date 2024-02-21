@@ -57,7 +57,7 @@ export const Hidden: StoryObj = {
   `,
 };
 
-Spacing.args = {
+Hidden.args = {
   smallMobile: false,
   mobile: false,
   largeMobile: false,

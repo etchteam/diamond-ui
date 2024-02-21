@@ -3,6 +3,7 @@ body {
   font-size: var(--diamond-font-size-base);
   -webkit-font-smoothing: antialiased;
   line-height: var(--diamond-font-line-height);
+  text-wrap: pretty;
 }
 
 h1,
@@ -11,14 +12,14 @@ h3,
 h4 {
   color: var(--diamond-theme-heading-color);
   font-weight: var(--diamond-font-weight-bold);
-  line-height: var(--diamond-font-line-height-sm);
+  line-height: var(--diamond-font-line-height-heading);
   margin-bottom: var(--diamond-spacing-sm);
   margin-top: 0;
+  text-wrap: balance;
 }
 
 h1 {
   font-size: var(--diamond-font-size-h1);
-  line-height: var(--diamond-font-line-height-sm);
 }
 
 h2 {
