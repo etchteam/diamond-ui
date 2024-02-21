@@ -13,7 +13,7 @@
 .diamond-text-font-h3,
 .diamond-text-font-h4 {
   font-weight: var(--diamond-font-weight-bold);
-  line-height: var(--diamond-font-line-height-sm);
+  line-height: var(--diamond-font-line-height-heading);
   text-wrap: balance;
 }
 
