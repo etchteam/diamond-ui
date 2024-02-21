@@ -1,3 +1,10 @@
+## [1.21.1](https://github.com/etchteam/diamond-ui/compare/v1.21.0...v1.21.1) (2024-02-21)
+
+
+### Bug Fixes
+
+* app type ([65aa326](https://github.com/etchteam/diamond-ui/commit/65aa3265b8679c0e32b8fa22fc116dd4ff64a21c))
+
 ## [1.21.0](https://github.com/etchteam/diamond-ui/compare/v1.20.0...v1.21.0) (2024-02-20)
 
 
