@@ -41,7 +41,7 @@ export default {
         'h3',
         'h4',
       ],
-      description: 'Sets the font-size and line-height properties.',
+      description: 'Sets the font-size property.',
     },
     weight: {
       control: {

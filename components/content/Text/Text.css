@@ -37,67 +37,54 @@
 
 .diamond-text-size-default {
   font-size: var(--diamond-font-size-default);
-  line-height: var(--diamond-font-line-height);
 }
 
 .diamond-text-size-xs {
   font-size: var(--diamond-font-size-xs);
-  line-height: var(--diamond-font-line-height);
 }
 
 .diamond-text-size-sm {
   font-size: var(--diamond-font-size-sm);
-  line-height: var(--diamond-font-line-height);
 }
 
 .diamond-text-size-base {
   font-size: var(--diamond-font-size-base);
-  line-height: var(--diamond-font-line-height);
 }
 
 .diamond-text-size-md {
   font-size: var(--diamond-font-size-md);
-  line-height: var(--diamond-font-line-height);
 }
 
 .diamond-text-size-lg {
   font-size: var(--diamond-font-size-lg);
-  line-height: var(--diamond-font-line-height);
 }
 
 .diamond-text-size-xl {
   font-size: var(--diamond-font-size-xl);
-  line-height: var(--diamond-font-line-height);
 }
 
 .diamond-text-size-xxl {
   font-size: var(--diamond-font-size-xxl);
-  line-height: var(--diamond-font-line-height);
 }
 
 .diamond-text-size-xxxl {
   font-size: var(--diamond-font-size-xxxl);
-  line-height: var(--diamond-font-line-height);
 }
 
 .diamond-text-size-h1 {
   font-size: var(--diamond-font-size-h1);
-  line-height: var(--diamond-font-line-height-sm);
 }
 
 .diamond-text-size-h2 {
   font-size: var(--diamond-font-size-h2);
-  line-height: var(--diamond-font-line-height-sm);
 }
 
 .diamond-text-size-h3 {
   font-size: var(--diamond-font-size-h3);
-  line-height: var(--diamond-font-line-height-sm);
 }
 
 .diamond-text-size-h4 {
   font-size: var(--diamond-font-size-h4);
-  line-height: var(--diamond-font-line-height-sm);
 }
 
 /* Weight */
