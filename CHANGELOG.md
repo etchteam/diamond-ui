@@ -1,3 +1,10 @@
+## [1.23.0](https://github.com/etchteam/diamond-ui/compare/v1.22.0...v1.23.0) (2024-02-21)
+
+
+### Features
+
+* add fill cell prop to grid item ([f2a02c6](https://github.com/etchteam/diamond-ui/commit/f2a02c6825a4f6c5c6b697a16dfbcb4aced1dbc8))
+
 ## [1.22.0](https://github.com/etchteam/diamond-ui/compare/v1.21.1...v1.22.0) (2024-02-21)
 
 
