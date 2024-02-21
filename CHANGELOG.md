@@ -1,3 +1,10 @@
+## [1.22.0](https://github.com/etchteam/diamond-ui/compare/v1.21.1...v1.22.0) (2024-02-21)
+
+
+### Features
+
+* add baseline to grid align ([ad9d6d4](https://github.com/etchteam/diamond-ui/commit/ad9d6d477d0eca47ef6de7d56aad9672cbccdfdb))
+
 ## [1.21.1](https://github.com/etchteam/diamond-ui/compare/v1.21.0...v1.21.1) (2024-02-21)
 
 
