@@ -18,6 +18,7 @@ type Column =
 export interface GridItemAttributes {
   grow?: boolean;
   shrink?: boolean;
+  fill?: boolean;
   smallMobile?: Column;
   mobile?: Column;
   largeMobile?: Column;
