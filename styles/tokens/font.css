@@ -1,6 +1,7 @@
 :root {
   --diamond-font-family: -apple-system, system-ui, blinkmacsystemfont, roboto,
     helvetica, arial, sans-serif;
+  --diamond-font-family-heading: var(--diamond-font-family);
 
   --diamond-font-line-height: 1.5;
   --diamond-font-line-height-sm: 1.25;

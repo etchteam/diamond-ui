@@ -1,36 +1,18 @@
 /* Font */
 
 .diamond-text-font-body {
+  font-family: var(--diamond-font-family);
   font-size: var(--diamond-font-size-base);
   font-weight: var(--diamond-font-weight-base);
   line-height: var(--diamond-font-line-height);
   text-wrap: pretty;
 }
 
-.diamond-text-font-heading,
-.diamond-text-font-h1,
-.diamond-text-font-h2,
-.diamond-text-font-h3,
-.diamond-text-font-h4 {
+.diamond-text-font-heading {
+  font-family: var(--diamond-font-family-heading);
   font-weight: var(--diamond-font-weight-bold);
   line-height: var(--diamond-font-line-height-heading);
   text-wrap: balance;
-}
-
-.diamond-text-font-h1 {
-  font-size: var(--diamond-font-size-h1);
-}
-
-.diamond-text-font-h2 {
-  font-size: var(--diamond-font-size-h2);
-}
-
-.diamond-text-font-h3 {
-  font-size: var(--diamond-font-size-h3);
-}
-
-.diamond-text-font-h4 {
-  font-size: var(--diamond-font-size-h4);
 }
 
 /* Size */

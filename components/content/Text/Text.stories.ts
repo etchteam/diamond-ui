@@ -18,7 +18,7 @@ export default {
       control: {
         type: 'select',
       },
-      options: ['body', 'heading', 'h1', 'h2', 'h3', 'h4'],
+      options: ['body', 'heading'],
       description:
         'Sets a combination of CSS properties to match the selected font style.',
     },
