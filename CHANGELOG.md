@@ -1,3 +1,10 @@
+## [1.23.2](https://github.com/etchteam/diamond-ui/compare/v1.23.1...v1.23.2) (2024-02-21)
+
+
+### Bug Fixes
+
+* section padding ([c05886b](https://github.com/etchteam/diamond-ui/commit/c05886ba794507d33e7a3f1d1ec326b4776833e9))
+
 ## [1.23.1](https://github.com/etchteam/diamond-ui/compare/v1.23.0...v1.23.1) (2024-02-21)
 
 
