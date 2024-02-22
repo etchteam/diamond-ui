@@ -1,3 +1,17 @@
+## [1.25.0](https://github.com/etchteam/diamond-ui/compare/v1.24.1...v1.25.0) (2024-02-22)
+
+
+### Features
+
+* enter component ([44105de](https://github.com/etchteam/diamond-ui/commit/44105de7047102ffba8780a5d28755ec118caf50))
+* fill setting on enter ([695ccf1](https://github.com/etchteam/diamond-ui/commit/695ccf1e134dc547dd090b84eb0b18b43ccbaa4b))
+
+
+### Bug Fixes
+
+* duplicate prop ([8dbcdcd](https://github.com/etchteam/diamond-ui/commit/8dbcdcda608c9a43fe784ae8d7c0384ead0f8d28))
+* remove illegal display ([faf3ab6](https://github.com/etchteam/diamond-ui/commit/faf3ab698d70709c21d25434ce764c3668f92a84))
+
 ## [1.24.1](https://github.com/etchteam/diamond-ui/compare/v1.24.0...v1.24.1) (2024-02-22)
 
 
