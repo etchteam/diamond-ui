@@ -39,7 +39,7 @@ diamond-enter {
   animation-name: var(--diamond-transition-enter-animation);
   animation-name: var(--diamond-transition-enter-animation);
   animation-timing-function: var(--diamond-transition-enter-timing);
-  display: block;
+  display: contents block;
   opacity: 0;
   position: relative;
   z-index: 1;
@@ -50,5 +50,9 @@ diamond-enter {
 
   &[type='boing'] {
     animation-timing-function: var(--diamond-transition-enter-timing-boing);
+  }
+
+  &[fill] {
+    display: grid;
   }
 }

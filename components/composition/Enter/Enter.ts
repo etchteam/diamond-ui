@@ -7,6 +7,10 @@ export interface EnterAttributes {
   type?: 'fade' | 'fade-in-up' | 'boing';
   enterOnScroll?: boolean;
   delay?: string;
+  /**
+   * Applies display grid so that children fill the height and width of the component
+   */
+  fill?: boolean;
 }
 
 @customElement('diamond-enter')
@@ -17,6 +21,7 @@ export class Enter extends LitElement {
   @property({ reflect: true, type: Boolean, attribute: 'enter-on-scroll' })
   enterOnScroll?: boolean = false;
   @property({ reflect: true }) delay?: string = '0s';
+  @property({ reflect: true, type: Boolean }) fill: boolean = false;
 
   connectedCallback(): void {
     super.connectedCallback();
