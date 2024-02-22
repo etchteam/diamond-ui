@@ -1,3 +1,10 @@
+## [1.25.1](https://github.com/etchteam/diamond-ui/compare/v1.25.0...v1.25.1) (2024-02-22)
+
+
+### Bug Fixes
+
+* support no s on delay ([3b91764](https://github.com/etchteam/diamond-ui/commit/3b91764f339a39818ff80f81fb19edd1e3dd5c16))
+
 ## [1.25.0](https://github.com/etchteam/diamond-ui/compare/v1.24.1...v1.25.0) (2024-02-22)
 
 
