@@ -20,7 +20,7 @@ export class Enter extends LitElement {
   @property({ reflect: true }) type?: 'fade' | 'fade-in-up' | 'boing' = 'fade';
   @property({ reflect: true, type: Boolean, attribute: 'enter-on-scroll' })
   enterOnScroll?: boolean = false;
-  @property({ reflect: true }) delay?: string = '0s';
+  @property({ reflect: true }) delay?: string | number = '0';
   @property({ reflect: true, type: Boolean }) fill: boolean = false;
 
   connectedCallback(): void {
@@ -52,7 +52,7 @@ export class Enter extends LitElement {
     return html`
       <style>
         :host {
-          --diamond-transition-enter-delay: ${this.delay};
+          --diamond-transition-enter-delay: ${this.delay}s;
           --diamond-transition-enter-animation: ${type};
         }
       </style>
