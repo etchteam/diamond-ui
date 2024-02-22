@@ -29,7 +29,6 @@ export class Enter extends LitElement {
       this.observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
-            console.info('entry', entry);
             if (entry.isIntersecting) {
               this.inView = true;
               this.observer?.unobserve(this);
