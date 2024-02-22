@@ -12,6 +12,26 @@
 
   --diamond-transition-enter-duration: 0.5s;
   --diamond-transition-enter-timing: ease-in-out;
+  --diamond-transition-enter-timing-boing: linear(
+    0,
+    0.06,
+    0.25 18%,
+    1 36%,
+    0.81,
+    0.75,
+    0.81,
+    1,
+    0.94,
+    1,
+    1
+  );
   --diamond-transition-enter: var(--diamond-transition-enter-duration)
     var(--diamond-transition-enter-timing);
+}
+
+@media (prefers-reduced-motion) {
+  :root {
+    --diamond-transition-duration: 0s;
+    --diamond-transition-enter-duration: 0s;
+  }
 }
