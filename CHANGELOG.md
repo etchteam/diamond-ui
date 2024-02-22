@@ -1,3 +1,10 @@
+## [1.24.1](https://github.com/etchteam/diamond-ui/compare/v1.24.0...v1.24.1) (2024-02-22)
+
+
+### Bug Fixes
+
+* make gutter and size optional ([6e19935](https://github.com/etchteam/diamond-ui/commit/6e19935f946c07dcadc0292497363bbe0cf9f8be))
+
 ## [1.24.0](https://github.com/etchteam/diamond-ui/compare/v1.23.2...v1.24.0) (2024-02-21)
 
 
