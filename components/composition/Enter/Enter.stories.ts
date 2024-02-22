@@ -30,7 +30,7 @@ export const Enter: StoryObj = {
 Enter.args = {
   type: 'fade',
   enterOnScroll: false,
-  delay: '0.5s',
+  delay: '0.5',
 };
 
 export const OnScroll: StoryObj = {
@@ -49,5 +49,5 @@ export const OnScroll: StoryObj = {
 OnScroll.args = {
   type: 'boing',
   enterOnScroll: true,
-  delay: '0s',
+  delay: '0',
 };
