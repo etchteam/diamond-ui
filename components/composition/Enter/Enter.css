@@ -40,8 +40,6 @@ diamond-enter {
   animation-timing-function: var(--diamond-transition-enter-timing);
   display: block;
   opacity: 0;
-  position: relative;
-  z-index: 1;
 
   &[delay] {
     animation-delay: var(--diamond-transition-enter-delay);
