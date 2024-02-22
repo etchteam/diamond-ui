@@ -1,3 +1,10 @@
+## [1.25.2](https://github.com/etchteam/diamond-ui/compare/v1.25.1...v1.25.2) (2024-02-22)
+
+
+### Bug Fixes
+
+* accept numbers ([eba5674](https://github.com/etchteam/diamond-ui/commit/eba56749596de1f67df1de0129a101ff471133f0))
+
 ## [1.25.1](https://github.com/etchteam/diamond-ui/compare/v1.25.0...v1.25.1) (2024-02-22)
 
 
