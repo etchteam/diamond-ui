@@ -20,7 +20,17 @@ export default {
   argTypes: {
     size: {
       control: { type: 'select' },
-      options: ['xs', 'sm', 'md', 'lg', 'xl', 'fluid', 'fluid-sm', 'fluid-lg'],
+      options: [
+        'none',
+        'xs',
+        'sm',
+        'md',
+        'lg',
+        'xl',
+        'fluid',
+        'fluid-sm',
+        'fluid-lg',
+      ],
     },
   },
 };
