@@ -1,4 +1,7 @@
 /* top */
+.diamond-spacing-top-none {
+  margin-top: 0;
+}
 
 .diamond-spacing-top-xs {
   margin-top: var(--diamond-spacing-xs);
@@ -33,6 +36,9 @@
 }
 
 /* bottom */
+.diamond-spacing-bottom-none {
+  margin-bottom: 0;
+}
 
 .diamond-spacing-bottom-xs {
   margin-bottom: var(--diamond-spacing-xs);
