@@ -1,3 +1,10 @@
+## [1.26.0](https://github.com/etchteam/diamond-ui/compare/v1.25.2...v1.26.0) (2024-02-26)
+
+
+### Features
+
+* add none option to spacing ([a616622](https://github.com/etchteam/diamond-ui/commit/a6166225bd6b0f144662c52e5ae89bf0e4cb6ec8))
+
 ## [1.25.2](https://github.com/etchteam/diamond-ui/compare/v1.25.1...v1.25.2) (2024-02-22)
 
 
