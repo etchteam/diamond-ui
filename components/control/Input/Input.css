@@ -62,11 +62,10 @@ diamond-input {
   select {
     cursor: pointer;
     margin-right: calc(
-      var(--diamond-icon-size) * -1 - var(--diamond-input-padding-horizontal) *
-        0.5
+      var(--diamond-icon-size) * -1 - var(--diamond-input-padding-inline) * 0.5
     );
     padding-right: calc(
-      var(--diamond-icon-size) + var(--diamond-input-padding-horizontal) * 1.5
+      var(--diamond-icon-size) + var(--diamond-input-padding-inline) * 1.5
     );
   }
 
@@ -84,13 +83,13 @@ diamond-input {
 
   /* Prefix */
   &:has(* + :is(input, textarea, select)) > :first-child {
-    margin-right: calc(var(--diamond-input-padding-horizontal) / 2 * -1);
-    padding: 0 0 0 var(--diamond-input-padding-horizontal);
+    margin-right: calc(var(--diamond-input-padding-inline) / 2 * -1);
+    padding: 0 0 0 var(--diamond-input-padding-inline);
   }
 
   /* Suffix */
   :is(input, textarea, select) + * {
-    margin-left: calc(var(--diamond-input-padding-horizontal) / 2 * -1);
-    padding: 0 var(--diamond-input-padding-horizontal) 0 0;
+    margin-left: calc(var(--diamond-input-padding-inline) / 2 * -1);
+    padding: 0 var(--diamond-input-padding-inline) 0 0;
   }
 }

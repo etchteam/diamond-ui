@@ -106,7 +106,7 @@ export const TextButton: StoryObj = {
 
 export const IconOnlyButton: StoryObj = {
   render: () => html`
-    <diamond-grid wrap="wrap">
+    <diamond-grid wrap="wrap" align-items="center">
       <diamond-grid-item>
         <diamond-button width="square">
           <button type="button">

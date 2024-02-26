@@ -11,6 +11,8 @@ diamond-button {
   --_size: 1rem;
   --_padding-block: var(--diamond-button-padding-block);
   --_padding-inline: var(--diamond-button-padding-inline);
+  --_line-height: var(--diamond-button-line-height);
+  display: inline-block;
 
   button,
   a,
@@ -31,7 +33,9 @@ diamond-button {
     gap: var(--diamond-button-gap);
     justify-content: center;
     letter-spacing: inherit;
-    line-height: var(--diamond-font-line-height);
+    line-height: var(--_line-height);
+    min-height: var(--diamond-spacing-thumb);
+    min-width: var(--diamond-spacing-thumb);
     padding-block: var(--_padding-block);
     padding-inline: var(--_padding-inline);
     -webkit-tap-highlight-color: transparent;
@@ -100,6 +104,7 @@ diamond-button {
   }
 
   &[width='square'] {
+    --_line-height: 1;
     --_padding-inline: var(--diamond-button-padding-block);
   }
 
