@@ -15,10 +15,10 @@
   --diamond-input-checkbox-border-radius: var(--diamond-border-radius-sm);
   --diamond-input-radio-checkbox-padding: 0.1875rem;
 
-  --diamond-input-padding-vertical: var(--diamond-spacing-sm);
-  --diamond-input-padding-horizontal: var(--diamond-spacing);
-  --diamond-input-padding: var(--diamond-input-padding-vertical)
-    var(--diamond-input-padding-horizontal);
+  --diamond-input-padding-block: var(--diamond-spacing-sm);
+  --diamond-input-padding-inline: var(--diamond-spacing);
+  --diamond-input-padding: var(--diamond-input-padding-block)
+    var(--diamond-input-padding-inline);
 
   --diamond-input-line-height: var(--diamond-font-line-height);
 }
