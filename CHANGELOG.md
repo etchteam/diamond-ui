@@ -1,3 +1,15 @@
+## [1.27.0](https://github.com/etchteam/diamond-ui/compare/v1.26.0...v1.27.0) (2024-02-26)
+
+
+### Features
+
+* make button and input heights match ([1f47ff6](https://github.com/etchteam/diamond-ui/commit/1f47ff68e213a90b6ae63d9b3a7f8d098e695cee))
+
+
+### Bug Fixes
+
+* stop label styles leaking into storybook controls ([06b79cd](https://github.com/etchteam/diamond-ui/commit/06b79cdfcee28a305e482ed17587d9a51e726fd7))
+
 ## [1.26.0](https://github.com/etchteam/diamond-ui/compare/v1.25.2...v1.26.0) (2024-02-26)
 
 
