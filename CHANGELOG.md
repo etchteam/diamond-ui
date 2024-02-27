@@ -1,3 +1,10 @@
+## [1.27.1](https://github.com/etchteam/diamond-ui/compare/v1.27.0...v1.27.1) (2024-02-27)
+
+
+### Bug Fixes
+
+* disabled file selector ([d931437](https://github.com/etchteam/diamond-ui/commit/d93143765d06759879bada639296fb3e46201687))
+
 ## [1.27.0](https://github.com/etchteam/diamond-ui/compare/v1.26.0...v1.27.0) (2024-02-26)
 
 
