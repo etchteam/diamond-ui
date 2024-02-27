@@ -1,3 +1,10 @@
+## [1.27.2](https://github.com/etchteam/diamond-ui/compare/v1.27.1...v1.27.2) (2024-02-27)
+
+
+### Bug Fixes
+
+* invalid disabled selector ([20d2d08](https://github.com/etchteam/diamond-ui/commit/20d2d0812f80a3b5afa4eadd66df4fe11fa16e72))
+
 ## [1.27.1](https://github.com/etchteam/diamond-ui/compare/v1.27.0...v1.27.1) (2024-02-27)
 
 
