@@ -225,6 +225,11 @@ export const HtmlButtonTypes: StoryObj = {
           <input type="file" />
         </diamond-button>
       </diamond-grid-item>
+      <diamond-grid-item>
+        <diamond-button>
+          <input type="file" disabled />
+        </diamond-button>
+      </diamond-grid-item>
     </diamond-grid>
   `,
 };
