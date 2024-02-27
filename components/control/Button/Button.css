@@ -52,7 +52,7 @@ diamond-button {
     user-select: none;
 
     @media (hover: hover) {
-      &:hover {
+      &:not([disabled]):hover {
         --_background: var(--_background-hover);
         --_border-color: var(--_border-color-hover);
         --_color: var(--_color-hover);
@@ -63,18 +63,20 @@ diamond-button {
       outline-offset: var(--diamond-button-outline-offset);
     }
 
-    &[disabled] {
-      --_background: var(--_background-disabled);
-      --_color: var(--_color-disabled);
-      --_border-color: var(--_border-color-disabled);
-      cursor: not-allowed;
-    }
-
     svg {
       block-size: var(--diamond-icon-size);
       flex-shrink: 0;
       inline-size: var(--diamond-icon-size);
     }
+  }
+
+  button[disabled],
+  input[disabled],
+  input[type='file'][disabled]::file-selector-button {
+    --_background: var(--_background-disabled);
+    --_color: var(--_color-disabled);
+    --_border-color: var(--_border-color-disabled);
+    cursor: not-allowed;
   }
 
   &[size='sm'] {
