@@ -52,7 +52,7 @@ diamond-button {
     user-select: none;
 
     @media (hover: hover) {
-      &:not([disabled]):hover {
+      &:hover {
         --_background: var(--_background-hover);
         --_border-color: var(--_border-color-hover);
         --_color: var(--_color-hover);
@@ -77,6 +77,12 @@ diamond-button {
     --_color: var(--_color-disabled);
     --_border-color: var(--_border-color-disabled);
     cursor: not-allowed;
+
+    &:hover {
+      --_background: var(--_background-disabled);
+      --_color: var(--_color-disabled);
+      --_border-color: var(--_border-color-disabled);
+    }
   }
 
   &[size='sm'] {
