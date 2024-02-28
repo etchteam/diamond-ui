@@ -62,17 +62,17 @@ diamond-button {
     &:not(:active):focus-visible {
       outline-offset: var(--diamond-button-outline-offset);
     }
-
-    svg {
-      block-size: var(--diamond-icon-size);
-      flex-shrink: 0;
-      inline-size: var(--diamond-icon-size);
-    }
   }
 
-  button[disabled],
-  input[disabled],
-  input[type='file'][disabled]::file-selector-button {
+  svg {
+    block-size: var(--diamond-icon-size);
+    flex-shrink: 0;
+    inline-size: var(--diamond-icon-size);
+  }
+
+  [disabled],
+  [disabled],
+  [type='file'][disabled]::file-selector-button {
     --_background: var(--_background-disabled);
     --_color: var(--_color-disabled);
     --_border-color: var(--_border-color-disabled);
