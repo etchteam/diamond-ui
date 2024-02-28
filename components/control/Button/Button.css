@@ -94,6 +94,8 @@ diamond-button {
   }
 
   &[width='full-width'] {
+    display: block;
+
     button,
     a,
     input {
@@ -103,6 +105,8 @@ diamond-button {
 
   @media (width < 480px) {
     &[width='full-width-mobile'] {
+      display: block;
+
       button,
       a,
       input {
