@@ -1,3 +1,10 @@
+## [1.27.4](https://github.com/etchteam/diamond-ui/compare/v1.27.3...v1.27.4) (2024-02-28)
+
+
+### Bug Fixes
+
+* block button styles ([e2b1ab2](https://github.com/etchteam/diamond-ui/commit/e2b1ab266f222933dfe000d874fea292b62f71b3))
+
 ## [1.27.3](https://github.com/etchteam/diamond-ui/compare/v1.27.2...v1.27.3) (2024-02-28)
 
 
