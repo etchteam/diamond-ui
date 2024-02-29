@@ -4,10 +4,10 @@ import { customElement, property } from 'lit/decorators.js';
 import { JSXCustomElement } from '../../../types/jsx-custom-element';
 
 export interface ImgAttributes {
-  block?: boolean;
-  responsive?: boolean;
+  block?: string | boolean;
+  responsive?: string | boolean;
   aspectRatio?: string;
-  radius?: boolean;
+  radius?: string | boolean;
   objectFit?: 'cover' | 'contain';
   objectPosition?: string;
 }
