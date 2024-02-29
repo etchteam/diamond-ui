@@ -1,3 +1,10 @@
+## [1.27.7](https://github.com/etchteam/diamond-ui/compare/v1.27.6...v1.27.7) (2024-02-29)
+
+
+### Bug Fixes
+
+* boolean defaults ([a316e9a](https://github.com/etchteam/diamond-ui/commit/a316e9a4e3c9f1c9ec844422ce103103749a20bc))
+
 ## [1.27.6](https://github.com/etchteam/diamond-ui/compare/v1.27.5...v1.27.6) (2024-02-29)
 
 
