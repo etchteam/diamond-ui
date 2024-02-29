@@ -21,7 +21,7 @@ export class Enter extends LitElement {
   @property({ reflect: true, attribute: 'enter-on-scroll' })
   enterOnScroll?: string | boolean;
   @property({ reflect: true }) delay?: string | number;
-  @property({ reflect: true, type: Boolean }) fill: boolean = false;
+  @property({ reflect: true }) fill?: string | boolean;
 
   connectedCallback(): void {
     super.connectedCallback();

@@ -14,10 +14,10 @@ export interface ImgAttributes {
 
 @customElement('diamond-img')
 export class Img extends LitElement {
-  @property({ type: Boolean, reflect: true }) block = false;
-  @property({ type: Boolean, reflect: true }) responsive = false;
+  @property({ reflect: true }) block?: string | boolean;
+  @property({ reflect: true }) responsive?: string | boolean;
   @property({ reflect: true, attribute: 'aspect-ratio' }) aspectRatio = 'auto';
-  @property({ type: Boolean, reflect: true }) radius = false;
+  @property({ reflect: true }) radius?: string | boolean;
   @property({ reflect: true, attribute: 'object-fit' }) objectFit?:
     | 'fill'
     | 'cover'
