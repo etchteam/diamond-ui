@@ -1,3 +1,10 @@
+## [1.27.6](https://github.com/etchteam/diamond-ui/compare/v1.27.5...v1.27.6) (2024-02-29)
+
+
+### Bug Fixes
+
+* enter on scroll dom render ([c27d305](https://github.com/etchteam/diamond-ui/commit/c27d3053fc5e09cb7a43bd995eb041eab0baae66))
+
 ## [1.27.5](https://github.com/etchteam/diamond-ui/compare/v1.27.4...v1.27.5) (2024-02-29)
 
 
