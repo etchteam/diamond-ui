@@ -17,10 +17,10 @@ export interface EnterAttributes {
 export class Enter extends LitElement {
   observer?: IntersectionObserver;
   @state() inView: boolean = false;
-  @property({ reflect: true }) type?: 'fade' | 'fade-in-up' | 'boing' = 'fade';
+  @property({ reflect: true }) type?: 'fade' | 'fade-in-up' | 'boing';
   @property({ reflect: true, type: Boolean, attribute: 'enter-on-scroll' })
   enterOnScroll?: boolean = false;
-  @property({ reflect: true }) delay?: string | number = '0';
+  @property({ reflect: true }) delay?: string | number;
   @property({ reflect: true, type: Boolean }) fill: boolean = false;
 
   connectedCallback(): void {
