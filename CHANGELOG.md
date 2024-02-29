@@ -1,3 +1,10 @@
+## [1.27.5](https://github.com/etchteam/diamond-ui/compare/v1.27.4...v1.27.5) (2024-02-29)
+
+
+### Bug Fixes
+
+* remove enter defaults ([797230b](https://github.com/etchteam/diamond-ui/commit/797230b6496c7232db9bac5a8c629ca5f576fa2f))
+
 ## [1.27.4](https://github.com/etchteam/diamond-ui/compare/v1.27.3...v1.27.4) (2024-02-28)
 
 
