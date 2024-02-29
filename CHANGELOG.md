@@ -1,3 +1,10 @@
+## [1.27.8](https://github.com/etchteam/diamond-ui/compare/v1.27.7...v1.27.8) (2024-02-29)
+
+
+### Bug Fixes
+
+* handle boolean props ([aa28929](https://github.com/etchteam/diamond-ui/commit/aa2892903de7c0434d2f233f3ca3249a0f6e6290))
+
 ## [1.27.7](https://github.com/etchteam/diamond-ui/compare/v1.27.6...v1.27.7) (2024-02-29)
 
 
