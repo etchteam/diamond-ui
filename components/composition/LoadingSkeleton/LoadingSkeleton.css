@@ -1,0 +1,42 @@
+@keyframes pulse {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+diamond-loading-skeleton {
+  &[loading='true'] {
+    > * {
+      animation: pulse 1.5s infinite linear;
+      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+      background-size: 200% 100%;
+      color: transparent;
+      height: auto;
+      width: 100%;
+      --diamond-theme-color: transparent;
+      --diamond-theme-heading-color: transparent;
+      --diamond-backdrop: transparent;
+      --diamond-theme-background: transparent;
+      --diamond-theme-border-color: transparent;
+    }
+  }
+
+  &[loading='false'] {
+    > * {
+      animation: none;
+      background: none;
+      color: inherit;
+      height: inherit;
+      width: inherit;
+      --diamond-theme-color: inherit;
+      --diamond-theme-heading-color: inherit;
+      --diamond-backdrop: inherit;
+      --diamond-theme-background: inherit;
+      --diamond-theme-border-color: inherit;
+    }
+  }
+}
