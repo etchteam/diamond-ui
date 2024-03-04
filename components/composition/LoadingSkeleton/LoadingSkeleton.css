@@ -40,6 +40,7 @@ diamond-loading-skeleton {
       background-size: 200% 100%;
       color: transparent;
       overflow: hidden;
+      width: fit-content;
     }
 
     diamond-card {
