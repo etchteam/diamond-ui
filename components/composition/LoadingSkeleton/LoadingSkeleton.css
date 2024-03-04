@@ -16,12 +16,66 @@ diamond-loading-skeleton {
       background-size: 200% 100%;
       color: transparent;
       height: auto;
-      width: 100%;
+      width: fit-content;
       --diamond-theme-color: transparent;
       --diamond-theme-heading-color: transparent;
       --diamond-backdrop: transparent;
       --diamond-theme-background: transparent;
       --diamond-theme-border-color: transparent;
+      --diamond-button-background: transparent;
+      --diamond-button-color: transparent;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    a {
+      animation: pulse 3s infinite linear;
+      background: linear-gradient(90deg, #d2cccc 25%, #e0e0e0 50%, #d2cccc 75%);
+      background-size: 200% 100%;
+      color: transparent;
+      overflow: hidden;
+    }
+
+    diamond-card {
+      p {
+        animation: pulse 3s infinite linear;
+        background: linear-gradient(
+          90deg,
+          #d2cccc 25%,
+          #e0e0e0 50%,
+          #d2cccc 75%
+        );
+        background-size: 200% 100%;
+        border: var(--diamond-border);
+        overflow: hidden;
+      }
+    }
+
+    diamond-img {
+      animation: pulse 3s infinite linear;
+      background: linear-gradient(90deg, #d2cccc 25%, #e0e0e0 50%, #d2cccc 75%);
+      background-size: 200% 100%;
+      border: var(--diamond-border);
+      overflow: hidden;
+
+      > img {
+        visibility: hidden;
+      }
+    }
+
+    diamond-button {
+      animation: pulse 1.5s infinite linear;
+      background: linear-gradient(90deg, #d2cccc 25%, #e0e0e0 50%, #d2cccc 75%);
+      background-size: 200% 100%;
+      border-radius: var(--diamond-border-radius);
+      color: transparent;
+      overflow: hidden;
     }
   }
 
