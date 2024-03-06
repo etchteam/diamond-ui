@@ -1,3 +1,10 @@
+## [1.27.11](https://github.com/etchteam/diamond-ui/compare/v1.27.10...v1.27.11) (2024-03-06)
+
+
+### Bug Fixes
+
+* key type ([defe826](https://github.com/etchteam/diamond-ui/commit/defe826f113fb1521ceaad7de057cd917104dffd))
+
 ## [1.27.10](https://github.com/etchteam/diamond-ui/compare/v1.27.9...v1.27.10) (2024-03-06)
 
 
