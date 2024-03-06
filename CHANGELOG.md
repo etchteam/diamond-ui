@@ -1,3 +1,10 @@
+## [1.27.10](https://github.com/etchteam/diamond-ui/compare/v1.27.9...v1.27.10) (2024-03-06)
+
+
+### Bug Fixes
+
+* don't force min height on button and input ([8ac7501](https://github.com/etchteam/diamond-ui/commit/8ac7501eef6ef81eced62ff6261ab28faaacb037))
+
 ## [1.27.9](https://github.com/etchteam/diamond-ui/compare/v1.27.8...v1.27.9) (2024-03-06)
 
 
