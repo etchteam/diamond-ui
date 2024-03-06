@@ -1,3 +1,10 @@
+## [1.27.9](https://github.com/etchteam/diamond-ui/compare/v1.27.8...v1.27.9) (2024-03-06)
+
+
+### Bug Fixes
+
+* icon size should be em ([af042b0](https://github.com/etchteam/diamond-ui/commit/af042b0f141e36b7b75c77747739f443b5ed653f))
+
 ## [1.27.8](https://github.com/etchteam/diamond-ui/compare/v1.27.7...v1.27.8) (2024-02-29)
 
 
