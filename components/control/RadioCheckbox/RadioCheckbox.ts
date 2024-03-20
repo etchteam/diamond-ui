@@ -45,7 +45,7 @@ declare global {
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-radio-checkbox': RadioCheckboxAttributes & JSXCustomElement;
+      'diamond-radio-checkbox': JSXCustomElement<RadioCheckboxAttributes>;
     }
   }
 }

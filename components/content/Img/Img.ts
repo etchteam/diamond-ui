@@ -48,7 +48,7 @@ declare global {
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-img': ImgAttributes & JSXCustomElement;
+      'diamond-img': JSXCustomElement<ImgAttributes>;
     }
   }
 }
