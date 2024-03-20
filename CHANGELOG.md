@@ -1,3 +1,10 @@
+## [1.28.0](https://github.com/etchteam/diamond-ui/compare/v1.27.11...v1.28.0) (2024-03-20)
+
+
+### Features
+
+* indent bullets ([4663c4f](https://github.com/etchteam/diamond-ui/commit/4663c4ffe9ecf0f9713e63c4327ca27a96cbdc8c))
+
 ## [1.27.11](https://github.com/etchteam/diamond-ui/compare/v1.27.10...v1.27.11) (2024-03-06)
 
 
