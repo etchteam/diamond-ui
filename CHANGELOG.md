@@ -1,3 +1,10 @@
+## [1.28.1](https://github.com/etchteam/diamond-ui/compare/v1.28.0...v1.28.1) (2024-03-20)
+
+
+### Bug Fixes
+
+* omit size prop from jsx element ([acb303f](https://github.com/etchteam/diamond-ui/commit/acb303f61ccf46cc8369b05fbf9f148576cb2a15))
+
 ## [1.28.0](https://github.com/etchteam/diamond-ui/compare/v1.27.11...v1.28.0) (2024-03-20)
 
 
