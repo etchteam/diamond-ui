@@ -22,7 +22,7 @@ declare global {
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-section': SectionAttributes & JSXCustomElement;
+      'diamond-section': JSXCustomElement<SectionAttributes>;
     }
   }
 }
