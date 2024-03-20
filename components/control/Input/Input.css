@@ -83,12 +83,12 @@ diamond-input {
   /* Prefix */
   &:has(* + :is(input, textarea, select)) > :first-child {
     margin-right: calc(var(--diamond-input-padding-inline) / 2 * -1);
-    padding: 0 0 0 var(--diamond-input-padding-inline);
+    padding: 0 0 0 calc(var(--diamond-input-padding-inline) / 2);
   }
 
   /* Suffix */
   :is(input, textarea, select) + * {
     margin-left: calc(var(--diamond-input-padding-inline) / 2 * -1);
-    padding: 0 var(--diamond-input-padding-inline) 0 0;
+    padding: 0 calc(var(--diamond-input-padding-inline) / 2) 0 0;
   }
 }
