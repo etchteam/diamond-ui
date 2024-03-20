@@ -1,3 +1,10 @@
+## [1.29.0](https://github.com/etchteam/diamond-ui/compare/v1.28.1...v1.29.0) (2024-03-20)
+
+
+### Features
+
+* halve input with icon padding ([5f06d4a](https://github.com/etchteam/diamond-ui/commit/5f06d4a57208f4be1ecdd0b88af34f707b7812c6))
+
 ## [1.28.1](https://github.com/etchteam/diamond-ui/compare/v1.28.0...v1.28.1) (2024-03-20)
 
 
