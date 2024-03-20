@@ -45,7 +45,7 @@ p:last-child {
 
 ul,
 ol {
-  margin: 0 0 var(--diamond-spacing-sm) 0;
+  margin: 0 0 var(--diamond-spacing-sm) var(--diamond-spacing-xs);
   padding-left: var(--diamond-spacing);
 }
 
