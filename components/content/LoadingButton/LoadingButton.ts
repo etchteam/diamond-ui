@@ -1,20 +1,20 @@
 import { JSXCustomElement } from '../../../types/jsx-custom-element';
 
-export interface ButtonAttributes {
-  size?: 'sm' | 'md' | 'lg';
+export interface LoadingButtonAttributes {
+  variant?: 'primary' | 'secondary' | 'text';
   width?: 'full-width' | 'full-width-mobile' | 'square';
 }
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-button': ButtonAttributes;
+    'diamond-loading-button': LoadingButtonAttributes;
   }
 }
 
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-button': ButtonAttributes & JSXCustomElement;
+      'diamond-loading-button': LoadingButtonAttributes & JSXCustomElement;
     }
   }
 }

@@ -1,0 +1,71 @@
+@keyframes pulse {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+diamond-loading-button {
+  --_size: 1rem;
+  --_padding-block: var(--diamond-button-padding-block);
+  --_padding-inline: var(--diamond-button-padding-inline);
+  --_line-height: var(--diamond-button-line-height);
+
+  button,
+  a,
+  input:not([type='file']),
+  input[type='file']::file-selector-button {
+    align-items: center;
+    animation: pulse 1.5s infinite linear;
+    appearance: none;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    border: transparent;
+    color: transparent;
+    display: inline-block;
+    justify-content: center;
+    letter-spacing: inherit;
+    line-height: var(--_line-height);
+    min-height: var(--diamond-spacing-thumb);
+    min-width: var(--diamond-spacing-thumb);
+    padding-block: var(--_padding-block);
+    padding-inline: var(--_padding-inline);
+    touch-action: none;
+  }
+
+  svg {
+    block-size: var(--diamond-icon-size);
+    flex-shrink: 0;
+    inline-size: var(--diamond-icon-size);
+  }
+
+  &[width='full-width'] {
+    display: block;
+
+    button,
+    a,
+    input {
+      width: 100%;
+    }
+  }
+
+  @media (width < 480px) {
+    &[width='full-width-mobile'] {
+      display: block;
+
+      button,
+      a,
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  &[width='square'] {
+    --_line-height: 1;
+    --_padding-inline: var(--diamond-button-padding-block);
+  }
+}
