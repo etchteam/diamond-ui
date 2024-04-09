@@ -1,4 +1,4 @@
-@import url('styles/tokens/pulse.css');
+@import url('/styles/tokens/pulse.css');
 
 diamond-loading-button {
   --_size: 1rem;
@@ -11,7 +11,7 @@ diamond-loading-button {
   input:not([type='file']),
   input[type='file']::file-selector-button {
     align-items: center;
-    animation: pulse 3s infinite linear;
+    animation: pulse var(--diamond-pulse-duration) infinite linear;
     appearance: none;
     background: linear-gradient(
       90deg,

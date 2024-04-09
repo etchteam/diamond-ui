@@ -1,10 +1,10 @@
-@import url('styles/tokens/pulse.css');
+@import url('/styles/tokens/pulse.css');
 
 diamond-loading-img {
   img {
     visibility: hidden;
   }
-  animation: pulse 3s infinite linear;
+  animation: pulse var(--diamond-pulse-duration) infinite linear;
   background: linear-gradient(
     90deg,
     var(--diamond-color-grey-100) 25%,

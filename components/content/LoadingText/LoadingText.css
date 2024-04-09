@@ -1,7 +1,7 @@
-@import url('styles/tokens/pulse.css');
+@import url('/styles/tokens/pulse.css');
 
 diamond-loading-text {
-  animation: pulse 3s infinite linear;
+  animation: pulse var(--diamond-pulse-duration) infinite linear;
   appearance: none;
   background: linear-gradient(
     90deg,
