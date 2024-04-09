@@ -12,8 +12,13 @@ diamond-loading-img {
   img {
     visibility: hidden;
   }
-  animation: pulse 1.5s infinite linear;
-  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  animation: pulse 3s infinite linear;
+  background: linear-gradient(
+    90deg,
+    var(--diamond-color-grey-100) 25%,
+    var(--diamond-color-grey-300) 50%,
+    var(--diamond-color-grey-100) 75%
+  );
   background-size: 200% 100%;
   display: inline-block;
 

@@ -5,13 +5,6 @@ import './LoadingButton';
 
 export default {
   component: 'diamond-loading-button',
-  parameters: {
-    docs: {
-      description: {
-        component: 'Loading version of the Button component.',
-      },
-    },
-  },
   argTypes: {
     width: {
       control: {
