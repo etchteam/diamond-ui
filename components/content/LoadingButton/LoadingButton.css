@@ -1,4 +1,4 @@
-@import url('/styles/tokens/pulse.css');
+@import url('../../../styles/tokens/pulse.css');
 
 diamond-loading-button {
   --_size: 1rem;
