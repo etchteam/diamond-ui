@@ -1,25 +1,10 @@
-diamond-button {
-  --_background: var(--diamond-button-background);
-  --_background-hover: var(--diamond-button-background-hover);
-  --_background-disabled: var(--diamond-button-background-disabled);
-  --_border-color: var(--diamond-button-border-color);
-  --_border-color-hover: var(--diamond-button-border-color-hover);
-  --_border-color-disabled: var(--diamond-button-border-color-disabled);
-  --_color: var(--diamond-button-color);
-  --_color-hover: var(--diamond-button-color-hover);
-  --_color-disabled: var(--diamond-button-color-disabled);
-  --_size: 1rem;
-  --_padding-block: var(--diamond-button-padding-block);
-  --_padding-inline: var(--diamond-button-padding-inline);
-  --_line-height: var(--diamond-button-line-height);
-  display: inline-block;
+@import '../../../styles/mixins/button.css';
 
+diamond-button {
   button,
   a,
   input:not([type='file']),
   input[type='file']::file-selector-button {
-    align-items: center;
-    appearance: none;
     background: var(--_background);
     border: var(--diamond-border);
     border-color: var(--_border-color);
@@ -27,41 +12,6 @@ diamond-button {
     color: var(--_color);
     cursor: pointer;
     display: inline-flex;
-    font: inherit;
-    font-size: var(--_size, 1rem);
-    font-weight: var(--diamond-button-font-weight);
-    gap: var(--diamond-button-gap);
-    justify-content: center;
-    letter-spacing: inherit;
-    line-height: var(--_line-height);
-    min-height: var(--diamond-spacing-thumb);
-    min-width: var(--diamond-spacing-thumb);
-    padding-block: var(--_padding-block);
-    padding-inline: var(--_padding-inline);
-    -webkit-tap-highlight-color: transparent;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: var(--diamond-button-text-shadow);
-    touch-action: manipulation;
-    -webkit-touch-callout: none;
-    transition:
-      background var(--diamond-transition),
-      color var(--diamond-transition),
-      border-color var(--diamond-transition),
-      outline-offset var(--diamond-transition);
-    user-select: none;
-
-    @media (hover: hover) {
-      &:hover {
-        --_background: var(--_background-hover);
-        --_border-color: var(--_border-color-hover);
-        --_color: var(--_color-hover);
-      }
-    }
-
-    &:not(:active):focus-visible {
-      outline-offset: var(--diamond-button-outline-offset);
-    }
   }
 
   svg {
@@ -70,7 +20,6 @@ diamond-button {
     inline-size: var(--diamond-icon-size);
   }
 
-  [disabled],
   [disabled],
   [type='file'][disabled]::file-selector-button {
     --_background: var(--_background-disabled);
@@ -85,42 +34,7 @@ diamond-button {
     }
   }
 
-  &[size='sm'] {
-    --_size: 0.875rem;
-  }
-
-  &[size='lg'] {
-    --_size: 1.25rem;
-  }
-
-  &[width='full-width'] {
-    display: block;
-
-    button,
-    a,
-    input {
-      width: 100%;
-    }
-  }
-
-  @media (width < 480px) {
-    &[width='full-width-mobile'] {
-      display: block;
-
-      button,
-      a,
-      input {
-        width: 100%;
-      }
-    }
-  }
-
-  &[width='square'] {
-    --_line-height: 1;
-    --_padding-inline: var(--diamond-button-padding-block);
-  }
-
-  &[variant='primary'] {
+  &[variant='primary'] > button {
     --_background: var(--diamond-button-primary-background);
     --_background-hover: var(--diamond-button-primary-background-hover);
     --_background-disabled: var(--diamond-button-primary-background-disabled);
@@ -134,7 +48,7 @@ diamond-button {
     --_color-disabled: var(--diamond-button-primary-color-disabled);
   }
 
-  &[variant='secondary'] {
+  &[variant='secondary'] > button {
     --_background: var(--diamond-button-secondary-background);
     --_background-hover: var(--diamond-button-secondary-background-hover);
     --_background-disabled: var(--diamond-button-secondary-background-disabled);
