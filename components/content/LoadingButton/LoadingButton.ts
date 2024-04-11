@@ -1,9 +1,18 @@
 import { JSXCustomElement } from '../../../types/jsx-custom-element';
 
 export interface LoadingButtonAttributes {
-  variant?: 'primary' | 'secondary' | 'text';
+  size?: 'sm' | 'md' | 'lg';
   width?: 'full-width' | 'full-width-mobile' | 'square';
 }
+
+export class DiamondLoadingButton extends HTMLElement {
+  constructor() {
+    super();
+    this.classList.add('diamond-button-shared');
+  }
+}
+
+customElements.define('diamond-loading-button', DiamondLoadingButton);
 
 declare global {
   interface HTMLElementTagNameMap {
