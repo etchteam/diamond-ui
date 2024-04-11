@@ -1,11 +1,7 @@
 @import url('../../../styles/tokens/pulse.css');
+@import '../../../styles/mixins/button.css';
 
 diamond-loading-button {
-  --_size: 1rem;
-  --_padding-block: var(--diamond-button-padding-block);
-  --_padding-inline: var(--diamond-button-padding-inline);
-  --_line-height: var(--diamond-button-line-height);
-
   button,
   a,
   input:not([type='file']),
@@ -23,46 +19,6 @@ diamond-loading-button {
     border: transparent;
     color: transparent;
     display: inline-block;
-    justify-content: center;
-    letter-spacing: inherit;
-    line-height: var(--_line-height);
-    min-height: var(--diamond-spacing-thumb);
-    min-width: var(--diamond-spacing-thumb);
-    padding-block: var(--_padding-block);
-    padding-inline: var(--_padding-inline);
     touch-action: none;
-  }
-
-  svg {
-    block-size: var(--diamond-icon-size);
-    flex-shrink: 0;
-    inline-size: var(--diamond-icon-size);
-  }
-
-  &[width='full-width'] {
-    display: block;
-
-    button,
-    a,
-    input {
-      width: 100%;
-    }
-  }
-
-  @media (width < 480px) {
-    &[width='full-width-mobile'] {
-      display: block;
-
-      button,
-      a,
-      input {
-        width: 100%;
-      }
-    }
-  }
-
-  &[width='square'] {
-    --_line-height: 1;
-    --_padding-inline: var(--diamond-button-padding-block);
   }
 }
