@@ -1,0 +1,95 @@
+.diamond-button-shared > button,
+a,
+input:not([type='file']),
+input[type='file']::file-selector-button {
+  --_background: var(--diamond-button-background);
+  --_background-hover: var(--diamond-button-background-hover);
+  --_background-disabled: var(--diamond-button-background-disabled);
+  --_border-color: var(--diamond-button-border-color);
+  --_border-color-hover: var(--diamond-button-border-color-hover);
+  --_border-color-disabled: var(--diamond-button-border-color-disabled);
+  --_color: var(--diamond-button-color);
+  --_color-hover: var(--diamond-button-color-hover);
+  --_color-disabled: var(--diamond-button-color-disabled);
+  --_size: 1rem;
+  --_padding-block: var(--diamond-button-padding-block);
+  --_padding-inline: var(--diamond-button-padding-inline);
+  --_line-height: var(--diamond-button-line-height);
+
+  align-items: center;
+  appearance: none;
+  cursor: pointer;
+  font: inherit;
+  font-size: var(--_size, 1rem);
+  font-weight: var(--diamond-button-font-weight);
+  gap: var(--diamond-button-gap);
+  justify-content: center;
+  letter-spacing: inherit;
+  line-height: var(--_line-height);
+  min-height: var(--diamond-spacing-thumb);
+  min-width: var(--diamond-spacing-thumb);
+  padding-block: var(--_padding-block);
+  padding-inline: var(--_padding-inline);
+
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+  text-decoration: none;
+
+  text-shadow: var(--diamond-button-text-shadow);
+  touch-action: manipulation;
+  -webkit-touch-callout: none;
+  transition:
+    background var(--diamond-transition),
+    color var(--diamond-transition),
+    border-color var(--diamond-transition),
+    outline-offset var(--diamond-transition);
+
+  @media (hover: hover) {
+    &:hover {
+      --_background: var(--_background-hover);
+      --_border-color: var(--_border-color-hover);
+      --_color: var(--_color-hover);
+    }
+  }
+
+  &:not(:active):focus-visible {
+    outline-offset: var(--diamond-button-outline-offset);
+  }
+}
+
+.diamond-button-shared {
+  &[size='sm'] > button {
+    --_size: 0.875rem;
+  }
+
+  &[size='lg'] > button {
+    --_size: 1.25rem;
+  }
+
+  &[width='full-width'] {
+    display: block;
+
+    button,
+    a,
+    input {
+      width: 100%;
+    }
+  }
+
+  @media (width < 480px) {
+    &[width='full-width-mobile'] > button {
+      display: block;
+
+      button,
+      a,
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  &[width='square'] > button {
+    --_line-height: 1;
+    --_padding-inline: var(--diamond-button-padding-block);
+  }
+}
