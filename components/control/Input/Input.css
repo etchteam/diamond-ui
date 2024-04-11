@@ -50,6 +50,7 @@ diamond-input {
     color: inherit;
     display: block;
     flex: 1 1 auto;
+    font-size: var(--diamond-input-font-size);
     line-height: var(--diamond-input-line-height);
     padding: var(--diamond-input-padding);
 
