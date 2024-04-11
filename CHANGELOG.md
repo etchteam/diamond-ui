@@ -1,3 +1,10 @@
+## [1.29.1](https://github.com/etchteam/diamond-ui/compare/v1.29.0...v1.29.1) (2024-04-11)
+
+
+### Bug Fixes
+
+* ios input zoom ([63220d3](https://github.com/etchteam/diamond-ui/commit/63220d31c4329e3f7b19a5213504e4ea2fc95750))
+
 ## [1.29.0](https://github.com/etchteam/diamond-ui/compare/v1.28.1...v1.29.0) (2024-03-20)
 
 
