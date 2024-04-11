@@ -12,6 +12,12 @@ export default {
       },
       options: ['full-width', 'full-width-mobile', 'square'],
     },
+    size: {
+      control: {
+        type: 'select',
+      },
+      options: ['sm', 'md', 'lg'],
+    },
   },
 };
 
