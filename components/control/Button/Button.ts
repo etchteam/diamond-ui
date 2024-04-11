@@ -14,17 +14,14 @@ export class DiamondButton extends HTMLElement {
   }
 }
 
-// Define the custom element with the specified attributes
 customElements.define('diamond-button', DiamondButton);
 
-// Declare the custom element in the global HTMLElementTagNameMap
 declare global {
   interface HTMLElementTagNameMap {
     'diamond-button': ButtonAttributes;
   }
 }
 
-// Declare the custom element in the JSX namespace for React
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
