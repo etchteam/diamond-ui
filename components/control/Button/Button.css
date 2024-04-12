@@ -1,10 +1,25 @@
-@import '../../../styles/mixins/button.css';
-
 diamond-button {
+  --_background: var(--diamond-button-background);
+  --_background-hover: var(--diamond-button-background-hover);
+  --_background-disabled: var(--diamond-button-background-disabled);
+  --_border-color: var(--diamond-button-border-color);
+  --_border-color-hover: var(--diamond-button-border-color-hover);
+  --_border-color-disabled: var(--diamond-button-border-color-disabled);
+  --_color: var(--diamond-button-color);
+  --_color-hover: var(--diamond-button-color-hover);
+  --_color-disabled: var(--diamond-button-color-disabled);
+  --_size: 1rem;
+  --_padding-block: var(--diamond-button-padding-block);
+  --_padding-inline: var(--diamond-button-padding-inline);
+  --_line-height: var(--diamond-button-line-height);
+  display: inline-block;
+
   button,
   a,
   input:not([type='file']),
   input[type='file']::file-selector-button {
+    align-items: center;
+    appearance: none;
     background: var(--_background);
     border: var(--diamond-border);
     border-color: var(--_border-color);
@@ -53,6 +68,7 @@ diamond-button {
     inline-size: var(--diamond-icon-size);
   }
 
+  [disabled],
   [disabled],
   [type='file'][disabled]::file-selector-button {
     --_background: var(--_background-disabled);
@@ -122,7 +138,7 @@ diamond-button {
     --_color-disabled: var(--diamond-button-primary-color-disabled);
   }
 
-  &[variant='secondary'] > button {
+  &[variant='secondary'] {
     --_background: var(--diamond-button-secondary-background);
     --_background-hover: var(--diamond-button-secondary-background-hover);
     --_background-disabled: var(--diamond-button-secondary-background-disabled);
