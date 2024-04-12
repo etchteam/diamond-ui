@@ -77,6 +77,8 @@ export class DocsLoadingPage extends LitElement {
 
   render() {
     const { page, cards } = this;
+    // const page = null;
+    // const cards = null;
     return html`
       <link
         rel="stylesheet"
@@ -97,37 +99,96 @@ export class DocsLoadingPage extends LitElement {
           gutter="md"
           class="diamond-text-align-center diamond-spacing-bottom-fluid-sm"
         >
-          <h1>${page?.title}</h1>
-          <p>${page?.description}</p>
+          ${page
+            ? html`<h1>${page?.title}</h1>
+                <p>${page?.description}</p>`
+            : html`<h1>
+                  <diamond-loading-text> Loading... </diamond-loading-text>
+                </h1>
+                <p>
+                  <diamond-loading-text>
+                    Loren ipsum dolor consequit
+                  </diamond-loading-text>
+                </p>`}
         </diamond-wrap>
         <diamond-wrap size="xxl" gutter="md">
           <diamond-grid wrap="wrap">
-            ${cards?.map(
-              (card) => html`
-                <diamond-grid-item small-mobile="12" tablet="6" desktop="3">
-                  <diamond-card border class="theme-light">
-                    <diamond-img full-width responsive>
-                      <img
-                        src="${card.image.src}"
-                        alt="${card.image.alt}"
-                        width="${card.image.width}"
-                        height="${card.image.height}"
-                      />
-                    </diamond-img>
+            ${cards
+              ? cards.map(
+                  (card) => html`
+                    <diamond-grid-item small-mobile="12" tablet="6" desktop="3">
+                      <diamond-card border class="theme-light">
+                        <diamond-img full-width responsive>
+                          <img
+                            src="${card.image.src}"
+                            alt="${card.image.alt}"
+                            width="${card.image.width}"
+                            height="${card.image.height}"
+                          />
+                        </diamond-img>
 
-                    <h2 class="diamond-text-size-h3">${card.title}</h2>
-                    <p>${card.description}</p>
+                        <h2 class="diamond-text-size-h3">${card.title}</h2>
+                        <p>${card.description}</p>
 
-                    <diamond-button>
-                      <button type="button">Read More</button>
-                    </diamond-button>
-                  </diamond-card>
-                </diamond-grid-item>
-              `,
-            )}
+                        <diamond-button>
+                          <button type="button">Read More</button>
+                        </diamond-button>
+                      </diamond-card>
+                    </diamond-grid-item>
+                  `,
+                )
+              : [1, 2, 3, 4].map(
+                  () => html`
+                    <diamond-grid-item small-mobile="12" tablet="6" desktop="3">
+                      <diamond-card border class="theme-light">
+                        <diamond-img full-width responsive> </diamond-img>
+
+                        <h2 class="diamond-text-size-h3">
+                          <diamond-loading-text>
+                            Loren ipsum dolor consequit
+                          </diamond-loading-text>
+                        </h2>
+                        <p>
+                          <diamond-loading-text>
+                            Loren ipsum dolor consequit
+                          </diamond-loading-text>
+                        </p>
+
+                        <diamond-loading-button>
+                          <button type="button">Loading...</button>
+                        </diamond-loading-button>
+                      </diamond-card>
+                    </diamond-grid-item>
+                  `,
+                )}
           </diamond-grid>
         </diamond-wrap>
       </diamond-section>
     `;
   }
 }
+// <diamond-grid wrap="wrap">
+//             ${cards?.map(
+//               (card) => html`
+// <diamond-grid-item small-mobile="12" tablet="6" desktop="3">
+//   <diamond-card border class="theme-light">
+//     <diamond-img full-width responsive>
+//       <img
+//         src="${card.image.src}"
+//         alt="${card.image.alt}"
+//         width="${card.image.width}"
+//         height="${card.image.height}"
+//       />
+//     </diamond-img>
+
+//     <h2 class="diamond-text-size-h3">${card.title}</h2>
+//     <p>${card.description}</p>
+
+//     <diamond-button>
+//       <button type="button">Read More</button>
+//     </diamond-button>
+//   </diamond-card>
+// </diamond-grid-item>
+//               `,
+//             )}
+//           </diamond-grid>

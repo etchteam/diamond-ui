@@ -1,27 +1,32 @@
-import { LitElement } from 'lit';
+import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators/custom-element.js';
-import { property } from 'lit/decorators.js';
-import { unsafeStatic, html } from 'lit/static-html.js';
+
+import { pulse } from '../../../lib/pulse';
 
 @customElement('diamond-loading-text')
 export class LoadingText extends LitElement {
-  @property({ reflect: true }) as?:
-    | 'h1'
-    | 'h2'
-    | 'h3'
-    | 'h4'
-    | 'h5'
-    | 'h6'
-    | 'p'
-    | 'div'
-    | 'span' = 'p';
+  static readonly styles = [
+    css`
+      :host {
+        animation: pulse var(--diamond-pulse-duration) infinite linear;
+        appearance: none;
+        background: linear-gradient(
+          90deg,
+          var(--diamond-color-grey-100) 25%,
+          var(--diamond-color-grey-300) 50%,
+          var(--diamond-color-grey-100) 75%
+        );
+        background-size: 200% 100%;
+        color: transparent;
+        display: inline-block;
+        user-select: none;
+      }
+    `,
+    pulse,
+  ];
 
-  getTagName() {
-    return this.as ?? 'p';
-  }
   render() {
-    const tag = this.getTagName() || 'p';
-    return html`<${unsafeStatic(tag)}><slot></slot></${unsafeStatic(tag)}>`;
+    return html`<slot></slot>`;
   }
 }
 

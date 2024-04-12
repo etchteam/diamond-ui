@@ -2,6 +2,8 @@ import { StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 
 import './LoadingPage';
+import '../../components/content/LoadingText/LoadingText';
+import '../../components/content/LoadingButton/LoadingButton';
 
 export default {
   title: 'Recipes/Loading Skeleton',
