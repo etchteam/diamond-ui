@@ -50,8 +50,8 @@ diamond-input {
     color: inherit;
     display: block;
     flex: 1 1 auto;
+    font-size: var(--diamond-input-font-size);
     line-height: var(--diamond-input-line-height);
-    min-height: var(--diamond-spacing-thumb);
     padding: var(--diamond-input-padding);
 
     &:focus {
@@ -84,12 +84,12 @@ diamond-input {
   /* Prefix */
   &:has(* + :is(input, textarea, select)) > :first-child {
     margin-right: calc(var(--diamond-input-padding-inline) / 2 * -1);
-    padding: 0 0 0 var(--diamond-input-padding-inline);
+    padding: 0 0 0 calc(var(--diamond-input-padding-inline) / 2);
   }
 
   /* Suffix */
   :is(input, textarea, select) + * {
     margin-left: calc(var(--diamond-input-padding-inline) / 2 * -1);
-    padding: 0 var(--diamond-input-padding-inline) 0 0;
+    padding: 0 calc(var(--diamond-input-padding-inline) / 2) 0 0;
   }
 }

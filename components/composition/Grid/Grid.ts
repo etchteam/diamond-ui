@@ -24,7 +24,7 @@ declare global {
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-grid': GridAttributes & JSXCustomElement;
+      'diamond-grid': JSXCustomElement<GridAttributes>;
     }
   }
 }

@@ -13,7 +13,7 @@ declare global {
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-input': InputAttributes & JSXCustomElement;
+      'diamond-input': JSXCustomElement<InputAttributes>;
     }
   }
 }

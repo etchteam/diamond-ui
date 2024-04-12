@@ -1,4 +1,7 @@
-export type JSXCustomElement = React.HTMLAttributes<HTMLElement> & {
-  key?: string;
-  class?: string;
-};
+export type JSXCustomElement<T = object> = T &
+  Omit<React.HTMLAttributes<HTMLElement>, 'size'> & {
+    key?: string | number;
+    class?: string;
+    slot?: string;
+    shadowRoot?: ShadowRoot;
+  };

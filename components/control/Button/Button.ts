@@ -25,7 +25,7 @@ declare global {
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-button': ButtonAttributes & JSXCustomElement;
+      'diamond-button': JSXCustomElement<ButtonAttributes>;
     }
   }
 }

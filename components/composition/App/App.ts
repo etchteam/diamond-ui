@@ -35,7 +35,7 @@ declare global {
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-app': AppAttributes & JSXCustomElement;
+      'diamond-app': JSXCustomElement<AppAttributes>;
     }
   }
 }

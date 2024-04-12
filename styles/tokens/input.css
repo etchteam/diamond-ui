@@ -21,4 +21,7 @@
     var(--diamond-input-padding-inline);
 
   --diamond-input-line-height: var(--diamond-font-line-height);
+
+  /* Should be 16px minimum to avoid IOS zoom */
+  --diamond-input-font-size: var(--diamond-font-size-default);
 }

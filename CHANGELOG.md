@@ -1,3 +1,52 @@
+## [1.29.1](https://github.com/etchteam/diamond-ui/compare/v1.29.0...v1.29.1) (2024-04-11)
+
+
+### Bug Fixes
+
+* ios input zoom ([63220d3](https://github.com/etchteam/diamond-ui/commit/63220d31c4329e3f7b19a5213504e4ea2fc95750))
+
+## [1.29.0](https://github.com/etchteam/diamond-ui/compare/v1.28.1...v1.29.0) (2024-03-20)
+
+
+### Features
+
+* halve input with icon padding ([5f06d4a](https://github.com/etchteam/diamond-ui/commit/5f06d4a57208f4be1ecdd0b88af34f707b7812c6))
+
+## [1.28.1](https://github.com/etchteam/diamond-ui/compare/v1.28.0...v1.28.1) (2024-03-20)
+
+
+### Bug Fixes
+
+* omit size prop from jsx element ([acb303f](https://github.com/etchteam/diamond-ui/commit/acb303f61ccf46cc8369b05fbf9f148576cb2a15))
+
+## [1.28.0](https://github.com/etchteam/diamond-ui/compare/v1.27.11...v1.28.0) (2024-03-20)
+
+
+### Features
+
+* indent bullets ([4663c4f](https://github.com/etchteam/diamond-ui/commit/4663c4ffe9ecf0f9713e63c4327ca27a96cbdc8c))
+
+## [1.27.11](https://github.com/etchteam/diamond-ui/compare/v1.27.10...v1.27.11) (2024-03-06)
+
+
+### Bug Fixes
+
+* key type ([defe826](https://github.com/etchteam/diamond-ui/commit/defe826f113fb1521ceaad7de057cd917104dffd))
+
+## [1.27.10](https://github.com/etchteam/diamond-ui/compare/v1.27.9...v1.27.10) (2024-03-06)
+
+
+### Bug Fixes
+
+* don't force min height on button and input ([8ac7501](https://github.com/etchteam/diamond-ui/commit/8ac7501eef6ef81eced62ff6261ab28faaacb037))
+
+## [1.27.9](https://github.com/etchteam/diamond-ui/compare/v1.27.8...v1.27.9) (2024-03-06)
+
+
+### Bug Fixes
+
+* icon size should be em ([af042b0](https://github.com/etchteam/diamond-ui/commit/af042b0f141e36b7b75c77747739f443b5ed653f))
+
 ## [1.27.8](https://github.com/etchteam/diamond-ui/compare/v1.27.7...v1.27.8) (2024-02-29)
 
 
