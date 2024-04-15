@@ -78,6 +78,10 @@ export class DocsLoadingPage extends LitElement {
   render() {
     const { page, cards } = this;
 
+    // Having a link element here is not recommended,
+    // but I can't think of a better way to get the
+    // global styles into this shadow dom context
+    // Requires a stencil build to update them too
     return html`
       <link rel="stylesheet" href="../dist/diamond-ui.css" />
       <style>
