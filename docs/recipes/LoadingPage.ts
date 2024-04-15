@@ -76,14 +76,11 @@ export class DocsLoadingPage extends LitElement {
   }
 
   render() {
-    const { page, cards } = this;
-    // const page = null;
-    // const cards = null;
+    // const { page, cards } = this;
+    const page = null;
+    const cards = null;
     return html`
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@etchteam/diamond-ui@latest/diamond-ui.css"
-      />
+      <link rel="stylesheet" href="../dist/diamond-ui.css" />
       <style>
         .theme-light {
           --diamond-theme-background: #fff;
@@ -141,8 +138,12 @@ export class DocsLoadingPage extends LitElement {
                   () => html`
                     <diamond-grid-item small-mobile="12" tablet="6" desktop="3">
                       <diamond-card border class="theme-light">
-                        <diamond-img full-width responsive> </diamond-img>
-
+                        <diamond-img full-width responsive>
+                          <diamond-loading-img
+                            width="400"
+                            height="300"
+                          ></diamond-loading-img>
+                        </diamond-img>
                         <h2 class="diamond-text-size-h3">
                           <diamond-loading-text>
                             Loren ipsum dolor consequit
@@ -153,10 +154,11 @@ export class DocsLoadingPage extends LitElement {
                             Loren ipsum dolor consequit
                           </diamond-loading-text>
                         </p>
-
-                        <diamond-loading-button>
-                          <button type="button">Loading...</button>
-                        </diamond-loading-button>
+                        <diamond-button>
+                          <diamond-loading-button>
+                            Loading...
+                          </diamond-loading-button>
+                        </diamond-button>
                       </diamond-card>
                     </diamond-grid-item>
                   `,
@@ -167,28 +169,3 @@ export class DocsLoadingPage extends LitElement {
     `;
   }
 }
-// <diamond-grid wrap="wrap">
-//             ${cards?.map(
-//               (card) => html`
-// <diamond-grid-item small-mobile="12" tablet="6" desktop="3">
-//   <diamond-card border class="theme-light">
-//     <diamond-img full-width responsive>
-//       <img
-//         src="${card.image.src}"
-//         alt="${card.image.alt}"
-//         width="${card.image.width}"
-//         height="${card.image.height}"
-//       />
-//     </diamond-img>
-
-//     <h2 class="diamond-text-size-h3">${card.title}</h2>
-//     <p>${card.description}</p>
-
-//     <diamond-button>
-//       <button type="button">Read More</button>
-//     </diamond-button>
-//   </diamond-card>
-// </diamond-grid-item>
-//               `,
-//             )}
-//           </diamond-grid>

@@ -1,7 +1,7 @@
 import { StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 
-import './LoadingImage';
+import './LoadingImg';
 
 export default {
   component: 'diamond-loading-img',

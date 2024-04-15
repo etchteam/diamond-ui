@@ -2,6 +2,7 @@ import { StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 
 import './LoadingPage';
+import '../../components/content/LoadingImg/LoadingImg';
 import '../../components/content/LoadingText/LoadingText';
 import '../../components/content/LoadingButton/LoadingButton';
 

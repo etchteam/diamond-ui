@@ -16,7 +16,8 @@ export interface ImgAttributes {
 export class Img extends LitElement {
   @property({ reflect: true }) block?: string | boolean;
   @property({ reflect: true }) responsive?: string | boolean;
-  @property({ reflect: true, attribute: 'aspect-ratio' }) aspectRatio = 'auto';
+  @property({ reflect: true, attribute: 'aspect-ratio' }) aspectRatio?: string =
+    'inherit';
   @property({ reflect: true }) radius?: string | boolean;
   @property({ reflect: true, attribute: 'object-fit' }) objectFit?:
     | 'fill'

@@ -2,14 +2,16 @@ diamond-img {
   display: inline-block;
 
   &[block],
-  &[block] img {
+  &[block] img,
+  &[block] diamond-loading-img {
     display: block;
   }
 
   &[responsive] {
     width: 100%;
 
-    img {
+    img,
+    diamond-loading-img {
       height: auto;
       width: 100%;
     }
@@ -21,15 +23,18 @@ diamond-img {
   }
 
   &[aspect-ratio],
-  &[aspect-ratio] img {
+  &[aspect-ratio] img,
+  &[aspect-ratio] diamond-loading-img {
     aspect-ratio: var(--diamond-img-aspect-ratio);
   }
 
-  &[object-fit] img {
+  &[object-fit] img,
+  &[object-fit] diamond-loading-img {
     object-fit: var(--diamond-img-object-fit);
   }
 
-  &[object-position] img {
+  &[object-position] img,
+  &[object-position] diamond-loading-img {
     object-position: var(--diamond-img-object-position);
   }
 }

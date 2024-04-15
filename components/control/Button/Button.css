@@ -14,17 +14,14 @@ diamond-button {
   --_line-height: var(--diamond-button-line-height);
   display: inline-block;
 
+  diamond-loading-button,
   button,
   a,
   input:not([type='file']),
   input[type='file']::file-selector-button {
     align-items: center;
     appearance: none;
-    background: var(--_background);
-    border: var(--diamond-border);
-    border-color: var(--_border-color);
     border-radius: var(--diamond-button-border-radius);
-    color: var(--_color);
     cursor: pointer;
     display: inline-flex;
     font: inherit;
@@ -39,7 +36,6 @@ diamond-button {
     -webkit-tap-highlight-color: transparent;
     text-align: center;
     text-decoration: none;
-    text-shadow: var(--diamond-button-text-shadow);
     touch-action: manipulation;
     -webkit-touch-callout: none;
     transition:
@@ -60,6 +56,17 @@ diamond-button {
     &:not(:active):focus-visible {
       outline-offset: var(--diamond-button-outline-offset);
     }
+  }
+
+  button,
+  a,
+  input:not([type='file']),
+  input[type='file']::file-selector-button {
+    background: var(--_background);
+    border: var(--diamond-border);
+    border-color: var(--_border-color);
+    color: var(--_color);
+    text-shadow: var(--diamond-button-text-shadow);
   }
 
   svg {
@@ -94,6 +101,7 @@ diamond-button {
   &[width='full-width'] {
     display: block;
 
+    diamond-loading-button,
     button,
     a,
     input {
@@ -105,6 +113,7 @@ diamond-button {
     &[width='full-width-mobile'] {
       display: block;
 
+      diamond-loading-button,
       button,
       a,
       input {
@@ -117,6 +126,7 @@ diamond-button {
     --_line-height: 1;
     --_padding-inline: var(--diamond-button-padding-block);
 
+    diamond-loading-button,
     button,
     a,
     input {
@@ -165,6 +175,7 @@ diamond-button {
     /* Text button is square */
     --_padding-inline: var(--diamond-button-padding-block);
 
+    diamond-loading-button,
     button,
     a,
     input {
