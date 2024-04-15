@@ -5,24 +5,15 @@ import './LoadingText';
 
 export default {
   component: 'diamond-loading-text',
-  argTypes: {
-    as: {
-      control: {
-        type: 'select',
-      },
-      options: ['h1', 'h2', 'h3', 'h4', 'p', 'span', 'div'],
-    },
-  },
 };
 
-export const Text: StoryObj = {
-  render: (args) => html`
-    <diamond-loading-text as="${args.as}">
-      A loading skeleton
-    </diamond-loading-text>
+export const LoadingText: StoryObj = {
+  render: () => html`
+    <h1>
+      <diamond-loading-text>Loading title</diamond-loading-text>
+    </h1>
+    <p>
+      <diamond-loading-text>Loading text</diamond-loading-text>
+    </p>
   `,
-};
-
-Text.args = {
-  as: 'h1',
 };

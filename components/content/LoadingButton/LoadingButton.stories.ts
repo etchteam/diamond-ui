@@ -7,10 +7,10 @@ export default {
   component: 'diamond-loading-button',
 };
 
-export const Button: StoryObj = {
+export const LoadingButton: StoryObj = {
   render: () => html`
     <diamond-button width="full-width">
-      <diamond-loading-button>Button </diamond-loading-button>
+      <diamond-loading-button>Button text</diamond-loading-button>
     </diamond-button>
   `,
 };

@@ -7,25 +7,18 @@ export default {
   component: 'diamond-loading-img',
 };
 
-export const Img: StoryObj = {
+export const LoadingImg: StoryObj = {
   render: (args) => html`
-    <diamond-loading-img
-      ?block="${args.block}"
-      ?responsive="${args.responsive}"
-      ?radius="${args.radius}"
-    >
-      <img
-        src="https://placehold.it/300x300"
-        alt="Placeholder"
-        width="300"
-        height="300"
-      />
-    </diamond-loading-img>
+    <diamond-img>
+      <diamond-loading-img
+        height="${args.height}"
+        width="${args.width}"
+      ></diamond-loading-img>
+    </diamond-img>
   `,
 };
 
-Img.args = {
-  block: false,
-  responsive: false,
-  radius: false,
+LoadingImg.args = {
+  width: 400,
+  height: 300,
 };
