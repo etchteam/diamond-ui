@@ -14,6 +14,9 @@ export interface ImgAttributes {
 
 @customElement('diamond-img')
 export class Img extends LitElement {
+  @property({ reflect: true, attribute: 'aria-hidden' }) ariaHidden:
+    | string
+    | null = 'true';
   @property({ reflect: true }) block?: string | boolean;
   @property({ reflect: true }) responsive?: string | boolean;
   @property({ reflect: true, attribute: 'aspect-ratio' }) aspectRatio?: string =

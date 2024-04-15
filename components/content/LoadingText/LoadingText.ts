@@ -1,29 +1,14 @@
-import { LitElement, css, html } from 'lit';
-import { customElement } from 'lit/decorators/custom-element.js';
+import { LitElement, html } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
 
 import { pulse } from '../../../lib/pulse';
 
 @customElement('diamond-loading-text')
 export class LoadingText extends LitElement {
-  static readonly styles = [
-    css`
-      :host {
-        animation: pulse var(--diamond-pulse-duration) infinite linear;
-        appearance: none;
-        background: linear-gradient(
-          90deg,
-          var(--diamond-color-grey-100) 25%,
-          var(--diamond-color-grey-300) 50%,
-          var(--diamond-color-grey-100) 75%
-        );
-        background-size: 200% 100%;
-        color: transparent;
-        display: inline-block;
-        user-select: none;
-      }
-    `,
-    pulse,
-  ];
+  @property({ reflect: true, attribute: 'aria-hidden' }) ariaHidden:
+    | string
+    | null = 'true';
+  static readonly styles = [pulse];
 
   render() {
     return html`<slot></slot>`;

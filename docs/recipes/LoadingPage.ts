@@ -76,46 +76,72 @@ export class DocsLoadingPage extends LitElement {
   }
 
   render() {
-    // const { page, cards } = this;
-    const page = null;
-    const cards = null;
+    const { page, cards } = this;
+
     return html`
       <link rel="stylesheet" href="../dist/diamond-ui.css" />
       <style>
         .theme-light {
           --diamond-theme-background: #fff;
+          --diamond-theme-color: #333;
+          --diamond-theme-heading-color: #333;
         }
 
         .theme-medium {
           --diamond-theme-background: #f2f2f2;
+          --diamond-theme-color: #333;
+          --diamond-theme-heading-color: #333;
+        }
+
+        .theme-dark {
+          --diamond-theme-background: #333;
+          --diamond-theme-color: #fff;
+          --diamond-theme-heading-color: #fff;
         }
       </style>
-      <diamond-section padding="fluid" class="theme-medium">
+      <diamond-section padding="fluid" class="theme-dark">
         <diamond-wrap
           size="md"
           gutter="md"
           class="diamond-text-align-center diamond-spacing-bottom-fluid-sm"
         >
           ${page
-            ? html`<h1>${page?.title}</h1>
-                <p>${page?.description}</p>`
-            : html`<h1>
-                  <diamond-loading-text> Loading... </diamond-loading-text>
+            ? html`
+                <h1>${page?.title}</h1>
+                <p>${page?.description}</p>
+              `
+            : html`
+                <h1>
+                  <diamond-loading-text>
+                    Fake loading title
+                  </diamond-loading-text>
                 </h1>
                 <p>
                   <diamond-loading-text>
-                    Loren ipsum dolor consequit
+                    Lorem ipsum dolor consequit sit amet epsilon
                   </diamond-loading-text>
-                </p>`}
+                </p>
+              `}
         </diamond-wrap>
         <diamond-wrap size="xxl" gutter="md">
           <diamond-grid wrap="wrap">
             ${cards
               ? cards.map(
                   (card) => html`
-                    <diamond-grid-item small-mobile="12" tablet="6" desktop="3">
-                      <diamond-card border class="theme-light">
-                        <diamond-img full-width responsive>
+                    <diamond-grid-item
+                      small-mobile="12"
+                      tablet="6"
+                      desktop="3"
+                      fill
+                    >
+                      <diamond-card class="theme-light" radius>
+                        <diamond-img
+                          radius
+                          full-width
+                          responsive
+                          block
+                          class="diamond-spacing-bottom-md"
+                        >
                           <img
                             src="${card.image.src}"
                             alt="${card.image.alt}"
@@ -125,9 +151,11 @@ export class DocsLoadingPage extends LitElement {
                         </diamond-img>
 
                         <h2 class="diamond-text-size-h3">${card.title}</h2>
-                        <p>${card.description}</p>
+                        <p class="diamond-spacing-bottom-lg">
+                          ${card.description}
+                        </p>
 
-                        <diamond-button>
+                        <diamond-button width="full-width">
                           <button type="button">Read More</button>
                         </diamond-button>
                       </diamond-card>
@@ -136,9 +164,20 @@ export class DocsLoadingPage extends LitElement {
                 )
               : [1, 2, 3, 4].map(
                   () => html`
-                    <diamond-grid-item small-mobile="12" tablet="6" desktop="3">
-                      <diamond-card border class="theme-light">
-                        <diamond-img full-width responsive>
+                    <diamond-grid-item
+                      small-mobile="12"
+                      tablet="6"
+                      desktop="3"
+                      fill
+                    >
+                      <diamond-card radius class="theme-light">
+                        <diamond-img
+                          radius
+                          full-width
+                          responsive
+                          block
+                          class="diamond-spacing-bottom-md"
+                        >
                           <diamond-loading-img
                             width="400"
                             height="300"
@@ -146,17 +185,18 @@ export class DocsLoadingPage extends LitElement {
                         </diamond-img>
                         <h2 class="diamond-text-size-h3">
                           <diamond-loading-text>
-                            Loren ipsum dolor consequit
+                            Card title
                           </diamond-loading-text>
                         </h2>
-                        <p>
+                        <p class="diamond-spacing-bottom-lg">
                           <diamond-loading-text>
-                            Loren ipsum dolor consequit
+                            Lorem ipsum dolor consequit sit amet epsilon evitcus
+                            smartrum.
                           </diamond-loading-text>
                         </p>
-                        <diamond-button>
+                        <diamond-button width="full-width">
                           <diamond-loading-button>
-                            Loading...
+                            Button text
                           </diamond-loading-button>
                         </diamond-button>
                       </diamond-card>

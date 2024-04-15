@@ -10,7 +10,7 @@
   --diamond-transition-boing: var(--diamond-transition-duration-boing)
     var(--diamond-transition-timing-boing);
 
-  --diamond-pulse-duration: 3s;
+  --diamond-pulse-duration: 2.4s;
 
   --diamond-transition-enter-duration: 0.5s;
   --diamond-transition-enter-timing: ease-in-out;

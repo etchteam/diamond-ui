@@ -5,38 +5,27 @@ import { pulse } from '../../../lib/pulse';
 
 @customElement('diamond-loading-img')
 export class LoadingImg extends LitElement {
-  @property() width: string = '0';
-  @property() height: string = '0';
+  @property({ reflect: true }) width: string = '0';
+  @property({ reflect: true }) height: string = '0';
 
   static readonly styles = [
+    pulse,
     css`
       :host {
         aspect-ratio: var(--diamond-loading-img-width) /
           var(--diamond-loading-img-height);
-        display: inline-block;
-        animation: pulse var(--diamond-pulse-duration) infinite linear;
-        width: var(--diamond-loading-img-width, 100px);
-        height: var(--diamond-loading-img-height, 100px);
-        background: linear-gradient(
-          90deg,
-          var(--diamond-color-grey-100) 25%,
-          var(--diamond-color-grey-300) 50%,
-          var(--diamond-color-grey-100) 75%
-        );
-        background-size: 200% 100%;
-        color: transparent;
-        user-select: none;
+        height: calc(var(--diamond-loading-img-height) * 1px);
+        width: calc(var(--diamond-loading-img-width) * 1px);
       }
     `,
-    pulse,
   ];
 
   render() {
     return html`
       <style>
         :host {
-          --diamond-loading-img-width: ${this.width}px;
-          --diamond-loading-img-height: ${this.height}px;
+          --diamond-loading-img-width: ${this.width};
+          --diamond-loading-img-height: ${this.height};
         }
       </style>
     `;
