@@ -1,0 +1,22 @@
+docs-border {
+  border: var(--diamond-border-width) var(--diamond-border-style)
+    var(--diamond-theme-border-color);
+  border-bottom-width: 0;
+  border-right-width: 0;
+  border-top-left-radius: var(--diamond-radius);
+  display: block;
+  height: 4rem;
+  padding: var(--diamond-spacing);
+
+  &[size='xs'] {
+    border-top-left-radius: var(--diamond-radius-xs);
+  }
+
+  &[size='sm'] {
+    border-top-left-radius: var(--diamond-radius-sm);
+  }
+
+  &[size='lg'] {
+    border-top-left-radius: var(--diamond-radius-lg);
+  }
+}

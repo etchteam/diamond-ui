@@ -1,0 +1,31 @@
+import { Meta, Source } from '@storybook/blocks';
+import code from '../../styles/tokens/spacing.css?inline';
+
+<Meta title="Docs/Tokens/Spacing" />
+
+# Spacing
+
+Generally, md is good for padding components and horizontal spacing between elements or vertical between similar elements.
+
+Use lg for spacing between larger sections of content or for emphasis, such as before a button.
+
+xl and fluid are great for spacign around large sections of content, such as page sections.
+
+<Source code={code} language='css' />
+
+## Fixed spacing between elements
+
+{['xs', 'sm', 'md', 'lg', 'xl'].map((size) => (
+  <docs-wrap class={`diamond-spacing-bottom-${size}`}>{size}</docs-wrap>
+))}
+
+<docs-wrap class="diamond-spacing-bottom-lg">End element for demo purposes</docs-wrap>
+
+## Fluid spacing between elements
+
+{['fluid-sm', 'fluid', 'fluid-lg'].map((size) => (
+  <docs-wrap class={`diamond-spacing-bottom-${size}`}>{size}</docs-wrap>
+))}
+
+<docs-wrap class="diamond-spacing-bottom-lg">End element for demo purposes</docs-wrap>
+

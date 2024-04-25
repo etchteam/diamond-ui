@@ -1,0 +1,97 @@
+@keyframes normal-transition {
+  0%,
+  55%,
+  100% {
+    background-color: var(--diamond-color-white);
+  }
+
+  5%,
+  50% {
+    background-color: var(--diamond-color-grey-200);
+  }
+}
+
+@keyframes boing-transition {
+  0%,
+  60%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  10%,
+  50% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+@keyframes pulse-transition {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes enter-transition {
+  0%,
+  60%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  10%,
+  50% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+}
+
+docs-transition {
+  align-items: center;
+  border: var(--diamond-border);
+  display: flex;
+  height: 10rem;
+  justify-content: center;
+
+  &[type='default'] {
+    animation-duration: calc(var(--diamond-transition-duration) * 20);
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: normal-transition;
+    animation-timing-function: var(--diamond-transition-timing);
+  }
+
+  &[type='boing'] {
+    animation-duration: calc(var(--diamond-transition-duration-boing) * 10);
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: boing-transition;
+    animation-timing-function: var(--diamond-transition-timing-boing);
+  }
+
+  &[type='pulse'] {
+    animation: pulse-transition var(--diamond-transition-duration-pulse)
+      infinite var(--diamond-transition-timing-pulse);
+    background: linear-gradient(
+      to right,
+      color-mix(in srgb, var(--diamond-theme-color) 7.5%, transparent) 0%,
+      color-mix(in srgb, var(--diamond-theme-background) 50%, transparent)
+        33.33%,
+      color-mix(in srgb, var(--diamond-theme-color) 7.5%, transparent) 100%
+    );
+    background-size: 200% 100%;
+  }
+
+  &[type='enter'] {
+    animation-duration: calc(var(--diamond-transition-duration-enter) * 10);
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: enter-transition;
+    animation-timing-function: var(--diamond-transition-timing-enter);
+  }
+}

@@ -40,14 +40,15 @@ export const ComposingElements: StoryObj = {
         <diamond-grid-item>
           <svg
             viewBox="0 0 24 24"
-            stroke="currentColor"
-            fill="none"
+            stroke="none"
+            fill="currentColor"
             width="24"
             height="24"
             aria-label="A random icon for example placement"
           >
+            >
             <path
-              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
             />
           </svg>
         </diamond-grid-item>

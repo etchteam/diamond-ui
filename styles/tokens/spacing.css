@@ -8,6 +8,6 @@
   --diamond-spacing-xl: calc(var(--diamond-spacing) * 4);
 
   --diamond-spacing-fluid: clamp(1rem, 5vw, 4rem);
-  --diamond-spacing-fluid-sm: clamp(1rem, 5vw, 3rem);
-  --diamond-spacing-fluid-lg: clamp(1rem, 5vw, 5rem);
+  --diamond-spacing-fluid-sm: clamp(1rem, 2.5vw, 3rem);
+  --diamond-spacing-fluid-lg: clamp(1rem, 7.5vw, 5rem);
 }

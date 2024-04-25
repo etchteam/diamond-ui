@@ -1,7 +1,7 @@
 :root {
   --diamond-theme-background-light: var(--diamond-color-white);
   --diamond-theme-background-muted-light: var(--diamond-color-grey-100);
-  --diamond-theme-border-color-light: var(--diamond-color-grey-200);
+  --diamond-theme-border-color-light: var(--diamond-color-grey-100);
   --diamond-theme-border-color-hover-light: #1a0dab;
   --diamond-theme-color-light: var(--diamond-color-grey-900);
   --diamond-theme-color-muted-light: var(--diamond-color-grey-700);
