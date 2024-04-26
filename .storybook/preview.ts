@@ -6,6 +6,7 @@ import 'modern-normalize/modern-normalize.css';
 import '../styles/tokens.css';
 import '../styles/base.css';
 import '../styles/themes.css';
+import '../styles/docs/docs.css';
 import './styles.css'; // Storybook style overrides
 // @ts-ignore-next-line
 import.meta.glob('../components/**/*.css', { eager: true });

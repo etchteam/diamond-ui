@@ -3,7 +3,7 @@
   --diamond-input-background-focus: var(--diamond-theme-background);
   --diamond-input-background-disabled: var(--diamond-theme-background-muted);
 
-  --diamond-input-border-radius: var(--diamond-border-radius);
+  --diamond-input-border-radius: var(--diamond-radius);
   --diamond-input-border-color: var(--diamond-theme-border-color);
   --diamond-input-border-color-hover: var(--diamond-theme-border-color-hover);
   --diamond-input-border-color-valid: var(--diamond-color-green-100);
@@ -12,7 +12,7 @@
   --diamond-input-color: var(--diamond-theme-color);
 
   --diamond-input-checked: var(--diamond-color-black);
-  --diamond-input-checkbox-border-radius: var(--diamond-border-radius-sm);
+  --diamond-input-checkbox-border-radius: var(--diamond-radius-sm);
   --diamond-input-radio-checkbox-padding: 0.1875rem;
 
   --diamond-input-padding-block: var(--diamond-spacing-sm);

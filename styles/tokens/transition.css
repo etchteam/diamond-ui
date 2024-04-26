@@ -6,15 +6,7 @@
     var(--diamond-transition-timing);
 
   --diamond-transition-duration-boing: 0.3s;
-  --diamond-transition-timing-boing: cubic-bezier(0.84, 0.05, 0.46, 1.78);
-  --diamond-transition-boing: var(--diamond-transition-duration-boing)
-    var(--diamond-transition-timing-boing);
-
-  --diamond-pulse-duration: 2.4s;
-
-  --diamond-transition-enter-duration: 0.5s;
-  --diamond-transition-enter-timing: ease-in-out;
-  --diamond-transition-enter-timing-boing: linear(
+  --diamond-transition-timing-boing: linear(
     0,
     0.06,
     0.25 18%,
@@ -27,13 +19,23 @@
     1,
     1
   );
-  --diamond-transition-enter: var(--diamond-transition-enter-duration)
-    var(--diamond-transition-enter-timing);
+  --diamond-transition-boing: var(--diamond-transition-duration-boing)
+    var(--diamond-transition-timing-boing);
+
+  --diamond-transition-duration-pulse: 2.4s;
+  --diamond-transition-timing-pulse: ease-in-out;
+
+  --diamond-transition-duration-enter: 0.5s;
+  --diamond-transition-timing-enter: ease-in-out;
+  --diamond-transition-enter: var(--diamond-transition-duration-enter)
+    var(--diamond-transition-timing-enter);
 }
 
 @media (prefers-reduced-motion) {
   :root {
     --diamond-transition-duration: 0s;
-    --diamond-transition-enter-duration: 0s;
+    --diamond-transition-duration-enter: 0s;
+    --diamond-transition-duration-boing: 0s;
+    --diamond-transition-duration-pulse: 0s;
   }
 }

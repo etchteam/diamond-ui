@@ -12,7 +12,8 @@ export const pulse = css`
   }
 
   :host {
-    animation: pulse var(--diamond-pulse-duration) infinite linear;
+    animation: pulse var(--diamond-transition-duration-pulse) infinite
+      var(--diamond-transition-timing-pulse);
     appearance: none;
     background: linear-gradient(
       to right,

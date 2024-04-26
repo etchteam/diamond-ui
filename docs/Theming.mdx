@@ -1,9 +1,7 @@
-import { Meta, Source, Canvas } from '@storybook/addon-docs';
+import { Meta, Source, Canvas } from '@storybook/blocks';
 import theme from '../styles/tokens/theme.css?inline';
 import themes from '../styles/themes.css?inline';
-import '../components/composition/Grid/Grid'
-import '../components/composition/Grid/GridItem'
-import '../components/canvas/Card/Card'
+import * as ThemingStories from './recipes/Theming.stories.ts'
 
 <Meta title="Docs/Theming" />
 
@@ -31,37 +29,7 @@ Components that support theming will apply the base theme tokens, such as settin
 
 Here is an example of 3 cards wrapped in the demo theme classes, which then apply the theme tokens.
 
-<Canvas>
-  <diamond-grid wrap="wrap">
-    <diamond-grid-item small-mobile="12" tablet="4">
-      <diamond-card class="diamond-theme-light">
-        <h3>Card title</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </diamond-card>
-    </diamond-grid-item>
-    <diamond-grid-item small-mobile="12" tablet="4">
-      <diamond-card class="diamond-theme-medium">
-        <h3>Card title</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </diamond-card>
-    </diamond-grid-item>
-    <diamond-grid-item small-mobile="12" tablet="4">
-      <diamond-card class="diamond-theme-dark">
-        <h3>Card title</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </diamond-card>
-    </diamond-grid-item>
-  </diamond-grid>
-</Canvas>
+<Canvas of={ThemingStories.Theming} />
 
 ## Recommended themes
 

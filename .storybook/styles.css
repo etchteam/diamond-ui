@@ -1,3 +1,7 @@
 .docblock-argstable-body label {
   min-height: auto;
 }
+
+.sbdocs p {
+  max-width: 30rem;
+}

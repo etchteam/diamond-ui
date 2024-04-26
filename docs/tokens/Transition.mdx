@@ -1,0 +1,31 @@
+import { Meta, Source } from '@storybook/blocks';
+import code from '../../styles/tokens/transition.css?inline';
+
+<Meta title="Docs/Tokens/Transition" />
+
+# Transition
+
+<Source code={code} language='css' />
+
+<diamond-grid wrap="wrap">
+  <diamond-grid-item small-mobile="12" tablet="6" small-desktop="3">
+    <docs-transition type="default">
+      Default/Hover
+    </docs-transition>
+  </diamond-grid-item>
+  <diamond-grid-item small-mobile="12" tablet="6" small-desktop="3">
+    <docs-transition type="boing">
+      Boing
+    </docs-transition>
+  </diamond-grid-item>
+  <diamond-grid-item small-mobile="12" tablet="6" small-desktop="3">
+    <docs-transition type="pulse">
+      Pulse
+    </docs-transition>
+  </diamond-grid-item>
+  <diamond-grid-item small-mobile="12" tablet="6" small-desktop="3">
+    <docs-transition type="enter">
+      Enter
+    </docs-transition>
+  </diamond-grid-item>
+</diamond-grid>
