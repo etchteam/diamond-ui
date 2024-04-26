@@ -1,3 +1,10 @@
+## [1.31.0](https://github.com/etchteam/diamond-ui/compare/v1.30.0...v1.31.0) (2024-04-26)
+
+
+### Features
+
+* consistent transition variables, one radius vriable and token docs ([646b0b4](https://github.com/etchteam/diamond-ui/commit/646b0b4df7f6b49b4d2b1d3f4644efd0adcd0e43))
+
 ## [1.30.0](https://github.com/etchteam/diamond-ui/compare/v1.29.1...v1.30.0) (2024-04-16)
 
 
