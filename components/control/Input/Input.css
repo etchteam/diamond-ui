@@ -7,6 +7,7 @@ diamond-input {
   border-radius: var(--diamond-input-border-radius);
   color: var(--diamond-input-color);
   display: flex;
+  min-width: 0;
   position: relative;
   transition:
     border-color var(--diamond-transition),
@@ -53,6 +54,7 @@ diamond-input {
     font-size: var(--diamond-input-font-size);
     line-height: var(--diamond-input-line-height);
     padding: var(--diamond-input-padding);
+    width: 100%;
 
     &:focus {
       outline: none;
