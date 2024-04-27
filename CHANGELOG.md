@@ -1,3 +1,10 @@
+## [1.31.1](https://github.com/etchteam/diamond-ui/compare/v1.31.0...v1.31.1) (2024-04-27)
+
+
+### Bug Fixes
+
+* input width overflow ([698aaf4](https://github.com/etchteam/diamond-ui/commit/698aaf468de59a6935a9bd8b68d3aa4b15591857))
+
 ## [1.31.0](https://github.com/etchteam/diamond-ui/compare/v1.30.0...v1.31.0) (2024-04-26)
 
 
