@@ -1,3 +1,10 @@
+## [1.32.0](https://github.com/etchteam/diamond-ui/compare/v1.31.1...v1.32.0) (2024-04-30)
+
+
+### Features
+
+* input button group ([b06744f](https://github.com/etchteam/diamond-ui/commit/b06744f43dace3e92fb271c3ae8c84474ba7df91))
+
 ## [1.31.1](https://github.com/etchteam/diamond-ui/compare/v1.31.0...v1.31.1) (2024-04-27)
 
 
