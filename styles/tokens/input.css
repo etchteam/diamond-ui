@@ -3,6 +3,7 @@
   --diamond-input-background-focus: var(--diamond-theme-background);
   --diamond-input-background-disabled: var(--diamond-theme-background-muted);
 
+  --diamond-input-border-width: 1px;
   --diamond-input-border-radius: var(--diamond-radius);
   --diamond-input-border-color: var(--diamond-theme-border-color);
   --diamond-input-border-color-hover: var(--diamond-theme-border-color-hover);
