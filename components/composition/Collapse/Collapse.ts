@@ -8,7 +8,7 @@ export interface CollapseAttributes {
 }
 
 @customElement('diamond-collapse')
-export class App extends LitElement {
+export class Collapse extends LitElement {
   @property({ reflect: true, type: Boolean }) open?: boolean;
 
   static readonly styles = [
