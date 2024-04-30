@@ -3,11 +3,14 @@
   --diamond-input-background-focus: var(--diamond-theme-background);
   --diamond-input-background-disabled: var(--diamond-theme-background-muted);
 
+  --diamond-input-border-width: 1px;
   --diamond-input-border-radius: var(--diamond-radius);
   --diamond-input-border-color: var(--diamond-theme-border-color);
   --diamond-input-border-color-hover: var(--diamond-theme-border-color-hover);
   --diamond-input-border-color-valid: var(--diamond-color-green-100);
   --diamond-input-border-color-invalid: var(--diamond-color-red-100);
+
+  --diamond-input-outline-offset: 4px;
 
   --diamond-input-color: var(--diamond-theme-color);
 

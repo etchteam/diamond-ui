@@ -3,7 +3,7 @@ diamond-input {
   --_border-color: var(--diamond-input-border-color);
 
   background: var(--_background);
-  border: 1px solid var(--_border-color);
+  border: var(--diamond-input-border-width) solid var(--_border-color);
   border-radius: var(--diamond-input-border-radius);
   color: var(--diamond-input-color);
   display: flex;
@@ -25,6 +25,7 @@ diamond-input {
     /* https://css-tricks.com/copy-the-browsers-native-focus-styles/ */
     outline: 5px auto Highlight;
     outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: var(--diamond-input-outline-offset);
   }
 
   &[state='valid'] {
