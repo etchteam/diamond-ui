@@ -42,8 +42,7 @@ diamond-button {
     transition:
       background var(--diamond-transition),
       color var(--diamond-transition),
-      border-color var(--diamond-transition),
-      outline-offset var(--diamond-transition);
+      border-color var(--diamond-transition);
     user-select: none;
 
     @media (hover: hover) {

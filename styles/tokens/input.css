@@ -10,6 +10,8 @@
   --diamond-input-border-color-valid: var(--diamond-color-green-100);
   --diamond-input-border-color-invalid: var(--diamond-color-red-100);
 
+  --diamond-input-outline-offset: 4px;
+
   --diamond-input-color: var(--diamond-theme-color);
 
   --diamond-input-checked: var(--diamond-color-black);
