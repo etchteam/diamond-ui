@@ -29,7 +29,9 @@ export default {
 
 export const Dialog: StoryObj = {
   render: () => html`
-    <button id="toggle">Open dialog</button>
+    <diamond-button>
+      <button type="button" id="toggle">Open dialog</button>
+    </diamond-button>
     <dialog>
       <diamond-wrap size="xs" gutter="none">
         <diamond-card border radius>
