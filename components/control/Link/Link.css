@@ -1,0 +1,25 @@
+diamond-link {
+  --diamond-link-text-decoration: var(--diamond-theme-link-text-decoration);
+
+  a,
+  button {
+    appearance: none;
+    background: none;
+    border: 0 none;
+    color: var(--diamond-theme-link-color);
+    cursor: pointer;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    text-decoration: var(--diamond-link-text-decoration);
+  }
+
+  &[variant='underline'] {
+    --diamond-link-text-decoration: underline;
+  }
+
+  &[variant='no-underline'] {
+    --diamond-link-text-decoration: none;
+  }
+}
