@@ -47,6 +47,7 @@ export class Enter extends LitElement {
   }
 
   render() {
+    console.log(this.inView, this.enterOnScroll, this.type);
     const type = this.inView || !this.enterOnScroll ? this.type : '';
 
     return html`
