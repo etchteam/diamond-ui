@@ -1,3 +1,10 @@
+## [1.34.0](https://github.com/etchteam/diamond-ui/compare/v1.33.0...v1.34.0) (2024-05-01)
+
+
+### Features
+
+* link component ([df62dab](https://github.com/etchteam/diamond-ui/commit/df62dab7c3cae49c92ca5b8b2ad65bfc1b4260ea))
+
 ## [1.33.0](https://github.com/etchteam/diamond-ui/compare/v1.32.0...v1.33.0) (2024-05-01)
 
 
