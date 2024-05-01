@@ -19,7 +19,7 @@ export const Enter: StoryObj = {
   render: (args) => html`
     <diamond-enter
       type="${args.type}"
-      ?enter-on-scroll="${args.enterOnScroll}"
+      enter-on-scroll="${args.enterOnScroll}"
       delay="${args.delay}"
     >
       <div style="background-color: #eee; height: 400px;"></div>
@@ -38,7 +38,7 @@ export const OnScroll: StoryObj = {
     <div style="height: 120vh;">Scroll down</div>
     <diamond-enter
       type="${args.type}"
-      ?enter-on-scroll="${args.enterOnScroll}"
+      enter-on-scroll="${args.enterOnScroll}"
       delay="${args.delay}"
     >
       <div style="background-color: #eee; height: 400px;"></div>
