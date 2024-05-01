@@ -1,3 +1,15 @@
+## [1.33.0](https://github.com/etchteam/diamond-ui/compare/v1.32.0...v1.33.0) (2024-05-01)
+
+
+### Features
+
+* collapse ([75ab399](https://github.com/etchteam/diamond-ui/commit/75ab3999b4efeecc880d64700f5bbe809120965d))
+
+
+### Reverts
+
+* debug ([373a3b9](https://github.com/etchteam/diamond-ui/commit/373a3b9f5a8c734c24863f64b99c2bfc4edf8826))
+
 ## [1.32.0](https://github.com/etchteam/diamond-ui/compare/v1.31.1...v1.32.0) (2024-04-30)
 
 
