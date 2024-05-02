@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="src/images/logo.svg" />
   <h1>Diamond UI</h1>
   <p>
     Bring clarity to your components.
@@ -24,16 +25,17 @@
 
 # Table of Contents
 
-- [Project Background](#about-the-project)
-  * [What is Diamond?](#what-is-diamond)
-  * [What can Diamond do for me?](#why-diamond)
-- [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Basic Installation](#basic-installation)
-  * [Advanced Installation](#advanced-installation)
-- [Usage](#usage)
-  * [Brand Support & Skins](#brand-support-and-skins)
-- [Contributing](#wave-contributing)
+- [Table of Contents](#table-of-contents)
+  - [Project Background](#project-background)
+    - [What is Diamond?](#what-is-diamond)
+    - [What can Diamond do for me?](#what-can-diamond-do-for-me)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Basic Installation](#basic-installation)
+    - [Advanced Installation](#advanced-installation)
+  - [Usage](#usage)
+    - [Tokens \& Themes](#tokens--themes)
+  - [Contributing](#contributing)
 
 
 ## Project Background
@@ -69,11 +71,31 @@ Diamond UI components are based around the 4 Cs of UI:
 
 ## Getting Started
 ### Prerequisites
+None, Diamond UI uses web components or CSS classes.
+
 ### Basic Installation
+Getting Diamond up and running in a new or existing project can be as simple as including the import for components that don't have any internal javascript.
+
+**styles.css**
+
+``` @import 'npm:@etchteam/diamond-ui/diamond-ui.css'; ```
+
+Depending on your specific project setup and strucutre. Then you're ready to use Diamond components.
+
+```
+    <p class="diamond-text-font-heading diamond-text-size-h1 diamond-text-align-left diamond-text-wrap-pretty">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua.
+    </p>
+```
+[Codepen example](https://codepen.io/carls-playground/pen/MWRMYyj)
 ### Advanced Installation
+Different frameworks may have different expected directory and folder structures for importing stylesheets, please refer to your specific frameworks documentation.
 
 ## Usage
-### Brand Support & Skins
+### Tokens & Themes
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
@@ -83,6 +105,8 @@ Diamond UI components are based around the 4 Cs of UI:
 | Text Color | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
 
 ## Contributing
+
+<a href="https://github.com/etchteam/diamond-ui/blob/main/CONTRIBUTING.md">Contributing</a>
 
 
 
