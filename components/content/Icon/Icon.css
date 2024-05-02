@@ -1,0 +1,42 @@
+diamond-icon {
+  --diamond-icon-size: 1.25em;
+  align-items: baseline;
+  display: inline-flex;
+
+  &::part(icon) {
+    align-items: center;
+    display: flex;
+    height: 1em;
+    justify-content: center;
+    position: relative;
+    top: var(--diamond-icon-baseline-adjust);
+    width: var(--diamond-icon-size);
+  }
+
+  svg {
+    aspect-ratio: 1 / 1;
+    display: block;
+    flex: 0 0 var(--diamond-icon-size);
+    height: var(--diamond-icon-size);
+    min-width: var(--diamond-icon-size);
+    width: var(--diamond-icon-size);
+  }
+
+  &[shape='circle'] {
+    &::part(icon)::before {
+      background-color: var(--diamond-theme-icon-color);
+      border-radius: 100%;
+      content: '';
+      display: block;
+      height: var(--diamond-icon-size);
+      position: absolute;
+      width: var(--diamond-icon-size);
+    }
+
+    svg {
+      color: var(--diamond-theme-background);
+      transform: scale(0.75);
+      z-index: 1;
+    }
+  }
+}

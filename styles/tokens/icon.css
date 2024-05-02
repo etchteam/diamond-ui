@@ -1,0 +1,7 @@
+:root {
+  /*
+    Adjust the icon to sit nicely next to text,
+    probably needs changing per font
+  */
+  --diamond-icon-baseline-adjust: 0.25em;
+}
