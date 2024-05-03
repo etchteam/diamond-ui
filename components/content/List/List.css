@@ -1,7 +1,8 @@
 diamond-list {
   --diamond-list-spacing: 0;
 
-  li {
+  li,
+  dl > div {
     margin-bottom: var(--diamond-list-spacing);
 
     &:last-child {
@@ -11,7 +12,8 @@ diamond-list {
 
   &[variant='unstyled'] {
     ul,
-    ol {
+    ol,
+    dl {
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -22,11 +24,12 @@ diamond-list {
     ul,
     ol {
       list-style-type: none;
-      margin: 0;
-      padding: 0;
+      margin-left: 0;
+      padding-left: 0;
     }
 
-    li {
+    li,
+    dl > div {
       padding-left: var(--diamond-icon-size);
     }
 

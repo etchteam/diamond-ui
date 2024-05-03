@@ -152,3 +152,28 @@ export const Icon: StoryObj = {
 Icon.args = {
   variant: 'icon',
 };
+
+export const DefinitionList: StoryObj = {
+  render: (args) => html`
+    <diamond-list variant="${args.variant}" spacing="${args.spacing}">
+      <dl>
+        <div>
+          <dt>Term</dt>
+          <dd>Definition</dd>
+        </div>
+        <div>
+          <dt>Term</dt>
+          <dd>Item 3</dd>
+        </div>
+        <div>
+          <dt>Term</dt>
+          <dd>Item 3</dd>
+        </div>
+      </dl>
+    </diamond-list>
+  `,
+};
+
+DefinitionList.args = {
+  spacing: 'none',
+};
