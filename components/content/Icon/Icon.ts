@@ -4,12 +4,12 @@ import { customElement, property } from 'lit/decorators.js';
 import { JSXCustomElement } from '../../../types/jsx-custom-element';
 
 export interface IconAttributes {
-  shape: 'default' | 'circle';
+  variant: 'default' | 'circle';
 }
 
 @customElement('diamond-icon')
 export class Icon extends LitElement {
-  @property({ reflect: true }) shape?: IconAttributes['shape'];
+  @property({ reflect: true }) variant?: IconAttributes['variant'];
 
   render() {
     return html`

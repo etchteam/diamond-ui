@@ -8,7 +8,7 @@ Wraps an svg icon to provide alignment and sizing.
 
 Icons must have the appropriate fill or stroke set to currentColor.
 
-Icons are hidden from screen readers by default and should be accompanied by text. If an icon must be used on its own, add an aria-label to the icon element.
+Icons are hidden from screen readers by default and should be accompanied by text. If an icon is used on its own in a button or link, add an aria-label to the interactive element.
 `;
 
 export default {
@@ -21,7 +21,7 @@ export default {
     },
   },
   argTypes: {
-    shape: {
+    variant: {
       control: {
         type: 'radio',
       },
@@ -32,7 +32,7 @@ export default {
 
 export const Icon: StoryObj = {
   render: (args) => html`
-    <diamond-icon shape="${args.shape}">
+    <diamond-icon variant="${args.variant}">
       <svg fill="none" viewBox="0 0 24 24" height="24" width="24">
         <path
           d="M2 6C2 4.89543 2.89543 4 4 4H20C21.1046 4 22 4.89543 22 6V18C22 19.1046 21.1046 20 20 20H4C2.89543 20 2 19.1046 2 18V6ZM5.51859 6L12 11.6712L18.4814 6H5.51859ZM20 7.32877L12.6585 13.7526C12.2815 14.0825 11.7185 14.0825 11.3415 13.7526L4 7.32877V18H20V7.32877Z"
@@ -45,7 +45,7 @@ export const Icon: StoryObj = {
 };
 
 Icon.args = {
-  shape: 'default',
+  variant: 'default',
 };
 
 const sizes = ['h1', 'h2', 'h3', 'h4', 'md', 'default', 'sm', 'xs'];
@@ -81,7 +81,11 @@ Sizes.parameters = {
 
 export const IconInAGrid: StoryObj = {
   render: () => html`
-    <diamond-grid align-items="baseline" gap="xs">
+    <diamond-grid
+      align-items="baseline"
+      gap="xs"
+      class="diamond-spacing-bottom-md"
+    >
       <diamond-grid-item>
         <diamond-icon class="diamond-text-size-h3">
           <svg fill="none" viewBox="0 0 24 24" height="24" width="24">
@@ -94,6 +98,28 @@ export const IconInAGrid: StoryObj = {
       </diamond-grid-item>
       <diamond-grid-item grow shrink>
         <h3 class="diamond-spacing-bottom-none">Title text</h3>
+      </diamond-grid-item>
+    </diamond-grid>
+    <diamond-grid align-items="baseline" gap="xs">
+      <diamond-grid-item>
+        <diamond-icon>
+          <svg fill="none" viewBox="0 0 24 24" height="24" width="24">
+            <path
+              d="M2 6C2 4.89543 2.89543 4 4 4H20C21.1046 4 22 4.89543 22 6V18C22 19.1046 21.1046 20 20 20H4C2.89543 20 2 19.1046 2 18V6ZM5.51859 6L12 11.6712L18.4814 6H5.51859ZM20 7.32877L12.6585 13.7526C12.2815 14.0825 11.7185 14.0825 11.3415 13.7526L4 7.32877V18H20V7.32877Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </diamond-icon>
+      </diamond-grid-item>
+      <diamond-grid-item grow shrink>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+          vulputate vel magna id varius. Donec non auctor magna, id auctor
+          lacus. Vestibulum vitae ex id tortor varius fringilla. Cras in ligula
+          vulputate, lacinia metus vitae, suscipit purus. Nunc lacinia porta
+          urna eget accumsan. Pellentesque quis condimentum est. Aliquam leo
+          risus, blandit vel volutpat et, accumsan eget purus.
+        </p>
       </diamond-grid-item>
     </diamond-grid>
   `,

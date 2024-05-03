@@ -1,5 +1,6 @@
 diamond-icon {
   align-items: baseline;
+  color: var(--diamond-theme-icon-color);
   display: inline-flex;
 
   &::part(icon) {
@@ -21,7 +22,7 @@ diamond-icon {
     width: var(--diamond-icon-size);
   }
 
-  &[shape='circle'] {
+  &[variant='circle'] {
     &::part(icon)::before {
       background-color: var(--diamond-theme-icon-color);
       border-radius: 100%;
