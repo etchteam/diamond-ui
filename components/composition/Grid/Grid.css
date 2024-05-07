@@ -85,6 +85,10 @@ diamond-grid {
     --diamond-grid-gap: 0;
   }
 
+  &[gap='xs'] {
+    --diamond-grid-gap: var(--diamond-spacing-xs);
+  }
+
   &[gap='sm'] {
     --diamond-grid-gap: var(--diamond-spacing-sm);
   }

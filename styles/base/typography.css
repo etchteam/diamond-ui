@@ -54,6 +54,16 @@ ol:last-child {
   margin-bottom: 0;
 }
 
+dl {
+  margin: 0 0 var(--diamond-spacing-sm);
+}
+
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   color: var(--diamond-theme-link-color);
   text-decoration: var(--diamond-theme-link-text-decoration);
