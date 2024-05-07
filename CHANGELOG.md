@@ -1,3 +1,11 @@
+## [1.35.0](https://github.com/etchteam/diamond-ui/compare/v1.34.0...v1.35.0) (2024-05-07)
+
+
+### Features
+
+* icon component ([25e0c90](https://github.com/etchteam/diamond-ui/commit/25e0c90dc6e9af45661d358b0710900701ca936a))
+* list component ([1c2e6e0](https://github.com/etchteam/diamond-ui/commit/1c2e6e0b3de704ded35adb7ec7b5ad6996c3de2d))
+
 ## [1.34.0](https://github.com/etchteam/diamond-ui/compare/v1.33.0...v1.34.0) (2024-05-01)
 
 
