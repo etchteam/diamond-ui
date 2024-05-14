@@ -1,3 +1,11 @@
+## [1.35.1](https://github.com/etchteam/diamond-ui/compare/v1.35.0...v1.35.1) (2024-05-14)
+
+
+### Bug Fixes
+
+* disabled button hover ([11ca856](https://github.com/etchteam/diamond-ui/commit/11ca856329c5e480f43d35c32dc7e0b2377ce1d1))
+* sub-pixel radio and checkbox rendering issues ([93b675f](https://github.com/etchteam/diamond-ui/commit/93b675f85d9320944f64288a582d0890df48e6b9))
+
 ## [1.35.0](https://github.com/etchteam/diamond-ui/compare/v1.34.0...v1.35.0) (2024-05-07)
 
 
