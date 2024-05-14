@@ -46,7 +46,7 @@ diamond-button {
     user-select: none;
 
     @media (hover: hover) {
-      &:hover {
+      &:not([disabled]):hover {
         --_background: var(--_background-hover);
         --_border-color: var(--_border-color-hover);
         --_color: var(--_color-hover);
@@ -77,18 +77,11 @@ diamond-button {
   }
 
   [disabled],
-  [disabled],
   [type='file'][disabled]::file-selector-button {
     --_background: var(--_background-disabled);
     --_color: var(--_color-disabled);
     --_border-color: var(--_border-color-disabled);
     cursor: not-allowed;
-
-    &:hover {
-      --_background: var(--_background-disabled);
-      --_color: var(--_color-disabled);
-      --_border-color: var(--_border-color-disabled);
-    }
   }
 
   &[size='sm'] {
