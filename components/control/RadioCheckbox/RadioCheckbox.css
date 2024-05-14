@@ -72,7 +72,7 @@ diamond-radio-checkbox {
 
   &::part(indicator) {
     align-items: center;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1;
     background: var(--_background);
     border: 1px solid var(--_border-color);
     border-radius: var(--_border-radius);
@@ -91,15 +91,13 @@ diamond-radio-checkbox {
   }
 
   &::part(indicator)::before {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1;
     background-color: var(--_border-color);
     border-radius: var(--_inner-border-radius);
     content: '';
-    left: 50%;
     opacity: 0;
     position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0.5);
+    transform: scale(0.5);
     transition:
       background-color var(--diamond-transition),
       opacity var(--diamond-transition),
@@ -123,7 +121,7 @@ diamond-radio-checkbox {
 
     &::part(indicator)::before {
       opacity: 1;
-      transform: translate(-50%, -50%) scale(1);
+      transform: scale(1);
     }
 
     svg,
