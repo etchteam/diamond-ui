@@ -3,4 +3,9 @@
   --diamond-label-font-weight: var(--diamond-font-weight-base);
   --diamond-label-font-size: var(--diamond-font-size-base);
   --diamond-label-height: var(--diamond-spacing-thumb);
+
+  --diamond-help-text-color: var(--diamond-theme-color);
+  --diamond-help-text-color-success: var(--diamond-input-border-color-valid);
+  --diamond-help-text-color-error: var(--diamond-input-border-color-invalid);
+  --diamond-help-text-font-size: var(--diamond-font-size-sm);
 }

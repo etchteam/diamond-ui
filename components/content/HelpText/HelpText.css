@@ -1,0 +1,12 @@
+diamond-help-text {
+  color: var(--diamond-help-text-color);
+  font-size: var(--diamond-help-text-font-size);
+
+  &[state='success'] {
+    color: var(--diamond-help-text-color-success);
+  }
+
+  &[state='error'] {
+    color: var(--diamond-help-text-color-error);
+  }
+}
