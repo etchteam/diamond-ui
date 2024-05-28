@@ -19,7 +19,7 @@ export default {
       control: {
         type: 'select',
       },
-      options: ['error', 'success'],
+      options: ['valid', 'invalid'],
     },
   },
 };

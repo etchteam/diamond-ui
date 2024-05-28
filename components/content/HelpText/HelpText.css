@@ -2,11 +2,11 @@ diamond-help-text {
   color: var(--diamond-help-text-color);
   font-size: var(--diamond-help-text-font-size);
 
-  &[state='success'] {
+  &[state='valid'] {
     color: var(--diamond-help-text-color-success);
   }
 
-  &[state='error'] {
+  &[state='invalid'] {
     color: var(--diamond-help-text-color-error);
   }
 }

@@ -1,7 +1,7 @@
 import { JSXCustomElement } from '../../../types/jsx-custom-element';
 
 export interface HelpTextAttributes {
-  state?: 'error' | 'success';
+  state?: 'valid' | 'invalid';
 }
 
 declare global {
