@@ -7,8 +7,8 @@
   --diamond-input-border-radius: var(--diamond-radius);
   --diamond-input-border-color: var(--diamond-theme-border-color);
   --diamond-input-border-color-hover: var(--diamond-theme-border-color-hover);
-  --diamond-input-border-color-valid: var(--diamond-color-green-100);
-  --diamond-input-border-color-invalid: var(--diamond-color-red-100);
+  --diamond-input-border-color-valid: var(--diamond-color-valid);
+  --diamond-input-border-color-invalid: var(--diamond-color-invalid);
 
   --diamond-input-outline-offset: 4px;
 

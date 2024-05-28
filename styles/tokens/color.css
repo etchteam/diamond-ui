@@ -17,4 +17,7 @@
   --diamond-color-green-100: #219653;
 
   --diamond-color-red-100: #eb5757;
+
+  --diamond-color-valid: var(--diamond-color-green-100);
+  --diamond-color-invalid: var(--diamond-color-red-100);
 }

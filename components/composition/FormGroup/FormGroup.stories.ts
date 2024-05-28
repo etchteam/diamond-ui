@@ -25,7 +25,7 @@ export const FormGroup: StoryObj = {
       <diamond-input>
         <input id="name" type="text" />
       </diamond-input>
-      <p>Help text</p>
+      <diamond-help-text>Help text</diamond-help-text>
     </diamond-form-group>
   `,
 };
@@ -56,7 +56,7 @@ export const ComposingElements: StoryObj = {
       <diamond-input>
         <input id="composing-elements" type="text" />
       </diamond-input>
-      <p>Help text</p>
+      <diamond-help-text>Help text</diamond-help-text>
     </diamond-form-group>
   `,
 };
@@ -68,4 +68,17 @@ ComposingElements.parameters = {
         'The form group expects the first child element to be label-like, but its not opinionated about what elements are used.',
     },
   },
+};
+
+export const FormGroupValidationError: StoryObj = {
+  render: (args) => html`
+    <diamond-form-group orientation="${args.orientation}">
+      <label for="name">Form group label</label>
+      <diamond-help-text state="error">Error message</diamond-help-text>
+      <diamond-input state="invalid">
+        <input id="name" type="text" />
+      </diamond-input>
+      <diamond-help-text>Help text</diamond-help-text>
+    </diamond-form-group>
+  `,
 };
