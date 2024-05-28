@@ -1,3 +1,16 @@
+## [1.36.0](https://github.com/etchteam/diamond-ui/compare/v1.35.1...v1.36.0) (2024-05-28)
+
+
+### Features
+
+* help text component ([a11ab1c](https://github.com/etchteam/diamond-ui/commit/a11ab1cc130ae47de020e7e0e24d92f801ddab5a))
+
+
+### Bug Fixes
+
+* diamond-color-valid and diamond-color-invalid ([720b703](https://github.com/etchteam/diamond-ui/commit/720b7037c57daf59914696b4af365238d48cb5e6))
+* match state names to input ([ce4cbc0](https://github.com/etchteam/diamond-ui/commit/ce4cbc077bbcf94dd746d6ca8a9b885d87b0137b))
+
 ## [1.35.1](https://github.com/etchteam/diamond-ui/compare/v1.35.0...v1.35.1) (2024-05-14)
 
 
