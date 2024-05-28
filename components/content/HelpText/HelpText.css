@@ -3,10 +3,10 @@ diamond-help-text {
   font-size: var(--diamond-help-text-font-size);
 
   &[state='valid'] {
-    color: var(--diamond-help-text-color-success);
+    color: var(--diamond-help-text-color-valid);
   }
 
   &[state='invalid'] {
-    color: var(--diamond-help-text-color-error);
+    color: var(--diamond-help-text-color-invalid);
   }
 }
