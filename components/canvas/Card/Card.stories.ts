@@ -89,11 +89,3 @@ export const Interactive: StoryObj = {
     </diamond-grid>
   `,
 };
-
-Interactive.parameters = {
-  docs: {
-    description: {
-      story: 'The is attribute requires a polyfill in Safari',
-    },
-  },
-};
