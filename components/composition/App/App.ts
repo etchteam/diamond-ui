@@ -4,12 +4,12 @@ import { customElement, property } from 'lit/decorators.js';
 import { JSXCustomElement } from '../../../types/jsx-custom-element';
 
 export interface AppAttributes {
-  header?: 'sticky' | 'static';
+  header?: 'sticky';
 }
 
 @customElement('diamond-app')
 export class App extends LitElement {
-  @property({ reflect: true }) header?: 'sticky' | 'static' = 'static';
+  @property({ reflect: true }) header?: 'sticky';
 
   render() {
     return html`
