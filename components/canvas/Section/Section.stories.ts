@@ -10,11 +10,11 @@ import '../../composition/Wrap/Wrap';
 const description = `
 A section component represents a horizontal slice of a page.
 
-Sections support theming, applying a background colour and default
-text colour based on the current theme as well as vertical spacing.
-
 Multiple sections and themes can be used to create visibly grouped parts
 of the page with different backgrounds.
+
+Sections support theming, applying a background colour and default
+text colour based on the current theme as well as vertical spacing.
 `;
 
 export default {
