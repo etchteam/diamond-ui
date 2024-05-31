@@ -26,7 +26,7 @@ export const Img: StoryObj = {
       object-position="${args.objectPosition}"
     >
       <img
-        src="https://placehold.it/300x300"
+        src="https://placehold.co/300x300"
         alt="Placeholder"
         width="300"
         height="300"

@@ -5,6 +5,7 @@ import './LoadingPage';
 import '../../components/content/LoadingImg/LoadingImg';
 import '../../components/content/LoadingText/LoadingText';
 import '../../components/content/LoadingButton/LoadingButton';
+import '../../components/composition/Enter/Enter';
 
 export default {
   title: 'Recipes/Loading Skeleton',
