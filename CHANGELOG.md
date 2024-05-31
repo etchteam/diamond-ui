@@ -1,3 +1,10 @@
+## [1.36.1](https://github.com/etchteam/diamond-ui/compare/v1.36.0...v1.36.1) (2024-05-31)
+
+
+### Bug Fixes
+
+* static header is the default ([fdec446](https://github.com/etchteam/diamond-ui/commit/fdec4464f417fad5da262465fbf8d62017b42677))
+
 ## [1.36.0](https://github.com/etchteam/diamond-ui/compare/v1.35.1...v1.36.0) (2024-05-28)
 
 
