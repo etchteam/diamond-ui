@@ -17,9 +17,9 @@ export default {
   argTypes: {
     header: {
       control: {
-        type: 'select',
+        type: 'radio',
       },
-      options: ['sticky', 'static'],
+      options: ['', 'sticky'],
     },
   },
 };
@@ -44,8 +44,4 @@ export const App: StoryObj = {
       </diamond-section>
     </diamond-app>
   `,
-};
-
-App.args = {
-  header: 'static',
 };
