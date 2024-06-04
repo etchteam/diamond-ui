@@ -6,31 +6,31 @@ import { Meta } from '@storybook/blocks';
 
 Diamond UI doesn't use Sass. It's written in pure CSS (with a tiny sprinkle of PostCSS to clean up the imports) and outputs pure CSS.
 
-Sass has been the default CSS preprocessor for a long time and it felt like the leap to not using it is worth acknowledging and explaining why.
+Sass has been the default CSS preprocessor for a long time and the leap to not using it is worth acknowledging and explaining why.
 
 ## What do we get from Sass?
 
 Our favourite parts of Sass are variables, imports, mixins, functions (especially colour manipulation), loops and variable maps. With the recent improvements in modern CSS techniques and browser support coming to fruition, we can replicate most of these in pure CSS.
 
 ### Variables
-CSS variables (custom properties) are _awesome_. Whilst Sass variables are pre-compiled into hardcoded static values, CSS variables are evaluated at runtime, opening up a wide range of new and interesting techniques for application.
+CSS variables (custom properties) are awesome. Whilst Sass variables are pre-compiled into hardcoded static values, CSS variables are evaluated at runtime, opening up a wide range of new and interesting techniques for application.
 
 ### Imports
 We've used standard `@import` syntax from CSS and, during the production build, used PostCSS import and importGlob to inline all the base CSS. This method gives the same effect as using Sass imports.
 
 ### Functions
-CSS now has a wide array of functions that can be used to achieve what we would previously have used Sass functions for. `color-mix` and `calc` seem to cover the majority of simple UI manipulations we need in Diamond.
+CSS now has a wide array of functions that can be used to achieve what we would have used Sass functions for. `color-mix` and `calc` seems to cover most of the simple UI manipulations we need in Diamond.
 
 ### Loops
-We use loops in Sass primarily to generate swathes of grid column CSS or lots of modifiers on a component around a single prop, like alignment. The upcoming ability to use `attr` as a value, or within a `calc` will likely bypass the need for these loops so we have decided to temporarily write them out manually until they can be upgraded.
+We use loops in Sass primarily to generate swathes of grid column CSS or many modifiers on a component around a single prop, like alignment. The upcoming ability to use `attr` as a value, or within a `calc` will likely bypass the need for these loops so we have decided to temporarily write them out manually until they can be upgraded.
 
 ### CSS modules
-The nessessity for CSS module scoping has been bypassed with the use of Shadow DOM. We have also used BEM for a number of years, which negates the need to involve Javascript in CSS scope.
+The necessity for CSS module scoping has been bypassed with Shadow DOM. We have also used BEM for several years, which negates the need to involve JavaScript in CSS scope.
 
 ### Mixins and variable maps
-These last two do not currently have an equivalent in native CSS, but it feels like, with the new techniques available using CSS variables and the soon to be available `attr` values and container style queries, they are not as nessessary in modern CSS development. We almost had native CSS misings with the `@apply` functionality, but this has been abandoned. In rare cases, we can use Lit's shared styles to share CSS across components.
+These last two do not currently have an equivalent in native CSS. Still, it feels like, with the new techniques available using CSS variables and the soon-to-be-available `attr` values and container style queries, they are not as necessary in modern CSS development. We almost had native CSS mixins with the `@apply` functionality, but this has been abandoned. In rare cases, we can use Lit's shared styles to share CSS across components.
 
 ## Embracing the native web
-These Diamond UI components are part of a conscious move by the team to embrace the native web. We're _tired_ of upgrading frameworks and dependencies and the less we can get away with, the better. Many people don't use Sass and we don't want to force another dependency and longer build times on them, however small they are.
+These Diamond UI components are part of a conscious move by the team to embrace the native web. We're tired of upgrading frameworks and dependencies and the less we can get away with, the better. Many people don't use Sass and we want to avoid forcing another dependency and longer build times on them, however small they are.
 
 The CSS in Diamond will stay native for as long as possible.

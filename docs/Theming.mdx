@@ -7,21 +7,21 @@ import * as ThemingStories from './recipes/Theming.stories.ts'
 
 # Theming
 
-Diamond UI supports component theming, but does not provide any production ready themes out of the box.
+Diamond UI supports component theming but provides no production-ready themes out of the box.
 
-All themes are based around a core set of variables.
+All themes are based on a core set of variables.
 
 <Source code={theme} language='css' />
 
-These can be overridden by setting the `:root` CSS variables to create a base theme, as well as creating theme classes which can wrap components or groups of components.
+These can be overridden by setting the `:root` CSS variables to create a base theme and creating theme classes that can wrap components or groups of components.
 
-This setup allows consuming apps to create an infinite number of themes to apply to components, as well as allowing those themes to be applied at different levels within a page or app, rather than requiring them to be global.
+This setup allows consuming apps to create an infinite number of themes to apply to components and apply those themes at different levels within a page or app, rather than requiring them to be global.
 
 ## Examples
 
 Diamond UI optionally includes an example set of 3 basic themes: light, medium and dark. The theme tokens are set on the `:root` and then applied to the base theme via classes, such as `.diamond-theme-dark`.
 
-Components that support theming will apply the base theme tokens, such as setting background to `--diamond-theme-background`.
+Components that support theming will apply the base theme tokens, such as setting the background to `--diamond-theme-background`.
 
 <Source code={themes} language='css' />
 
@@ -33,6 +33,6 @@ Here is an example of 3 cards wrapped in the demo theme classes, which then appl
 
 ## Recommended themes
 
-In most projects we recommend a base set of themes for light, medium and dark.
+In most projects, we recommend a base set of themes for light, medium and dark.
 
 We would also recommend creating some state based themes for states such as info, success, warning and error.
