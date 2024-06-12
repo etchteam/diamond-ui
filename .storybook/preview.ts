@@ -17,10 +17,12 @@ const preview: Preview = {
       storySort: {
         order: [
           'Docs',
+          'Showroom',
           'Composition',
           'Canvas',
           'Content',
           'Controls',
+          'Recipes',
         ],
       },
     },
