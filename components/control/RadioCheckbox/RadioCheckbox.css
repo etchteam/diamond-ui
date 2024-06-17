@@ -3,10 +3,11 @@ diamond-radio-checkbox {
   --_border-color: var(--diamond-input-border-color);
   --_border-radius: var(--diamond-input-checkbox-border-radius);
   --_inner-border-radius: 0;
-  --_indicator-padding: 0;
+  --_indicator-padding: var(--diamond-input-radio-checkbox-padding);
   --_indicator-width: calc(var(--diamond-font-line-height) * 1em);
   --_indicator-inner-width: 100%;
 
+  align-items: center;
   color: inherit;
   cursor: pointer;
   display: flex;
@@ -14,6 +15,7 @@ diamond-radio-checkbox {
   font-weight: inherit;
   gap: var(--diamond-spacing-sm);
   line-height: inherit;
+  min-height: var(--diamond-spacing-thumb);
 
   &:hover,
   &:focus-within {
@@ -60,9 +62,10 @@ diamond-radio-checkbox {
   &::part(fallback-icon) {
     display: block;
     height: auto;
+    margin: calc(var(--_indicator-padding) * -1);
     opacity: 0;
     position: relative;
-    transform: scale(0.9);
+    transform: scale(1.45);
     transition:
       transform var(--diamond-transition),
       opacity var(--diamond-transition);
@@ -108,11 +111,10 @@ diamond-radio-checkbox {
   &:has(input[type='radio']) {
     --_border-radius: 50%;
     --_inner-border-radius: 50%;
-    --_indicator-padding: var(--diamond-input-radio-checkbox-padding);
     --_indicator-inner-width: calc(100% - (var(--_indicator-padding) * 2));
 
     &::part(fallback-icon) {
-      display: none;
+      visibility: hidden; /* Display none messes up alignment in horizontal forms */
     }
   }
 
@@ -128,7 +130,7 @@ diamond-radio-checkbox {
     img,
     &::part(fallback-icon) {
       opacity: 1;
-      transform: scale(1);
+      transform: scale(1.6);
       transition-delay: calc(var(--diamond-transition-duration) / 2);
     }
   }

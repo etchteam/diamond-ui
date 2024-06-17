@@ -1,5 +1,6 @@
 diamond-list {
   --diamond-list-spacing: 0;
+  display: block;
 
   li,
   dl > div {
