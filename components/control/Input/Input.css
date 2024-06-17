@@ -1,7 +1,9 @@
 diamond-input {
   --_background: var(--diamond-input-background);
   --_border-color: var(--diamond-input-border-color);
+  --diamond-icon-baseline-adjust: 0.1em;
 
+  align-items: center;
   background: var(--_background);
   border: var(--diamond-input-border-width) solid var(--_border-color);
   border-radius: var(--diamond-input-border-radius);

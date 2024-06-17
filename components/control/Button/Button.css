@@ -12,6 +12,7 @@ diamond-button {
   --_padding-block: var(--diamond-button-padding-block);
   --_padding-inline: var(--diamond-button-padding-inline);
   --_line-height: var(--diamond-button-line-height);
+  --diamond-icon-baseline-adjust: 0.1em;
   display: inline-block;
 
   /* Structural button styles */
