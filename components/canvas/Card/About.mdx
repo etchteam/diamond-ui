@@ -1,0 +1,70 @@
+import { Meta, Title, Primary, Controls, Stories } from '@storybook/blocks';
+import * as CardStories from './Card.stories';
+
+
+<Meta of={CardStories}/>
+
+
+## Quickstart guide
+
+The Card component is a simple wrapper, with a single slot for presenting content.
+
+```html
+<diamond-card>
+  <slot>
+</diamond-card>
+```
+
+## Interactive
+
+The interactive `diamond-card` is a regular `diamond-card` element with a wrapper as shown in the examples below. Interactive cards are keyboard focusable, and have an associated action when triggered.
+
+We have two types of interactive card, either wrap the `diamond-card` element with an `a` or an `button` tag.
+
+### Anchor
+<a href="https://etch.co" rel="noopener noreferrer" target="_blank">
+  <diamond-card border>
+      <h3>Card title</h3>
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+  </diamond-card>
+</a>
+
+```html
+<a href="https://etch.co" rel="noopener noreferrer" target="_blank">
+  <diamond-card border>
+      <h3>Card title</h3>
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+  </diamond-card>
+</a>
+```
+
+### Button
+
+<button type="button">
+  <diamond-card border>
+      <h3>Card title</h3>
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+  </diamond-card>
+</button>
+
+```html
+<button type="button">
+  <diamond-card border>
+      <h3>Card title</h3>
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+  </diamond-card>
+</button>
+```
+

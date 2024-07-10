@@ -4,6 +4,7 @@ import { html } from 'lit';
 import '../../composition/Grid/Grid';
 import '../../composition/Grid/GridItem';
 import './Card';
+import Guide from './About.mdx';
 
 export default {
   component: 'diamond-card',
@@ -29,6 +30,9 @@ export default {
         'fluid-lg',
         'none',
       ],
+    },
+    docs: {
+      page: Guide,
     },
   },
 };
