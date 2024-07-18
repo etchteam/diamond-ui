@@ -1,5 +1,7 @@
 import type { StorybookConfig } from '@storybook/web-components-vite';
 
+const base = process.env.BASE_PATH || '/';
+
 const config: StorybookConfig = {
   stories: [
     '../components/**/*.mdx',
@@ -18,7 +20,13 @@ const config: StorybookConfig = {
   },
   docs: {
     autodocs: true
-  }
+  },
+  async viteFinal(config) {
+    return  {
+      ...config,
+      base,
+    };
+  },
 };
 
 export default config;
