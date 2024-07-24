@@ -34,6 +34,9 @@ export const Collapse: StoryObj = {
       </button>
     </diamond-button>
     <diamond-collapse open id="collapse">
+      <diamond-input>
+        <input />
+      </diamond-input>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         suscipit leo sodales sem sollicitudin maximus.
@@ -49,14 +52,18 @@ export const Collapse: StoryObj = {
       </p>
     </diamond-collapse>
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const button = document.getElementById('toggle');
-        button.addEventListener('click', () => {
-          const collapse = document.querySelector('diamond-collapse');
-          collapse.open = !collapse.open;
-          button.setAttribute('aria-expanded', collapse.open.toString());
-        });
-      });
+      document.addEventListener(
+        'DOMContentLoaded',
+        () => {
+          const button = document.getElementById('toggle');
+          button.addEventListener('click', () => {
+            const collapse = document.querySelector('diamond-collapse');
+            collapse.open = !collapse.open;
+            button.setAttribute('aria-expanded', collapse.open.toString());
+          });
+        },
+        { once: true },
+      );
     </script>
   `,
 };
