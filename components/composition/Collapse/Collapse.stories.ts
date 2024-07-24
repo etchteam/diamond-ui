@@ -34,9 +34,6 @@ export const Collapse: StoryObj = {
       </button>
     </diamond-button>
     <diamond-collapse open id="collapse">
-      <diamond-input>
-        <input />
-      </diamond-input>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         suscipit leo sodales sem sollicitudin maximus.
