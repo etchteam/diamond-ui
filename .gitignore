@@ -35,3 +35,6 @@ dist
 
 # Misc
 .DS_Store
+
+# Storybook build output
+storybook-static
