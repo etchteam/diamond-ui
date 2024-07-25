@@ -1,3 +1,10 @@
+## [1.36.2](https://github.com/etchteam/diamond-ui/compare/v1.36.1...v1.36.2) (2024-07-25)
+
+
+### Bug Fixes
+
+* only overflow hidden whilst closed or transitioning ([9f2301e](https://github.com/etchteam/diamond-ui/commit/9f2301e63870d718d17b89dfd524354d9e2d09bb))
+
 ## [1.36.1](https://github.com/etchteam/diamond-ui/compare/v1.36.0...v1.36.1) (2024-05-31)
 
 
