@@ -13,6 +13,15 @@ export class Collapse extends LitElement {
 
   static readonly styles = [
     css`
+      @keyframes diamond-collapse-overflow {
+        0%,
+        99% {
+          overflow: hidden;
+        }
+        100% {
+          overflow: visible;
+        }
+      }
       :host {
         content-visibility: hidden;
         display: grid;
@@ -20,17 +29,23 @@ export class Collapse extends LitElement {
         overflow: hidden;
         transition:
           grid-template-rows var(--diamond-transition),
-          content-visibility var(--diamond-transition);
+          content-visibility var(--diamond-transition),
+          overflow var(--diamond-transition);
         transition-behavior: allow-discrete;
-      }
-
-      :host([open]:not([open='false'])) {
-        content-visibility: visible;
-        grid-template-rows: 1fr;
       }
 
       .diamond-collapse__content {
         overflow: hidden;
+      }
+
+      :host([open]:not([open='false'])) {
+        animation: diamond-collapse-overflow var(--diamond-transition) forwards;
+        content-visibility: visible;
+        grid-template-rows: 1fr;
+      }
+
+      :host([open]:not([open='false'])) .diamond-collapse__content {
+        animation: diamond-collapse-overflow var(--diamond-transition) forwards;
       }
     `,
   ];
