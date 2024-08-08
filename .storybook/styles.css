@@ -1,3 +1,11 @@
 .docblock-argstable-body label {
   min-height: auto;
 }
+
+docs-placeholder {
+  border: dotted 1px var(--diamond-theme-border-color-hover);
+  border-radius: var(--diamond-radius-sm);
+  display: block;
+  padding: var(--diamond-spacing-lg);
+  text-align: center;
+}

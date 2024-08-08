@@ -4,7 +4,6 @@ import { html } from 'lit';
 import '../../composition/Grid/Grid';
 import '../../composition/Grid/GridItem';
 import './Card';
-import Guide from './About.mdx';
 
 export default {
   component: 'diamond-card',
@@ -31,9 +30,6 @@ export default {
         'none',
       ],
     },
-    docs: {
-      page: Guide,
-    },
   },
 };
 
@@ -47,11 +43,13 @@ export const Card: StoryObj = {
       padding="${padding}"
       class="diamond-theme-${theme}"
     >
-      <h3>Card title</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+      <docs-placeholder>
+        <h2>Placeholder content</h2>
+        <p>
+          The slot can contain anything, the card component acts as a simple
+          wrapper with optional props for styling the card itself.
+        </p>
+      </docs-placeholder>
     </diamond-card>
   `,
 };
@@ -92,4 +90,48 @@ export const Interactive: StoryObj = {
       </diamond-grid-item>
     </diamond-grid>
   `,
+};
+
+Interactive.parameters = {
+  docs: {
+    description: {
+      story: `The card can be made interactive by wrapping the card in an anchor or button element.
+      `,
+    },
+  },
+};
+
+export const ImageCard: StoryObj = {
+  render: () => html`
+    <diamond-wrap size="sm">
+      <diamond-card border radius shadow class="diamond-theme-light">
+        <diamond-img block responsive>
+          <img
+            src="https://placehold.co/400x300"
+            alt="Placeholder"
+            width="400"
+            height="300"
+            class="diamond-spacing-bottom-md"
+          />
+        </diamond-img>
+        <h3>Card title</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+
+        <diamond-button variant="primary" size="sm" width="full-width">
+          <button type="button">Button</button>
+        </diamond-button>
+      </diamond-card>
+    </diamond-wrap>
+  `,
+};
+
+ImageCard.parameters = {
+  docs: {
+    description: {
+      story: `As a flexible canvas element, the card can be used for any number of layouts. For example, a simple image card.`,
+    },
+  },
 };
