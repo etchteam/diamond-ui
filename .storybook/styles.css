@@ -3,9 +3,10 @@
 }
 
 docs-placeholder {
-  border: dotted 1px var(--diamond-theme-border-color-hover);
+  background: var(--diamond-color-grey-50);
+  border: dotted 1px var(--diamond-theme-border-color);
   border-radius: var(--diamond-radius-sm);
   display: block;
   padding: var(--diamond-spacing-lg);
-  text-align: center;
+  text-align: left;
 }

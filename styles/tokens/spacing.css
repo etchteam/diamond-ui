@@ -1,7 +1,8 @@
 :root {
   --diamond-spacing-thumb: 2.625rem;
 
-  --diamond-spacing: 1rem;
+  --diamond-spacing-md: 1rem;
+  --diamond-spacing: var(--diamond-spacing-md);
   --diamond-spacing-xs: calc(var(--diamond-spacing) / 4);
   --diamond-spacing-sm: calc(var(--diamond-spacing) / 2);
   --diamond-spacing-lg: calc(var(--diamond-spacing) * 2);

@@ -4,8 +4,15 @@ import { html } from 'lit';
 const description = `
 Diamond spacing is a set of utility classes that can be added to any component or element.
 
+The spacing class name format is \`diamond-spacing-{direction}-{size}\`, e.g. \`diamond-spacing-bottom-sm\`.
+
 Spacing tweaks are one of the most common reasons for introducing page level CSS, which is
 a slippery slope to a bloated CSS file. Diamond spacing reduces or eliminates these tweaks.
+
+Individual components should not create spacing around themselves. Instead, they should use
+spacing classes to create the desired layout.
+
+It is generally recommended to use **bottom spacing** and **no top spacing** to prevent [margin collapse](https://www.joshwcomeau.com/css/rules-of-margin-collapse/).
 `;
 
 export default {
