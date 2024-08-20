@@ -6,7 +6,17 @@ module.exports = {
       'warn',
       {
         lang: 'en_GB',
-        skipWords: ['namespace', 'etchteam', 'plugins', 'lang'],
+        skipWords: [
+          'namespace',
+          'etchteam',
+          'plugins',
+          'lang',
+          'var',
+          'th',
+          'td',
+          'color',
+          'nowrap',
+        ],
       },
     ],
     '@typescript-eslint/no-namespace': [
