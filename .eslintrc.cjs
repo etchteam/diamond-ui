@@ -1,7 +1,14 @@
 module.exports = {
-  plugins: ['lit-a11y'],
+  plugins: ['lit-a11y', 'spellcheck'],
   extends: ['@etchteam', 'plugin:lit-a11y/recommended'],
   rules: {
+    'spellcheck/spell-checker': [
+      'warn',
+      {
+        lang: 'en_GB',
+        skipWords: ['namespace', 'etchteam', 'plugins', 'lang'],
+      },
+    ],
     '@typescript-eslint/no-namespace': [
       'error',
       {
