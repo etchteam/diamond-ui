@@ -1,7 +1,7 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-import { JSXCustomElement } from '../../../types/jsx-custom-element';
+import { JSXCustomElement } from '../../types/jsx-custom-element';
 
 export interface TokenTableAttributes {
   code: string;

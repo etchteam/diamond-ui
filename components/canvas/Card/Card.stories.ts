@@ -44,7 +44,7 @@ export const Card: StoryObj = {
       class="diamond-theme-${theme}"
     >
       <docs-placeholder>
-        <h2>Placeholder content</h2>
+        <h3>Placeholder content</h3>
         <p>
           The slot can contain anything, the card component acts as a simple
           wrapper with optional props for styling the card itself.
@@ -105,17 +105,16 @@ export const ImageCard: StoryObj = {
   render: () => html`
     <diamond-wrap size="sm">
       <diamond-card border radius shadow class="diamond-theme-light">
-        <diamond-img block responsive>
+        <diamond-img block responsive class="diamond-spacing-bottom-md">
           <img
             src="https://placehold.co/400x300"
             alt="Placeholder"
             width="400"
             height="300"
-            class="diamond-spacing-bottom-md"
           />
         </diamond-img>
         <h3>Card title</h3>
-        <p>
+        <p class="diamond-spacing-bottom-lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>

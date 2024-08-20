@@ -7,27 +7,76 @@ import code from '../../styles/tokens/spacing.css?inline';
 
 The spacing tokens define a set of sizes used for creating space around or within elements, like margins and padding.
 
-Generally, md is good for padding components and horizontal spacing between elements or vertical between similar elements. The default spacing `--diamond-spacing` is an alias of `--diamond-spacing-md`.
-
-Use lg for spacing between larger sections of content or for emphasis, such as before a button.
-
-xl and fluid are great for spacing around large sections of content, such as page sections.
+Spacing can be applied standalone to HTML elements or components using the [spacing utility classes](?path=/docs/composition-spacing--docs).
 
 <docs-token-table code={code}></docs-token-table>
 
 ## Fixed spacing between elements
 
 {['xs', 'sm', 'md', 'lg', 'xl'].map((size) => (
-  <docs-wrap class={`diamond-spacing-bottom-${size}`}>{size}</docs-wrap>
+  <>
+    <docs-wrap></docs-wrap>
+    <docs-spacing size={size} class={`diamond-spacing-bottom-${size}`}></docs-spacing>
+  </>
 ))}
 
-<docs-wrap class="diamond-spacing-bottom-lg">End element for demo purposes</docs-wrap>
+<docs-wrap class="diamond-spacing-bottom-lg"></docs-wrap>
 
 ## Fluid spacing between elements
 
 {['fluid-sm', 'fluid', 'fluid-lg'].map((size) => (
-  <docs-wrap class={`diamond-spacing-bottom-${size}`}>{size}</docs-wrap>
+  <>
+    <docs-wrap></docs-wrap>
+    <docs-spacing size={size} class={`diamond-spacing-bottom-${size}`}></docs-spacing>
+  </>
 ))}
 
-<docs-wrap class="diamond-spacing-bottom-lg">End element for demo purposes</docs-wrap>
+<docs-wrap class="diamond-spacing-bottom-lg"></docs-wrap>
 
+## Usage
+
+Generally, `md` is good for padding components and horizontal spacing between elements or vertical between similar elements. The default spacing `--diamond-spacing` is an alias of `--diamond-spacing-md`.
+
+<diamond-grid class="diamond-spacing-bottom-md" wrap="wrap">
+  {[0, 1, 2, 3].map(() => (
+    <diamond-grid-item small-mobile="12" large-mobile="6" large-tablet="3">
+      <diamond-card border>
+        <h3 class="sb-unstyled">Card title</h3>
+        <p class="sb-unstyled">
+          These cards use md padding within and have
+          a gap of md spacing between each card in the grid.
+        </p>
+      </diamond-card>
+    </diamond-grid-item>
+  ))}
+</diamond-grid>
+
+`Fluid` spacing varies depending on the browser size and is best used for spacing between large elements or padding within large sections of the page.
+
+<diamond-section padding="fluid" class="diamond-theme-medium">
+  <docs-spacing size="fluid" direction="top"></docs-spacing>
+  <diamond-wrap size="md" gutter="md">
+    <h3 class="sb-unstyled">Section title</h3>
+    <p class="sb-unstyled">
+      This section uses fluid spacing to create a natural feeling amount of spacing around
+      the content on any screen size.
+    </p>
+  </diamond-wrap>
+  <docs-spacing size="fluid"></docs-spacing>
+</diamond-section>
+
+Use `lg` for spacing between larger sections of content or for emphasis, such as before a button.
+
+<diamond-section padding="fluid" class="diamond-theme-medium">
+  <diamond-wrap size="md" gutter="md">
+    <h3 class="sb-unstyled">Section title</h3>
+    <p class="sb-unstyled diamond-spacing-bottom-lg">
+      This paragraph uses a large bottom spacing to give more emphasis to the CTA beneath.
+    </p>
+    <docs-spacing size="lg" direction="top" alignment="left"></docs-spacing>
+    <diamond-button>
+      <button type="button">Button text</button>
+    </diamond-button>
+  </diamond-wrap>
+
+</diamond-section>

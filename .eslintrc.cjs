@@ -16,6 +16,7 @@ module.exports = {
           'td',
           'color',
           'nowrap',
+          'center',
         ],
       },
     ],

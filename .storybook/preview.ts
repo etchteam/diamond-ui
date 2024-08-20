@@ -9,6 +9,7 @@ import '../styles/themes.css';
 import '../styles/docs/docs.css';
 import './styles.css'; // Storybook style overrides
 
+import '../docs/components/Spacing';
 import '../docs/components/TokenTable';
 
 // @ts-ignore-next-line
