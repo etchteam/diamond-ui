@@ -56,6 +56,8 @@ diamond-button {
 
     &:not(:active):focus-visible {
       outline-offset: var(--diamond-button-outline-offset);
+      position: relative;
+      z-index: 1;
     }
   }
 
