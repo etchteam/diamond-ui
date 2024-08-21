@@ -25,7 +25,8 @@ export const InputButtonGroup: StoryObj = {
 InputButtonGroup.parameters = {
   docs: {
     description: {
-      story: 'A composition of an input and a button, styled to look like a single component.',
+      story: `A composition of an input and a button, styled to look
+      like a single component.`,
     },
   },
 };
@@ -63,7 +64,8 @@ export const InputButtonGroupSelect: StoryObj = {
 InputButtonGroupSelect.parameters = {
   docs: {
     description: {
-      story: 'The input button group can be used with any input type, including select elements.',
+      story: `The input button group can be used with
+      any input type, including select elements.`,
     },
   },
 };
