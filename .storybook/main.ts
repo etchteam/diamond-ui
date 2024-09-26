@@ -29,7 +29,6 @@ const config: StorybookConfig = {
   },
   previewHead: (head) => (`
     ${head}
-    ${process.env.NODE_ENV}
     ${process.env.NODE_ENV === 'production' ? `
       <script
         defer
