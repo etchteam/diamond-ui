@@ -1,3 +1,10 @@
+## [1.37.0](https://github.com/etchteam/diamond-ui/compare/v1.36.2...v1.37.0) (2024-09-26)
+
+
+### Features
+
+* standardise mergify config ([4c81ff8](https://github.com/etchteam/diamond-ui/commit/4c81ff848e9c44b21598f8c4a39c90f2ce5501d2))
+
 ## [1.36.2](https://github.com/etchteam/diamond-ui/compare/v1.36.1...v1.36.2) (2024-07-25)
 
 
