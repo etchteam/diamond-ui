@@ -53,3 +53,4 @@ jobs:
           VALIDATE_JSX: false
           VALIDATE_TSX: false
           VALIDATE_TYPESCRIPT_STANDARD: false
+          FILTER_REGEX_EXCLUDE: preview-head.html

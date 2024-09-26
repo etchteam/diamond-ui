@@ -27,6 +27,16 @@ const config: StorybookConfig = {
       base,
     };
   },
+  previewHead: (head) => (`
+    ${head}
+    ${process.env.NODE_ENV === 'production' ? `
+      <script
+        defer
+        src="https://eu.umami.is/script.js"
+        data-website-id="6d365089-9b92-45bd-93ae-db50a14e487b"
+      ></script>
+    ` : ''}
+  `),
 };
 
 export default config;
