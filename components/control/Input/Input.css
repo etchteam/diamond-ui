@@ -67,10 +67,10 @@ diamond-input {
   select {
     cursor: pointer;
     margin-right: calc(
-      var(--diamond-icon-size) * -1 - var(--diamond-input-padding-inline) * 0.5
+      var(--diamond-icon-size) * -1 - var(--diamond-input-padding-inline)
     );
     padding-right: calc(
-      var(--diamond-icon-size) + var(--diamond-input-padding-inline) * 1.5
+      var(--diamond-icon-size) + var(--diamond-input-padding-inline)
     );
   }
 
@@ -84,6 +84,7 @@ diamond-input {
     box-sizing: content-box;
     flex-shrink: 0;
     inline-size: var(--diamond-icon-size);
+    pointer-events: none;
   }
 
   /* Prefix */
@@ -94,7 +95,10 @@ diamond-input {
 
   /* Suffix */
   :is(input, textarea, select) + * {
-    margin-left: calc(var(--diamond-input-padding-inline) / 2 * -1);
-    padding: 0 calc(var(--diamond-input-padding-inline) / 2) 0 0;
+    padding: 0 calc(var(--diamond-input-padding-inline) / 2);
+  }
+
+  :is(input, textarea):has(+ *) {
+    padding-right: 0;
   }
 }
