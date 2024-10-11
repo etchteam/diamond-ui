@@ -21,6 +21,7 @@ const preview: Preview = {
       storySort: {
         order: [
           'Docs',
+          ['Get Started', 'Tokens', 'Theming', 'Why no Sass?', 'Support'],
           'Showroom',
           'Composition',
           'Canvas',
