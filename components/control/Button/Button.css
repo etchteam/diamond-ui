@@ -56,6 +56,9 @@ diamond-button {
 
     &:not(:active):focus-visible {
       outline-offset: var(--diamond-button-outline-offset);
+      position: relative;
+      /* This z-index prevents the focus outline from being clipped by the parent */
+      z-index: 1;
     }
   }
 
