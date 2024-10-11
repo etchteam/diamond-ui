@@ -2,7 +2,7 @@ import { StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 
 const description =
-  'Diamond text is a set of utility classes that can be added to any component or element to alter the text style.';
+  'A set of utility classes that can be added to any component or element to alter the text style.';
 
 export default {
   component: 'diamond-text',

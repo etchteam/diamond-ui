@@ -10,7 +10,7 @@ export default {
     docs: {
       description: {
         component:
-          'A piece of text to provide additional information or context for form inputs, including form validation messages.',
+          'A piece of text to provide additional information or context for form inputs, including [form validation messages](?path=/docs/composition-formgroup--docs).',
       },
     },
   },

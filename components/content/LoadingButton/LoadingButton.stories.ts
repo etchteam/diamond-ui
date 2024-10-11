@@ -5,6 +5,14 @@ import './LoadingButton';
 
 export default {
   component: 'diamond-loading-button',
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'Used as a loading placeholder before the content is available. For a full demo, see the [loading recipe](?path=/docs/recipes-loading-skeleton--docs).',
+      },
+    },
+  },
 };
 
 export const LoadingButton: StoryObj = {

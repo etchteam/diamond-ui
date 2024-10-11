@@ -19,11 +19,13 @@ This setup allows consuming apps to create an infinite number of themes to apply
 
 ## Examples
 
-Diamond UI optionally includes an example set of 3 basic themes: light, medium and dark. The theme tokens are set on the `:root` and then applied to the base theme via classes, such as `.diamond-theme-dark`.
+In most projects, we recommend a base set of themes for light, medium and dark.
+
+We would also recommend creating some state based themes for states such as info, success, warning and error.
+
+Diamond UI optionally includes an demo set of 3 basic themes: light, medium and dark. The theme tokens are set on the `:root` and then applied to components via classes, such as `.diamond-theme-dark`.
 
 Components that support theming will apply the base theme tokens, such as setting the background to `--diamond-theme-background`.
-
-<docs-token-table code={themes}></docs-token-table>
 
 ### Cards using demo themes
 
@@ -31,8 +33,8 @@ Here is an example of 3 cards wrapped in the demo theme classes, which then appl
 
 <Canvas of={ThemingStories.Theming} />
 
-## Recommended themes
+### Demo theme tokens
 
-In most projects, we recommend a base set of themes for light, medium and dark.
+<docs-token-table code={themes}></docs-token-table>
 
-We would also recommend creating some state based themes for states such as info, success, warning and error.
+

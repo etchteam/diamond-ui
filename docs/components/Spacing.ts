@@ -8,7 +8,7 @@ export interface SpacingAttributes {
 }
 
 @customElement('docs-spacing')
-export class TokenTable extends LitElement {
+export class DocsSpacing extends LitElement {
   @property({ reflect: true }) size: string = 'md';
   @property({ reflect: true }) direction: 'top' | 'bottom' = 'bottom';
   @property({ reflect: true }) alignment: 'center' | 'left' = 'center';

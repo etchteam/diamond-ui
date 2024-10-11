@@ -6,6 +6,6 @@
 
   --diamond-help-text-color: var(--diamond-theme-color);
   --diamond-help-text-color-valid: var(--diamond-color-valid);
-  --diamond-help-text-color-invalid: var(--diamond-invalid);
+  --diamond-help-text-color-invalid: var(--diamond-color-invalid);
   --diamond-help-text-font-size: var(--diamond-font-size-sm);
 }

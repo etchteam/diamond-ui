@@ -17,6 +17,8 @@ module.exports = {
           'color',
           'nowrap',
           'center',
+          'etc',
+          'flexbox',
         ],
       },
     ],

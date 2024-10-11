@@ -16,6 +16,14 @@ export default {
       options: ['horizontal', 'vertical'],
     },
   },
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'The form group component is a wrapper for grouping form elements with a label and optional help text.',
+      },
+    },
+  },
 };
 
 export const FormGroup: StoryObj = {
@@ -74,7 +82,7 @@ export const FormGroupValidationError: StoryObj = {
   render: (args) => html`
     <diamond-form-group orientation="${args.orientation}">
       <label for="name">Form group label</label>
-      <diamond-help-text state="error">Error message</diamond-help-text>
+      <diamond-help-text state="invalid">Error message</diamond-help-text>
       <diamond-input state="invalid">
         <input id="name" type="text" />
       </diamond-input>

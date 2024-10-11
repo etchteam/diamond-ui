@@ -6,8 +6,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component:
-          'This composition allows for an input control to be paired with a button, handling scaling and alignment of both elements.',
+        component: 'Groups an input and button together as one unit.',
       },
     },
   },

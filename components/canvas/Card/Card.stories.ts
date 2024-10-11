@@ -31,6 +31,14 @@ export default {
       ],
     },
   },
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'The card component is a simple wrapper with a single slot and optional props for styling the card itself.',
+      },
+    },
+  },
 };
 
 export const Card: StoryObj = {

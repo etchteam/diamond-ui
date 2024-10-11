@@ -13,6 +13,14 @@ export default {
       options: ['fade', 'fade-in-up', 'boing'],
     },
   },
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'The enter component can be wrapped around content to animate it into view.',
+      },
+    },
+  },
 };
 
 export const Enter: StoryObj = {
