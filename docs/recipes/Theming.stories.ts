@@ -7,6 +7,14 @@ import '../../components/canvas/Card/Card';
 
 export default {
   title: 'Recipes/Theming',
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'This recipe demos using the theme classes to apply themes to components.',
+      },
+    },
+  },
 };
 
 export const Theming: StoryObj = {

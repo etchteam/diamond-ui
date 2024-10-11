@@ -4,6 +4,10 @@ import { html } from 'lit';
 import '../Icon/Icon';
 import './List';
 
+const description = `
+The list component adds a bit more power to HTML lists, such as spacing control and icon support.
+`;
+
 export default {
   component: 'diamond-list',
   argTypes: {
@@ -28,6 +32,13 @@ export default {
         'fluid',
         'fluid-lg',
       ],
+    },
+  },
+  parameters: {
+    docs: {
+      description: {
+        component: description,
+      },
     },
   },
 };

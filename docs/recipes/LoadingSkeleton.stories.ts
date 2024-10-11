@@ -54,6 +54,12 @@ export default {
   title: 'Recipes/Loading Skeleton',
   parameters: {
     layout: 'fullscreen',
+    docs: {
+      description: {
+        component:
+          'This recipes demos using the loading components to create a skeleton loading state.',
+      },
+    },
   },
 };
 

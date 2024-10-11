@@ -1,0 +1,13 @@
+import { Meta, Source, Canvas } from '@storybook/blocks';
+import code from '../../../styles/tokens/theme.css?inline';
+import * as ThemingStories from '../../recipes/Theming.stories.ts'
+
+<Meta title="Foundations/Tokens/Theme" />
+
+# Theme
+
+Themes allow customisation of a few key variables that can be consumed inside components. For a more detailed breakdown of theming, [read the theming docs](?path=/docs/docs-theming--docs).
+
+<docs-token-table code={code}></docs-token-table>
+
+<Canvas of={ThemingStories.Theming} />

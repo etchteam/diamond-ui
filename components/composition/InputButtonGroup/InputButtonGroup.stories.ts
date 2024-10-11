@@ -2,7 +2,14 @@ import { StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 
 export default {
-  component: 'diamond-inoput-button-group',
+  component: 'diamond-input-button-group',
+  parameters: {
+    docs: {
+      description: {
+        component: 'Groups an input and button together as one unit.',
+      },
+    },
+  },
 };
 
 export const InputButtonGroup: StoryObj = {

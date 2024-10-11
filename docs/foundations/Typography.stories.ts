@@ -1,8 +1,23 @@
 import { StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 
+const description = `
+Diamond comes with a set of base typography styles that can be used to style
+the typographic HTML elements, such as h1-4 and paragraphs.
+
+There are also a wide range of [text modifier classes](?path=/docs/content-text--docs) that can be used to
+update font sizes, weights, colours, etc on the fly.
+`;
+
 export default {
-  title: 'Recipes/Typography',
+  title: 'Foundations/Typography',
+  parameters: {
+    docs: {
+      description: {
+        component: description,
+      },
+    },
+  },
 };
 
 export const Headings: StoryObj = {

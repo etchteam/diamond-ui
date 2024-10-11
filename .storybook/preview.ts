@@ -9,6 +9,7 @@ import '../styles/themes.css';
 import '../styles/docs/docs.css';
 import './styles.css'; // Storybook style overrides
 
+import '../docs/components/Cell';
 import '../docs/components/Spacing';
 import '../docs/components/TokenTable';
 
@@ -21,12 +22,13 @@ const preview: Preview = {
       storySort: {
         order: [
           'Docs',
-          ['Get Started', 'Tokens', 'Theming', 'Why no Sass?', 'Support'],
+          ['Get Started', 'Theming', 'Why no Sass?', 'Support'],
           'Showroom',
-          'Composition',
-          'Canvas',
+          'Foundations',
           'Content',
-          'Controls',
+          'Control',
+          'Canvas',
+          'Composition',
           'Recipes',
         ],
       },

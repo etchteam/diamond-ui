@@ -43,17 +43,31 @@ export class TokenTable extends LitElement {
       font-size: var(--diamond-font-size-sm);
       line-height: 1;
       padding: var(--diamond-spacing-xs) var(--diamond-spacing-sm);
-      white-space: nowrap;
+      white-space: normal;
+    }
+
+    .token-table-thumbnail {
+      background: var(--token-table-thumbnail-background);
+      display: inline-block;
+      height: 1em;
+      vertical-align: middle;
+      width: 1em;
     }
   `;
 
   render() {
     const { code } = this;
 
+    // Find all the CSS contained in a :root or :backdrop selector
+    const tokenBlocks = code.match(/:(?:root|backdrop) {([^}]+)}/g);
+
+    console.log(tokenBlocks);
+
     // Find all the tokens in the code
-    const splitTokens = code.split(';');
-    const parsedTokens = splitTokens
-      .map((token) => /--diamond-([a-z]+)-([a-z-]+): (.+)/.exec(token))
+    const parsedTokens = tokenBlocks
+      ?.map((block) => block.split(';'))
+      .flat()
+      .map((token) => /--diamond-([a-z]+)-?([a-z-]*): ([^;]+)/.exec(token))
       .filter(Boolean)
       .map((token) => ({
         group: token?.[1],
@@ -74,9 +88,24 @@ export class TokenTable extends LitElement {
           ${parsedTokens.map(
             (token) => html`
               <tr>
-                <td>${token?.name}</td>
-                <td><code>--diamond-${token?.group}-${token?.name}</code></td>
-                <td>${token?.value}</td>
+                <td>${token?.name || token?.group}</td>
+                <td>
+                  <code
+                    >--diamond-${token?.group}${token?.name
+                      ? `-${token?.name}`
+                      : ''}</code
+                  >
+                </td>
+                <td>
+                  <code>${token?.value?.replace(/(\(\s|\s\))/g, '')}</code>
+                  <span
+                    class="token-table-thumbnail"
+                    style="--token-table-thumbnail-background: ${token?.value?.replace(
+                      /(\(\s|\s\))/g,
+                      '',
+                    )};"
+                  ></span>
+                </td>
               </tr>
             `,
           )}

@@ -5,6 +5,14 @@ import './LoadingImg';
 
 export default {
   component: 'diamond-loading-img',
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'Used as a loading placeholder before the content is available. For a full demo, see the [loading recipe](?path=/docs/recipes-loading-skeleton--docs).',
+      },
+    },
+  },
 };
 
 export const LoadingImg: StoryObj = {

@@ -1,0 +1,19 @@
+import { Meta, Source, Canvas } from '@storybook/blocks';
+import code from '../../../styles/tokens/button.css?inline';
+import * as ButtonStories from '../../../components/control/Button/Button.stories.ts'
+
+<Meta title="Foundations/Tokens/Button" />
+
+# Button
+
+These tokens control the styling of the [diamond-button](?path=/docs/control-button--docs) component, including hover and disabled states.
+
+<docs-token-table code={code}></docs-token-table>
+
+<Canvas of={ButtonStories.Button} />
+
+<Canvas of={ButtonStories.PrimaryButton} />
+
+<Canvas of={ButtonStories.SecondaryButton} />
+
+<Canvas of={ButtonStories.TextButton} />

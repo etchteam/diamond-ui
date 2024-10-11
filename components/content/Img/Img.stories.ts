@@ -3,6 +3,11 @@ import { html } from 'lit';
 
 import './Img';
 
+const description = `
+The image component wraps an img tag to provide some common image controls,
+such as making it responsive or fitting a specific aspect ratio.
+`;
+
 export default {
   component: 'diamond-img',
   argTypes: {
@@ -11,6 +16,13 @@ export default {
         type: 'radio',
       },
       options: ['fill', 'cover', 'contain'],
+    },
+  },
+  parameters: {
+    docs: {
+      description: {
+        component: description,
+      },
     },
   },
 };
