@@ -1,3 +1,11 @@
+## [1.37.1](https://github.com/etchteam/diamond-ui/compare/v1.37.0...v1.37.1) (2024-10-11)
+
+
+### Bug Fixes
+
+* handle prefix/affix btn group select padding scaling issue ([590f6eb](https://github.com/etchteam/diamond-ui/commit/590f6ebeb29c0cd17798c7bfc86c67491addab4e))
+* input button group select example, fix outline focus issue ([81614c5](https://github.com/etchteam/diamond-ui/commit/81614c54ddb49ca1a8c0b880ec7ab23a6713b909))
+
 ## [1.37.0](https://github.com/etchteam/diamond-ui/compare/v1.36.2...v1.37.0) (2024-09-26)
 
 
