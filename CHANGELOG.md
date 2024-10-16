@@ -1,3 +1,10 @@
+## [1.37.2](https://github.com/etchteam/diamond-ui/compare/v1.37.1...v1.37.2) (2024-10-16)
+
+
+### Bug Fixes
+
+* clean update storybook to stop exploding ([b6e2148](https://github.com/etchteam/diamond-ui/commit/b6e2148ed0b65f48d026760ee671f557a10c37e4))
+
 ## [1.37.1](https://github.com/etchteam/diamond-ui/compare/v1.37.0...v1.37.1) (2024-10-11)
 
 
