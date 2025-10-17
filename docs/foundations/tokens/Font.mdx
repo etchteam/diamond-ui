@@ -1,6 +1,5 @@
 import { Meta, Source, Canvas } from '@storybook/blocks';
-import code from '../../../styles/tokens/font.css?inline';
-import * as TypographyStories from '../Typography.stories.ts'
+import { Tokens } from '@etchteam/storybook-addon-design-token-tables';
 
 <Meta title="Foundations/Tokens/Font" />
 
@@ -8,8 +7,4 @@ import * as TypographyStories from '../Typography.stories.ts'
 
 Diamond has font sizes from xs to xxxl and h1 to h4. If you end up past h4, that's often a bad sign.
 
-<docs-token-table code={code}></docs-token-table>
-
-<Canvas of={TypographyStories.Headings} />
-
-<Canvas of={TypographyStories.FontSizes} />
+<Tokens collection="diamond-font" />

@@ -1,5 +1,5 @@
 import { Meta, Source } from '@storybook/blocks';
-import code from '../../../styles/tokens/wrap.css?inline';
+import { Tokens } from '@etchteam/storybook-addon-design-token-tables';
 
 <Meta title="Foundations/Tokens/Wrap" />
 
@@ -7,10 +7,5 @@ import code from '../../../styles/tokens/wrap.css?inline';
 
 Wraps are used to constrain content to a max width.
 
-<docs-token-table code={code}></docs-token-table>
+<Tokens collection="diamond-wrap" />
 
-{['xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'xxxl', 'xxxxl'].map((size) => (
-  <diamond-wrap size={size} class="diamond-spacing-bottom-md">
-    <docs-wrap>{size}</docs-wrap>
-  </diamond-wrap>
-))}

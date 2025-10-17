@@ -1,4 +1,18 @@
 import type { Preview } from '@storybook/web-components'
+import borderTokens from '../styles/tokens/border.css?raw';
+import buttonTokens from '../styles/tokens/button.css?raw';
+import colorTokens from '../styles/tokens/color.css?raw';
+import fontTokens from '../styles/tokens/font.css?raw';
+import iconTokens from '../styles/tokens/icon.css?raw';
+import inputTokens from '../styles/tokens/input.css?raw';
+import labelTokens from '../styles/tokens/label.css?raw';
+import loadingTokens from '../styles/tokens/loading.css?raw';
+import radiusTokens from '../styles/tokens/radius.css?raw';
+import shadowTokesn from '../styles/tokens/shadow.css?raw';
+import spacingTokens from '../styles/tokens/spacing.css?raw';
+import themeTokens from '../styles/tokens/theme.css?raw';
+import transitionTokens from '../styles/tokens/transition.css?raw';
+import wrapTokens from '../styles/tokens/wrap.css?raw';
 
 // Vite builder doesn't like the glob import in diamond-ui.css
 // importing the individual css files here instead.
@@ -11,7 +25,6 @@ import './styles.css'; // Storybook style overrides
 
 import '../docs/components/Cell';
 import '../docs/components/Spacing';
-import '../docs/components/TokenTable';
 
 // @ts-ignore-next-line
 import.meta.glob('../components/**/*.css', { eager: true });
@@ -107,6 +120,41 @@ const preview: Preview = {
         },
       }
     },
+    designTokenTables: {
+      collections: {
+        'diamond-radius': 'radius',
+        'diamond-color': 'color',
+        'diamond-spacing': 'spacing',
+        'diamond-button-gap': 'spacing',
+        'diamond-font-line-height': 'line-height',
+        'diamond-font-size': 'font-size',
+        'diamond-font-weight': 'font-weight',
+        'diamond-theme': 'color',
+        'diamond-button-primary': 'color',
+        'diamond-button-secondary': 'color',
+        'diamond-button-text': 'color',
+        'diamond-font-family': 'font-family',
+        'diamond-input-radio-checkbox-padding': 'spacing',
+        'diamond-input-padding': 'spacing',
+        'diamond-shadow': 'shadow',
+      },
+      tokens: [
+        borderTokens,
+        buttonTokens,
+        colorTokens,
+        fontTokens,
+        iconTokens,
+        inputTokens,
+        labelTokens,
+        loadingTokens,
+        radiusTokens,
+        shadowTokesn,
+        spacingTokens,
+        themeTokens,
+        transitionTokens,
+        wrapTokens,
+      ]
+    }
   },
 };
 

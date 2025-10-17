@@ -1,5 +1,5 @@
 import { Meta, Source } from '@storybook/blocks';
-import code from '../../../styles/tokens/radius.css?inline';
+import { Tokens } from '@etchteam/storybook-addon-design-token-tables';
 
 <Meta title="Foundations/Tokens/Radius" />
 
@@ -7,19 +7,5 @@ import code from '../../../styles/tokens/radius.css?inline';
 
 There are 4 available radii from xs to lg.
 
-<docs-token-table code={code}></docs-token-table>
+<Tokens collection="diamond-radius" />
 
-<diamond-grid>
-  <diamond-grid-item small-mobile="6" tablet="3">
-    <docs-border size="xs">xs</docs-border>
-  </diamond-grid-item>
-  <diamond-grid-item small-mobile="6" tablet="3">
-    <docs-border size="sm">sm</docs-border>
-  </diamond-grid-item>
-  <diamond-grid-item small-mobile="6" tablet="3">
-    <docs-border size="md">md</docs-border>
-  </diamond-grid-item>
-  <diamond-grid-item small-mobile="6" tablet="3">
-    <docs-border size="lg">lg</docs-border>
-  </diamond-grid-item>
-</diamond-grid>
