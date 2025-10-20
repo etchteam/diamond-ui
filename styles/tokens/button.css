@@ -6,7 +6,7 @@
   --diamond-button-padding-block: var(--diamond-spacing-sm);
   --diamond-button-gap: 0.75ch;
   --diamond-button-outline-offset: 4px;
-  --diamond-button-font-weight: var(--diamond-font-size-base);
+  --diamond-button-font-weight: var(--diamond-font-weight-base);
   --diamond-button-line-height: var(--diamond-font-line-height);
 
   /* Default variant */

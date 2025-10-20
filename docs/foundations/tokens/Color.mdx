@@ -1,5 +1,5 @@
 import { Meta, Source } from '@storybook/blocks';
-import code from '../../../styles/tokens/color.css?inline';
+import { Tokens } from '@etchteam/storybook-addon-design-token-tables';
 
 <Meta title="Foundations/Tokens/Color" />
 
@@ -7,37 +7,4 @@ import code from '../../../styles/tokens/color.css?inline';
 
 Diamond components are unbranded. Because of this, the colour palette is very limited to provide the minimum functionality and allow for easier white labelling. To read more about handling colours and themes in Diamond UI, [read the theming docs](?path=/docs/docs-theming--docs)
 
-<docs-token-table code={code}></docs-token-table>
-
-<diamond-grid class="diamond-spacing-bottom-lg" wrap="wrap">
-  {['white', 'black'].map((color) => (
-    <diamond-grid-item small-mobile="12" tablet="6" small-desktop="4">
-    <docs-swatch style={{ '--swatch-color': `var(--diamond-color-${color})` }}>
-      <h4>{color}</h4>
-      <code>--diamond-color-{color}</code>
-    </docs-swatch>
-  </diamond-grid-item>
-  ))}
-</diamond-grid>
-
-<diamond-grid class="diamond-spacing-bottom-lg" wrap="wrap">
-  {['grey-100', 'grey-200', 'grey-300', 'grey-400', 'grey-500', 'grey-600', 'grey-700', 'grey-800', 'grey-900'].map((color) => (
-    <diamond-grid-item small-mobile="12" tablet="6" small-desktop="4">
-      <docs-swatch style={{ '--swatch-color': `var(--diamond-color-${color})` }}>
-        <h4>{color}</h4>
-        <code>--diamond-color-{color}</code>
-      </docs-swatch>
-    </diamond-grid-item>
-  ))}
-</diamond-grid>
-
-<diamond-grid class="diamond-spacing-bottom-lg" wrap="wrap">
-  {['green-100', 'red-100'].map((color) => (
-    <diamond-grid-item small-mobile="12" tablet="6" small-desktop="4">
-      <docs-swatch style={{ '--swatch-color': `var(--diamond-color-${color})` }}>
-        <h4>{color}</h4>
-        <code>--diamond-color-{color}</code>
-      </docs-swatch>
-    </diamond-grid-item>
-  ))}
-</diamond-grid>
+<Tokens collection="diamond-color" />

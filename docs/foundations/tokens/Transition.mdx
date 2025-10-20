@@ -1,5 +1,5 @@
 import { Meta, Source } from '@storybook/blocks';
-import code from '../../../styles/tokens/transition.css?inline';
+import { Tokens } from '@etchteam/storybook-addon-design-token-tables';
 
 <Meta title="Foundations/Tokens/Transition" />
 
@@ -7,7 +7,7 @@ import code from '../../../styles/tokens/transition.css?inline';
 
 These tokens control the duration and timing function (easing) of transitions, such as hover, or [enter](?path=/docs/composition-enter--docs).
 
-<docs-token-table code={code}></docs-token-table>
+<Tokens collection="diamond-transition" />
 
 <diamond-grid wrap="wrap">
   <diamond-grid-item small-mobile="12" tablet="6" small-desktop="3">
