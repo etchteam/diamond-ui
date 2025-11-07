@@ -158,14 +158,9 @@ export const Form: StoryObj = {
 
             <div class="dmd-theme-light">
               <dmd-card class="dmd-spacing-bottom-lg">
-                <dmd-grid
-                  justify-content="space-between"
-                  align-items="center"
-                >
+                <dmd-grid justify-content="space-between" align-items="center">
                   <dmd-grid-item>
-                    <h2
-                      class="dmd-text-size-h3 dmd-spacing-bottom-none"
-                    >
+                    <h2 class="dmd-text-size-h3 dmd-spacing-bottom-none">
                       Card title
                     </h2>
                   </dmd-grid-item>
@@ -185,14 +180,9 @@ export const Form: StoryObj = {
               </dmd-card>
 
               <dmd-card class="dmd-spacing-bottom-lg">
-                <dmd-grid
-                  justify-content="space-between"
-                  align-items="center"
-                >
+                <dmd-grid justify-content="space-between" align-items="center">
                   <dmd-grid-item>
-                    <h2
-                      class="dmd-text-size-h3 dmd-spacing-bottom-none"
-                    >
+                    <h2 class="dmd-text-size-h3 dmd-spacing-bottom-none">
                       Card title
                     </h2>
                   </dmd-grid-item>
@@ -296,14 +286,9 @@ export const Form: StoryObj = {
               </dmd-card>
 
               <dmd-card class="dmd-spacing-bottom-lg">
-                <dmd-grid
-                  justify-content="space-between"
-                  align-items="center"
-                >
+                <dmd-grid justify-content="space-between" align-items="center">
                   <dmd-grid-item>
-                    <h2
-                      class="dmd-text-size-h3 dmd-spacing-bottom-none"
-                    >
+                    <h2 class="dmd-text-size-h3 dmd-spacing-bottom-none">
                       Card title
                     </h2>
                   </dmd-grid-item>
@@ -325,14 +310,9 @@ export const Form: StoryObj = {
               </dmd-card>
 
               <dmd-card class="dmd-spacing-bottom-lg">
-                <dmd-grid
-                  justify-content="space-between"
-                  align-items="center"
-                >
+                <dmd-grid justify-content="space-between" align-items="center">
                   <dmd-grid-item>
-                    <h2
-                      class="dmd-text-size-h3 dmd-spacing-bottom-none"
-                    >
+                    <h2 class="dmd-text-size-h3 dmd-spacing-bottom-none">
                       Card title
                     </h2>
                   </dmd-grid-item>
@@ -428,14 +408,9 @@ export const Form: StoryObj = {
               </dmd-card>
 
               <dmd-card class="dmd-spacing-bottom-lg">
-                <dmd-grid
-                  justify-content="space-between"
-                  align-items="center"
-                >
+                <dmd-grid justify-content="space-between" align-items="center">
                   <dmd-grid-item>
-                    <h2
-                      class="dmd-text-size-h3 dmd-spacing-bottom-none"
-                    >
+                    <h2 class="dmd-text-size-h3 dmd-spacing-bottom-none">
                       Card title
                     </h2>
                   </dmd-grid-item>
