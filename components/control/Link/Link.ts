@@ -6,14 +6,14 @@ export interface LinkAttributes {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-link': LinkAttributes;
+    'dmd-link': LinkAttributes;
   }
 }
 
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-link': JSXCustomElement<LinkAttributes>;
+      'dmd-': JSXCustomElement<LinkAttributes>;
     }
   }
 }

@@ -4,7 +4,7 @@ import { html } from 'lit';
 import './LoadingImg';
 
 export default {
-  component: 'diamond-loading-img',
+  component: 'dmd-loading-img',
   parameters: {
     docs: {
       description: {
@@ -17,12 +17,12 @@ export default {
 
 export const LoadingImg: StoryObj = {
   render: (args) => html`
-    <diamond-img>
-      <diamond-loading-img
+    <dmd-img>
+      <dmd-ing-img
         height="${args.height}"
         width="${args.width}"
-      ></diamond-loading-img>
-    </diamond-img>
+      ></dmd-loading-img>
+    </dmd-img>
   `,
 };
 

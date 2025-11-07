@@ -16,14 +16,14 @@ export interface ListAttributes {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-list': ListAttributes;
+    'dmd-list': ListAttributes;
   }
 }
 
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-list': JSXCustomElement<ListAttributes>;
+      'dmd-': JSXCustomElement<ListAttributes>;
     }
   }
 }

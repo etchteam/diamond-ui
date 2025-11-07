@@ -8,14 +8,14 @@ export interface ButtonAttributes {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-button': ButtonAttributes;
+    'dmd-button': ButtonAttributes;
   }
 }
 
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-button': JSXCustomElement<ButtonAttributes>;
+      'dmd-on': JSXCustomElement<ButtonAttributes>;
     }
   }
 }

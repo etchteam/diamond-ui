@@ -7,7 +7,7 @@ import '../../components/content/Icon/Icon';
 import '../../components/control/RadioCheckbox/RadioCheckbox';
 
 const infoIcon = html`
-  <diamond-icon class="diamond-text-size-lg">
+  <dmd-icon class="dmd-text-size-lg">
     <svg
       fill="none"
       viewBox="0 0 24 24"
@@ -32,11 +32,11 @@ const infoIcon = html`
         fill="#0D0D0D"
       ></path>
     </svg>
-  </diamond-icon>
+  </dmd-icon>
 `;
 
 const chevronDownIcon = html`
-  <diamond-icon>
+  <dmd->
     <svg
       fill="none"
       viewBox="0 0 24 24"
@@ -50,24 +50,24 @@ const chevronDownIcon = html`
         fill="currentColor"
       ></path>
     </svg>
-  </diamond-icon>
+  </dmd-icon>
 `;
 
 const envelopeIcon = html`
-  <diamond-icon>
+  <dmd->
     <svg fill="none" viewBox="0 0 24 24" height="24" width="24">
       <path
         d="M2 6C2 4.89543 2.89543 4 4 4H20C21.1046 4 22 4.89543 22 6V18C22 19.1046 21.1046 20 20 20H4C2.89543 20 2 19.1046 2 18V6ZM5.51859 6L12 11.6712L18.4814 6H5.51859ZM20 7.32877L12.6585 13.7526C12.2815 14.0825 11.7185 14.0825 11.3415 13.7526L4 7.32877V18H20V7.32877Z"
         fill="currentColor"
       ></path>
     </svg>
-  </diamond-icon>
+  </dmd-icon>
 `;
 
 const infoButton = html`
-  <diamond-button width="square">
+  <dmd-on width="square">
     <button type="button">
-      <diamond-icon>
+      <dmd->
         <svg
           fill="none"
           viewBox="0 0 24 24"
@@ -92,13 +92,13 @@ const infoButton = html`
             fill="#0D0D0D"
           ></path>
         </svg>
-      </diamond-icon>
+      </dmd-icon>
     </button>
-  </diamond-button>
+  </dmd-button>
 `;
 
 const checkIcon = html`
-  <diamond-icon>
+  <dmd->
     <svg
       fill="none"
       viewBox="0 0 24 24"
@@ -112,105 +112,105 @@ const checkIcon = html`
         fill="#0D0D0D"
       ></path>
     </svg>
-  </diamond-icon>
+  </dmd-icon>
 `;
 
 export const Form: StoryObj = {
   render: () => html`
-    <diamond-app header="sticky">
+    <dmd-header="sticky">
       <header slot="header">
-        <diamond-section padding="md">
-          <diamond-wrap size="xl" gutter="md">
+        <dmd-ion padding="md">
+          <dmd- size="xl" gutter="md">
             <img
               src="https://placehold.co/120x48"
               width="120"
               height="48"
               alt="Logo"
             />
-          </diamond-wrap>
-        </diamond-section>
+          </dmd-wrap>
+        </dmd-section>
       </header>
 
       <main>
-        <diamond-section padding="fluid" class="diamond-theme-medium">
-          <diamond-wrap size="md" gutter="md">
-            <diamond-grid
+        <dmd-ion padding="fluid" class="dmd-theme-medium">
+          <dmd- size="md" gutter="md">
+            <dmd-
               align-items="center"
-              class="diamond-spacing-bottom-lg"
+              class="dmd-spacing-bottom-lg"
               wrap="wrap"
             >
-              <diamond-grid-item small-mobile="12" small-tablet="auto">
+              <dmd--item small-mobile="12" small-tablet="auto">
                 <img
                   src="https://placehold.co/120x120"
                   width="120"
                   height="120"
                   alt="Placeholder"
                 />
-              </diamond-grid-item>
-              <diamond-grid-item small-mobile="12" small-tablet="1" grow>
-                <h1 class="diamond-text-size-h2">Big title, clever words</h1>
+              </dmd-grid-item>
+              <dmd--item small-mobile="12" small-tablet="1" grow>
+                <h1 class="dmd-text-size-h2">Big title, clever words</h1>
                 <p>
                   Pellentesque posuere enim ex, vel rutrum ligula semper et.
                   Donec vel nulla nibh.
                 </p>
-              </diamond-grid-item>
-            </diamond-grid>
+              </dmd-grid-item>
+            </dmd-grid>
 
-            <div class="diamond-theme-light">
-              <diamond-card class="diamond-spacing-bottom-lg">
-                <diamond-grid
+            <div class="dmd-theme-light">
+              <dmd- class="dmd-spacing-bottom-lg">
+                <dmd-
                   justify-content="space-between"
                   align-items="center"
                 >
-                  <diamond-grid-item>
+                  <dmd--item>
                     <h2
-                      class="diamond-text-size-h3 diamond-spacing-bottom-none"
+                      class="dmd-text-size-h3 dmd-spacing-bottom-none"
                     >
                       Card title
                     </h2>
-                  </diamond-grid-item>
-                  <diamond-grid-item> ${infoButton} </diamond-grid-item>
-                </diamond-grid>
-                <hr class="diamond-spacing-top-md diamond-spacing-bottom-md" />
-                <diamond-grid>
-                  <diamond-grid-item grow shrink>
+                  </dmd-grid-item>
+                  <dmd--item> ${infoButton} </dmd-grid-item>
+                </dmd-grid>
+                <hr class="dmd-spacing-top-md dmd-spacing-bottom-md" />
+                <dmd->
+                  <dmd--item grow shrink>
                     ${checkIcon} Nulla ante eu consequat.
-                  </diamond-grid-item>
-                  <diamond-grid-item>
-                    <diamond-link variant="no-underline">
+                  </dmd-grid-item>
+                  <dmd--item>
+                    <dmd- variant="no-underline">
                       <button type="button">Change</button>
-                    </diamond-link>
-                  </diamond-grid-item>
-                </diamond-grid>
-              </diamond-card>
+                    </dmd-link>
+                  </dmd-grid-item>
+                </dmd-grid>
+              </dmd-card>
 
-              <diamond-card class="diamond-spacing-bottom-lg">
-                <diamond-grid
+              <dmd- class="dmd-spacing-bottom-lg">
+                <dmd-
                   justify-content="space-between"
                   align-items="center"
                 >
-                  <diamond-grid-item>
+                  <dmd--item>
                     <h2
-                      class="diamond-text-size-h3 diamond-spacing-bottom-none"
+                      class="dmd-text-size-h3 dmd-spacing-bottom-none"
                     >
                       Card title
                     </h2>
-                  </diamond-grid-item>
-                  <diamond-grid-item> ${infoButton} </diamond-grid-item>
-                </diamond-grid>
-                <hr class="diamond-spacing-top-md diamond-spacing-bottom-md" />
+                  </dmd-grid-item>
+                  <dmd--item> ${infoButton} </dmd-grid-item>
+                </dmd-grid>
+                <hr class="dmd-spacing-top-md dmd-spacing-bottom-md" />
 
-                <diamond-form-group
+                <dmd--group
                   orientation="horizontal"
-                  class="diamond-spacing-bottom-md"
+                  class="dmd-spacing-bottom-md"
                 >
-                  <diamond-grid>
-                    <diamond-grid-item grow="grow">
+                  <dmd->
+                    <dmd--item grow="grow">
                       <label for="select">Form group label</label>
-                    </diamond-grid-item>
-                    <diamond-grid-item> ${infoIcon} </diamond-grid-item>
-                  </diamond-grid>
-                  <diamond-input>
+                    </dmd-grid-item>
+                    <dmd--item> ${infoIcon} </dmd-grid-item>
+                  </dmd-grid>
+                  <dmd-t>
                     <select id="select">
                       <option>Option 1</option>
                       <option>Option 2</option>
@@ -220,144 +220,144 @@ export const Form: StoryObj = {
                       <option>Option 6</option>
                     </select>
                     ${chevronDownIcon}
-                  </diamond-input>
-                </diamond-form-group>
+                  </dmd-input>
+                </dmd-form-group>
 
-                <diamond-form-group
+                <dmd--group
                   orientation="horizontal"
-                  class="diamond-spacing-bottom-md"
+                  class="dmd-spacing-bottom-md"
                 >
-                  <diamond-grid>
-                    <diamond-grid-item grow="grow">
+                  <dmd->
+                    <dmd--item grow="grow">
                       <label for="radio-group">Form group label</label>
-                    </diamond-grid-item>
-                    <diamond-grid-item> ${infoIcon} </diamond-grid-item>
-                  </diamond-grid>
+                    </dmd-grid-item>
+                    <dmd--item> ${infoIcon} </dmd-grid-item>
+                  </dmd-grid>
                   <div role="radiogroup" id="radio-group">
-                    <diamond-radio-checkbox>
+                    <dmd-o-checkbox>
                       <label>
                         <input type="radio" name="my-radio" value="yes" />
                         Item label one
                       </label>
-                    </diamond-radio-checkbox>
-                    <diamond-radio-checkbox>
+                    </dmd-radio-checkbox>
+                    <dmd-o-checkbox>
                       <label>
                         <input type="radio" name="my-radio" value="no" />
                         Item label two
                       </label>
-                    </diamond-radio-checkbox>
+                    </dmd-radio-checkbox>
                   </div>
-                </diamond-form-group>
+                </dmd-form-group>
 
-                <diamond-form-group
+                <dmd--group
                   orientation="horizontal"
-                  class="diamond-spacing-bottom-md"
+                  class="dmd-spacing-bottom-md"
                 >
                   <label for="composing-elements"
                     >Form group label text that is very long so it wraps onto
                     two lines</label
                   >
-                  <diamond-input>
+                  <dmd-t>
                     ${envelopeIcon}
                     <input id="composing-elements" type="text" />
-                  </diamond-input>
-                  <diamond-help-text>Help text</diamond-help-text>
-                </diamond-form-group>
+                  </dmd-input>
+                  <dmd--text>Help text</dmd-help-text>
+                </dmd-form-group>
 
-                <diamond-form-group
+                <dmd--group
                   orientation="horizontal"
-                  class="diamond-spacing-bottom-md"
+                  class="dmd-spacing-bottom-md"
                 >
                   <label for="checkbox-group">Form group label</label>
                   <div>
-                    <diamond-radio-checkbox>
+                    <dmd-o-checkbox>
                       <label>
                         <input type="checkbox" name="my-check[]" value="yes" />
                         Item label one
                       </label>
-                    </diamond-radio-checkbox>
-                    <diamond-radio-checkbox>
+                    </dmd-radio-checkbox>
+                    <dmd-o-checkbox>
                       <label>
                         <input type="checkbox" name="my-check[]" value="no" />
                         Item label two
                       </label>
-                    </diamond-radio-checkbox>
+                    </dmd-radio-checkbox>
                   </div>
-                </diamond-form-group>
+                </dmd-form-group>
 
-                <hr class="diamond-spacing-top-md diamond-spacing-bottom-md" />
-                <diamond-grid justify-content="flex-end">
-                  <diamond-grid-item small-mobile="12" tablet="6">
-                    <diamond-button width="full-width">
+                <hr class="dmd-spacing-top-md dmd-spacing-bottom-md" />
+                <dmd- justify-content="flex-end">
+                  <dmd--item small-mobile="12" tablet="6">
+                    <dmd-on width="full-width">
                       <button type="button">Button text</button>
-                    </diamond-button>
-                  </diamond-grid-item>
-                </diamond-grid>
-              </diamond-card>
+                    </dmd-button>
+                  </dmd-grid-item>
+                </dmd-grid>
+              </dmd-card>
 
-              <diamond-card class="diamond-spacing-bottom-lg">
-                <diamond-grid
+              <dmd- class="dmd-spacing-bottom-lg">
+                <dmd-
                   justify-content="space-between"
                   align-items="center"
                 >
-                  <diamond-grid-item>
+                  <dmd--item>
                     <h2
-                      class="diamond-text-size-h3 diamond-spacing-bottom-none"
+                      class="dmd-text-size-h3 dmd-spacing-bottom-none"
                     >
                       Card title
                     </h2>
-                  </diamond-grid-item>
-                  <diamond-grid-item> ${infoButton} </diamond-grid-item>
-                </diamond-grid>
-                <hr class="diamond-spacing-top-md diamond-spacing-bottom-md" />
-                <diamond-grid>
-                  <diamond-grid-item small-mobile="6">
-                    <diamond-button width="full-width">
+                  </dmd-grid-item>
+                  <dmd--item> ${infoButton} </dmd-grid-item>
+                </dmd-grid>
+                <hr class="dmd-spacing-top-md dmd-spacing-bottom-md" />
+                <dmd->
+                  <dmd--item small-mobile="6">
+                    <dmd-on width="full-width">
                       <button type="button">Yes</button>
-                    </diamond-button>
-                  </diamond-grid-item>
-                  <diamond-grid-item small-mobile="6">
-                    <diamond-button width="full-width">
+                    </dmd-button>
+                  </dmd-grid-item>
+                  <dmd--item small-mobile="6">
+                    <dmd-on width="full-width">
                       <button type="button">No</button>
-                    </diamond-button>
-                  </diamond-grid-item>
-                </diamond-grid>
-              </diamond-card>
+                    </dmd-button>
+                  </dmd-grid-item>
+                </dmd-grid>
+              </dmd-card>
 
-              <diamond-card class="diamond-spacing-bottom-lg">
-                <diamond-grid
+              <dmd- class="dmd-spacing-bottom-lg">
+                <dmd-
                   justify-content="space-between"
                   align-items="center"
                 >
-                  <diamond-grid-item>
+                  <dmd--item>
                     <h2
-                      class="diamond-text-size-h3 diamond-spacing-bottom-none"
+                      class="dmd-text-size-h3 dmd-spacing-bottom-none"
                     >
                       Card title
                     </h2>
-                  </diamond-grid-item>
-                  <diamond-grid-item> ${infoButton} </diamond-grid-item>
-                </diamond-grid>
+                  </dmd-grid-item>
+                  <dmd--item> ${infoButton} </dmd-grid-item>
+                </dmd-grid>
 
-                <hr class="diamond-spacing-top-md diamond-spacing-bottom-md" />
+                <hr class="dmd-spacing-top-md dmd-spacing-bottom-md" />
 
-                <diamond-grid>
-                  <diamond-grid-item grow shrink>
+                <dmd->
+                  <dmd--item grow shrink>
                     <h4>Section title</h4>
-                  </diamond-grid-item>
-                  <diamond-grid-item>
-                    <diamond-link variant="no-underline">
+                  </dmd-grid-item>
+                  <dmd--item>
+                    <dmd- variant="no-underline">
                       <button type="button">Remove</button>
-                    </diamond-link>
-                  </diamond-grid-item>
-                </diamond-grid>
+                    </dmd-link>
+                  </dmd-grid-item>
+                </dmd-grid>
 
-                <diamond-form-group
+                <dmd--group
                   orientation="horizontal"
-                  class="diamond-spacing-bottom-md diamond-spacing-top-md"
+                  class="dmd-spacing-bottom-md dmd-spacing-top-md"
                 >
                   <label for="select">Form group label</label>
-                  <diamond-input>
+                  <dmd-t>
                     <select id="select">
                       <option>Option 1</option>
                       <option>Option 2</option>
@@ -367,97 +367,97 @@ export const Form: StoryObj = {
                       <option>Option 6</option>
                     </select>
                     ${chevronDownIcon}
-                  </diamond-input>
-                </diamond-form-group>
+                  </dmd-input>
+                </dmd-form-group>
 
-                <diamond-form-group
+                <dmd--group
                   orientation="horizontal"
-                  class="diamond-spacing-bottom-md"
+                  class="dmd-spacing-bottom-md"
                 >
                   <label for="radio-group-2">Form group label</label>
                   <div role="radiogroup" id="radio-group-2">
-                    <diamond-radio-checkbox>
+                    <dmd-o-checkbox>
                       <label>
                         <input type="radio" name="my-radio-2" value="yes" />
                         Item label one
                       </label>
-                    </diamond-radio-checkbox>
-                    <diamond-radio-checkbox>
+                    </dmd-radio-checkbox>
+                    <dmd-o-checkbox>
                       <label>
                         <input type="radio" name="my-radio-2" value="no" />
                         Item label two
                       </label>
-                    </diamond-radio-checkbox>
+                    </dmd-radio-checkbox>
                   </div>
-                </diamond-form-group>
+                </dmd-form-group>
 
-                <diamond-form-group
+                <dmd--group
                   orientation="horizontal"
-                  class="diamond-spacing-bottom-md"
+                  class="dmd-spacing-bottom-md"
                 >
                   <label for="radio-group-3">Form group label</label>
                   <div role="radiogroup" id="radio-group-3">
-                    <diamond-radio-checkbox>
+                    <dmd-o-checkbox>
                       <label>
                         <input type="radio" name="my-radio-3" value="yes" />
                         Item label one
                       </label>
-                    </diamond-radio-checkbox>
-                    <diamond-radio-checkbox>
+                    </dmd-radio-checkbox>
+                    <dmd-o-checkbox>
                       <label>
                         <input type="radio" name="my-radio-3" value="no" />
                         Item label two
                       </label>
-                    </diamond-radio-checkbox>
+                    </dmd-radio-checkbox>
                   </div>
-                </diamond-form-group>
+                </dmd-form-group>
 
-                <hr class="diamond-spacing-top-md diamond-spacing-bottom-md" />
-                <diamond-grid wrap="wrap">
-                  <diamond-grid-item small-mobile="12" tablet="6">
-                    <diamond-button width="full-width">
+                <hr class="dmd-spacing-top-md dmd-spacing-bottom-md" />
+                <dmd- wrap="wrap">
+                  <dmd--item small-mobile="12" tablet="6">
+                    <dmd-on width="full-width">
                       <button type="button">Button text</button>
-                    </diamond-button>
-                  </diamond-grid-item>
-                  <diamond-grid-item small-mobile="12" tablet="6">
-                    <diamond-button width="full-width">
+                    </dmd-button>
+                  </dmd-grid-item>
+                  <dmd--item small-mobile="12" tablet="6">
+                    <dmd-on width="full-width">
                       <button type="button">Button text</button>
-                    </diamond-button>
-                  </diamond-grid-item>
-                </diamond-grid>
-              </diamond-card>
+                    </dmd-button>
+                  </dmd-grid-item>
+                </dmd-grid>
+              </dmd-card>
 
-              <diamond-card class="diamond-spacing-bottom-lg">
-                <diamond-grid
+              <dmd- class="dmd-spacing-bottom-lg">
+                <dmd-
                   justify-content="space-between"
                   align-items="center"
                 >
-                  <diamond-grid-item>
+                  <dmd--item>
                     <h2
-                      class="diamond-text-size-h3 diamond-spacing-bottom-none"
+                      class="dmd-text-size-h3 dmd-spacing-bottom-none"
                     >
                       Card title
                     </h2>
-                  </diamond-grid-item>
-                  <diamond-grid-item> ${infoButton} </diamond-grid-item>
-                </diamond-grid>
-                <hr class="diamond-spacing-top-md diamond-spacing-bottom-md" />
-                <diamond-link variant="no-underline">
+                  </dmd-grid-item>
+                  <dmd--item> ${infoButton} </dmd-grid-item>
+                </dmd-grid>
+                <hr class="dmd-spacing-top-md dmd-spacing-bottom-md" />
+                <dmd- variant="no-underline">
                   <button type="button">${chevronDownIcon} Button text</button>
-                </diamond-link>
-              </diamond-card>
+                </dmd-link>
+              </dmd-card>
             </div>
 
-            <diamond-grid justify-content="flex-end">
-              <diamond-grid-item small-mobile="12" tablet="6">
-                <diamond-button width="full-width" variant="primary">
+            <dmd- justify-content="flex-end">
+              <dmd--item small-mobile="12" tablet="6">
+                <dmd-on width="full-width" variant="primary">
                   <button type="button">Button text</button>
-                </diamond-button>
-              </diamond-grid-item>
-            </diamond-grid>
-          </diamond-wrap>
-        </diamond-section>
+                </dmd-button>
+              </dmd-grid-item>
+            </dmd-grid>
+          </dmd-wrap>
+        </dmd-section>
       </main>
-    </diamond-app>
+    </dmd-app>
   `,
 };

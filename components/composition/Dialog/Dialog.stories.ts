@@ -12,7 +12,7 @@ to be used with a wrap and a card.
 `;
 
 export default {
-  component: 'diamond-dialog',
+  component: 'dmd-dialog',
   parameters: {
     layout: 'fullscreen',
     docs: {
@@ -29,12 +29,12 @@ export default {
 
 export const Dialog: StoryObj = {
   render: () => html`
-    <diamond-button>
+    <dmd-button>
       <button type="button" id="toggle">Open dialog</button>
-    </diamond-button>
+    </dmd-button>
     <dialog>
-      <diamond-wrap size="xs" gutter="none">
-        <diamond-card border radius>
+      <dmd- size="xs" gutter="none">
+        <dmd- border radius>
           <h3>Modal title</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -43,8 +43,8 @@ export const Dialog: StoryObj = {
           <form method="dialog">
             <button>Close</button>
           </form>
-        </diamond-card>
-      </diamond-wrap>
+        </dmd-card>
+      </dmd-wrap>
     </dialog>
     <script>
       document.getElementById('toggle').addEventListener('click', () => {

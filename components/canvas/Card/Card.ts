@@ -19,14 +19,14 @@ export interface CardAttributes {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-card': CardAttributes;
+    'dmd-card': CardAttributes;
   }
 }
 
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-card': JSXCustomElement<CardAttributes>;
+      'dmd-': JSXCustomElement<CardAttributes>;
     }
   }
 }

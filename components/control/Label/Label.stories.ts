@@ -21,9 +21,9 @@ export default {
 export const Label: StoryObj = {
   render: () => html`
     <label for="input-with-label">Label</label>
-    <diamond-input>
+    <dmd-input>
       <input id="input-with-label" />
-    </diamond-input>
+    </dmd-input>
   `,
 };
 
@@ -31,9 +31,9 @@ export const Legend: StoryObj = {
   render: () => html`
     <fieldset>
       <legend>Legend</legend>
-      <diamond-input>
+      <dmd-t>
         <input />
-      </diamond-input>
+      </dmd-input>
     </fieldset>
   `,
 };
@@ -41,7 +41,7 @@ export const Legend: StoryObj = {
 export const ScreenReaderOnly: StoryObj = {
   render: () => html`
     <p>The invisible label content below is read by screen readers</p>
-    <label for="input-with-label" class="diamond-sr-only">Label</label>
+    <label for="input-with-label" class="dmd-sr-only">Label</label>
   `,
 };
 
@@ -49,7 +49,7 @@ ScreenReaderOnly.parameters = {
   docs: {
     description: {
       story:
-        'Occasionally, a label is only helpful when a screen reader is in use. In this case, the `.diamond-sr-only` class can be used to visually hide the label.',
+        'Occasionally, a label is only helpful when a screen reader is in use. In this case, the `.dmd-sr-only` class can be used to visually hide the label.',
     },
   },
 };

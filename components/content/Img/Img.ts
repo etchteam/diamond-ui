@@ -12,7 +12,7 @@ export interface ImgAttributes {
   objectPosition?: string;
 }
 
-@customElement('diamond-img')
+@customElement('dmd-img')
 export class Img extends LitElement {
   @property({ reflect: true, attribute: 'aria-hidden' }) ariaHidden:
     | string
@@ -33,9 +33,9 @@ export class Img extends LitElement {
     return html`
       <style>
         :host {
-          --diamond-img-aspect-ratio: ${this.aspectRatio};
-          --diamond-img-object-fit: ${this.objectFit};
-          --diamond-img-object-position: ${this.objectPosition};
+          --dmd-img-aspect-ratio: ${this.aspectRatio};
+          --dmd-object-fit: ${this.objectFit};
+          --dmd-object-position: ${this.objectPosition};
         }
       </style>
       <slot></slot>
@@ -45,14 +45,14 @@ export class Img extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-img': ImgAttributes;
+    'dmd-img': ImgAttributes;
   }
 }
 
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-img': JSXCustomElement<ImgAttributes>;
+      'dmd-img': JSXCustomElement<ImgAttributes>;
     }
   }
 }

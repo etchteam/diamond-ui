@@ -1,6 +1,6 @@
 :root {
-  --diamond-radius-xs: 0.125rem;
-  --diamond-radius-sm: 0.25rem;
-  --diamond-radius: 0.5rem;
-  --diamond-radius-lg: 1rem;
+  --dmd-radius-xs: 0.125rem;
+  --dmd-radius-sm: 0.25rem;
+  --dmd-radius: 0.5rem;
+  --dmd-radius-lg: 1rem;
 }

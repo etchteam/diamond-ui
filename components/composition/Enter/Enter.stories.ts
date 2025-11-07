@@ -4,7 +4,7 @@ import { html } from 'lit';
 import './Enter';
 
 export default {
-  component: 'diamond-enter',
+  component: 'dmd-enter',
   argTypes: {
     type: {
       control: {
@@ -25,13 +25,13 @@ export default {
 
 export const Enter: StoryObj = {
   render: (args) => html`
-    <diamond-enter
+    <dmd-enter
       type="${args.type}"
       enter-on-scroll="${args.enterOnScroll}"
       delay="${args.delay}"
     >
       <div style="background-color: #eee; height: 400px;"></div>
-    </diamond-enter>
+    </dmd-enter>
   `,
 };
 
@@ -44,13 +44,13 @@ Enter.args = {
 export const OnScroll: StoryObj = {
   render: (args) => html`
     <div style="height: 120vh;">Scroll down</div>
-    <diamond-enter
+    <dmd-r
       type="${args.type}"
       enter-on-scroll="${args.enterOnScroll}"
       delay="${args.delay}"
     >
       <div style="background-color: #eee; height: 400px;"></div>
-    </diamond-enter>
+    </dmd-enter>
   `,
 };
 

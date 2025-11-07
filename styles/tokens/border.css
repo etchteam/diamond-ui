@@ -1,6 +1,6 @@
 :root {
-  --diamond-border-width: 1px;
-  --diamond-border-style: solid;
-  --diamond-border: var(--diamond-border-width) var(--diamond-border-style)
-    var(--diamond-theme-border-color);
+  --dmd-border-width: 1px;
+  --dmd-border-style: solid;
+  --dmd-border: var(--dmd-border-width) var(--dmd-border-style)
+    var(--dmd-theme-border-color);
 }

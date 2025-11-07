@@ -19,6 +19,7 @@ module.exports = {
           'center',
           'etc',
           'flexbox',
+          'dmd',
         ],
       },
     ],

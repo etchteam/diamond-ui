@@ -15,14 +15,14 @@ export interface SectionAttributes {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-section': SectionAttributes;
+    'dmd-section': SectionAttributes;
   }
 }
 
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-section': JSXCustomElement<SectionAttributes>;
+      'dmd-ion': JSXCustomElement<SectionAttributes>;
     }
   }
 }

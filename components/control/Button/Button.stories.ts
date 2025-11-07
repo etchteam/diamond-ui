@@ -6,12 +6,12 @@ import '../../composition/Grid/Grid';
 import '../../composition/Grid/GridItem';
 
 export default {
-  component: 'diamond-button',
+  component: 'dmd-button',
   parameters: {
     docs: {
       description: {
         component:
-          'Provides styles for default HTML button elements that can be enhanced by wrapping them in a `diamond-button` component.',
+          'Provides styles for default HTML button elements that can be enhanced by wrapping them in a `dmd-button` component.',
       },
     },
   },
@@ -39,90 +39,90 @@ export default {
 
 export const Button: StoryObj = {
   render: (args) => html`
-    <diamond-button size="${args.size}" variant="${args.variant}" width="${args.width}">
+    <dmd-button size="${args.size}" variant="${args.variant}" width="${args.width}">
       <button type="button">Button</button>
-    </diamond-wrap>
+    </dmd-wrap>
   `,
 };
 
 export const AnchorButton: StoryObj = {
   render: () => html`
-    <diamond-button>
+    <dmd-on>
       <a href="#" onclick="return false;">Anchor</a>
-    </diamond-button>
+    </dmd-button>
   `,
 };
 
 export const PrimaryButton: StoryObj = {
   render: () => html`
-    <diamond-grid wrap="wrap">
-      <diamond-grid-item>
-        <diamond-button variant="primary">
+    <dmd- wrap="wrap">
+      <dmd--item>
+        <dmd-on variant="primary">
           <button>Primary</button>
-        </diamond-button>
-      </diamond-grid-item>
-      <diamond-grid-item>
-        <diamond-button variant="primary">
+        </dmd-button>
+      </dmd-grid-item>
+      <dmd--item>
+        <dmd-on variant="primary">
           <button disabled>Disabled</button>
-        </diamond-button>
-      </diamond-grid-item>
-    </diamond-grid>
+        </dmd-button>
+      </dmd-grid-item>
+    </dmd-grid>
   `,
 };
 
 export const SecondaryButton: StoryObj = {
   render: () => html`
-    <diamond-grid wrap="wrap">
-      <diamond-grid-item>
-        <diamond-button variant="secondary">
+    <dmd- wrap="wrap">
+      <dmd--item>
+        <dmd-on variant="secondary">
           <button>Secondary</button>
-        </diamond-button>
-      </diamond-grid-item>
-      <diamond-grid-item>
-        <diamond-button variant="secondary">
+        </dmd-button>
+      </dmd-grid-item>
+      <dmd--item>
+        <dmd-on variant="secondary">
           <button disabled>Disabled</button>
-        </diamond-button>
-      </diamond-grid-item>
-    </diamond-grid>
+        </dmd-button>
+      </dmd-grid-item>
+    </dmd-grid>
   `,
 };
 
 export const TextButton: StoryObj = {
   render: () => html`
-    <diamond-grid wrap="wrap">
-      <diamond-grid-item>
-        <diamond-button variant="text">
+    <dmd- wrap="wrap">
+      <dmd--item>
+        <dmd-on variant="text">
           <button>Text</button>
-        </diamond-button>
-      </diamond-grid-item>
-      <diamond-grid-item>
-        <diamond-button variant="text">
+        </dmd-button>
+      </dmd-grid-item>
+      <dmd--item>
+        <dmd-on variant="text">
           <button disabled>Disabled</button>
-        </diamond-button>
-      </diamond-grid-item>
-    </diamond-grid>
+        </dmd-button>
+      </dmd-grid-item>
+    </dmd-grid>
   `,
 };
 
 export const Sizes: StoryObj = {
   render: () => html`
-    <diamond-button size="sm">
+    <dmd-on size="sm">
       <button type="button">Button</button>
-    </diamond-button>
-    <diamond-button size="md">
+    </dmd-button>
+    <dmd-on size="md">
       <button type="button">Button</button>
-    </diamond-button>
-    <diamond-button size="lg">
+    </dmd-button>
+    <dmd-on size="lg">
       <button type="button">Button</button>
-    </diamond-button>
+    </dmd-button>
   `,
 };
 
 export const IconOnlyButton: StoryObj = {
   render: () => html`
-    <diamond-grid wrap="wrap" align-items="center">
-      <diamond-grid-item>
-        <diamond-button width="square">
+    <dmd- wrap="wrap" align-items="center">
+      <dmd--item>
+        <dmd-on width="square">
           <button type="button">
             <svg fill="none" viewBox="0 0 24 24" height="24" width="24">
               <path
@@ -131,10 +131,10 @@ export const IconOnlyButton: StoryObj = {
               ></path>
             </svg>
           </button>
-        </diamond-button>
-      </diamond-grid-item>
-      <diamond-grid-item>
-        <diamond-button variant="text">
+        </dmd-button>
+      </dmd-grid-item>
+      <dmd--item>
+        <dmd-on variant="text">
           <button type="button">
             <svg fill="none" viewBox="0 0 24 24" height="24" width="24">
               <path
@@ -143,9 +143,9 @@ export const IconOnlyButton: StoryObj = {
               ></path>
             </svg>
           </button>
-        </diamond-button>
-      </diamond-grid-item>
-    </diamond-grid>
+        </dmd-button>
+      </dmd-grid-item>
+    </dmd-grid>
   `,
 };
 
@@ -153,29 +153,29 @@ export const CustomButton: StoryObj = {
   render: () => html`
     <style>
       .positive-button {
-        --diamond-button-background: hotpink;
-        --diamond-button-background-hover: pink;
-        --diamond-button-background-disabled: lightgray;
-        --diamond-button-border-color: hotpink;
-        --diamond-button-border-color-hover: hotpink;
-        --diamond-button-border-color-disabled: lightgray;
-        --diamond-button-color: white;
-        --diamond-button-color-hover: white;
-        --diamond-button-color-disabled: white;
+        --dmd-button-background: hotpink;
+        --dmd-button-background-hover: pink;
+        --dmd-button-background-disabled: lightgray;
+        --dmd-button-border-color: hotpink;
+        --dmd-button-border-color-hover: hotpink;
+        --dmd-button-border-color-disabled: lightgray;
+        --dmd-button-color: white;
+        --dmd-button-color-hover: white;
+        --dmd-button-color-disabled: white;
       }
     </style>
-    <diamond-grid wrap="wrap">
-      <diamond-grid-item>
-        <diamond-button class="positive-button">
+    <dmd- wrap="wrap">
+      <dmd--item>
+        <dmd-on class="positive-button">
           <button>Custom button</button>
-        </diamond-button>
-      </diamond-grid-item>
-      <diamond-grid-item class="positive-button">
-        <diamond-button>
+        </dmd-button>
+      </dmd-grid-item>
+      <dmd--item class="positive-button">
+        <dmd-on>
           <button disabled>Disabled</button>
-        </diamond-button>
-      </diamond-grid-item>
-    </diamond-grid>
+        </dmd-button>
+      </dmd-grid-item>
+    </dmd-grid>
   `,
 };
 
@@ -190,19 +190,19 @@ CustomButton.parameters = {
 
 export const HtmlButtonTypes: StoryObj = {
   render: () => html`
-    <diamond-grid wrap="wrap">
-      <diamond-grid-item>
-        <diamond-button>
+    <dmd- wrap="wrap">
+      <dmd--item>
+        <dmd-on>
           <button>Default</button>
-        </diamond-button>
-      </diamond-grid-item>
-      <diamond-grid-item>
-        <diamond-button>
+        </dmd-button>
+      </dmd-grid-item>
+      <dmd--item>
+        <dmd-on>
           <input type="button" value="<input>" />
-        </diamond-button>
-      </diamond-grid-item>
-      <diamond-grid-item>
-        <diamond-button>
+        </dmd-button>
+      </dmd-grid-item>
+      <dmd--item>
+        <dmd-on>
           <button>
             <svg fill="none" viewBox="0 0 24 24" height="24" width="24">
               <path
@@ -212,39 +212,39 @@ export const HtmlButtonTypes: StoryObj = {
             </svg>
             Icon
           </button>
-        </diamond-button>
-      </diamond-grid-item>
-      <diamond-grid-item>
-        <diamond-button>
+        </dmd-button>
+      </dmd-grid-item>
+      <dmd--item>
+        <dmd-on>
           <button type="submit">Submit</button>
-        </diamond-button>
-      </diamond-grid-item>
-      <diamond-grid-item>
-        <diamond-button>
+        </dmd-button>
+      </dmd-grid-item>
+      <dmd--item>
+        <dmd-on>
           <button type="button">Type Button</button>
-        </diamond-button>
-      </diamond-grid-item>
-      <diamond-grid-item>
-        <diamond-button>
+        </dmd-button>
+      </dmd-grid-item>
+      <dmd--item>
+        <dmd-on>
           <button type="reset">Reset</button>
-        </diamond-button>
-      </diamond-grid-item>
-      <diamond-grid-item>
-        <diamond-button>
+        </dmd-button>
+      </dmd-grid-item>
+      <dmd--item>
+        <dmd-on>
           <button disabled>Disabled</button>
-        </diamond-button>
-      </diamond-grid-item>
-      <diamond-grid-item>
-        <diamond-button>
+        </dmd-button>
+      </dmd-grid-item>
+      <dmd--item>
+        <dmd-on>
           <input type="file" />
-        </diamond-button>
-      </diamond-grid-item>
-      <diamond-grid-item>
-        <diamond-button>
+        </dmd-button>
+      </dmd-grid-item>
+      <dmd--item>
+        <dmd-on>
           <input type="file" disabled />
-        </diamond-button>
-      </diamond-grid-item>
-    </diamond-grid>
+        </dmd-button>
+      </dmd-grid-item>
+    </dmd-grid>
   `,
 };
 

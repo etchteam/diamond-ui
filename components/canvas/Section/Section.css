@@ -1,35 +1,35 @@
-diamond-section {
-  background: var(--diamond-theme-background);
-  color: var(--diamond-theme-color);
+dmd-section {
+  background: var(--dmd-theme-background);
+  color: var(--dmd-theme-color);
   display: block;
-  padding-block: var(--diamond-spacing);
+  padding-block: var(--dmd-spacing);
 
   &[padding='xs'] {
-    padding-block: var(--diamond-spacing-xs);
+    padding-block: var(--dmd-spacing-xs);
   }
 
   &[padding='sm'] {
-    padding-block: var(--diamond-spacing-sm);
+    padding-block: var(--dmd-spacing-sm);
   }
 
   &[padding='lg'] {
-    padding-block: var(--diamond-spacing-lg);
+    padding-block: var(--dmd-spacing-lg);
   }
 
   &[padding='xl'] {
-    padding-block: var(--diamond-spacing-xl);
+    padding-block: var(--dmd-spacing-xl);
   }
 
   &[padding='fluid-sm'] {
-    padding-block: var(--diamond-spacing-fluid-sm);
+    padding-block: var(--dmd-spacing-fluid-sm);
   }
 
   &[padding='fluid'] {
-    padding-block: var(--diamond-spacing-fluid);
+    padding-block: var(--dmd-spacing-fluid);
   }
 
   &[padding='fluid-lg'] {
-    padding-block: var(--diamond-spacing-fluid-lg);
+    padding-block: var(--dmd-spacing-fluid-lg);
   }
 
   &[padding='none'] {

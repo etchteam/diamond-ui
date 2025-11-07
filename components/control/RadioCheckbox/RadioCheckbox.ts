@@ -7,7 +7,7 @@ export interface RadioCheckboxAttributes {
   state?: 'valid' | 'invalid';
 }
 
-@customElement('diamond-radio-checkbox')
+@customElement('dmd-radio-checkbox')
 export class RadioCheckbox extends LitElement {
   @property({ reflect: true }) state?: 'valid' | 'invalid';
 
@@ -38,14 +38,14 @@ export class RadioCheckbox extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-radio-checkbox': RadioCheckboxAttributes;
+    'dmd-o-checkbox': RadioCheckboxAttributes;
   }
 }
 
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-radio-checkbox': JSXCustomElement<RadioCheckboxAttributes>;
+      'dmd-o-checkbox': JSXCustomElement<RadioCheckboxAttributes>;
     }
   }
 }

@@ -1,18 +1,18 @@
 :root {
-  --diamond-theme-background: var(--diamond-color-white);
-  --diamond-theme-background-muted: var(--diamond-color-grey-100);
+  --dmd-theme-background: var(--dmd-color-white);
+  --dmd-theme-background-muted: var(--dmd-color-grey-100);
 
-  --diamond-theme-border-color: var(--diamond-color-grey-200);
-  --diamond-theme-border-color-hover: #1a0dab;
+  --dmd-theme-border-color: var(--dmd-color-grey-200);
+  --dmd-theme-border-color-hover: #1a0dab;
 
-  --diamond-theme-color: var(--diamond-color-grey-900);
-  --diamond-theme-color-muted: var(--diamond-color-grey-700);
+  --dmd-theme-color: var(--dmd-color-grey-900);
+  --dmd-theme-color-muted: var(--dmd-color-grey-700);
 
-  --diamond-theme-heading-color: var(--diamond-theme-color);
+  --dmd-theme-heading-color: var(--dmd-theme-color);
 
-  --diamond-theme-icon-color: var(--diamond-theme-color);
+  --dmd-theme-icon-color: var(--dmd-theme-color);
 
-  --diamond-theme-link-color: #1a0dab;
+  --dmd-theme-link-color: #1a0dab;
 
-  --diamond-theme-link-text-decoration: underline;
+  --dmd-theme-link-text-decoration: underline;
 }

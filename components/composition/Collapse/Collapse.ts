@@ -7,13 +7,13 @@ export interface CollapseAttributes {
   open?: boolean;
 }
 
-@customElement('diamond-collapse')
+@customElement('dmd-collapse')
 export class Collapse extends LitElement {
   @property({ reflect: true, type: Boolean }) open?: boolean;
 
   static readonly styles = [
     css`
-      @keyframes diamond-collapse-overflow {
+      @keyframes dmd-collapse-overflow {
         0%,
         99% {
           overflow: hidden;
@@ -28,31 +28,31 @@ export class Collapse extends LitElement {
         grid-template-rows: 0fr;
         overflow: hidden;
         transition:
-          grid-template-rows var(--diamond-transition),
-          content-visibility var(--diamond-transition),
-          overflow var(--diamond-transition);
+          grid-template-rows var(--dmd-transition),
+          content-visibility var(--dmd-sition),
+          overflow var(--dmd-sition);
         transition-behavior: allow-discrete;
       }
 
-      .diamond-collapse__content {
+      .dmd-collapse__content {
         overflow: hidden;
       }
 
       :host([open]:not([open='false'])) {
-        animation: diamond-collapse-overflow var(--diamond-transition) forwards;
+        animation: dmd-collapse-overflow var(--dm--dmd-on) forwards;
         content-visibility: visible;
         grid-template-rows: 1fr;
       }
 
-      :host([open]:not([open='false'])) .diamond-collapse__content {
-        animation: diamond-collapse-overflow var(--diamond-transition) forwards;
+      :host([open]:not([open='false'])) .dmd-collapse__content {
+        animation: dmd-collapse-overflow var(--dm--dmd-on) forwards;
       }
     `,
   ];
 
   render() {
     return html`
-      <div class="diamond-collapse__content">
+      <div class="dmd-collapse__content">
         <slot></slot>
       </div>
     `;
@@ -61,14 +61,14 @@ export class Collapse extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-collapse': CollapseAttributes;
+    'dmd-collapse': CollapseAttributes;
   }
 }
 
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-collapse': JSXCustomElement<CollapseAttributes>;
+      'dmd-collapse': JSXCustomElement<CollapseAttributes>;
     }
   }
 }

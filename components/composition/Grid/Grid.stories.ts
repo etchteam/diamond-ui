@@ -10,7 +10,7 @@ the most commonly used flexbox properties as attributes.
 `;
 
 export default {
-  component: 'diamond-grid',
+  component: 'dmd-grid',
   argTypes: {
     wrap: {
       control: {
@@ -68,7 +68,7 @@ export const Grid: StoryObj = {
     gap,
     inline,
   }) => html`
-    <diamond-grid
+    <dmd-grid
       wrap="${wrap}"
       direction="${direction}"
       justify-content="${justifyContent}"
@@ -78,12 +78,12 @@ export const Grid: StoryObj = {
     >
       ${[...Array(12).keys()].map(
         (i) => html`
-          <diamond-grid-item grow shrink>
+          <dmd--item grow shrink>
             <docs-cell>${i + 1}</docs-cell>
-          </diamond-grid-item>
+          </dmd-grid-item>
         `,
       )}
-    </diamond-grid>
+    </dmd-grid>
   `,
 };
 
@@ -97,65 +97,65 @@ Grid.args = {
 };
 
 export const StretchOneSide = () => `
-  <diamond-grid>
-    <diamond-grid-item grow shrink>
+  <dmd->
+    <dmd--item grow shrink>
       <docs-cell>Grow</docs-cell>
-    </diamond-grid-item>
-    <diamond-grid-item>
+    </dmd-grid-item>
+    <dmd--item>
       <docs-cell>Fixed</docs-cell>
-    </diamond-grid-item>
-  </diamond-grid>
-  <diamond-spacing bottom="sm"></diamond-spacing>
-  <diamond-grid>
-    <diamond-grid-item>
+    </dmd-grid-item>
+  </dmd-grid>
+  <dmd-ing bottom="sm"></dmd-spacing>
+  <dmd->
+    <dmd--item>
       <docs-cell>Fixed</docs-cell>
-    </diamond-grid-item>
-    <diamond-grid-item grow shrink>
+    </dmd-grid-item>
+    <dmd--item grow shrink>
       <docs-cell>Grow</docs-cell>
-    </diamond-grid-item>
-  </diamond-grid>
+    </dmd-grid-item>
+  </dmd-grid>
 `;
 
 export const PushApart = () => `
-  <diamond-grid justify-content="space-between">
-    <diamond-grid-item>
+  <dmd- justify-content="space-between">
+    <dmd--item>
       <docs-cell>Left</docs-cell>
-    </diamond-grid-item>
-    <diamond-grid-item>
+    </dmd-grid-item>
+    <dmd--item>
       <docs-cell>Right</docs-cell>
-    </diamond-grid-item>
-  </diamond-grid>
+    </dmd-grid-item>
+  </dmd-grid>
 `;
 
 export const Centered = () => `
-  <diamond-grid justify-content="center">
-    <diamond-grid-item>
+  <dmd- justify-content="center">
+    <dmd--item>
       <docs-cell>Centered</docs-cell>
-    </diamond-grid-item>
-    <diamond-grid-item>
+    </dmd-grid-item>
+    <dmd--item>
       <docs-cell>Centered</docs-cell>
-    </diamond-grid-item>
-    <diamond-grid-item>
+    </dmd-grid-item>
+    <dmd--item>
       <docs-cell>Centered</docs-cell>
-    </diamond-grid-item>
-  </diamond-grid>
+    </dmd-grid-item>
+  </dmd-grid>
 `;
 
 export const ResponsiveColumns = () => `
-  <diamond-grid wrap="wrap">
-    <diamond-grid-item mobile="12" tablet="6" desktop="3">
+  <dmd- wrap="wrap">
+    <dmd--item mobile="12" tablet="6" desktop="3">
       <docs-cell>Cell</docs-cell>
-    </diamond-grid-item>
-    <diamond-grid-item mobile="12" tablet="6" desktop="3">
+    </dmd-grid-item>
+    <dmd--item mobile="12" tablet="6" desktop="3">
       <docs-cell>Cell</docs-cell>
-    </diamond-grid-item>
-    <diamond-grid-item mobile="12" tablet="6" desktop="3">
+    </dmd-grid-item>
+    <dmd--item mobile="12" tablet="6" desktop="3">
       <docs-cell>Cell</docs-cell>
-    </diamond-grid-item>
-    <diamond-grid-item mobile="12" tablet="6" desktop="3">
+    </dmd-grid-item>
+    <dmd--item mobile="12" tablet="6" desktop="3">
       <docs-cell>Cell</docs-cell>
-    </diamond-grid-item>
-  </diamond-grid>
+    </dmd-grid-item>
+  </dmd-grid>
 `;
 
 const responsiveColumnsDescription = `
@@ -171,20 +171,20 @@ ResponsiveColumns.parameters = {
 };
 
 export const MobileCTA = () => `
-  <diamond-wrap gutter="none" size="md">
-    <diamond-grid wrap="wrap" direction="row-reverse">
-      <diamond-grid-item mobile="12" tablet="3">
-        <diamond-button variant="primary" width="full-width">
+  <dmd- gutter="none" size="md">
+    <dmd- wrap="wrap" direction="row-reverse">
+      <dmd--item mobile="12" tablet="3">
+        <dmd-on variant="primary" width="full-width">
           <button type="button">Continue</button>
-        </diamond-button>
-      </diamond-grid-item>
-      <diamond-grid-item mobile="12" tablet="3">
-        <diamond-button width="full-width">
+        </dmd-button>
+      </dmd-grid-item>
+      <dmd--item mobile="12" tablet="3">
+        <dmd-on width="full-width">
           <button type="button">Cancel</button>
-        </diamond-button>
-      </diamond-grid-item>
-    </diamond-grid>
-  </diamond-wrap>
+        </dmd-button>
+      </dmd-grid-item>
+    </dmd-grid>
+  </dmd-wrap>
 `;
 
 const mobileCTADescription = `
@@ -201,18 +201,18 @@ MobileCTA.parameters = {
 };
 
 export const VerticalCenterContent = () => `
-  <diamond-wrap gutter="none" size="sm">
-    <diamond-grid align-items="center">
-      <diamond-grid-item grow shrink>
+  <dmd- gutter="none" size="sm">
+    <dmd- align-items="center">
+      <dmd--item grow shrink>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
           ut justo in velit euismod ultricies id sit amet diam. Vivamus convallis
           molestie urna.
         </p>
-      </diamond-grid-item>
-      <diamond-grid-item>
+      </dmd-grid-item>
+      <dmd--item>
         <img src="https://placehold.co/200x150" alt="Placeholder image" width="200" height="150" />
-      </diamond-grid-item>
-    </diamond-grid>
-  </diamond-wrap>
+      </dmd-grid-item>
+    </dmd-grid>
+  </dmd-wrap>
 `;

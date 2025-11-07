@@ -6,14 +6,14 @@ export interface HelpTextAttributes {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-help-text': HelpTextAttributes;
+    'dmd-help-text': HelpTextAttributes;
   }
 }
 
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-help-text': JSXCustomElement<HelpTextAttributes>;
+      'dmd--text': JSXCustomElement<HelpTextAttributes>;
     }
   }
 }

@@ -1,7 +1,6 @@
-diamond-input-button-group {
+dmd-input-button-group {
   display: flex;
 
-  --diamond-input-border-radius: var(--diamond-radius) 0 0 var(--diamond-radius);
-  --diamond-button-border-radius: 0 var(--diamond-radius) var(--diamond-radius)
-    0;
+  --dmd-input-border-radius: var(--dmd-radius) 0 0 var(--dmd-radius);
+  --dmd-button-border-radius: 0 var(--dmd-radius) var(--dmd-radius) 0;
 }

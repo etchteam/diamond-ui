@@ -1,102 +1,86 @@
 :root {
-  --diamond-theme-background-light: var(--diamond-color-white);
-  --diamond-theme-background-muted-light: var(--diamond-color-grey-100);
-  --diamond-theme-border-color-light: var(--diamond-color-grey-100);
-  --diamond-theme-border-color-hover-light: #1a0dab;
-  --diamond-theme-color-light: var(--diamond-color-grey-900);
-  --diamond-theme-color-muted-light: var(--diamond-color-grey-700);
-  --diamond-theme-heading-color-light: var(--diamond-color-grey-900);
-  --diamond-theme-icon-color-light: var(--diamond-color-grey-900);
-  --diamond-theme-link-color-light: #1a0dab;
-  --diamond-theme-link-text-decoration-light: underline;
+  --dmd-theme-background-light: var(--dmd-color-white);
+  --dmd-theme-background-muted-light: var(--dmd-color-grey-100);
+  --dmd-theme-border-color-light: var(--dmd-color-grey-100);
+  --dmd-theme-border-color-hover-light: #1a0dab;
+  --dmd-theme-color-light: var(--dmd-color-grey-900);
+  --dmd-theme-color-muted-light: var(--dmd-color-grey-700);
+  --dmd-theme-heading-color-light: var(--dmd-color-grey-900);
+  --dmd-theme-icon-color-light: var(--dmd-color-grey-900);
+  --dmd-theme-link-color-light: #1a0dab;
+  --dmd-theme-link-text-decoration-light: underline;
 
-  --diamond-theme-background-medium: var(--diamond-color-grey-100);
-  --diamond-theme-background-muted-medium: var(--diamond-color-grey-200);
-  --diamond-theme-border-color-medium: var(--diamond-color-grey-300);
-  --diamond-theme-border-color-hover-medium: #1a0dab;
-  --diamond-theme-color-medium: var(--diamond-color-grey-900);
-  --diamond-theme-color-muted-medium: var(--diamond-color-grey-700);
-  --diamond-theme-heading-color-medium: var(--diamond-color-grey-900);
-  --diamond-theme-icon-color-medium: var(--diamond-color-grey-900);
-  --diamond-theme-link-color-medium: #1a0dab;
-  --diamond-theme-link-text-decoration-medium: underline;
+  --dmd-theme-background-medium: var(--dmd-color-grey-100);
+  --dmd-theme-background-muted-medium: var(--dmd-color-grey-200);
+  --dmd-theme-border-color-medium: var(--dmd-color-grey-300);
+  --dmd-theme-border-color-hover-medium: #1a0dab;
+  --dmd-theme-color-medium: var(--dmd-color-grey-900);
+  --dmd-theme-color-muted-medium: var(--dmd-color-grey-700);
+  --dmd-theme-heading-color-medium: var(--dmd-color-grey-900);
+  --dmd-theme-icon-color-medium: var(--dmd-color-grey-900);
+  --dmd-theme-link-color-medium: #1a0dab;
+  --dmd-theme-link-text-decoration-medium: underline;
 
-  --diamond-theme-background-dark: var(--diamond-color-grey-900);
-  --diamond-theme-background-muted-dark: var(--diamond-color-grey-800);
-  --diamond-theme-border-color-dark: var(--diamond-color-grey-900);
-  --diamond-theme-border-color-hover-dark: #1a0dab;
-  --diamond-theme-color-dark: var(--diamond-color-white);
-  --diamond-theme-color-muted-dark: var(--diamond-color-grey-100);
-  --diamond-theme-heading-color-dark: var(--diamond-color-white);
-  --diamond-theme-icon-color-dark: var(--diamond-color-white);
-  --diamond-theme-link-color-dark: var(--diamond-color-white);
-  --diamond-theme-link-text-decoration-dark: underline;
+  --dmd-theme-background-dark: var(--dmd-color-grey-900);
+  --dmd-theme-background-muted-dark: var(--dmd-color-grey-800);
+  --dmd-theme-border-color-dark: var(--dmd-color-grey-900);
+  --dmd-theme-border-color-hover-dark: #1a0dab;
+  --dmd-theme-color-dark: var(--dmd-color-white);
+  --dmd-theme-color-muted-dark: var(--dmd-color-grey-100);
+  --dmd-theme-heading-color-dark: var(--dmd-color-white);
+  --dmd-theme-icon-color-dark: var(--dmd-color-white);
+  --dmd-theme-link-color-dark: var(--dmd-color-white);
+  --dmd-theme-link-text-decoration-dark: underline;
 
-  --diamond-theme-background: var(--diamond-theme-background-light);
-  --diamond-theme-background-muted: var(--diamond-theme-background-muted-light);
-  --diamond-theme-border-color: var(--diamond-theme-border-color-light);
-  --diamond-theme-border-color-hover: var(
-    --diamond-theme-border-color-hover-light
-  );
-  --diamond-theme-color: var(--diamond-theme-color-light);
-  --diamond-theme-color-muted: var(--diamond-theme-color-muted-light);
-  --diamond-theme-heading-color: var(--diamond-theme-heading-color-light);
-  --diamond-theme-icon-color: var(--diamond-theme-icon-color-light);
-  --diamond-theme-link-color: var(--diamond-theme-link-color-light);
-  --diamond-theme-link-text-decoration: var(
-    --diamond-theme-link-text-decoration-light
+  --dmd-theme-background: var(--dmd-theme-background-light);
+  --dmd-theme-background-muted: var(--dmd-theme-background-muted-light);
+  --dmd-theme-border-color: var(--dmd-theme-border-color-light);
+  --dmd-theme-border-color-hover: var(--dmd-theme-border-color-hover-light);
+  --dmd-theme-color: var(--dmd-theme-color-light);
+  --dmd-theme-color-muted: var(--dmd-theme-color-muted-light);
+  --dmd-theme-heading-color: var(--dmd-theme-heading-color-light);
+  --dmd-theme-icon-color: var(--dmd-theme-icon-color-light);
+  --dmd-theme-link-color: var(--dmd-theme-link-color-light);
+  --dmd-theme-link-text-decoration: var(--dmd-theme-link-text-decoration-light);
+}
+
+.dmd-theme-light {
+  --dmd-theme-background: var(--dmd-theme-background-light);
+  --dmd-theme-background-muted: var(--dmd-theme-background-muted-light);
+  --dmd-theme-border-color: var(--dmd-theme-border-color-light);
+  --dmd-theme-border-color-hover: var(--dmd-theme-border-color-hover-light);
+  --dmd-theme-color: var(--dmd-theme-color-light);
+  --dmd-theme-color-muted: var(--dmd-theme-color-muted-light);
+  --dmd-theme-heading-color: var(--dmd-theme-heading-color-light);
+  --dmd-theme-icon-color: var(--dmd-theme-icon-color-light);
+  --dmd-theme-link-color: var(--dmd-theme-link-color-light);
+  --dmd-theme-link-text-decoration: var(--dmd-theme-link-text-decoration-light);
+}
+
+.dmd-theme-medium {
+  --dmd-theme-background: var(--dmd-theme-background-medium);
+  --dmd-theme-background-muted: var(--dmd-theme-background-muted-medium);
+  --dmd-theme-border-color: var(--dmd-theme-border-color-medium);
+  --dmd-theme-border-color-hover: var(--dmd-theme-border-color-hover-medium);
+  --dmd-theme-color: var(--dmd-theme-color-medium);
+  --dmd-theme-color-muted: var(--dmd-theme-color-muted-medium);
+  --dmd-theme-heading-color: var(--dmd-theme-heading-color-medium);
+  --dmd-theme-icon-color: var(--dmd-theme-icon-color-medium);
+  --dmd-theme-link-color: var(--dmd-theme-link-color-medium);
+  --dmd-theme-link-text-decoration: var(
+    --dmd-theme-link-text-decoration-medium
   );
 }
 
-.diamond-theme-light {
-  --diamond-theme-background: var(--diamond-theme-background-light);
-  --diamond-theme-background-muted: var(--diamond-theme-background-muted-light);
-  --diamond-theme-border-color: var(--diamond-theme-border-color-light);
-  --diamond-theme-border-color-hover: var(
-    --diamond-theme-border-color-hover-light
-  );
-  --diamond-theme-color: var(--diamond-theme-color-light);
-  --diamond-theme-color-muted: var(--diamond-theme-color-muted-light);
-  --diamond-theme-heading-color: var(--diamond-theme-heading-color-light);
-  --diamond-theme-icon-color: var(--diamond-theme-icon-color-light);
-  --diamond-theme-link-color: var(--diamond-theme-link-color-light);
-  --diamond-theme-link-text-decoration: var(
-    --diamond-theme-link-text-decoration-light
-  );
-}
-
-.diamond-theme-medium {
-  --diamond-theme-background: var(--diamond-theme-background-medium);
-  --diamond-theme-background-muted: var(
-    --diamond-theme-background-muted-medium
-  );
-  --diamond-theme-border-color: var(--diamond-theme-border-color-medium);
-  --diamond-theme-border-color-hover: var(
-    --diamond-theme-border-color-hover-medium
-  );
-  --diamond-theme-color: var(--diamond-theme-color-medium);
-  --diamond-theme-color-muted: var(--diamond-theme-color-muted-medium);
-  --diamond-theme-heading-color: var(--diamond-theme-heading-color-medium);
-  --diamond-theme-icon-color: var(--diamond-theme-icon-color-medium);
-  --diamond-theme-link-color: var(--diamond-theme-link-color-medium);
-  --diamond-theme-link-text-decoration: var(
-    --diamond-theme-link-text-decoration-medium
-  );
-}
-
-.diamond-theme-dark {
-  --diamond-theme-background: var(--diamond-theme-background-dark);
-  --diamond-theme-background-muted: var(--diamond-theme-background-muted-dark);
-  --diamond-theme-border-color: var(--diamond-theme-border-color-dark);
-  --diamond-theme-border-color-hover: var(
-    --diamond-theme-border-color-hover-dark
-  );
-  --diamond-theme-color: var(--diamond-theme-color-dark);
-  --diamond-theme-color-muted: var(--diamond-theme-color-muted-dark);
-  --diamond-theme-heading-color: var(--diamond-theme-heading-color-dark);
-  --diamond-theme-icon-color: var(--diamond-theme-icon-color-dark);
-  --diamond-theme-link-color: var(--diamond-theme-link-color-dark);
-  --diamond-theme-link-text-decoration: var(
-    --diamond-theme-link-text-decoration-dark
-  );
+.dmd-theme-dark {
+  --dmd-theme-background: var(--dmd-theme-background-dark);
+  --dmd-theme-background-muted: var(--dmd-theme-background-muted-dark);
+  --dmd-theme-border-color: var(--dmd-theme-border-color-dark);
+  --dmd-theme-border-color-hover: var(--dmd-theme-border-color-hover-dark);
+  --dmd-theme-color: var(--dmd-theme-color-dark);
+  --dmd-theme-color-muted: var(--dmd-theme-color-muted-dark);
+  --dmd-theme-heading-color: var(--dmd-theme-heading-color-dark);
+  --dmd-theme-icon-color: var(--dmd-theme-icon-color-dark);
+  --dmd-theme-link-color: var(--dmd-theme-link-color-dark);
+  --dmd-theme-link-text-decoration: var(--dmd-theme-link-text-decoration-dark);
 }

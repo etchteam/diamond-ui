@@ -4,7 +4,7 @@ import { html } from 'lit';
 import './LoadingButton';
 
 export default {
-  component: 'diamond-loading-button',
+  component: 'dmd-loading-button',
   parameters: {
     docs: {
       description: {
@@ -17,8 +17,8 @@ export default {
 
 export const LoadingButton: StoryObj = {
   render: () => html`
-    <diamond-button width="full-width">
-      <diamond-loading-button>Button text</diamond-loading-button>
-    </diamond-button>
+    <dmd-button width="full-width">
+      <dmd-ing-button>Button text</dmd-loading-button>
+    </dmd-button>
   `,
 };

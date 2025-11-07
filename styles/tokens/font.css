@@ -1,41 +1,41 @@
 :root {
-  --diamond-font-family: -apple-system, system-ui, blinkmacsystemfont, roboto,
+  --dmd-font-family: -apple-system, system-ui, blinkmacsystemfont, roboto,
     helvetica, arial, sans-serif;
-  --diamond-font-family-heading: var(--diamond-font-family);
+  --dmd-font-family-heading: var(--dmd-font-family);
 
-  --diamond-font-line-height: 1.5;
-  --diamond-font-line-height-sm: 1.25;
-  --diamond-font-line-height-heading: var(--diamond-font-line-height-sm);
+  --dmd-font-line-height: 1.5;
+  --dmd-font-line-height-sm: 1.25;
+  --dmd-font-line-height-heading: var(--dmd-font-line-height-sm);
 
-  --diamond-font-size-default: 1rem;
-  --diamond-font-size-xs: 0.75em;
-  --diamond-font-size-sm: 0.875em;
-  --diamond-font-size-base: 0.875rem;
-  --diamond-font-size-md: 1.125em;
-  --diamond-font-size-lg: 1.25em;
-  --diamond-font-size-xl: 1.5em;
-  --diamond-font-size-xxl: 2em;
-  --diamond-font-size-xxxl: 3em;
+  --dmd-font-size-default: 1rem;
+  --dmd-font-size-xs: 0.75em;
+  --dmd-font-size-sm: 0.875em;
+  --dmd-font-size-base: 0.875rem;
+  --dmd-font-size-md: 1.125em;
+  --dmd-font-size-lg: 1.25em;
+  --dmd-font-size-xl: 1.5em;
+  --dmd-font-size-xxl: 2em;
+  --dmd-font-size-xxxl: 3em;
 
-  --diamond-font-size-h1: 2rem;
-  --diamond-font-size-h2: 1.75rem;
-  --diamond-font-size-h3: 1.5rem;
-  --diamond-font-size-h4: 1.25rem;
+  --dmd-font-size-h1: 2rem;
+  --dmd-font-size-h2: 1.75rem;
+  --dmd-font-size-h3: 1.5rem;
+  --dmd-font-size-h4: 1.25rem;
 
-  --diamond-icon-size: calc(1em * var(--diamond-font-line-height));
+  --dmd-icon-size: calc(1em * var(--dmd-font-line-height));
 
-  --diamond-font-weight-light: 300;
-  --diamond-font-weight-base: 400;
-  --diamond-font-weight-medium: 500;
-  --diamond-font-weight-bold: 700;
-  --diamond-font-weight-black: 900;
+  --dmd-font-weight-light: 300;
+  --dmd-font-weight-base: 400;
+  --dmd-font-weight-medium: 500;
+  --dmd-font-weight-bold: 700;
+  --dmd-font-weight-black: 900;
 }
 
 @media (width >= 768px) {
   :root {
-    --diamond-font-size-base: 1rem;
+    --dmd-font-size-base: 1rem;
 
-    --diamond-font-size-h1: 3rem;
-    --diamond-font-size-h2: 2rem;
+    --dmd-font-size-h1: 3rem;
+    --dmd-font-size-h2: 2rem;
   }
 }

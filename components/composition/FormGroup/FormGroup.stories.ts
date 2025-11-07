@@ -7,7 +7,7 @@ import '../../composition/Grid/GridItem';
 import './FormGroup';
 
 export default {
-  component: 'diamond-form-group',
+  component: 'dmd-form-group',
   argTypes: {
     orientation: {
       control: {
@@ -28,24 +28,24 @@ export default {
 
 export const FormGroup: StoryObj = {
   render: (args) => html`
-    <diamond-form-group orientation="${args.orientation}">
+    <dmd-form-group orientation="${args.orientation}">
       <label for="name">Form group label</label>
-      <diamond-input>
+      <dmd-t>
         <input id="name" type="text" />
-      </diamond-input>
-      <diamond-help-text>Help text</diamond-help-text>
-    </diamond-form-group>
+      </dmd-input>
+      <dmd--text>Help text</dmd-help-text>
+    </dmd-form-group>
   `,
 };
 
 export const ComposingElements: StoryObj = {
   render: () => html`
-    <diamond-form-group orientation="horizontal">
-      <diamond-grid align-items="center">
-        <diamond-grid-item grow="grow">
+    <dmd--group orientation="horizontal">
+      <dmd- align-items="center">
+        <dmd--item grow="grow">
           <label for="composing-elements">Form group label</label>
-        </diamond-grid-item>
-        <diamond-grid-item>
+        </dmd-grid-item>
+        <dmd--item>
           <svg
             viewBox="0 0 24 24"
             stroke="none"
@@ -59,13 +59,13 @@ export const ComposingElements: StoryObj = {
               d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
             />
           </svg>
-        </diamond-grid-item>
-      </diamond-grid>
-      <diamond-input>
+        </dmd-grid-item>
+      </dmd-grid>
+      <dmd-t>
         <input id="composing-elements" type="text" />
-      </diamond-input>
-      <diamond-help-text>Help text</diamond-help-text>
-    </diamond-form-group>
+      </dmd-input>
+      <dmd--text>Help text</dmd-help-text>
+    </dmd-form-group>
   `,
 };
 
@@ -80,13 +80,13 @@ ComposingElements.parameters = {
 
 export const FormGroupValidationError: StoryObj = {
   render: (args) => html`
-    <diamond-form-group orientation="${args.orientation}">
+    <dmd--group orientation="${args.orientation}">
       <label for="name">Form group label</label>
-      <diamond-help-text state="invalid">Error message</diamond-help-text>
-      <diamond-input state="invalid">
+      <dmd--text state="invalid">Error message</dmd-help-text>
+      <dmd-t state="invalid">
         <input id="name" type="text" />
-      </diamond-input>
-      <diamond-help-text>Help text</diamond-help-text>
-    </diamond-form-group>
+      </dmd-input>
+      <dmd--text>Help text</dmd-help-text>
+    </dmd-form-group>
   `,
 };

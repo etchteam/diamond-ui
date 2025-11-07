@@ -27,11 +27,11 @@ import '@etchteam/diamond-ui/composition/Grid/Grid';
 And then used in HTML (or React, Vue, Angular, etc)
 
 ```html
-<diamond-grid>
-  <diamond-grid-item>
+<dmd-grid>
+  <dmd-grid-item>
     Grid content
-  </diamond-grid-item>
-</diamond-grid>
+  </dmd-grid-item>
+</dmd-grid>
 ```
 
 ## Configure

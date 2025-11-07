@@ -7,7 +7,7 @@ export interface AppAttributes {
   header?: 'sticky';
 }
 
-@customElement('diamond-app')
+@customElement('dmd-app')
 export class App extends LitElement {
   @property({ reflect: true }) header?: 'sticky';
 
@@ -28,14 +28,14 @@ export class App extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-app': AppAttributes;
+    'dmd-: AppAttributes;
   }
 }
 
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-app': JSXCustomElement<AppAttributes>;
+      'dmd-: JSXCustomElement<AppAttributes>;
     }
   }
 }

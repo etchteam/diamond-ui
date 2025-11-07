@@ -6,7 +6,7 @@ import '../../composition/Grid/Grid';
 import '../../composition/Grid/GridItem';
 
 export default {
-  component: 'diamond-input',
+  component: 'dmd-input',
   parameters: {
     docs: {
       description: {
@@ -27,39 +27,39 @@ export default {
 
 export const Input: StoryObj = {
   render: (args) => html`
-    <diamond-input state="${args.state}">
+    <dmd-input state="${args.state}">
       <input />
-    </diamond-input>
+    </dmd-input>
   `,
 };
 
 export const InputStates: StoryObj = {
   render: () => html`
-    <diamond-grid wrap="wrap">
-      <diamond-grid-item>
-        <diamond-input state="valid">
+    <dmd- wrap="wrap">
+      <dmd--item>
+        <dmd-t state="valid">
           <input value="valid" />
-        </diamond-input>
-      </diamond-grid-item>
-      <diamond-grid-item>
-        <diamond-input state="invalid">
+        </dmd-input>
+      </dmd-grid-item>
+      <dmd--item>
+        <dmd-t state="invalid">
           <input value="invalid" />
-        </diamond-input>
-      </diamond-grid-item>
-      <diamond-grid-item>
-        <diamond-input>
+        </dmd-input>
+      </dmd-grid-item>
+      <dmd--item>
+        <dmd-t>
           <input value="disabled" disabled />
-        </diamond-input>
-      </diamond-grid-item>
-    </diamond-grid>
+        </dmd-input>
+      </dmd-grid-item>
+    </dmd-grid>
   `,
 };
 
 export const Affix: StoryObj = {
   render: () => html`
-    <diamond-grid wrap="wrap">
-      <diamond-grid-item>
-        <diamond-input>
+    <dmd- wrap="wrap">
+      <dmd--item>
+        <dmd-t>
           <svg fill="none" viewBox="0 0 24 24" height="24" width="24">
             <path
               d="M2 6C2 4.89543 2.89543 4 4 4H20C21.1046 4 22 4.89543 22 6V18C22 19.1046 21.1046 20 20 20H4C2.89543 20 2 19.1046 2 18V6ZM5.51859 6L12 11.6712L18.4814 6H5.51859ZM20 7.32877L12.6585 13.7526C12.2815 14.0825 11.7185 14.0825 11.3415 13.7526L4 7.32877V18H20V7.32877Z"
@@ -67,10 +67,10 @@ export const Affix: StoryObj = {
             ></path>
           </svg>
           <input value="prefix" />
-        </diamond-input>
-      </diamond-grid-item>
-      <diamond-grid-item>
-        <diamond-input>
+        </dmd-input>
+      </dmd-grid-item>
+      <dmd--item>
+        <dmd-t>
           <input value="suffix" />
           <svg fill="none" viewBox="0 0 24 24" height="24" width="24">
             <path
@@ -78,17 +78,17 @@ export const Affix: StoryObj = {
               fill="currentColor"
             ></path>
           </svg>
-        </diamond-input>
-      </diamond-grid-item>
-    </diamond-grid>
+        </dmd-input>
+      </dmd-grid-item>
+    </dmd-grid>
   `,
 };
 
 export const Textarea: StoryObj = {
   render: (args) => html`
-    <diamond-input state="${args.state}">
+    <dmd-t state="${args.state}">
       <textarea></textarea>
-    </diamond-input>
+    </dmd-input>
   `,
 };
 
@@ -102,7 +102,7 @@ Textarea.parameters = {
 
 export const Select: StoryObj = {
   render: (args) => html`
-    <diamond-input state="${args.state}">
+    <dmd-t state="${args.state}">
       <select>
         <option value="1">Option 1</option>
         <option value="2">Option 2</option>
@@ -121,7 +121,7 @@ export const Select: StoryObj = {
           fill="currentColor"
         ></path>
       </svg>
-    </diamond-input>
+    </dmd-input>
   `,
 };
 

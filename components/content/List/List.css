@@ -1,10 +1,10 @@
-diamond-list {
-  --diamond-list-spacing: 0;
+dmd-list {
+  --dmd-list-spacing: 0;
   display: block;
 
   li,
   dl > div {
-    margin-bottom: var(--diamond-list-spacing);
+    margin-bottom: var(--dmd-list-spacing);
 
     &:last-child {
       margin-bottom: 0;
@@ -31,44 +31,44 @@ diamond-list {
 
     li,
     dl > div {
-      padding-left: var(--diamond-icon-size);
+      padding-left: var(--dmd-icon-size);
     }
 
-    diamond-icon {
+    dmd-icon {
       /* The 4px handles inline block magic spacing */
-      margin-left: calc(-1 * (var(--diamond-icon-size) + 4px));
+      margin-left: calc(-1 * (var(--dmd-icon-size) + 4px));
     }
   }
 
   &[spacing='xs'] {
-    --diamond-list-spacing: var(--diamond-spacing-xs);
+    --dmd-list-spacing: var(--dmd-spacing-xs);
   }
 
   &[spacing='sm'] {
-    --diamond-list-spacing: var(--diamond-spacing-sm);
+    --dmd-list-spacing: var(--dmd-spacing-sm);
   }
 
   &[spacing='md'] {
-    --diamond-list-spacing: var(--diamond-spacing-md);
+    --dmd-list-spacing: var(--dmd-spacing-md);
   }
 
   &[spacing='lg'] {
-    --diamond-list-spacing: var(--diamond-spacing-lg);
+    --dmd-list-spacing: var(--dmd-spacing-lg);
   }
 
   &[spacing='xl'] {
-    --diamond-list-spacing: var(--diamond-spacing-xl);
+    --dmd-list-spacing: var(--dmd-spacing-xl);
   }
 
   &[spacing='fluid'] {
-    --diamond-list-spacing: var(--diamond-spacing-fluid);
+    --dmd-list-spacing: var(--dmd-spacing-fluid);
   }
 
   &[spacing='fluid-sm'] {
-    --diamond-list-spacing: var(--diamond-spacing-fluid-sm);
+    --dmd-list-spacing: var(--dmd-spacing-fluid-sm);
   }
 
   &[spacing='fluid-lg'] {
-    --diamond-list-spacing: var(--diamond-spacing-fluid-lg);
+    --dmd-list-spacing: var(--dmd-spacing-fluid-lg);
   }
 }

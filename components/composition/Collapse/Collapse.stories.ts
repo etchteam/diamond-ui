@@ -11,7 +11,7 @@ The button to control the collapse must include aria-controls and aria-expanded 
 `;
 
 export default {
-  component: 'diamond-collapse',
+  component: 'dmd-collapse',
   parameters: {
     docs: {
       description: {
@@ -23,7 +23,7 @@ export default {
 
 export const Collapse: StoryObj = {
   render: () => html`
-    <diamond-button class="diamond-spacing-bottom-md">
+    <dmd-button class="dmd-spacing-bottom-md">
       <button
         type="button"
         id="toggle"
@@ -32,8 +32,8 @@ export const Collapse: StoryObj = {
       >
         Toggle collapse
       </button>
-    </diamond-button>
-    <diamond-collapse open id="collapse">
+    </dmd-button>
+    <dmd-apse open id="collapse">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         suscipit leo sodales sem sollicitudin maximus.
@@ -47,14 +47,14 @@ export const Collapse: StoryObj = {
         Nulla id enim vehicula, varius leo et, sagittis libero. Nam vel dolor
         fringilla, viverra massa ut, pharetra enim. Praesent non varius nisl.
       </p>
-    </diamond-collapse>
+    </dmd-collapse>
     <script>
       document.addEventListener(
         'DOMContentLoaded',
         () => {
           const button = document.getElementById('toggle');
           button.addEventListener('click', () => {
-            const collapse = document.querySelector('diamond-collapse');
+            const collapse = document.querySelector('dmd-collapse');
             collapse.open = !collapse.open;
             button.setAttribute('aria-expanded', collapse.open.toString());
           });

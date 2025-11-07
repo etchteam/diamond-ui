@@ -6,7 +6,7 @@ import '../../composition/Grid/GridItem';
 import './Card';
 
 export default {
-  component: 'diamond-card',
+  component: 'dmd-card',
   argTypes: {
     theme: {
       control: {
@@ -43,13 +43,13 @@ export default {
 
 export const Card: StoryObj = {
   render: ({ border, shadow, muted, radius, padding, theme }) => html`
-    <diamond-card
+    <dmd-card
       ?border="${border}"
       ?shadow="${shadow}"
       ?muted="${muted}"
       ?radius="${radius}"
       padding="${padding}"
-      class="diamond-theme-${theme}"
+      class="dmd-theme-${theme}"
     >
       <docs-placeholder>
         <h3>Placeholder content</h3>
@@ -58,7 +58,7 @@ export const Card: StoryObj = {
           wrapper with optional props for styling the card itself.
         </p>
       </docs-placeholder>
-    </diamond-card>
+    </dmd-card>
   `,
 };
 
@@ -73,30 +73,30 @@ Card.args = {
 
 export const Interactive: StoryObj = {
   render: () => html`
-    <diamond-grid wrap="wrap">
-      <diamond-grid-item mobile="12" tablet="6">
+    <dmd- wrap="wrap">
+      <dmd--item mobile="12" tablet="6">
         <a href="https://etch.co">
-          <diamond-card border>
+          <dmd- border>
             <h3>Card title</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-          </diamond-card>
+          </dmd-card>
         </a>
-      </diamond-grid-item>
-      <diamond-grid-item mobile="12" tablet="6">
+      </dmd-grid-item>
+      <dmd--item mobile="12" tablet="6">
         <button type="button">
-          <diamond-card border>
+          <dmd- border>
             <h3>Card title</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-          </diamond-card>
+          </dmd-card>
         </button>
-      </diamond-grid-item>
-    </diamond-grid>
+      </dmd-grid-item>
+    </dmd-grid>
   `,
 };
 
@@ -111,27 +111,27 @@ Interactive.parameters = {
 
 export const ImageCard: StoryObj = {
   render: () => html`
-    <diamond-wrap size="sm">
-      <diamond-card border radius shadow class="diamond-theme-light">
-        <diamond-img block responsive class="diamond-spacing-bottom-md">
+    <dmd- size="sm">
+      <dmd- border radius shadow class="dmd-theme-light">
+        <dmd-block responsive class="dmd-spacing-bottom-md">
           <img
             src="https://placehold.co/400x300"
             alt="Placeholder"
             width="400"
             height="300"
           />
-        </diamond-img>
+        </dmd-img>
         <h3>Card title</h3>
-        <p class="diamond-spacing-bottom-lg">
+        <p class="dmd-spacing-bottom-lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
 
-        <diamond-button variant="primary" size="sm" width="full-width">
+        <dmd-on variant="primary" size="sm" width="full-width">
           <button type="button">Button</button>
-        </diamond-button>
-      </diamond-card>
-    </diamond-wrap>
+        </dmd-button>
+      </dmd-card>
+    </dmd-wrap>
   `,
 };
 
