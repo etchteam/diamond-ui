@@ -16,8 +16,8 @@ export class DocsSpacing extends LitElement {
   static readonly styles = css`
     :host {
       display: block;
-      color: var(--diamond-color-red-100);
-      font-size: var(--diamond-font-size-xs);
+      color: var(--dmd-color-red-100);
+      font-size: var(--dmd-font-size-xs);
       height: 0;
       position: relative;
     }
@@ -28,28 +28,28 @@ export class DocsSpacing extends LitElement {
 
     :host([alignment='left']) .docs-spacing__content {
       justify-content: flex-start;
-      padding-left: var(--diamond-spacing-md);
+      padding-left: var(--dmd-spacing-md);
     }
 
     .docs-spacing__content {
       align-items: center;
       display: flex;
-      gap: var(--diamond-spacing-xs);
+      gap: var(--dmd-spacing-xs);
       height: var(--docs-spacing-height);
       justify-content: center;
-      padding-left: var(--diamond-spacing-md);
+      padding-left: var(--dmd-spacing-md);
     }
 
     .docs-spacing__border {
-      border-bottom: 1px solid var(--diamond-color-red-100);
-      border-top: 1px solid var(--diamond-color-red-100);
+      border-bottom: 1px solid var(--dmd-color-red-100);
+      border-top: 1px solid var(--dmd-color-red-100);
       height: 100%;
       position: relative;
       width: 7px;
     }
 
     .docs-spacing__border::before {
-      background-color: var(--diamond-color-red-100);
+      background-color: var(--dmd-color-red-100);
       content: '';
       display: block;
       height: 100%;
@@ -71,7 +71,7 @@ export class DocsSpacing extends LitElement {
     return html`
       <style>
         :host {
-          --docs-spacing-height: var(--diamond-spacing-${size});
+          --docs-spacing-height: var(--dmd-spacing-${size});
         }
       </style>
       <div class="docs-spacing__content">

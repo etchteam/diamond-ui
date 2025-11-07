@@ -4,7 +4,7 @@ import { html } from 'lit';
 import './RadioCheckbox';
 
 export default {
-  component: 'diamond-radio-checkbox',
+  component: 'dmd-radio-checkbox',
   parameters: {
     docs: {
       description: {
@@ -25,68 +25,68 @@ export default {
 
 export const Radio: StoryObj = {
   render: (args) => html`
-    <diamond-radio-checkbox
+    <dmd-radio-checkbox
       state="${args.state}"
-      class="diamond-spacing-bottom-sm"
+      class="dmd-spacing-bottom-sm"
     >
       <label>
         <input type="radio" name="my-radio" value="yes" checked />
         Item label one
       </label>
-    </diamond-radio-checkbox>
-    <diamond-radio-checkbox
+    </dmd-radio-checkbox>
+    <dmd-radio-checkbox
       state="${args.state}"
-      class="diamond-spacing-bottom-sm"
+      class="dmd-spacing-bottom-sm"
     >
       <label>
         <input type="radio" name="my-radio" value="no" />
         Item label two
       </label>
-    </diamond-radio-checkbox>
-    <diamond-radio-checkbox state="${args.state}">
+    </dmd-radio-checkbox>
+    <dmd-radio-checkbox state="${args.state}">
       <label>
         <input type="radio" name="my-radio" value="maybe" disabled />
         Item label three
       </label>
-    </diamond-radio-checkbox>
+    </dmd-radio-checkbox>
   `,
 };
 
 export const Checkbox: StoryObj = {
   render: (args) => html`
-    <diamond-radio-checkbox
+    <dmd-radio-checkbox
       state="${args.state}"
-      class="diamond-spacing-bottom-sm"
+      class="dmd-spacing-bottom-sm"
     >
       <label>
         <input type="checkbox" name="my-checkbox" value="yes" checked />
         Item label one
       </label>
-    </diamond-radio-checkbox>
-    <diamond-radio-checkbox
+    </dmd-radio-checkbox>
+    <dmd-radio-checkbox
       state="${args.state}"
-      class="diamond-spacing-bottom-sm"
+      class="dmd-spacing-bottom-sm"
     >
       <label>
         <input type="checkbox" name="my-checkbox" value="no" />
         Item label two
       </label>
-    </diamond-radio-checkbox>
-    <diamond-radio-checkbox state="${args.state}">
+    </dmd-radio-checkbox>
+    <dmd-radio-checkbox state="${args.state}">
       <label>
         <input type="checkbox" name="my-checkbox" value="maybe" disabled />
         Item label three
       </label>
-    </diamond-radio-checkbox>
+    </dmd-radio-checkbox>
   `,
 };
 
 export const CustomIcon: StoryObj = {
   render: (args) => html`
-    <diamond-radio-checkbox
+    <dmd-radio-checkbox
       state="${args.state}"
       input="${args.input}"
-      class="diamond-spacing-bottom-sm"
+      class="dmd-spacing-bottom-sm"
     >
       <svg
         slot="icon"
@@ -106,8 +106,8 @@ export const CustomIcon: StoryObj = {
         <input type="checkbox" name="custom-icon" value="yes" checked />
         Item label one
       </label>
-    </diamond-radio-checkbox>
-    <diamond-radio-checkbox state="${args.state}" input="${args.input}">
+    </dmd-radio-checkbox>
+    <dmd-radio-checkbox state="${args.state}" input="${args.input}">
       <svg
         slot="icon"
         fill="none"
@@ -126,6 +126,6 @@ export const CustomIcon: StoryObj = {
         <input type="checkbox" name="custom-icon" value="no" />
         Item label two
       </label>
-    </diamond-radio-checkbox>
+    </dmd-radio-checkbox>
   `,
 };

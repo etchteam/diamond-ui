@@ -1,69 +1,61 @@
 :root {
-  --diamond-button-border-radius: var(--diamond-radius);
-  --diamond-button-text-shadow: none;
-  --diamond-button-file-background: var(--diamond-color-grey-100);
-  --diamond-button-padding-inline: var(--diamond-spacing);
-  --diamond-button-padding-block: var(--diamond-spacing-sm);
-  --diamond-button-gap: 0.75ch;
-  --diamond-button-outline-offset: 4px;
-  --diamond-button-font-weight: var(--diamond-font-weight-base);
-  --diamond-button-line-height: var(--diamond-font-line-height);
+  --dmd-button-border-radius: var(--dmd-radius);
+  --dmd-button-text-shadow: none;
+  --dmd-button-file-background: var(--dmd-color-grey-100);
+  --dmd-button-padding-inline: var(--dmd-spacing);
+  --dmd-button-padding-block: var(--dmd-spacing-sm);
+  --dmd-button-gap: 0.75ch;
+  --dmd-button-outline-offset: 4px;
+  --dmd-button-font-weight: var(--dmd-font-weight-base);
+  --dmd-button-line-height: var(--dmd-font-line-height);
 
   /* Default variant */
-  --diamond-button-background: var(--diamond-theme-background);
-  --diamond-button-background-hover: var(--diamond-theme-background);
-  --diamond-button-background-disabled: var(--diamond-theme-background);
-  --diamond-button-border-color: var(--diamond-theme-border-color);
-  --diamond-button-border-color-hover: var(--diamond-theme-color);
-  --diamond-button-border-color-disabled: var(--diamond-theme-border-color);
-  --diamond-button-color: var(--diamond-theme-color);
-  --diamond-button-color-hover: var(--diamond-theme-color);
-  --diamond-button-color-disabled: var(--diamond-theme-color-muted);
+  --dmd-button-background: var(--dmd-theme-background);
+  --dmd-button-background-hover: var(--dmd-theme-background);
+  --dmd-button-background-disabled: var(--dmd-theme-background);
+  --dmd-button-border-color: var(--dmd-theme-border-color);
+  --dmd-button-border-color-hover: var(--dmd-theme-color);
+  --dmd-button-border-color-disabled: var(--dmd-theme-border-color);
+  --dmd-button-color: var(--dmd-theme-color);
+  --dmd-button-color-hover: var(--dmd-theme-color);
+  --dmd-button-color-disabled: var(--dmd-theme-color-muted);
 
   /* Primary variant */
-  --diamond-button-primary-background: var(--diamond-color-grey-800);
-  --diamond-button-primary-background-hover: var(--diamond-color-grey-900);
-  --diamond-button-primary-background-disabled: var(--diamond-color-grey-600);
-  --diamond-button-primary-border-color: var(
-    --diamond-button-primary-background
+  --dmd-button-primary-background: var(--dmd-color-grey-800);
+  --dmd-button-primary-background-hover: var(--dmd-color-grey-900);
+  --dmd-button-primary-background-disabled: var(--dmd-color-grey-600);
+  --dmd-button-primary-border-color: var(--dmd-button-primary-background);
+  --dmd-button-primary-border-color-hover: var(
+    --dmd-button-primary-background-hover
   );
-  --diamond-button-primary-border-color-hover: var(
-    --diamond-button-primary-background-hover
+  --dmd-button-primary-border-color-disabled: var(
+    --dmd-button-primary-background-disabled
   );
-  --diamond-button-primary-border-color-disabled: var(
-    --diamond-button-primary-background-disabled
-  );
-  --diamond-button-primary-color: var(--diamond-theme-background);
-  --diamond-button-primary-color-hover: var(--diamond-theme-background);
-  --diamond-button-primary-color-disabled: var(--diamond-theme-background);
+  --dmd-button-primary-color: var(--dmd-theme-background);
+  --dmd-button-primary-color-hover: var(--dmd-theme-background);
+  --dmd-button-primary-color-disabled: var(--dmd-theme-background);
 
   /* Secondary variant */
-  --diamond-button-secondary-background: var(--diamond-theme-background-muted);
-  --diamond-button-secondary-background-hover: var(
-    --diamond-theme-background-muted
+  --dmd-button-secondary-background: var(--dmd-theme-background-muted);
+  --dmd-button-secondary-background-hover: var(--dmd-theme-background-muted);
+  --dmd-button-secondary-background-disabled: var(--dmd-theme-background-muted);
+  --dmd-button-secondary-border-color: var(--dmd-theme-background-muted);
+  --dmd-button-secondary-border-color-hover: var(--dmd-theme-color);
+  --dmd-button-secondary-border-color-disabled: var(
+    --dmd-theme-background-muted
   );
-  --diamond-button-secondary-background-disabled: var(
-    --diamond-theme-background-muted
-  );
-  --diamond-button-secondary-border-color: var(
-    --diamond-theme-background-muted
-  );
-  --diamond-button-secondary-border-color-hover: var(--diamond-theme-color);
-  --diamond-button-secondary-border-color-disabled: var(
-    --diamond-theme-background-muted
-  );
-  --diamond-button-secondary-color: var(--diamond-theme-color);
-  --diamond-button-secondary-color-hover: var(--diamond-theme-color);
-  --diamond-button-secondary-color-disabled: var(--diamond-theme-color-muted);
+  --dmd-button-secondary-color: var(--dmd-theme-color);
+  --dmd-button-secondary-color-hover: var(--dmd-theme-color);
+  --dmd-button-secondary-color-disabled: var(--dmd-theme-color-muted);
 
   /* Text variant */
-  --diamond-button-text-background: none;
-  --diamond-button-text-background-hover: var(--diamond-color-grey-100);
-  --diamond-button-text-background-disabled: none;
-  --diamond-button-text-border-color: transparent;
-  --diamond-button-text-border-color-hover: transparent;
-  --diamond-button-text-border-color-disabled: transparent;
-  --diamond-button-text-color: var(--diamond-theme-color);
-  --diamond-button-text-color-hover: var(--diamond-theme-color);
-  --diamond-button-text-color-disabled: var(--diamond-theme-color-muted);
+  --dmd-button-text-background: none;
+  --dmd-button-text-background-hover: var(--dmd-color-grey-100);
+  --dmd-button-text-background-disabled: none;
+  --dmd-button-text-border-color: transparent;
+  --dmd-button-text-border-color-hover: transparent;
+  --dmd-button-text-border-color-disabled: transparent;
+  --dmd-button-text-color: var(--dmd-theme-color);
+  --dmd-button-text-color-hover: var(--dmd-theme-color);
+  --dmd-button-text-color-disabled: var(--dmd-theme-color-muted);
 }

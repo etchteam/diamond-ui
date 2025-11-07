@@ -3,7 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 
 import { pulse } from '../../../lib/pulse';
 
-@customElement('diamond-loading-img')
+@customElement('dmd-loading-img')
 export class LoadingImg extends LitElement {
   @property({ reflect: true }) width: string = '0';
   @property({ reflect: true }) height: string = '0';
@@ -12,10 +12,10 @@ export class LoadingImg extends LitElement {
     pulse,
     css`
       :host {
-        aspect-ratio: var(--diamond-loading-img-width) /
-          var(--diamond-loading-img-height);
-        height: calc(var(--diamond-loading-img-height) * 1px);
-        width: calc(var(--diamond-loading-img-width) * 1px);
+        aspect-ratio: var(--dmd-loading-img-width) /
+          var(--dmd-loading-img-height);
+        height: calc(var(--dmd-loading-img-height) * 1px);
+        width: calc(var(--dmd-loading-img-width) * 1px);
       }
     `,
   ];
@@ -24,8 +24,8 @@ export class LoadingImg extends LitElement {
     return html`
       <style>
         :host {
-          --diamond-loading-img-width: ${this.width};
-          --diamond-loading-img-height: ${this.height};
+          --dmd-loading-img-width: ${this.width};
+          --dmd-loading-img-height: ${this.height};
         }
       </style>
     `;
@@ -34,6 +34,6 @@ export class LoadingImg extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-loading-img': LoadingImg;
+    'dmd-loading-img': LoadingImg;
   }
 }

@@ -1,12 +1,11 @@
 :root,
 ::backdrop {
-  --diamond-transition-duration: 0.2s;
-  --diamond-transition-timing: ease-in-out;
-  --diamond-transition: var(--diamond-transition-duration)
-    var(--diamond-transition-timing);
+  --dmd-transition-duration: 0.2s;
+  --dmd-transition-timing: ease-in-out;
+  --dmd-transition: var(--dmd-transition-duration) var(--dmd-transition-timing);
 
-  --diamond-transition-duration-boing: 0.3s;
-  --diamond-transition-timing-boing: linear(
+  --dmd-transition-duration-boing: 0.3s;
+  --dmd-transition-timing-boing: linear(
     0,
     0.06,
     0.25 18%,
@@ -19,23 +18,23 @@
     1,
     1
   );
-  --diamond-transition-boing: var(--diamond-transition-duration-boing)
-    var(--diamond-transition-timing-boing);
+  --dmd-transition-boing: var(--dmd-transition-duration-boing)
+    var(--dmd-transition-timing-boing);
 
-  --diamond-transition-duration-pulse: 2.4s;
-  --diamond-transition-timing-pulse: ease-in-out;
+  --dmd-transition-duration-pulse: 2.4s;
+  --dmd-transition-timing-pulse: ease-in-out;
 
-  --diamond-transition-duration-enter: 0.5s;
-  --diamond-transition-timing-enter: ease-in-out;
-  --diamond-transition-enter: var(--diamond-transition-duration-enter)
-    var(--diamond-transition-timing-enter);
+  --dmd-transition-duration-enter: 0.5s;
+  --dmd-transition-timing-enter: ease-in-out;
+  --dmd-transition-enter: var(--dmd-transition-duration-enter)
+    var(--dmd-transition-timing-enter);
 }
 
 @media (prefers-reduced-motion) {
   :root {
-    --diamond-transition-duration: 0s;
-    --diamond-transition-duration-enter: 0s;
-    --diamond-transition-duration-boing: 0s;
-    --diamond-transition-duration-pulse: 0s;
+    --dmd-transition-duration: 0s;
+    --dmd-transition-duration-enter: 0s;
+    --dmd-transition-duration-boing: 0s;
+    --dmd-transition-duration-pulse: 0s;
   }
 }

@@ -17,14 +17,14 @@ export interface GridAttributes {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-grid': GridAttributes;
+    'dmd-grid': GridAttributes;
   }
 }
 
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-grid': JSXCustomElement<GridAttributes>;
+      'dmd-grid': JSXCustomElement<GridAttributes>;
     }
   }
 }

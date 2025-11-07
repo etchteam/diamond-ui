@@ -2,12 +2,12 @@
   0%,
   55%,
   100% {
-    background-color: var(--diamond-color-white);
+    background-color: var(--dmd-color-white);
   }
 
   5%,
   50% {
-    background-color: var(--diamond-color-grey-200);
+    background-color: var(--dmd-color-grey-200);
   }
 }
 
@@ -53,45 +53,44 @@
 
 docs-transition {
   align-items: center;
-  border: var(--diamond-border);
+  border: var(--dmd-border);
   display: flex;
   height: 10rem;
   justify-content: center;
 
   &[type='default'] {
-    animation-duration: calc(var(--diamond-transition-duration) * 20);
+    animation-duration: calc(var(--dmd-transition-duration) * 20);
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-name: normal-transition;
-    animation-timing-function: var(--diamond-transition-timing);
+    animation-timing-function: var(--dmd-transition-timing);
   }
 
   &[type='boing'] {
-    animation-duration: calc(var(--diamond-transition-duration-boing) * 10);
+    animation-duration: calc(var(--dmd-transition-duration-boing) * 10);
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-name: boing-transition;
-    animation-timing-function: var(--diamond-transition-timing-boing);
+    animation-timing-function: var(--dmd-transition-timing-boing);
   }
 
   &[type='pulse'] {
-    animation: pulse-transition var(--diamond-transition-duration-pulse)
-      infinite var(--diamond-transition-timing-pulse);
+    animation: pulse-transition var(--dmd-transition-duration-pulse) infinite
+      var(--dmd-transition-timing-pulse);
     background: linear-gradient(
       to right,
-      color-mix(in srgb, var(--diamond-theme-color) 7.5%, transparent) 0%,
-      color-mix(in srgb, var(--diamond-theme-background) 50%, transparent)
-        33.33%,
-      color-mix(in srgb, var(--diamond-theme-color) 7.5%, transparent) 100%
+      color-mix(in srgb, var(--dmd-theme-color) 7.5%, transparent) 0%,
+      color-mix(in srgb, var(--dmd-theme-background) 50%, transparent) 33.33%,
+      color-mix(in srgb, var(--dmd-theme-color) 7.5%, transparent) 100%
     );
     background-size: 200% 100%;
   }
 
   &[type='enter'] {
-    animation-duration: calc(var(--diamond-transition-duration-enter) * 10);
+    animation-duration: calc(var(--dmd-transition-duration-enter) * 10);
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-name: enter-transition;
-    animation-timing-function: var(--diamond-transition-timing-enter);
+    animation-timing-function: var(--dmd-transition-timing-enter);
   }
 }

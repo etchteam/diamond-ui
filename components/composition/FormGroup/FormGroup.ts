@@ -6,14 +6,14 @@ export interface FormGroupAttributes {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-form-group': FormGroupAttributes;
+    'dmd-form-group': FormGroupAttributes;
   }
 }
 
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-form-group': JSXCustomElement<FormGroupAttributes>;
+      'dmd-form-group': JSXCustomElement<FormGroupAttributes>;
     }
   }
 }

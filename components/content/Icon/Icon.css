@@ -1,6 +1,6 @@
-diamond-icon {
+dmd-icon {
   align-items: baseline;
-  color: var(--diamond-theme-icon-color);
+  color: var(--dmd-theme-icon-color);
   display: inline-flex;
 
   &::part(icon) {
@@ -9,32 +9,32 @@ diamond-icon {
     height: 1em;
     justify-content: center;
     position: relative;
-    top: var(--diamond-icon-baseline-adjust);
-    width: var(--diamond-icon-size);
+    top: var(--dmd-icon-baseline-adjust);
+    width: var(--dmd-icon-size);
   }
 
   svg {
     aspect-ratio: 1 / 1;
     display: block;
-    flex: 0 0 var(--diamond-icon-size);
-    height: var(--diamond-icon-size);
-    min-width: var(--diamond-icon-size);
-    width: var(--diamond-icon-size);
+    flex: 0 0 var(--dmd-icon-size);
+    height: var(--dmd-icon-size);
+    min-width: var(--dmd-icon-size);
+    width: var(--dmd-icon-size);
   }
 
   &[variant='circle'] {
     &::part(icon)::before {
-      background-color: var(--diamond-theme-icon-color);
+      background-color: var(--dmd-theme-icon-color);
       border-radius: 100%;
       content: '';
       display: block;
-      height: var(--diamond-icon-size);
+      height: var(--dmd-icon-size);
       position: absolute;
-      width: var(--diamond-icon-size);
+      width: var(--dmd-icon-size);
     }
 
     svg {
-      color: var(--diamond-theme-background);
+      color: var(--dmd-theme-background);
       transform: scale(0.75);
       z-index: 1;
     }

@@ -3,10 +3,10 @@
 }
 
 docs-placeholder {
-  background: var(--diamond-color-grey-50);
-  border: dotted 1px var(--diamond-theme-border-color);
-  border-radius: var(--diamond-radius-sm);
+  background: var(--dmd-color-grey-50);
+  border: dotted 1px var(--dmd-theme-border-color);
+  border-radius: var(--dmd-radius-sm);
   display: block;
-  padding: var(--diamond-spacing-lg);
+  padding: var(--dmd-spacing-lg);
   text-align: left;
 }

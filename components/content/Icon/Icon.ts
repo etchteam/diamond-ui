@@ -8,7 +8,7 @@ export interface IconAttributes {
   label: string;
 }
 
-@customElement('diamond-icon')
+@customElement('dmd-icon')
 export class Icon extends LitElement {
   @property({ reflect: true }) variant?: IconAttributes['variant'];
   @property() label: IconAttributes['label'] = '';
@@ -31,14 +31,14 @@ export class Icon extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-icon': IconAttributes;
+    'dmd-icon': IconAttributes;
   }
 }
 
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-icon': JSXCustomElement<IconAttributes>;
+      'dmd-icon': JSXCustomElement<IconAttributes>;
     }
   }
 }

@@ -2,7 +2,7 @@ import { StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 
 export default {
-  component: 'diamond-input-button-group',
+  component: 'dmd-input-button-group',
   parameters: {
     docs: {
       description: {
@@ -14,18 +14,18 @@ export default {
 
 export const InputButtonGroup: StoryObj = {
   render: () => html`
-    <diamond-input-button-group>
-      <diamond-input>
+    <dmd-input-button-group>
+      <dmd-input>
         <input
           type="text"
           placeholder="Input placeholder"
           aria-label="Input label"
         />
-      </diamond-input>
-      <diamond-button>
+      </dmd-input>
+      <dmd-button>
         <button type="button">Button</button>
-      </diamond-button>
-    </diamond-input-button-group>
+      </dmd-button>
+    </dmd-input-button-group>
   `,
 };
 
@@ -39,8 +39,8 @@ InputButtonGroup.parameters = {
 
 export const InputButtonGroupSelect: StoryObj = {
   render: () => html`
-    <diamond-input-button-group>
-      <diamond-input>
+    <dmd-input-button-group>
+      <dmd-input>
         <select>
           <option value="1">Option 1</option>
           <option value="2">Option 2</option>
@@ -59,11 +59,11 @@ export const InputButtonGroupSelect: StoryObj = {
             fill="currentColor"
           ></path>
         </svg>
-      </diamond-input>
-      <diamond-button>
+      </dmd-input>
+      <dmd-button>
         <button type="button">Button</button>
-      </diamond-button>
-    </diamond-input-button-group>
+      </dmd-button>
+    </dmd-input-button-group>
   `,
 };
 
@@ -78,8 +78,8 @@ InputButtonGroupSelect.parameters = {
 
 export const InputButtonGroupSearch: StoryObj = {
   render: () => html`
-    <diamond-input-button-group>
-      <diamond-input>
+    <dmd-input-button-group>
+      <dmd-input>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height="24px"
@@ -93,10 +93,10 @@ export const InputButtonGroupSearch: StoryObj = {
           />
         </svg>
         <input value="" placeholder="Search..." />
-      </diamond-input>
-      <diamond-button>
+      </dmd-input>
+      <dmd-button>
         <button type="button">Submit</button>
-      </diamond-button>
-    </diamond-input-button-group>
+      </dmd-button>
+    </dmd-input-button-group>
   `,
 };

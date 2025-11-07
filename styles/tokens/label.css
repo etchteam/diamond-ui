@@ -1,11 +1,11 @@
 :root {
-  --diamond-label-color: var(--diamond-theme-color);
-  --diamond-label-font-weight: var(--diamond-font-weight-base);
-  --diamond-label-font-size: var(--diamond-font-size-base);
-  --diamond-label-height: var(--diamond-spacing-thumb);
+  --dmd-label-color: var(--dmd-theme-color);
+  --dmd-label-font-weight: var(--dmd-font-weight-base);
+  --dmd-label-font-size: var(--dmd-font-size-base);
+  --dmd-label-height: var(--dmd-spacing-thumb);
 
-  --diamond-help-text-color: var(--diamond-theme-color);
-  --diamond-help-text-color-valid: var(--diamond-color-valid);
-  --diamond-help-text-color-invalid: var(--diamond-color-invalid);
-  --diamond-help-text-font-size: var(--diamond-font-size-sm);
+  --dmd-help-text-color: var(--dmd-theme-color);
+  --dmd-help-text-color-valid: var(--dmd-color-valid);
+  --dmd-help-text-color-invalid: var(--dmd-color-invalid);
+  --dmd-help-text-font-size: var(--dmd-font-size-sm);
 }

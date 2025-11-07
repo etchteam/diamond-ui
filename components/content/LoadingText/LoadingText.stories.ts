@@ -4,7 +4,7 @@ import { html } from 'lit';
 import './LoadingText';
 
 export default {
-  component: 'diamond-loading-text',
+  component: 'dmd-loading-text',
   parameters: {
     docs: {
       description: {
@@ -18,10 +18,10 @@ export default {
 export const LoadingText: StoryObj = {
   render: () => html`
     <h1>
-      <diamond-loading-text>Loading title</diamond-loading-text>
+      <dmd-loading-text>Loading title</dmd-loading-text>
     </h1>
     <p>
-      <diamond-loading-text>Loading text</diamond-loading-text>
+      <dmd-loading-text>Loading text</dmd-loading-text>
     </p>
   `,
 };

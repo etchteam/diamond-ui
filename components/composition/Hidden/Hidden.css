@@ -1,87 +1,87 @@
-.diamond-hidden-small-mobile {
+.dmd-hidden-small-mobile {
   display: none;
 }
 
-.diamond-visible-small-mobile {
+.dmd-visible-small-mobile {
   display: block;
 }
 
 @media (width >= 375px) {
-  .diamond-hidden-mobile {
+  .dmd-hidden-mobile {
     display: none;
   }
 
-  .diamond-visible-mobile {
+  .dmd-visible-mobile {
     display: block;
   }
 }
 
 @media (width >= 480px) {
-  .diamond-hidden-large-mobile {
+  .dmd-hidden-large-mobile {
     display: none;
   }
 
-  .diamond-visible-large-mobile {
+  .dmd-visible-large-mobile {
     display: block;
   }
 }
 
 @media (width >= 600px) {
-  .diamond-hidden-small-tablet {
+  .dmd-hidden-small-tablet {
     display: none;
   }
 
-  .diamond-visible-small-tablet {
+  .dmd-visible-small-tablet {
     display: block;
   }
 }
 
 @media (width >= 768px) {
-  .diamond-hidden-tablet {
+  .dmd-hidden-tablet {
     display: none;
   }
 
-  .diamond-visible-tablet {
+  .dmd-visible-tablet {
     display: block;
   }
 }
 
 @media (width >= 1024px) {
-  .diamond-hidden-large-tablet {
+  .dmd-hidden-large-tablet {
     display: none;
   }
 
-  .diamond-visible-large-tablet {
+  .dmd-visible-large-tablet {
     display: block;
   }
 }
 
 @media (width >= 1280px) {
-  .diamond-hidden-small-desktop {
+  .dmd-hidden-small-desktop {
     display: none;
   }
 
-  .diamond-visible-small-desktop {
+  .dmd-visible-small-desktop {
     display: block;
   }
 }
 
 @media (width >= 1440px) {
-  .diamond-hidden-desktop {
+  .dmd-hidden-desktop {
     display: none;
   }
 
-  .diamond-visible-desktop {
+  .dmd-visible-desktop {
     display: block;
   }
 }
 
 @media (width >= 1920px) {
-  .diamond-hidden-large-desktop {
+  .dmd-hidden-large-desktop {
     display: none;
   }
 
-  .diamond-visible-large-desktop {
+  .dmd-visible-large-desktop {
     display: block;
   }
 }

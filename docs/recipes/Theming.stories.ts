@@ -19,34 +19,34 @@ export default {
 
 export const Theming: StoryObj = {
   render: () => html`
-    <diamond-grid wrap="wrap">
-      <diamond-grid-item small-mobile="12" tablet="4">
-        <diamond-card border class="diamond-theme-light">
+    <dmd-grid wrap="wrap">
+      <dmd-grid-item small-mobile="12" tablet="4">
+        <dmd-card border class="dmd-theme-light">
           <h3>Card title</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-        </diamond-card>
-      </diamond-grid-item>
-      <diamond-grid-item small-mobile="12" tablet="4">
-        <diamond-card border class="diamond-theme-medium">
+        </dmd-card>
+      </dmd-grid-item>
+      <dmd-grid-item small-mobile="12" tablet="4">
+        <dmd-card border class="dmd-theme-medium">
           <h3>Card title</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-        </diamond-card>
-      </diamond-grid-item>
-      <diamond-grid-item small-mobile="12" tablet="4">
-        <diamond-card border class="diamond-theme-dark">
+        </dmd-card>
+      </dmd-grid-item>
+      <dmd-grid-item small-mobile="12" tablet="4">
+        <dmd-card border class="dmd-theme-dark">
           <h3>Card title</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-        </diamond-card>
-      </diamond-grid-item>
-    </diamond-grid>
+        </dmd-card>
+      </dmd-grid-item>
+    </dmd-grid>
   `,
 };

@@ -1,7 +1,7 @@
-diamond-grid {
-  --diamond-grid-gap: var(--diamond-spacing);
+dmd-grid {
+  --dmd-grid-gap: var(--dmd-spacing);
   display: flex;
-  margin: calc(var(--diamond-grid-gap) * -0.5);
+  margin: calc(var(--dmd-grid-gap) * -0.5);
 
   &[inline] {
     display: inline-flex;
@@ -82,26 +82,26 @@ diamond-grid {
   /* gap */
 
   &[gap='none'] {
-    --diamond-grid-gap: 0;
+    --dmd-grid-gap: 0;
   }
 
   &[gap='xs'] {
-    --diamond-grid-gap: var(--diamond-spacing-xs);
+    --dmd-grid-gap: var(--dmd-spacing-xs);
   }
 
   &[gap='sm'] {
-    --diamond-grid-gap: var(--diamond-spacing-sm);
+    --dmd-grid-gap: var(--dmd-spacing-sm);
   }
 
   &[gap='md'] {
-    --diamond-grid-gap: var(--diamond-spacing);
+    --dmd-grid-gap: var(--dmd-spacing);
   }
 
   &[gap='lg'] {
-    --diamond-grid-gap: var(--diamond-spacing-lg);
+    --dmd-grid-gap: var(--dmd-spacing-lg);
   }
 
   &[gap='xl'] {
-    --diamond-grid-gap: var(--diamond-spacing-xl);
+    --dmd-grid-gap: var(--dmd-spacing-xl);
   }
 }

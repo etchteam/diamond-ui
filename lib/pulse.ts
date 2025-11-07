@@ -23,17 +23,16 @@ export const pulse = css`
 
   :host {
     animation:
-      fade-in var(--diamond-transition-duration-enter) forwards
-        var(--diamond-transition-timing-enter) var(--diamond-loading-delay),
-      pulse var(--diamond-transition-duration-pulse) infinite
-        var(--diamond-transition-timing-pulse);
+      fade-in var(--dmd-transition-duration-enter) forwards
+        var(--dmd-transition-timing-enter) var(--dmd-loading-delay),
+      pulse var(--dmd-transition-duration-pulse) infinite
+        var(--dmd-transition-timing-pulse);
     appearance: none;
     background: linear-gradient(
       to right,
-      color-mix(in srgb, var(--diamond-theme-color) 7.5%, transparent) 0%,
-      color-mix(in srgb, var(--diamond-theme-background) 50%, transparent)
-        33.33%,
-      color-mix(in srgb, var(--diamond-theme-color) 7.5%, transparent) 100%
+      color-mix(in srgb, var(--dmd-theme-color) 7.5%, transparent) 0%,
+      color-mix(in srgb, var(--dmd-theme-background) 50%, transparent) 33.33%,
+      color-mix(in srgb, var(--dmd-theme-color) 7.5%, transparent) 100%
     );
     background-size: 200% 100%;
     color: transparent;

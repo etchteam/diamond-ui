@@ -1,45 +1,45 @@
-diamond-input {
-  --_background: var(--diamond-input-background);
-  --_border-color: var(--diamond-input-border-color);
-  --diamond-icon-baseline-adjust: 0.1em;
+dmd-input {
+  --_background: var(--dmd-input-background);
+  --_border-color: var(--dmd-input-border-color);
+  --dmd-icon-baseline-adjust: 0.1em;
 
   align-items: center;
   background: var(--_background);
-  border: var(--diamond-input-border-width) solid var(--_border-color);
-  border-radius: var(--diamond-input-border-radius);
-  color: var(--diamond-input-color);
+  border: var(--dmd-input-border-width) solid var(--_border-color);
+  border-radius: var(--dmd-input-border-radius);
+  color: var(--dmd-input-color);
   display: flex;
   min-width: 0;
   position: relative;
   transition:
-    border-color var(--diamond-transition),
-    background-color var(--diamond-transition);
+    border-color var(--dmd-transition),
+    background-color var(--dmd-transition);
 
   &:hover,
   &:focus-within {
-    --_border-color: var(--diamond-input-border-color-hover);
+    --_border-color: var(--dmd-input-border-color-hover);
   }
 
   &:has(input:focus-visible),
   &:has(textarea:focus-visible),
   &:has(select:focus-visible) {
-    --_background: var(--diamond-input-background-focus);
+    --_background: var(--dmd-input-background-focus);
     /* https://css-tricks.com/copy-the-browsers-native-focus-styles/ */
     outline: 5px auto Highlight;
     outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: var(--diamond-input-outline-offset);
+    outline-offset: var(--dmd-input-outline-offset);
   }
 
   &[state='valid'] {
-    --_border-color: var(--diamond-input-border-color-valid);
+    --_border-color: var(--dmd-input-border-color-valid);
   }
 
   &[state='invalid'] {
-    --_border-color: var(--diamond-input-border-color-invalid);
+    --_border-color: var(--dmd-input-border-color-invalid);
   }
 
   &:has([disabled]) {
-    --_background: var(--diamond-input-background-disabled);
+    --_background: var(--dmd-input-background-disabled);
     cursor: not-allowed;
     opacity: 0.5;
     pointer-events: none;
@@ -54,9 +54,9 @@ diamond-input {
     color: inherit;
     display: block;
     flex: 1 1 auto;
-    font-size: var(--diamond-input-font-size);
-    line-height: var(--diamond-input-line-height);
-    padding: var(--diamond-input-padding);
+    font-size: var(--dmd-input-font-size);
+    line-height: var(--dmd-input-line-height);
+    padding: var(--dmd-input-padding);
     width: 100%;
 
     &:focus {
@@ -67,11 +67,9 @@ diamond-input {
   select {
     cursor: pointer;
     margin-right: calc(
-      var(--diamond-icon-size) * -1 - var(--diamond-input-padding-inline)
+      var(--dmd-icon-size) * -1 - var(--dmd-input-padding-inline)
     );
-    padding-right: calc(
-      var(--diamond-icon-size) + var(--diamond-input-padding-inline)
-    );
+    padding-right: calc(var(--dmd-icon-size) + var(--dmd-input-padding-inline));
   }
 
   textarea {
@@ -80,22 +78,22 @@ diamond-input {
 
   svg {
     align-self: center;
-    block-size: var(--diamond-icon-size);
+    block-size: var(--dmd-icon-size);
     box-sizing: content-box;
     flex-shrink: 0;
-    inline-size: var(--diamond-icon-size);
+    inline-size: var(--dmd-icon-size);
     pointer-events: none;
   }
 
   /* Prefix */
   &:has(* + :is(input, textarea, select)) > :first-child {
-    margin-right: calc(var(--diamond-input-padding-inline) / 2 * -1);
-    padding: 0 0 0 calc(var(--diamond-input-padding-inline) / 2);
+    margin-right: calc(var(--dmd-input-padding-inline) / 2 * -1);
+    padding: 0 0 0 calc(var(--dmd-input-padding-inline) / 2);
   }
 
   /* Suffix */
   :is(input, textarea, select) + * {
-    padding: 0 calc(var(--diamond-input-padding-inline) / 2);
+    padding: 0 calc(var(--dmd-input-padding-inline) / 2);
   }
 
   :is(input, textarea):has(+ *) {

@@ -1,10 +1,10 @@
 :root {
-  --diamond-wrap-xs: 320px;
-  --diamond-wrap-sm: 480px;
-  --diamond-wrap-md: 600px;
-  --diamond-wrap-lg: 768px;
-  --diamond-wrap-xl: 1024px;
-  --diamond-wrap-xxl: 1280px;
-  --diamond-wrap-xxxl: 1440px;
-  --diamond-wrap-xxxxl: 1920px;
+  --dmd-wrap-xs: 320px;
+  --dmd-wrap-sm: 480px;
+  --dmd-wrap-md: 600px;
+  --dmd-wrap-lg: 768px;
+  --dmd-wrap-xl: 1024px;
+  --dmd-wrap-xxl: 1280px;
+  --dmd-wrap-xxxl: 1440px;
+  --dmd-wrap-xxxxl: 1920px;
 }

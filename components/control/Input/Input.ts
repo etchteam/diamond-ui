@@ -6,14 +6,14 @@ export interface InputAttributes {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-input': InputAttributes;
+    'dmd-input': InputAttributes;
   }
 }
 
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-input': JSXCustomElement<InputAttributes>;
+      'dmd-input': JSXCustomElement<InputAttributes>;
     }
   }
 }

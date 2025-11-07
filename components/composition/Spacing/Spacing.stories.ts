@@ -4,7 +4,7 @@ import { html } from 'lit';
 const description = `
 Diamond spacing is a set of utility classes that can be added to any component or element.
 
-The spacing class name format is \`diamond-spacing-{direction}-{size}\`, e.g. \`diamond-spacing-bottom-sm\`.
+The spacing class name format is \`dmd-spacing-{direction}-{size}\`, e.g. \`dmd-spacing-bottom-sm\`.
 
 Spacing tweaks are one of the most common reasons for introducing page level CSS, which is
 a slippery slope to a bloated CSS file. Diamond spacing reduces or eliminates these tweaks.
@@ -16,7 +16,7 @@ It is generally recommended to use **bottom spacing** and **no top spacing** to 
 `;
 
 export default {
-  component: 'diamond-spacing',
+  component: 'dmd-spacing',
   parameters: {
     docs: {
       description: {
@@ -45,15 +45,15 @@ export default {
 export const Spacing: StoryObj = {
   render: (args) => html`
     <div
-      class="diamond-spacing-bottom-${args.size}"
+      class="dmd-spacing-bottom-${args.size}"
       style="height: 100px; background-color: #eee;"
     ></div>
     <div
-      class="diamond-spacing-bottom-${args.size}"
+      class="dmd-spacing-bottom-${args.size}"
       style="height: 100px; background-color: #eee;"
     ></div>
     <div
-      class="diamond-spacing-bottom-${args.size}"
+      class="dmd-spacing-bottom-${args.size}"
       style="height: 100px; background-color: #eee;"
     ></div>
   `,

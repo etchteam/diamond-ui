@@ -1,35 +1,35 @@
-diamond-button {
-  --_background: var(--diamond-button-background);
-  --_background-hover: var(--diamond-button-background-hover);
-  --_background-disabled: var(--diamond-button-background-disabled);
-  --_border-color: var(--diamond-button-border-color);
-  --_border-color-hover: var(--diamond-button-border-color-hover);
-  --_border-color-disabled: var(--diamond-button-border-color-disabled);
-  --_color: var(--diamond-button-color);
-  --_color-hover: var(--diamond-button-color-hover);
-  --_color-disabled: var(--diamond-button-color-disabled);
+dmd-button {
+  --_background: var(--dmd-button-background);
+  --_background-hover: var(--dmd-button-background-hover);
+  --_background-disabled: var(--dmd-button-background-disabled);
+  --_border-color: var(--dmd-button-border-color);
+  --_border-color-hover: var(--dmd-button-border-color-hover);
+  --_border-color-disabled: var(--dmd-button-border-color-disabled);
+  --_color: var(--dmd-button-color);
+  --_color-hover: var(--dmd-button-color-hover);
+  --_color-disabled: var(--dmd-button-color-disabled);
   --_size: 1rem;
-  --_padding-block: var(--diamond-button-padding-block);
-  --_padding-inline: var(--diamond-button-padding-inline);
-  --_line-height: var(--diamond-button-line-height);
-  --diamond-icon-baseline-adjust: 0.1em;
+  --_padding-block: var(--dmd-button-padding-block);
+  --_padding-inline: var(--dmd-button-padding-inline);
+  --_line-height: var(--dmd-button-line-height);
+  --dmd-icon-baseline-adjust: 0.1em;
   display: inline-block;
 
   /* Structural button styles */
-  diamond-loading-button,
+  dmd-loading-button,
   button,
   a,
   input:not([type='file']),
   input[type='file']::file-selector-button {
     align-items: center;
     appearance: none;
-    border-radius: var(--diamond-button-border-radius);
+    border-radius: var(--dmd-button-border-radius);
     cursor: pointer;
     display: inline-flex;
     font: inherit;
     font-size: var(--_size, 1rem);
-    font-weight: var(--diamond-button-font-weight);
-    gap: var(--diamond-button-gap);
+    font-weight: var(--dmd-button-font-weight);
+    gap: var(--dmd-button-gap);
     justify-content: center;
     letter-spacing: inherit;
     line-height: var(--_line-height);
@@ -41,9 +41,9 @@ diamond-button {
     touch-action: manipulation;
     -webkit-touch-callout: none;
     transition:
-      background var(--diamond-transition),
-      color var(--diamond-transition),
-      border-color var(--diamond-transition);
+      background var(--dmd-transition),
+      color var(--dmd-transition),
+      border-color var(--dmd-transition);
     user-select: none;
 
     @media (hover: hover) {
@@ -55,7 +55,7 @@ diamond-button {
     }
 
     &:not(:active):focus-visible {
-      outline-offset: var(--diamond-button-outline-offset);
+      outline-offset: var(--dmd-button-outline-offset);
       position: relative;
       /* This z-index prevents the focus outline from being clipped by the parent */
       z-index: 1;
@@ -68,16 +68,16 @@ diamond-button {
   input:not([type='file']),
   input[type='file']::file-selector-button {
     background: var(--_background);
-    border: var(--diamond-border);
+    border: var(--dmd-border);
     border-color: var(--_border-color);
     color: var(--_color);
-    text-shadow: var(--diamond-button-text-shadow);
+    text-shadow: var(--dmd-button-text-shadow);
   }
 
   svg {
-    block-size: var(--diamond-icon-size);
+    block-size: var(--dmd-icon-size);
     flex-shrink: 0;
-    inline-size: var(--diamond-icon-size);
+    inline-size: var(--dmd-icon-size);
   }
 
   [disabled],
@@ -99,7 +99,7 @@ diamond-button {
   &[width='full-width'] {
     display: block;
 
-    diamond-loading-button,
+    dmd-loading-button,
     button,
     a,
     input {
@@ -111,7 +111,7 @@ diamond-button {
     &[width='full-width-mobile'] {
       display: block;
 
-      diamond-loading-button,
+      dmd-loading-button,
       button,
       a,
       input {
@@ -122,9 +122,9 @@ diamond-button {
 
   &[width='square'] {
     --_line-height: 1;
-    --_padding-inline: var(--diamond-button-padding-block);
+    --_padding-inline: var(--dmd-button-padding-block);
 
-    diamond-loading-button,
+    dmd-loading-button,
     button,
     a,
     input {
@@ -133,47 +133,43 @@ diamond-button {
   }
 
   &[variant='primary'] {
-    --_background: var(--diamond-button-primary-background);
-    --_background-hover: var(--diamond-button-primary-background-hover);
-    --_background-disabled: var(--diamond-button-primary-background-disabled);
-    --_border-color: var(--diamond-button-primary-border-color);
-    --_border-color-hover: var(--diamond-button-primary-border-color-hover);
-    --_border-color-disabled: var(
-      --diamond-button-primary-border-color-disabled
-    );
-    --_color: var(--diamond-button-primary-color);
-    --_color-hover: var(--diamond-button-primary-color-hover);
-    --_color-disabled: var(--diamond-button-primary-color-disabled);
+    --_background: var(--dmd-button-primary-background);
+    --_background-hover: var(--dmd-button-primary-background-hover);
+    --_background-disabled: var(--dmd-button-primary-background-disabled);
+    --_border-color: var(--dmd-button-primary-border-color);
+    --_border-color-hover: var(--dmd-button-primary-border-color-hover);
+    --_border-color-disabled: var(--dmd-button-primary-border-color-disabled);
+    --_color: var(--dmd-button-primary-color);
+    --_color-hover: var(--dmd-button-primary-color-hover);
+    --_color-disabled: var(--dmd-button-primary-color-disabled);
   }
 
   &[variant='secondary'] {
-    --_background: var(--diamond-button-secondary-background);
-    --_background-hover: var(--diamond-button-secondary-background-hover);
-    --_background-disabled: var(--diamond-button-secondary-background-disabled);
-    --_border-color: var(--diamond-button-secondary-border-color);
-    --_border-color-hover: var(--diamond-button-secondary-border-color-hover);
-    --_border-color-disabled: var(
-      --diamond-button-secondary-border-color-disabled
-    );
-    --_color: var(--diamond-button-secondary-color);
-    --_color-hover: var(--diamond-button-secondary-color-hover);
-    --_color-disabled: var(--diamond-button-secondary-color-disabled);
+    --_background: var(--dmd-button-secondary-background);
+    --_background-hover: var(--dmd-button-secondary-background-hover);
+    --_background-disabled: var(--dmd-button-secondary-background-disabled);
+    --_border-color: var(--dmd-button-secondary-border-color);
+    --_border-color-hover: var(--dmd-button-secondary-border-color-hover);
+    --_border-color-disabled: var(--dmd-button-secondary-border-color-disabled);
+    --_color: var(--dmd-button-secondary-color);
+    --_color-hover: var(--dmd-button-secondary-color-hover);
+    --_color-disabled: var(--dmd-button-secondary-color-disabled);
   }
 
   &[variant='text'] {
-    --_background: var(--diamond-button-text-background);
-    --_background-hover: var(--diamond-button-text-background-hover);
-    --_background-disabled: var(--diamond-button-text-background-disabled);
-    --_border-color: var(--diamond-button-text-border-color);
-    --_border-color-hover: var(--diamond-button-text-border-color-hover);
-    --_border-color-disabled: var(--diamond-button-text-border-color-disabled);
-    --_color: var(--diamond-button-text-color);
-    --_color-hover: var(--diamond-button-text-color-hover);
-    --_color-disabled: var(--diamond-button-text-color-disabled);
+    --_background: var(--dmd-button-text-background);
+    --_background-hover: var(--dmd-button-text-background-hover);
+    --_background-disabled: var(--dmd-button-text-background-disabled);
+    --_border-color: var(--dmd-button-text-border-color);
+    --_border-color-hover: var(--dmd-button-text-border-color-hover);
+    --_border-color-disabled: var(--dmd-button-text-border-color-disabled);
+    --_color: var(--dmd-button-text-color);
+    --_color-hover: var(--dmd-button-text-color-hover);
+    --_color-disabled: var(--dmd-button-text-color-disabled);
     /* Text button is square */
-    --_padding-inline: var(--diamond-button-padding-block);
+    --_padding-inline: var(--dmd-button-padding-block);
 
-    diamond-loading-button,
+    dmd-loading-button,
     button,
     a,
     input {
@@ -183,13 +179,13 @@ diamond-button {
   }
 
   input[type='file'] {
-    background-color: var(--diamond-button-file-background);
-    border-radius: var(--diamond-button-border-radius);
+    background-color: var(--dmd-button-file-background);
+    border-radius: var(--dmd-button-border-radius);
     inline-size: 100%;
     max-inline-size: max-content;
 
     &::file-selector-button {
-      margin-inline-end: var(--diamond-spacing);
+      margin-inline-end: var(--dmd-spacing);
     }
   }
 }

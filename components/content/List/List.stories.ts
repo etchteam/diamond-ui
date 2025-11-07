@@ -9,7 +9,7 @@ The list component adds a bit more power to HTML lists, such as spacing control 
 `;
 
 export default {
-  component: 'diamond-list',
+  component: 'dmd-list',
   argTypes: {
     variant: {
       control: {
@@ -45,13 +45,13 @@ export default {
 
 export const List: StoryObj = {
   render: (args) => html`
-    <diamond-list variant="${args.variant}" spacing="${args.spacing}">
+    <dmd-list variant="${args.variant}" spacing="${args.spacing}">
       <ul>
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
       </ul>
-    </diamond-list>
+    </dmd-list>
   `,
 };
 
@@ -61,13 +61,13 @@ List.args = {
 
 export const Unstyled: StoryObj = {
   render: (args) => html`
-    <diamond-list variant="${args.variant}" spacing="${args.spacing}">
+    <dmd-list variant="${args.variant}" spacing="${args.spacing}">
       <ul>
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
       </ul>
-    </diamond-list>
+    </dmd-list>
   `,
 };
 
@@ -93,10 +93,10 @@ Unstyled.parameters = {
 
 export const Icon: StoryObj = {
   render: (args) => html`
-    <diamond-list variant="${args.variant}" spacing="${args.spacing}">
+    <dmd-list variant="${args.variant}" spacing="${args.spacing}">
       <ul>
         <li>
-          <diamond-icon>
+          <dmd-icon>
             <svg
               fill="none"
               viewBox="0 0 24 24"
@@ -110,13 +110,13 @@ export const Icon: StoryObj = {
                 fill="#0D0D0D"
               ></path>
             </svg>
-          </diamond-icon>
+          </dmd-icon>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
           fermentum pharetra massa sed convallis. Mauris finibus justo sit amet
           lorem scelerisque consectetur.
         </li>
         <li>
-          <diamond-icon>
+          <dmd-icon>
             <svg
               fill="none"
               viewBox="0 0 24 24"
@@ -130,13 +130,13 @@ export const Icon: StoryObj = {
                 fill="#0D0D0D"
               ></path>
             </svg>
-          </diamond-icon>
+          </dmd-icon>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
           fermentum pharetra massa sed convallis. Mauris finibus justo sit amet
           lorem scelerisque consectetur.
         </li>
         <li>
-          <diamond-icon>
+          <dmd-icon>
             <svg
               fill="none"
               viewBox="0 0 24 24"
@@ -150,13 +150,13 @@ export const Icon: StoryObj = {
                 fill="#0D0D0D"
               ></path>
             </svg>
-          </diamond-icon>
+          </dmd-icon>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
           fermentum pharetra massa sed convallis. Mauris finibus justo sit amet
           lorem scelerisque consectetur.
         </li>
       </ul>
-    </diamond-list>
+    </dmd-list>
   `,
 };
 
@@ -166,7 +166,7 @@ Icon.args = {
 
 export const DefinitionList: StoryObj = {
   render: (args) => html`
-    <diamond-list variant="${args.variant}" spacing="${args.spacing}">
+    <dmd-list variant="${args.variant}" spacing="${args.spacing}">
       <dl>
         <div>
           <dt>Term</dt>
@@ -181,7 +181,7 @@ export const DefinitionList: StoryObj = {
           <dd>Item 3</dd>
         </div>
       </dl>
-    </diamond-list>
+    </dmd-list>
   `,
 };
 

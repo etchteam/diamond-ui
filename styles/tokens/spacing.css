@@ -1,14 +1,14 @@
 :root {
-  --diamond-spacing-thumb: 2.625rem;
+  --dmd-spacing-thumb: 2.625rem;
 
-  --diamond-spacing-md: 1rem;
-  --diamond-spacing: var(--diamond-spacing-md);
-  --diamond-spacing-xs: calc(var(--diamond-spacing) / 4);
-  --diamond-spacing-sm: calc(var(--diamond-spacing) / 2);
-  --diamond-spacing-lg: calc(var(--diamond-spacing) * 2);
-  --diamond-spacing-xl: calc(var(--diamond-spacing) * 4);
+  --dmd-spacing-md: 1rem;
+  --dmd-spacing: var(--dmd-spacing-md);
+  --dmd-spacing-xs: calc(var(--dmd-spacing) / 4);
+  --dmd-spacing-sm: calc(var(--dmd-spacing) / 2);
+  --dmd-spacing-lg: calc(var(--dmd-spacing) * 2);
+  --dmd-spacing-xl: calc(var(--dmd-spacing) * 4);
 
-  --diamond-spacing-fluid: clamp(1rem, 5vw, 4rem);
-  --diamond-spacing-fluid-sm: clamp(1rem, 2.5vw, 3rem);
-  --diamond-spacing-fluid-lg: clamp(1rem, 7.5vw, 5rem);
+  --dmd-spacing-fluid: clamp(1rem, 5vw, 4rem);
+  --dmd-spacing-fluid-sm: clamp(1rem, 2.5vw, 3rem);
+  --dmd-spacing-fluid-lg: clamp(1rem, 7.5vw, 5rem);
 }
