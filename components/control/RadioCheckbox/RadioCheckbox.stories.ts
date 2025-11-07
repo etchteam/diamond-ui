@@ -25,19 +25,13 @@ export default {
 
 export const Radio: StoryObj = {
   render: (args) => html`
-    <dmd-radio-checkbox
-      state="${args.state}"
-      class="dmd-spacing-bottom-sm"
-    >
+    <dmd-radio-checkbox state="${args.state}" class="dmd-spacing-bottom-sm">
       <label>
         <input type="radio" name="my-radio" value="yes" checked />
         Item label one
       </label>
     </dmd-radio-checkbox>
-    <dmd-radio-checkbox
-      state="${args.state}"
-      class="dmd-spacing-bottom-sm"
-    >
+    <dmd-radio-checkbox state="${args.state}" class="dmd-spacing-bottom-sm">
       <label>
         <input type="radio" name="my-radio" value="no" />
         Item label two
@@ -54,19 +48,13 @@ export const Radio: StoryObj = {
 
 export const Checkbox: StoryObj = {
   render: (args) => html`
-    <dmd-radio-checkbox
-      state="${args.state}"
-      class="dmd-spacing-bottom-sm"
-    >
+    <dmd-radio-checkbox state="${args.state}" class="dmd-spacing-bottom-sm">
       <label>
         <input type="checkbox" name="my-checkbox" value="yes" checked />
         Item label one
       </label>
     </dmd-radio-checkbox>
-    <dmd-radio-checkbox
-      state="${args.state}"
-      class="dmd-spacing-bottom-sm"
-    >
+    <dmd-radio-checkbox state="${args.state}" class="dmd-spacing-bottom-sm">
       <label>
         <input type="checkbox" name="my-checkbox" value="no" />
         Item label two

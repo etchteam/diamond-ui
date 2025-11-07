@@ -1,4 +1,5 @@
 module.exports = {
+  ignorePatterns: ['dist', 'node_modules'],
   plugins: ['lit-a11y', 'spellcheck'],
   extends: ['@etchteam', 'plugin:lit-a11y/recommended'],
   rules: {

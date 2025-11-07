@@ -87,11 +87,7 @@ Sizes.parameters = {
 
 export const IconInAGrid: StoryObj = {
   render: () => html`
-    <dmd-grid
-      align-items="baseline"
-      gap="xs"
-      class="dmd-spacing-bottom-md"
-    >
+    <dmd-grid align-items="baseline" gap="xs" class="dmd-spacing-bottom-md">
       <dmd-grid-item>
         <dmd-icon class="dmd-text-size-h3">
           <svg fill="none" viewBox="0 0 24 24" height="24" width="24">

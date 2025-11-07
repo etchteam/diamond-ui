@@ -196,9 +196,7 @@ export const LoadingSkeleton: StoryObj = {
                       </dmd-img>
 
                       <h2 class="dmd-text-size-h3">${card.title}</h2>
-                      <p class="dmd-spacing-bottom-lg">
-                        ${card.description}
-                      </p>
+                      <p class="dmd-spacing-bottom-lg">${card.description}</p>
 
                       <dmd-button width="full-width">
                         <button type="button">Read More</button>
