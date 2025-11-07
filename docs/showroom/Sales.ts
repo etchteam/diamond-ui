@@ -56,10 +56,7 @@ export const Sales: StoryObj = {
                   ${[0, 1, 2, 3].map(
                     (i) => html`
                       <dmd-grid-item>
-                        <dmd-enter
-                          type="fade-in-up"
-                          delay="${i * 0.2 + 0.6}"
-                        >
+                        <dmd-enter type="fade-in-up" delay="${i * 0.2 + 0.6}">
                           <img
                             src="https://placehold.co/64x64"
                             width="64"
@@ -109,11 +106,7 @@ export const Sales: StoryObj = {
                       enter-on-scroll="true"
                       delay="${i * 0.2}"
                     >
-                      <dmd-card
-                        border
-                        radius
-                        class="dmd-text-align-center"
-                      >
+                      <dmd-card border radius class="dmd-text-align-center">
                         <dmd-img block responsive>
                           <img
                             src="https://placehold.co/120x80"
@@ -383,9 +376,7 @@ export const Sales: StoryObj = {
                             />
                           </dmd-grid-item>
                         </dmd-grid>
-                        <hr
-                          class="dmd-spacing-top-md dmd-spacing-bottom-lg"
-                        />
+                        <hr class="dmd-spacing-top-md dmd-spacing-bottom-lg" />
 
                         <h3>Card title</h3>
                         <p class="dmd-spacing-bottom-lg">
@@ -511,11 +502,7 @@ export const Sales: StoryObj = {
             <dmd-grid wrap="wrap">
               <dmd-grid-item small-mobile="12" tablet="6">
                 <dmd-enter type="fade-in-up" enter-on-scroll="true">
-                  <dmd-img
-                    block
-                    responsive
-                    class="dmd-spacing-bottom-md"
-                  >
+                  <dmd-img block responsive class="dmd-spacing-bottom-md">
                     <img
                       src="https://placehold.co/320x200"
                       width="320"
@@ -584,11 +571,7 @@ export const Sales: StoryObj = {
             <dmd-grid wrap="wrap">
               ${[0, 1, 2].map(
                 () => html`
-                  <dmd-grid-item
-                    small-mobile="12"
-                    tablet="6"
-                    large-tablet="3"
-                  >
+                  <dmd-grid-item small-mobile="12" tablet="6" large-tablet="3">
                     <h3>List title</h3>
 
                     <dmd-list variant="unstyled" spacing="sm">
