@@ -5,7 +5,7 @@ const description =
   'A set of utility classes that can be added to any component or element to alter the text style.';
 
 export default {
-  component: 'diamond-text',
+  component: 'dmd-text',
   parameters: {
     docs: {
       description: {
@@ -77,7 +77,7 @@ export default {
       },
       options: ['1', '2', '3', '4'],
       description:
-        "Limits the text to the specified number of lines and adds an ellipsis if it's too long. 'diamond-text-line-limit-1' is an alias for 'diamond-text-truncate'.",
+        "Limits the text to the specified number of lines and adds an ellipsis if it's too long. 'dmd-text-line-limit-1' is an alias for 'dmd-text-truncate'.",
     },
     decoration: {
       control: {
@@ -102,17 +102,17 @@ export const Text: StoryObj = {
     decoration,
   }) => {
     const classes = [
-      `diamond-text-font-${font}`,
-      `diamond-text-size-${size}`,
-      `diamond-text-weight-${weight}`,
-      `diamond-text-align-${align}`,
-      `diamond-text-wrap-${wrap}`,
-      `diamond-text-line-limit-${lineLimit}`,
-      `diamond-text-decoration-${decoration}`,
+      `dmd-text-font-${font}`,
+      `dmd-text-size-${size}`,
+      `dmd-text-weight-${weight}`,
+      `dmd-text-align-${align}`,
+      `dmd-text-wrap-${wrap}`,
+      `dmd-text-line-limit-${lineLimit}`,
+      `dmd-text-decoration-${decoration}`,
     ];
 
     if (truncate) {
-      classes.push('diamond-text-truncate');
+      classes.push('dmd-text-truncate');
     }
 
     const classString = classes

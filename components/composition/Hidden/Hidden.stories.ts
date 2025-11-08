@@ -12,7 +12,7 @@ so not every breakpoint needs to be specified.
 `;
 
 export default {
-  component: 'diamond-hidden',
+  component: 'dmd-hidden',
   parameters: {
     docs: {
       description: {
@@ -30,17 +30,17 @@ const generateClasses = (args: { [key: string]: boolean }) => {
     .map((breakpoint, index) => {
       const arg = args[camelCase(breakpoint.name)];
       if (index === 0) {
-        return arg ? `diamond-hidden-${breakpoint.name}` : '';
+        return arg ? `dmd-hidden-${breakpoint.name}` : '';
       }
 
       const previousArg = args[camelCase(breakpoints[index - 1].name)];
 
       if (arg && !previousArg) {
-        return `diamond-hidden-${breakpoint.name}`;
+        return `dmd-hidden-${breakpoint.name}`;
       }
 
       if (!arg && previousArg) {
-        return `diamond-visible-${breakpoint.name}`;
+        return `dmd-visible-${breakpoint.name}`;
       }
 
       return '';

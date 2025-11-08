@@ -3,7 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 
 import { pulse } from '../../../lib/pulse';
 
-@customElement('diamond-loading-button')
+@customElement('dmd-loading-button')
 export class LoadingButton extends LitElement {
   @property({ reflect: true, attribute: 'aria-hidden' }) ariaHidden:
     | string
@@ -18,6 +18,6 @@ export class LoadingButton extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-loading-button': LoadingButton;
+    'dmd-loading-button': LoadingButton;
   }
 }

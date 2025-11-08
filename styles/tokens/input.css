@@ -1,30 +1,30 @@
 :root {
-  --diamond-input-background: var(--diamond-theme-background);
-  --diamond-input-background-focus: var(--diamond-theme-background);
-  --diamond-input-background-disabled: var(--diamond-theme-background-muted);
+  --dmd-input-background: var(--dmd-theme-background);
+  --dmd-input-background-focus: var(--dmd-theme-background);
+  --dmd-input-background-disabled: var(--dmd-theme-background-muted);
 
-  --diamond-input-border-width: 1px;
-  --diamond-input-border-radius: var(--diamond-radius);
-  --diamond-input-border-color: var(--diamond-theme-border-color);
-  --diamond-input-border-color-hover: var(--diamond-theme-border-color-hover);
-  --diamond-input-border-color-valid: var(--diamond-color-valid);
-  --diamond-input-border-color-invalid: var(--diamond-color-invalid);
+  --dmd-input-border-width: 1px;
+  --dmd-input-border-radius: var(--dmd-radius);
+  --dmd-input-border-color: var(--dmd-theme-border-color);
+  --dmd-input-border-color-hover: var(--dmd-theme-border-color-hover);
+  --dmd-input-border-color-valid: var(--dmd-color-valid);
+  --dmd-input-border-color-invalid: var(--dmd-color-invalid);
 
-  --diamond-input-outline-offset: 4px;
+  --dmd-input-outline-offset: 4px;
 
-  --diamond-input-color: var(--diamond-theme-color);
+  --dmd-input-color: var(--dmd-theme-color);
 
-  --diamond-input-checked: var(--diamond-color-black);
-  --diamond-input-checkbox-border-radius: var(--diamond-radius-sm);
-  --diamond-input-radio-checkbox-padding: 0.1875rem;
+  --dmd-input-checked: var(--dmd-color-black);
+  --dmd-input-checkbox-border-radius: var(--dmd-radius-sm);
+  --dmd-input-radio-checkbox-padding: 0.1875rem;
 
-  --diamond-input-padding-block: var(--diamond-spacing-sm);
-  --diamond-input-padding-inline: var(--diamond-spacing);
-  --diamond-input-padding: var(--diamond-input-padding-block)
-    var(--diamond-input-padding-inline);
+  --dmd-input-padding-block: var(--dmd-spacing-sm);
+  --dmd-input-padding-inline: var(--dmd-spacing);
+  --dmd-input-padding: var(--dmd-input-padding-block)
+    var(--dmd-input-padding-inline);
 
-  --diamond-input-line-height: var(--diamond-font-line-height);
+  --dmd-input-line-height: var(--dmd-font-line-height);
 
   /* Should be 16px minimum to avoid IOS zoom */
-  --diamond-input-font-size: var(--diamond-font-size-default);
+  --dmd-input-font-size: var(--dmd-font-size-default);
 }

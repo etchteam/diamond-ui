@@ -1,50 +1,50 @@
-diamond-card {
-  background: var(--diamond-theme-background);
+dmd-card {
+  background: var(--dmd-theme-background);
   border: 0 none;
-  color: var(--diamond-theme-color);
+  color: var(--dmd-theme-color);
   display: block;
-  padding: var(--diamond-spacing);
-  transition: border-color var(--diamond-transition);
+  padding: var(--dmd-spacing);
+  transition: border-color var(--dmd-transition);
 
   &[shadow] {
-    box-shadow: var(--diamond-shadow);
+    box-shadow: var(--dmd-shadow);
   }
 
   &[muted] {
-    background: var(--diamond-theme-background-muted);
+    background: var(--dmd-theme-background-muted);
   }
 
   &[radius] {
-    border-radius: var(--diamond-radius);
+    border-radius: var(--dmd-radius);
     overflow: hidden;
   }
 
   &[padding='xs'] {
-    padding: var(--diamond-spacing-xs);
+    padding: var(--dmd-spacing-xs);
   }
 
   &[padding='sm'] {
-    padding: var(--diamond-spacing-sm);
+    padding: var(--dmd-spacing-sm);
   }
 
   &[padding='lg'] {
-    padding: var(--diamond-spacing-lg);
+    padding: var(--dmd-spacing-lg);
   }
 
   &[padding='xl'] {
-    padding: var(--diamond-spacing-xl);
+    padding: var(--dmd-spacing-xl);
   }
 
   &[padding='fluid-sm'] {
-    padding: var(--diamond-spacing-fluid-sm);
+    padding: var(--dmd-spacing-fluid-sm);
   }
 
   &[padding='fluid'] {
-    padding: var(--diamond-spacing-fluid);
+    padding: var(--dmd-spacing-fluid);
   }
 
   &[padding='fluid-lg'] {
-    padding: var(--diamond-spacing-fluid-lg);
+    padding: var(--dmd-spacing-fluid-lg);
   }
 
   &[padding='none'] {
@@ -52,12 +52,12 @@ diamond-card {
   }
 
   &[border] {
-    border: 1px solid var(--diamond-theme-border-color);
+    border: 1px solid var(--dmd-theme-border-color);
   }
 
   @media (hover: hover) {
     &[border][href]:hover {
-      border-color: var(--diamond-theme-border-color-hover);
+      border-color: var(--dmd-theme-border-color-hover);
     }
   }
 }
@@ -66,8 +66,8 @@ button,
 a {
   &:hover,
   &:focus-visible {
-    diamond-card {
-      border-color: var(--diamond-theme-border-color-hover);
+    dmd-card {
+      border-color: var(--dmd-theme-border-color-hover);
     }
   }
 }

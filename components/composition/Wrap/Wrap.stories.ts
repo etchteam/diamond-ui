@@ -4,7 +4,7 @@ import { html } from 'lit';
 import './Wrap';
 
 export default {
-  component: 'diamond-wrap',
+  component: 'dmd-wrap',
   parameters: {
     layout: 'fullscreen',
     docs: {
@@ -32,13 +32,13 @@ export default {
 
 export const Wrap: StoryObj = {
   render: (args) => html`
-    <diamond-wrap size="${args.size}" gutter="${args.gutter}">
+    <dmd-wrap size="${args.size}" gutter="${args.gutter}">
       <div
         style="height: 100px; background-color: #eee; display: flex; align-items: center; justify-content: center;"
       >
         Wrapped content
       </div>
-    </diamond-wrap>
+    </dmd-wrap>
   `,
 };
 

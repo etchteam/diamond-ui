@@ -1,7 +1,7 @@
 a,
 button,
 label {
-  &:has(diamond-card, [data-interactive]) {
+  &:has(dmd-card, [data-interactive]) {
     appearance: none;
     background-color: transparent;
     border: 0 none;

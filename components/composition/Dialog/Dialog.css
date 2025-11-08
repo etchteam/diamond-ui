@@ -5,28 +5,28 @@ dialog {
   padding: 0;
   transform: translateY(1rem);
   transition:
-    opacity var(--diamond-transition),
-    display var(--diamond-transition) allow-discrete,
-    overlay var(--diamond-transition) allow-discrete,
-    transform var(--diamond-transition);
+    opacity var(--dmd-transition),
+    display var(--dmd-transition) allow-discrete,
+    overlay var(--dmd-transition) allow-discrete,
+    transform var(--dmd-transition);
 
   &::backdrop {
-    background-color: var(--diamond-backdrop, var(--diamond-color-grey-600));
+    background-color: var(--dmd-backdrop, var(--dmd-color-grey-600));
     opacity: 0;
     transition:
-      opacity var(--diamond-transition),
-      display var(--diamond-transition) allow-discrete,
-      overlay var(--diamond-transition) allow-discrete;
+      opacity var(--dmd-transition),
+      display var(--dmd-transition) allow-discrete,
+      overlay var(--dmd-transition) allow-discrete;
   }
 
   &[open] {
     opacity: 1;
     transform: none;
-    transition-delay: calc(var(--diamond-transition-duration) * 0.5);
+    transition-delay: calc(var(--dmd-transition-duration) * 0.5);
   }
 
   &[open]::backdrop {
-    opacity: var(--diamond-backdrop-opacity, 0.4);
+    opacity: var(--dmd-backdrop-opacity, 0.4);
   }
 }
 

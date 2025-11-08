@@ -67,21 +67,21 @@ export const LoadingSkeleton: StoryObj = {
   render: () => html`
     <style>
       .theme-light {
-        --diamond-theme-background: #fff;
-        --diamond-theme-color: #333;
-        --diamond-theme-heading-color: #333;
+        --dmd-theme-background: #fff;
+        --dmd-theme-color: #333;
+        --dmd-theme-heading-color: #333;
       }
 
       .theme-medium {
-        --diamond-theme-background: #f2f2f2;
-        --diamond-theme-color: #333;
-        --diamond-theme-heading-color: #333;
+        --dmd-theme-background: #f2f2f2;
+        --dmd-theme-color: #333;
+        --dmd-theme-heading-color: #333;
       }
 
       .theme-dark {
-        --diamond-theme-background: #333;
-        --diamond-theme-color: #fff;
-        --diamond-theme-heading-color: #fff;
+        --dmd-theme-background: #333;
+        --dmd-theme-color: #fff;
+        --dmd-theme-heading-color: #fff;
       }
     </style>
     <script>
@@ -100,96 +100,92 @@ export const LoadingSkeleton: StoryObj = {
         cardsLoaded.hidden = false;
       }, 3000);
     </script>
-    <diamond-section padding="fluid" class="theme-dark">
-      <diamond-wrap
+    <dmd-section padding="fluid" class="theme-dark">
+      <dmd-wrap
         size="md"
         gutter="md"
-        class="diamond-text-align-center diamond-spacing-bottom-fluid"
+        class="dmd-text-align-center dmd-spacing-bottom-fluid"
       >
         <div class="js-page-loaded" hidden>
-          <diamond-enter type="fade">
+          <dmd-enter type="fade">
             <h1>Diamond UI</h1>
             <p>Bring clarity to your components.</p>
-          </diamond-enter>
+          </dmd-enter>
         </div>
         <div class="js-page-loading">
           <h1>
-            <diamond-loading-text> Fake loading title </diamond-loading-text>
+            <dmd-loading-text> Fake loading title </dmd-loading-text>
           </h1>
           <p>
-            <diamond-loading-text>
+            <dmd-loading-text>
               Lorem ipsum dolor consequit sit amet epsilon
-            </diamond-loading-text>
+            </dmd-loading-text>
           </p>
         </div>
-      </diamond-wrap>
-      <diamond-wrap size="xxl" gutter="md">
+      </dmd-wrap>
+      <dmd-wrap size="xxl" gutter="md">
         <div class="js-cards-loading">
-          <diamond-grid wrap="wrap">
+          <dmd-grid wrap="wrap">
             ${[1, 2, 3, 4].map(
               (i) => html`
-                <diamond-grid-item
+                <dmd-grid-item
                   small-mobile="12"
                   tablet="6"
                   large-tablet="3"
                   fill
                 >
-                  <diamond-enter type="fade-in-up" delay="${i * 0.1}">
-                    <diamond-card radius class="theme-light">
-                      <diamond-img
+                  <dmd-enter type="fade-in-up" delay="${i * 0.1}">
+                    <dmd-card radius class="theme-light">
+                      <dmd-img
                         radius
                         full-width
                         responsive
                         block
-                        class="diamond-spacing-bottom-md"
+                        class="dmd-spacing-bottom-md"
                       >
-                        <diamond-loading-img
+                        <dmd-loading-img
                           width="400"
                           height="300"
-                        ></diamond-loading-img>
-                      </diamond-img>
-                      <h2 class="diamond-text-size-h3">
-                        <diamond-loading-text>
-                          Card title
-                        </diamond-loading-text>
+                        ></dmd-loading-img>
+                      </dmd-img>
+                      <h2 class="dmd-text-size-h3">
+                        <dmd-loading-text> Card title </dmd-loading-text>
                       </h2>
-                      <p class="diamond-spacing-bottom-lg">
-                        <diamond-loading-text>
+                      <p class="dmd-spacing-bottom-lg">
+                        <dmd-loading-text>
                           Lorem ipsum dolor consequit sit amet epsilon evitcus
                           smartrum.
-                        </diamond-loading-text>
+                        </dmd-loading-text>
                       </p>
-                      <diamond-button width="full-width">
-                        <diamond-loading-button>
-                          Button text
-                        </diamond-loading-button>
-                      </diamond-button>
-                    </diamond-card>
-                  </diamond-enter>
-                </diamond-grid-item>
+                      <dmd-button width="full-width">
+                        <dmd-loading-button> Button text </dmd-loading-button>
+                      </dmd-button>
+                    </dmd-card>
+                  </dmd-enter>
+                </dmd-grid-item>
               `,
             )}
-          </diamond-grid>
+          </dmd-grid>
         </div>
 
         <div class="js-cards-loaded" hidden>
-          <diamond-grid wrap="wrap">
+          <dmd-grid wrap="wrap">
             ${cards.map(
               (card) => html`
-                <diamond-grid-item
+                <dmd-grid-item
                   small-mobile="12"
                   tablet="6"
                   large-tablet="3"
                   fill
                 >
-                  <diamond-card class="theme-light" radius>
-                    <diamond-enter type="fade">
-                      <diamond-img
+                  <dmd-card class="theme-light" radius>
+                    <dmd-enter type="fade">
+                      <dmd-img
                         radius
                         full-width
                         responsive
                         block
-                        class="diamond-spacing-bottom-md"
+                        class="dmd-spacing-bottom-md"
                       >
                         <img
                           src="${card.image.src}"
@@ -197,24 +193,22 @@ export const LoadingSkeleton: StoryObj = {
                           width="${card.image.width}"
                           height="${card.image.height}"
                         />
-                      </diamond-img>
+                      </dmd-img>
 
-                      <h2 class="diamond-text-size-h3">${card.title}</h2>
-                      <p class="diamond-spacing-bottom-lg">
-                        ${card.description}
-                      </p>
+                      <h2 class="dmd-text-size-h3">${card.title}</h2>
+                      <p class="dmd-spacing-bottom-lg">${card.description}</p>
 
-                      <diamond-button width="full-width">
+                      <dmd-button width="full-width">
                         <button type="button">Read More</button>
-                      </diamond-button>
-                    </diamond-enter>
-                  </diamond-card>
-                </diamond-grid-item>
+                      </dmd-button>
+                    </dmd-enter>
+                  </dmd-card>
+                </dmd-grid-item>
               `,
             )}
-          </diamond-grid>
+          </dmd-grid>
         </div>
-      </diamond-wrap>
-    </diamond-section>
+      </dmd-wrap>
+    </dmd-section>
   `,
 };

@@ -1,9 +1,9 @@
 :root {
   /* The size of icons compared to the text */
-  --diamond-icon-size: 1.25em;
+  --dmd-icon-size: 1.25em;
   /*
     Adjust the icon to sit nicely next to text,
     probably needs changing per font
   */
-  --diamond-icon-baseline-adjust: 0.25em;
+  --dmd-icon-baseline-adjust: 0.25em;
 }

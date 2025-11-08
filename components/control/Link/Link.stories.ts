@@ -4,7 +4,7 @@ import { html } from 'lit';
 import './Link';
 
 export default {
-  component: 'diamond-link',
+  component: 'dmd-link',
   parameters: {
     docs: {
       description: {
@@ -24,9 +24,9 @@ export default {
 
 export const Link: StoryObj = {
   render: (args) => html`
-    <diamond-link variant="${args.variant}">
+    <dmd-link variant="${args.variant}">
       <a href="https://diamond.etch.co">Link text</a>
-    </diamond-link>
+    </dmd-link>
   `,
 };
 
@@ -36,9 +36,9 @@ Link.args = {
 
 export const ButtonLink: StoryObj = {
   render: (args) => html`
-    <diamond-link variant="${args.variant}">
+    <dmd-link variant="${args.variant}">
       <button type="button">Link text</button>
-    </diamond-link>
+    </dmd-link>
   `,
 };
 

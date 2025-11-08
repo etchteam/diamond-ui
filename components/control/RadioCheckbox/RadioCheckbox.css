@@ -1,10 +1,10 @@
-diamond-radio-checkbox {
-  --_background: var(--diamond-input-background);
-  --_border-color: var(--diamond-input-border-color);
-  --_border-radius: var(--diamond-input-checkbox-border-radius);
+dmd-radio-checkbox {
+  --_background: var(--dmd-input-background);
+  --_border-color: var(--dmd-input-border-color);
+  --_border-radius: var(--dmd-input-checkbox-border-radius);
   --_inner-border-radius: 0;
-  --_indicator-padding: var(--diamond-input-radio-checkbox-padding);
-  --_indicator-width: calc(var(--diamond-font-line-height) * 1em);
+  --_indicator-padding: var(--dmd-input-radio-checkbox-padding);
+  --_indicator-width: calc(var(--dmd-font-line-height) * 1em);
   --_indicator-inner-width: 100%;
 
   align-items: center;
@@ -13,23 +13,23 @@ diamond-radio-checkbox {
   display: flex;
   font-size: inherit;
   font-weight: inherit;
-  gap: var(--diamond-spacing-sm);
+  gap: var(--dmd-spacing-sm);
   line-height: inherit;
-  min-height: var(--diamond-spacing-thumb);
+  min-height: var(--dmd-spacing-thumb);
 
   &:hover,
   &:focus-within {
-    --_border-color: var(--diamond-input-border-color-hover);
+    --_border-color: var(--dmd-input-border-color-hover);
   }
 
   &:focus-within:has(input:focus-visible) {
-    --_background: var(--diamond-input-background-focus);
+    --_background: var(--dmd-input-background-focus);
 
     &::part(indicator) {
       /* https://css-tricks.com/copy-the-browsers-native-focus-styles/ */
       outline: 5px auto Highlight;
       outline: 5px auto -webkit-focus-ring-color;
-      outline-offset: var(--diamond-input-outline-offset);
+      outline-offset: var(--dmd-input-outline-offset);
     }
   }
 
@@ -50,11 +50,9 @@ diamond-radio-checkbox {
     font-size: inherit;
     font-weight: inherit;
     line-height: inherit;
-    margin-left: calc(
-      (var(--_indicator-width) + var(--diamond-spacing-sm)) * -1
-    );
+    margin-left: calc((var(--_indicator-width) + var(--dmd-spacing-sm)) * -1);
     min-height: 0;
-    padding-left: calc((var(--_indicator-width) + var(--diamond-spacing-sm)));
+    padding-left: calc((var(--_indicator-width) + var(--dmd-spacing-sm)));
   }
 
   svg,
@@ -67,9 +65,9 @@ diamond-radio-checkbox {
     position: relative;
     transform: scale(1.45);
     transition:
-      transform var(--diamond-transition),
-      opacity var(--diamond-transition);
-    width: calc(100% - var(--diamond-input-radio-checkbox-padding) * 2);
+      transform var(--dmd-transition),
+      opacity var(--dmd-transition);
+    width: calc(100% - var(--dmd-input-radio-checkbox-padding) * 2);
     z-index: 1;
   }
 
@@ -88,8 +86,8 @@ diamond-radio-checkbox {
     pointer-events: none;
     position: relative;
     transition:
-      border-color var(--diamond-transition),
-      background-color var(--diamond-transition);
+      border-color var(--dmd-transition),
+      background-color var(--dmd-transition);
     width: var(--_indicator-width);
   }
 
@@ -102,9 +100,9 @@ diamond-radio-checkbox {
     position: absolute;
     transform: scale(0.5);
     transition:
-      background-color var(--diamond-transition),
-      opacity var(--diamond-transition),
-      transform var(--diamond-transition);
+      background-color var(--dmd-transition),
+      opacity var(--dmd-transition),
+      transform var(--dmd-transition);
     width: var(--_indicator-inner-width);
   }
 
@@ -119,7 +117,7 @@ diamond-radio-checkbox {
   }
 
   &:has(input:checked) {
-    --_border-color: var(--diamond-input-checked);
+    --_border-color: var(--dmd-input-checked);
 
     &::part(indicator)::before {
       opacity: 1;
@@ -131,20 +129,20 @@ diamond-radio-checkbox {
     &::part(fallback-icon) {
       opacity: 1;
       transform: scale(1.6);
-      transition-delay: calc(var(--diamond-transition-duration) / 2);
+      transition-delay: calc(var(--dmd-transition-duration) / 2);
     }
   }
 
   &[state='valid'] {
-    --_border-color: var(--diamond-input-border-color-valid);
+    --_border-color: var(--dmd-input-border-color-valid);
   }
 
   &[state='invalid'] {
-    --_border-color: var(--diamond-input-border-color-invalid);
+    --_border-color: var(--dmd-input-border-color-invalid);
   }
 
   &:has([disabled]) {
-    --_background: var(--diamond-input-background-disabled);
+    --_background: var(--dmd-input-background-disabled);
     cursor: not-allowed;
     opacity: 0.5;
     pointer-events: none;

@@ -1,24 +1,24 @@
 :root,
 ::backdrop {
-  --diamond-color-white: #fff;
+  --dmd-color-white: #fff;
 
-  --diamond-color-grey-50: #f2f2f2;
-  --diamond-color-grey-100: #e6e6e6;
-  --diamond-color-grey-200: #ccc;
-  --diamond-color-grey-300: #b3b3b3;
-  --diamond-color-grey-400: #999;
-  --diamond-color-grey-500: #808080;
-  --diamond-color-grey-600: #666;
-  --diamond-color-grey-700: #4d4d4d;
-  --diamond-color-grey-800: #333;
-  --diamond-color-grey-900: #1a1a1a;
+  --dmd-color-grey-50: #f2f2f2;
+  --dmd-color-grey-100: #e6e6e6;
+  --dmd-color-grey-200: #ccc;
+  --dmd-color-grey-300: #b3b3b3;
+  --dmd-color-grey-400: #999;
+  --dmd-color-grey-500: #808080;
+  --dmd-color-grey-600: #666;
+  --dmd-color-grey-700: #4d4d4d;
+  --dmd-color-grey-800: #333;
+  --dmd-color-grey-900: #1a1a1a;
 
-  --diamond-color-black: #000;
+  --dmd-color-black: #000;
 
-  --diamond-color-green-100: #219653;
+  --dmd-color-green-100: #219653;
 
-  --diamond-color-red-100: #eb5757;
+  --dmd-color-red-100: #eb5757;
 
-  --diamond-color-valid: var(--diamond-color-green-100);
-  --diamond-color-invalid: var(--diamond-color-red-100);
+  --dmd-color-valid: var(--dmd-color-green-100);
+  --dmd-color-invalid: var(--dmd-color-red-100);
 }

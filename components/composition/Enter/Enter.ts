@@ -13,7 +13,7 @@ export interface EnterAttributes {
   fill?: string | boolean;
 }
 
-@customElement('diamond-enter')
+@customElement('dmd-enter')
 export class Enter extends LitElement {
   observer?: IntersectionObserver;
   @state() inView: boolean = false;
@@ -52,8 +52,8 @@ export class Enter extends LitElement {
     return html`
       <style>
         :host {
-          --diamond-transition-enter-delay: ${this.delay}s;
-          --diamond-transition-enter-animation: ${type};
+          --dmd-transition-enter-delay: ${this.delay}s;
+          --dmd-transition-enter-animation: ${type};
         }
       </style>
       <slot></slot>
@@ -63,14 +63,14 @@ export class Enter extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-enter': EnterAttributes;
+    'dmd-enter': EnterAttributes;
   }
 }
 
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-enter': JSXCustomElement<EnterAttributes>;
+      'dmd-enter': JSXCustomElement<EnterAttributes>;
     }
   }
 }

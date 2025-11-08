@@ -60,7 +60,7 @@ export const FontSizes: StoryObj = {
   render: () => html`
     ${['xxxl', 'xxl', 'xl', 'lg', 'md', 'default', 'sm', 'xs'].map(
       (size) => html`
-        <p class="diamond-text-size-${size}">This text is size ${size}.</p>
+        <p class="dmd-text-size-${size}">This text is size ${size}.</p>
       `,
     )}
   `,

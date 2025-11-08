@@ -6,33 +6,33 @@ import '../../components/composition/App/App';
 
 export const Sales: StoryObj = {
   render: () => html`
-    <diamond-app header="sticky">
+    <dmd-app header="sticky">
       <header slot="header">
-        <diamond-section padding="md">
-          <diamond-wrap size="xl" gutter="md">
+        <dmd-section padding="md">
+          <dmd-wrap size="xl" gutter="md">
             <img
               src="https://placehold.co/120x48"
               width="120"
               height="48"
               alt="Logo"
             />
-          </diamond-wrap>
-        </diamond-section>
+          </dmd-wrap>
+        </dmd-section>
       </header>
 
       <main>
-        <diamond-section padding="fluid" class="diamond-theme-medium">
-          <diamond-wrap size="xl" gutter="md">
-            <diamond-grid>
-              <diamond-grid-item small-mobile="12" tablet="8" large-tablet="6">
-                <diamond-enter type="fade">
+        <dmd-section padding="fluid" class="dmd-theme-medium">
+          <dmd-wrap size="xl" gutter="md">
+            <dmd-grid>
+              <dmd-grid-item small-mobile="12" tablet="8" large-tablet="6">
+                <dmd-enter type="fade">
                   <span>Eyebrow text</span>
                   <h1>Big title, clever words</h1>
-                </diamond-enter>
-                <diamond-enter
+                </dmd-enter>
+                <dmd-enter
                   type="fade-in-up"
                   delay="0.2"
-                  class="diamond-spacing-bottom-lg"
+                  class="dmd-spacing-bottom-lg"
                 >
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -40,205 +40,198 @@ export const Sales: StoryObj = {
                     Curabitur laoreet iaculis orci, id hendrerit odio
                     consectetur eu.
                   </p>
-                </diamond-enter>
-                <diamond-enter type="fade-in-up" delay="0.4">
-                  <diamond-button
+                </dmd-enter>
+                <dmd-enter type="fade-in-up" delay="0.4">
+                  <dmd-button
                     size="lg"
                     variant="primary"
-                    class="diamond-spacing-bottom-lg"
+                    class="dmd-spacing-bottom-lg"
                     width="full-width-mobile"
                   >
                     <button type="button">Button text</button>
-                  </diamond-button>
-                </diamond-enter>
+                  </dmd-button>
+                </dmd-enter>
 
-                <diamond-grid>
+                <dmd-grid>
                   ${[0, 1, 2, 3].map(
                     (i) => html`
-                      <diamond-grid-item>
-                        <diamond-enter
-                          type="fade-in-up"
-                          delay="${i * 0.2 + 0.6}"
-                        >
+                      <dmd-grid-item>
+                        <dmd-enter type="fade-in-up" delay="${i * 0.2 + 0.6}">
                           <img
                             src="https://placehold.co/64x64"
                             width="64"
                             height="64"
                             alt="Award"
                           />
-                        </diamond-enter>
-                      </diamond-grid-item>
+                        </dmd-enter>
+                      </dmd-grid-item>
                     `,
                   )}
-                </diamond-grid>
-              </diamond-grid-item>
-            </diamond-grid>
-          </diamond-wrap>
-        </diamond-section>
+                </dmd-grid>
+              </dmd-grid-item>
+            </dmd-grid>
+          </dmd-wrap>
+        </dmd-section>
 
-        <diamond-section padding="fluid">
-          <diamond-wrap size="xl" gutter="md">
-            <diamond-enter type="fade" enter-on-scroll="true">
-              <diamond-wrap
+        <dmd-section padding="fluid">
+          <dmd-wrap size="xl" gutter="md">
+            <dmd-enter type="fade" enter-on-scroll="true">
+              <dmd-wrap
                 size="sm"
                 gutter="none"
-                class="diamond-text-align-center diamond-spacing-bottom-lg"
+                class="dmd-text-align-center dmd-spacing-bottom-lg"
               >
                 <h2>Section title</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                   ut sapien eget nisl interdum porta vitae eu libero.
                 </p>
-              </diamond-wrap>
-            </diamond-enter>
+              </dmd-wrap>
+            </dmd-enter>
 
-            <diamond-grid
+            <dmd-grid
               justify-content="center"
-              class="diamond-spacing-bottom-lg"
+              class="dmd-spacing-bottom-lg"
               wrap="wrap"
             >
               ${[0, 1, 2, 3].map(
                 (i) => html`
-                  <diamond-grid-item
+                  <dmd-grid-item
                     small-mobile="12"
                     small-tablet="6"
                     large-tablet="3"
                   >
-                    <diamond-enter
+                    <dmd-enter
                       type="fade-in-up"
                       enter-on-scroll="true"
                       delay="${i * 0.2}"
                     >
-                      <diamond-card
-                        border
-                        radius
-                        class="diamond-text-align-center"
-                      >
-                        <diamond-img block responsive>
+                      <dmd-card border radius class="dmd-text-align-center">
+                        <dmd-img block responsive>
                           <img
                             src="https://placehold.co/120x80"
                             width="240"
                             height="160"
                             alt="USP"
-                            class="diamond-spacing-bottom-md"
+                            class="dmd-spacing-bottom-md"
                           />
-                        </diamond-img>
+                        </dmd-img>
 
                         <h3>USP title</h3>
                         <p>
                           Phasellus sodales quam fermentum enim lobortis, non
                           pellentesque est malesuada.
                         </p>
-                      </diamond-card>
-                    </diamond-enter>
-                  </diamond-grid-item>
+                      </dmd-card>
+                    </dmd-enter>
+                  </dmd-grid-item>
                 `,
               )}
-            </diamond-grid>
+            </dmd-grid>
 
-            <diamond-grid justify-content="center">
-              <diamond-grid-item>
-                <diamond-enter type="boing" enter-on-scroll="true" delay="0.5">
-                  <diamond-button
+            <dmd-grid justify-content="center">
+              <dmd-grid-item>
+                <dmd-enter type="boing" enter-on-scroll="true" delay="0.5">
+                  <dmd-button
                     width="full-width-mobile"
                     size="lg"
                     variant="primary"
                   >
                     <button type="button">Button text</button>
-                  </diamond-button>
-                </diamond-enter>
-              </diamond-grid-item>
-            </diamond-grid>
-          </diamond-wrap>
-        </diamond-section>
+                  </dmd-button>
+                </dmd-enter>
+              </dmd-grid-item>
+            </dmd-grid>
+          </dmd-wrap>
+        </dmd-section>
 
-        <diamond-section padding="fluid" class="diamond-theme-dark">
-          <diamond-wrap size="xl" gutter="md">
-            <diamond-enter type="fade" enter-on-scroll="true">
-              <diamond-wrap
+        <dmd-section padding="fluid" class="dmd-theme-dark">
+          <dmd-wrap size="xl" gutter="md">
+            <dmd-enter type="fade" enter-on-scroll="true">
+              <dmd-wrap
                 size="sm"
                 gutter="none"
-                class="diamond-text-align-center diamond-spacing-bottom-lg"
+                class="dmd-text-align-center dmd-spacing-bottom-lg"
               >
                 <h2>Section title</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                   ut sapien eget nisl interdum porta vitae eu libero.
                 </p>
-              </diamond-wrap>
-            </diamond-enter>
+              </dmd-wrap>
+            </dmd-enter>
 
-            <diamond-grid
+            <dmd-grid
               justify-content="center"
-              class="diamond-spacing-bottom-lg"
+              class="dmd-spacing-bottom-lg"
               wrap="wrap"
             >
               ${[0, 1, 2].map(
                 (i) => html`
-                  <diamond-grid-item small-mobile="12" tablet="4">
-                    <diamond-enter
+                  <dmd-grid-item small-mobile="12" tablet="4">
+                    <dmd-enter
                       type="fade-in-up"
                       enter-on-scroll="true"
                       delay="${i * 0.2}"
                     >
-                      <diamond-card
+                      <dmd-card
                         border
                         radius
-                        class="diamond-text-align-center diamond-theme-light"
+                        class="dmd-text-align-center dmd-theme-light"
                       >
-                        <diamond-img block responsive>
+                        <dmd-img block responsive>
                           <img
                             src="https://placehold.co/120x80"
                             width="240"
                             height="160"
                             alt="USP"
-                            class="diamond-spacing-bottom-md"
+                            class="dmd-spacing-bottom-md"
                           />
-                        </diamond-img>
+                        </dmd-img>
 
                         <h3>USP title</h3>
-                        <p class="diamond-spacing-bottom-lg">
+                        <p class="dmd-spacing-bottom-lg">
                           Phasellus sodales quam fermentum enim lobortis, non
                           pellentesque est malesuada.
                         </p>
-                        <diamond-button
+                        <dmd-button
                           width="full-width"
-                          class="diamond-spacing-bottom-md"
+                          class="dmd-spacing-bottom-md"
                           variant="primary"
                         >
                           <button type="button">Button text</button>
-                        </diamond-button>
+                        </dmd-button>
 
-                        <diamond-link>
+                        <dmd-link>
                           <a href="#">Link text</a>
-                        </diamond-link>
-                      </diamond-card>
-                    </diamond-enter>
-                  </diamond-grid-item>
+                        </dmd-link>
+                      </dmd-card>
+                    </dmd-enter>
+                  </dmd-grid-item>
                 `,
               )}
-            </diamond-grid>
-          </diamond-wrap>
-        </diamond-section>
+            </dmd-grid>
+          </dmd-wrap>
+        </dmd-section>
 
-        <diamond-section padding="fluid">
-          <diamond-wrap size="xl" gutter="md">
-            <diamond-grid wrap="wrap" align-items="center" gap="lg">
-              <diamond-grid-item small-mobile="12" tablet="6">
-                <diamond-img block responsive>
+        <dmd-section padding="fluid">
+          <dmd-wrap size="xl" gutter="md">
+            <dmd-grid wrap="wrap" align-items="center" gap="lg">
+              <dmd-grid-item small-mobile="12" tablet="6">
+                <dmd-img block responsive>
                   <img
                     src="https://placehold.co/400x300"
                     width="400"
                     height="300"
                     alt="Placeholder"
                   />
-                </diamond-img>
-              </diamond-grid-item>
-              <diamond-grid-item small-mobile="12" tablet="6">
-                <diamond-enter type="fade" enter-on-scroll="true">
+                </dmd-img>
+              </dmd-grid-item>
+              <dmd-grid-item small-mobile="12" tablet="6">
+                <dmd-enter type="fade" enter-on-scroll="true">
                   <h2>Section title</h2>
 
-                  <diamond-list spacing="sm" class="diamond-spacing-bottom-lg">
+                  <dmd-list spacing="sm" class="dmd-spacing-bottom-lg">
                     <ul>
                       ${[0, 1, 2].map(
                         () => html`
@@ -250,28 +243,28 @@ export const Sales: StoryObj = {
                         `,
                       )}
                     </ul>
-                  </diamond-list>
-                </diamond-enter>
-                <diamond-enter type="fade-in-up" enter-on-scroll="true">
-                  <diamond-button
+                  </dmd-list>
+                </dmd-enter>
+                <dmd-enter type="fade-in-up" enter-on-scroll="true">
+                  <dmd-button
                     size="lg"
                     variant="primary"
                     width="full-width-mobile"
                   >
                     <button type="button">Button text</button>
-                  </diamond-button>
-                </diamond-enter>
-              </diamond-grid-item>
-            </diamond-grid>
-          </diamond-wrap>
-        </diamond-section>
+                  </dmd-button>
+                </dmd-enter>
+              </dmd-grid-item>
+            </dmd-grid>
+          </dmd-wrap>
+        </dmd-section>
 
-        <diamond-section padding="fluid" class="diamond-theme-dark">
-          <diamond-wrap size="xl" gutter="md">
-            <diamond-grid justify-content="flex-end">
-              <diamond-grid-item small-mobile="12" tablet="6" large-tablet="5">
-                <diamond-enter type="fade-in-up" enter-on-scroll="true">
-                  <diamond-card border radius class="diamond-theme-light">
+        <dmd-section padding="fluid" class="dmd-theme-dark">
+          <dmd-wrap size="xl" gutter="md">
+            <dmd-grid justify-content="flex-end">
+              <dmd-grid-item small-mobile="12" tablet="6" large-tablet="5">
+                <dmd-enter type="fade-in-up" enter-on-scroll="true">
+                  <dmd-card border radius class="dmd-theme-light">
                     <h2>Section title</h2>
                     <p>
                       Proin dapibus, quam nec ullamcorper suscipit, mauris ipsum
@@ -283,169 +276,167 @@ export const Sales: StoryObj = {
                       Cras dapibus vestibulum dapibus.
                     </p>
                     <strong>Vestibulum dapibus &mdash; Molestie</strong>
-                  </diamond-card>
-                </diamond-enter>
-              </diamond-grid-item>
-            </diamond-grid>
-          </diamond-wrap>
-        </diamond-section>
+                  </dmd-card>
+                </dmd-enter>
+              </dmd-grid-item>
+            </dmd-grid>
+          </dmd-wrap>
+        </dmd-section>
 
-        <diamond-section padding="fluid">
-          <diamond-wrap size="xl" gutter="md">
-            <diamond-grid wrap="wrap" align-items="center">
-              <diamond-grid-item small-mobile="12" tablet="4">
-                <diamond-enter type="fade" enter-on-scroll="true">
+        <dmd-section padding="fluid">
+          <dmd-wrap size="xl" gutter="md">
+            <dmd-grid wrap="wrap" align-items="center">
+              <dmd-grid-item small-mobile="12" tablet="4">
+                <dmd-enter type="fade" enter-on-scroll="true">
                   <h2>Section title</h2>
                   <p>
                     Etiam nec sagittis quam, eu vehicula felis. Sed vel iaculis
                     velit. Suspendisse id congue orci. Integer rutrum bibendum
                     vulputate.
                   </p>
-                </diamond-enter>
-              </diamond-grid-item>
+                </dmd-enter>
+              </dmd-grid-item>
               ${[0, 1, 2, 3].map(
                 (i) => html`
-                  <diamond-grid-item small-mobile="6" tablet="2">
-                    <diamond-enter
+                  <dmd-grid-item small-mobile="6" tablet="2">
+                    <dmd-enter
                       type="fade-in-up"
                       enter-on-scroll="true"
                       delay="${i * 0.2}"
                     >
-                      <diamond-img block responsive>
+                      <dmd-img block responsive>
                         <img
                           src="https://placehold.co/64x64"
                           width="64"
                           height="64"
                           alt="Placeholder"
                         />
-                      </diamond-img>
-                    </diamond-enter>
-                  </diamond-grid-item>
+                      </dmd-img>
+                    </dmd-enter>
+                  </dmd-grid-item>
                 `,
               )}
-            </diamond-grid>
-          </diamond-wrap>
-        </diamond-section>
+            </dmd-grid>
+          </dmd-wrap>
+        </dmd-section>
 
-        <diamond-section padding="fluid" class="diamond-theme-medium">
-          <diamond-wrap size="xl" gutter="md">
-            <diamond-enter type="fade" enter-on-scroll="true">
-              <diamond-wrap
+        <dmd-section padding="fluid" class="dmd-theme-medium">
+          <dmd-wrap size="xl" gutter="md">
+            <dmd-enter type="fade" enter-on-scroll="true">
+              <dmd-wrap
                 size="sm"
                 gutter="none"
-                class="diamond-text-align-center diamond-spacing-bottom-lg"
+                class="dmd-text-align-center dmd-spacing-bottom-lg"
               >
                 <h2>Section title</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                   ut sapien eget nisl interdum porta vitae eu libero.
                 </p>
-              </diamond-wrap>
-            </diamond-enter>
+              </dmd-wrap>
+            </dmd-enter>
 
-            <diamond-grid
+            <dmd-grid
               justify-content="center"
-              class="diamond-spacing-bottom-lg"
+              class="dmd-spacing-bottom-lg"
               wrap="wrap"
             >
               ${[0, 1, 2, 3].map(
                 (i) => html`
-                  <diamond-grid-item small-mobile="12" small-tablet="6">
-                    <diamond-enter
+                  <dmd-grid-item small-mobile="12" small-tablet="6">
+                    <dmd-enter
                       type="fade-in-up"
                       enter-on-scroll="true"
                       delay="${i * 0.2}"
                     >
-                      <diamond-card border radius class="diamond-theme-light">
-                        <diamond-grid justify-content="space-between">
-                          <diamond-grid-item>
-                            <diamond-grid gap="sm">
+                      <dmd-card border radius class="dmd-theme-light">
+                        <dmd-grid justify-content="space-between">
+                          <dmd-grid-item>
+                            <dmd-grid gap="sm">
                               ${[0, 1, 2, 3, 4].map(
                                 () => html`
-                                  <diamond-grid-item>
+                                  <dmd-grid-item>
                                     <img
                                       src="https://placehold.co/24x24"
                                       width="24"
                                       height="24"
                                       alt="Placeholder"
                                     />
-                                  </diamond-grid-item>
+                                  </dmd-grid-item>
                                 `,
                               )}
-                            </diamond-grid>
-                          </diamond-grid-item>
-                          <diamond-grid-item>
+                            </dmd-grid>
+                          </dmd-grid-item>
+                          <dmd-grid-item>
                             <img
                               src="https://placehold.co/80x24"
                               width="80"
                               height="24"
                               alt="Placeholder"
                             />
-                          </diamond-grid-item>
-                        </diamond-grid>
-                        <hr
-                          class="diamond-spacing-top-md diamond-spacing-bottom-lg"
-                        />
+                          </dmd-grid-item>
+                        </dmd-grid>
+                        <hr class="dmd-spacing-top-md dmd-spacing-bottom-lg" />
 
                         <h3>Card title</h3>
-                        <p class="diamond-spacing-bottom-lg">
+                        <p class="dmd-spacing-bottom-lg">
                           Integer fermentum sed libero ac accumsan. Nullam et
                           erat id erat ornare vestibulum et ac leo. Integer eu
                           eros rhoncus, volutpat turpis nec, dignissim nisi.
                           Suspendisse vel efficitur libero, eget finibus dui.
                         </p>
 
-                        <diamond-grid align-items="center">
-                          <diamond-grid-item>
+                        <dmd-grid align-items="center">
+                          <dmd-grid-item>
                             <img
                               src="https://placehold.co/32x32"
                               width="32"
                               height="32"
                               alt="Placeholder"
                             />
-                          </diamond-grid-item>
-                          <diamond-grid-item>
+                          </dmd-grid-item>
+                          <dmd-grid-item>
                             <strong> Cras dapibus </strong>
-                          </diamond-grid-item>
-                        </diamond-grid>
-                      </diamond-card>
-                    </diamond-enter>
-                  </diamond-grid-item>
+                          </dmd-grid-item>
+                        </dmd-grid>
+                      </dmd-card>
+                    </dmd-enter>
+                  </dmd-grid-item>
                 `,
               )}
-            </diamond-grid>
+            </dmd-grid>
 
-            <diamond-grid justify-content="center">
-              <diamond-grid-item>
-                <diamond-enter type="boing" enter-on-scroll="true" delay="0.5">
-                  <diamond-button
+            <dmd-grid justify-content="center">
+              <dmd-grid-item>
+                <dmd-enter type="boing" enter-on-scroll="true" delay="0.5">
+                  <dmd-button
                     width="full-width-mobile"
                     size="lg"
                     variant="primary"
                   >
                     <button type="button">Button text</button>
-                  </diamond-button>
-                </diamond-enter>
-              </diamond-grid-item>
-            </diamond-grid>
-          </diamond-wrap>
-        </diamond-section>
+                  </dmd-button>
+                </dmd-enter>
+              </dmd-grid-item>
+            </dmd-grid>
+          </dmd-wrap>
+        </dmd-section>
 
-        <diamond-section padding="fluid">
-          <diamond-wrap size="xl" gutter="md">
-            <diamond-enter type="fade" enter-on-scroll="true">
-              <diamond-grid
+        <dmd-section padding="fluid">
+          <dmd-wrap size="xl" gutter="md">
+            <dmd-enter type="fade" enter-on-scroll="true">
+              <dmd-grid
                 wrap="wrap"
                 align-items="center"
-                class="diamond-spacing-bottom-lg"
+                class="dmd-spacing-bottom-lg"
               >
-                <diamond-grid-item grow shrink>
-                  <h2 class="diamond-spacing-bottom-none">Section title</h2>
-                </diamond-grid-item>
+                <dmd-grid-item grow shrink>
+                  <h2 class="dmd-spacing-bottom-none">Section title</h2>
+                </dmd-grid-item>
                 ${[0, 1, 2].map(
                   () => html`
-                    <diamond-grid-item>
-                      <diamond-button width="square">
+                    <dmd-grid-item>
+                      <dmd-button width="square">
                         <button type="button">
                           <svg
                             fill="none"
@@ -460,160 +451,152 @@ export const Sales: StoryObj = {
                             ></path>
                           </svg>
                         </button>
-                      </diamond-button>
-                    </diamond-grid-item>
+                      </dmd-button>
+                    </dmd-grid-item>
                   `,
                 )}
-              </diamond-grid>
-            </diamond-enter>
+              </dmd-grid>
+            </dmd-enter>
 
-            <diamond-grid wrap="wrap">
+            <dmd-grid wrap="wrap">
               ${[0, 1, 2, 3, 4, 5].map(
                 (i) => html`
-                  <diamond-grid-item small-mobile="6" tablet="4">
-                    <diamond-enter
+                  <dmd-grid-item small-mobile="6" tablet="4">
+                    <dmd-enter
                       type="fade-in-up"
                       enter-on-scroll="true"
                       delay="${i * 0.2}"
                     >
-                      <diamond-img block responsive>
+                      <dmd-img block responsive>
                         <img
                           src="https://placehold.co/300x300"
                           width="300"
                           height="300"
                           alt="Placeholder"
                         />
-                      </diamond-img>
-                    </diamond-enter>
-                  </diamond-grid-item>
+                      </dmd-img>
+                    </dmd-enter>
+                  </dmd-grid-item>
                 `,
               )}
-            </diamond-grid>
-          </diamond-wrap>
-        </diamond-section>
+            </dmd-grid>
+          </dmd-wrap>
+        </dmd-section>
 
-        <diamond-section padding="fluid">
-          <diamond-wrap size="xl" gutter="md">
-            <diamond-enter type="fade" enter-on-scroll="true">
-              <diamond-wrap
+        <dmd-section padding="fluid">
+          <dmd-wrap size="xl" gutter="md">
+            <dmd-enter type="fade" enter-on-scroll="true">
+              <dmd-wrap
                 size="sm"
                 gutter="none"
-                class="diamond-text-align-center diamond-spacing-bottom-lg"
+                class="dmd-text-align-center dmd-spacing-bottom-lg"
               >
                 <h2>Section title</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                   ut sapien eget nisl interdum porta vitae eu libero.
                 </p>
-              </diamond-wrap>
-            </diamond-enter>
+              </dmd-wrap>
+            </dmd-enter>
 
-            <diamond-grid wrap="wrap">
-              <diamond-grid-item small-mobile="12" tablet="6">
-                <diamond-enter type="fade-in-up" enter-on-scroll="true">
-                  <diamond-img
-                    block
-                    responsive
-                    class="diamond-spacing-bottom-md"
-                  >
+            <dmd-grid wrap="wrap">
+              <dmd-grid-item small-mobile="12" tablet="6">
+                <dmd-enter type="fade-in-up" enter-on-scroll="true">
+                  <dmd-img block responsive class="dmd-spacing-bottom-md">
                     <img
                       src="https://placehold.co/320x200"
                       width="320"
                       height="200"
                       alt="Placeholder"
                     />
-                  </diamond-img>
+                  </dmd-img>
                   <span>Eyebrow text</span>
-                  <h3 class="diamond-spacing-bottom-none">
+                  <h3 class="dmd-spacing-bottom-none">
                     Suspendisse nibh turpis, posuere ac ultrices non
                   </h3>
                   <p>Integer fermentum sed libero ac accumsan.</p>
-                  <span class="diamond-text-size-sm"
+                  <span class="dmd-text-size-sm"
                     >Suspendisse &mdash; Vel efficitur</span
                   >
-                </diamond-enter>
-              </diamond-grid-item>
-              <diamond-grid-item small-mobile="12" tablet="6">
-                <diamond-list variant="unstyled" spacing="md">
+                </dmd-enter>
+              </dmd-grid-item>
+              <dmd-grid-item small-mobile="12" tablet="6">
+                <dmd-list variant="unstyled" spacing="md">
                   <ul>
                     ${[0, 1, 2].map(
                       (i) => html`
                         <li>
-                          <diamond-enter
+                          <dmd-enter
                             type="fade-in-up"
                             enter-on-scroll="true"
                             delay="${(i + 1) * 0.2}"
                           >
-                            <diamond-grid align-items="center">
-                              <diamond-grid-item>
-                                <diamond-img block>
+                            <dmd-grid align-items="center">
+                              <dmd-grid-item>
+                                <dmd-img block>
                                   <img
                                     src="https://placehold.co/160x120"
                                     width="160"
                                     height="120"
                                     alt="Placeholder"
                                   />
-                                </diamond-img>
-                              </diamond-grid-item>
-                              <diamond-grid-item grow shrink>
+                                </dmd-img>
+                              </dmd-grid-item>
+                              <dmd-grid-item grow shrink>
                                 <span>Eyebrow text</span>
-                                <h3 class="diamond-spacing-bottom-none">
+                                <h3 class="dmd-spacing-bottom-none">
                                   Suspendisse nibh turpis, posuere ac ultrices
                                   non
                                 </h3>
-                                <span class="diamond-text-size-sm"
+                                <span class="dmd-text-size-sm"
                                   >Suspendisse &mdash; Vel efficitur</span
                                 >
-                              </diamond-grid-item>
-                            </diamond-grid>
-                          </diamond-enter>
+                              </dmd-grid-item>
+                            </dmd-grid>
+                          </dmd-enter>
                         </li>
                       `,
                     )}
                   </ul>
-                </diamond-list>
-              </diamond-grid-item>
-            </diamond-grid>
-          </diamond-wrap>
-        </diamond-section>
+                </dmd-list>
+              </dmd-grid-item>
+            </dmd-grid>
+          </dmd-wrap>
+        </dmd-section>
       </main>
 
       <footer slot="footer">
-        <diamond-section padding="fluid" class="diamond-theme-medium">
-          <diamond-wrap size="xl" gutter="md">
-            <diamond-grid wrap="wrap">
+        <dmd-section padding="fluid" class="dmd-theme-medium">
+          <dmd-wrap size="xl" gutter="md">
+            <dmd-grid wrap="wrap">
               ${[0, 1, 2].map(
                 () => html`
-                  <diamond-grid-item
-                    small-mobile="12"
-                    tablet="6"
-                    large-tablet="3"
-                  >
+                  <dmd-grid-item small-mobile="12" tablet="6" large-tablet="3">
                     <h3>List title</h3>
 
-                    <diamond-list variant="unstyled" spacing="sm">
+                    <dmd-list variant="unstyled" spacing="sm">
                       <ul>
                         ${[0, 1, 2, 3, 4].map(
                           () => html`
                             <li>
-                              <diamond-link variant="no-underline">
+                              <dmd-link variant="no-underline">
                                 <a href="#">Link text</a>
-                              </diamond-link>
+                              </dmd-link>
                             </li>
                           `,
                         )}
                       </ul>
-                    </diamond-list>
-                  </diamond-grid-item>
+                    </dmd-list>
+                  </dmd-grid-item>
                 `,
               )}
-              <diamond-grid-item small-mobile="12" tablet="6" large-tablet="3">
+              <dmd-grid-item small-mobile="12" tablet="6" large-tablet="3">
                 <h3>Section title</h3>
-                <diamond-grid class="diamond-spacing-bottom-md">
+                <dmd-grid class="dmd-spacing-bottom-md">
                   ${[0, 1, 2, 3].map(
                     () => html`
-                      <diamond-grid-item>
-                        <diamond-button width="square">
+                      <dmd-grid-item>
+                        <dmd-button width="square">
                           <button type="button">
                             <svg
                               fill="none"
@@ -628,14 +611,14 @@ export const Sales: StoryObj = {
                               ></path>
                             </svg>
                           </button>
-                        </diamond-button>
-                      </diamond-grid-item>
+                        </dmd-button>
+                      </dmd-grid-item>
                     `,
                   )}
-                </diamond-grid>
+                </dmd-grid>
 
                 <label for="select">Label text</label>
-                <diamond-input>
+                <dmd-input>
                   <select id="select">
                     <option value="option">Option text</option>
                     <option value="option">Option text</option>
@@ -654,34 +637,34 @@ export const Sales: StoryObj = {
                       fill="currentColor"
                     ></path>
                   </svg>
-                </diamond-input>
-              </diamond-grid-item>
-            </diamond-grid>
+                </dmd-input>
+              </dmd-grid-item>
+            </dmd-grid>
 
-            <hr class="diamond-spacing-bottom-lg diamond-spacing-top-lg" />
+            <hr class="dmd-spacing-bottom-lg dmd-spacing-top-lg" />
 
-            <diamond-grid
+            <dmd-grid
               wrap="wrap"
               align-items="center"
-              class="diamond-spacing-bottom-lg"
+              class="dmd-spacing-bottom-lg"
             >
-              <diamond-grid-item>
+              <dmd-grid-item>
                 <img
                   src="https://placehold.co/120x48"
                   width="120"
                   height="48"
                   alt="Placeholder"
                 />
-              </diamond-grid-item>
-              <diamond-grid-item grow shrink>
+              </dmd-grid-item>
+              <dmd-grid-item grow shrink>
                 Big Company Ltd. Unit 1, Big Street, Small Town, CT18 7BQ
-              </diamond-grid-item>
-            </diamond-grid>
+              </dmd-grid-item>
+            </dmd-grid>
 
             <p>© 1985 - 2024 Big Company Ltd. All rights reserved.</p>
 
-            <diamond-grid>
-              <diamond-grid-item small-mobile="12" tablet="6">
+            <dmd-grid>
+              <dmd-grid-item small-mobile="12" tablet="6">
                 <p>
                   Cras iaculis dui efficitur porttitor hendrerit. Mauris
                   sagittis tincidunt mi eget scelerisque. Fusce felis libero,
@@ -692,25 +675,25 @@ export const Sales: StoryObj = {
                   Etiam nec sagittis quam, eu vehicula felis. Sed vel iaculis
                   velit.
                 </p>
-              </diamond-grid-item>
-            </diamond-grid>
+              </dmd-grid-item>
+            </dmd-grid>
 
-            <hr class="diamond-spacing-bottom-lg diamond-spacing-top-lg" />
+            <hr class="dmd-spacing-bottom-lg dmd-spacing-top-lg" />
 
-            <diamond-grid wrap="wrap">
+            <dmd-grid wrap="wrap">
               ${[0, 1, 2, 3, 4].map(
                 () => html`
-                  <diamond-grid-item>
-                    <diamond-link variant="no-underline">
+                  <dmd-grid-item>
+                    <dmd-link variant="no-underline">
                       <a href="#">Link text</a>
-                    </diamond-link>
-                  </diamond-grid-item>
+                    </dmd-link>
+                  </dmd-grid-item>
                 `,
               )}
-            </diamond-grid>
-          </diamond-wrap>
-        </diamond-section>
+            </dmd-grid>
+          </dmd-wrap>
+        </dmd-section>
       </footer>
-    </diamond-app>
+    </dmd-app>
   `,
 };

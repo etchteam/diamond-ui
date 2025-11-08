@@ -17,7 +17,7 @@ const breakpointArgs = Object.fromEntries(
 );
 
 export default {
-  component: 'diamond-grid-item',
+  component: 'dmd-grid-item',
   argTypes: {
     ...breakpointArgs,
   },
@@ -37,10 +37,10 @@ export const GridItem: StoryObj = {
     desktop,
     largeDesktop,
   }) => html`
-    <diamond-grid wrap="wrap">
+    <dmd-grid wrap="wrap">
       ${[...Array(24).keys()].map(
         (i) => html`
-          <diamond-grid-item
+          <dmd-grid-item
             ?grow=${grow}
             ?shrink=${shrink}
             small-mobile="${smallMobile}"
@@ -58,10 +58,10 @@ export const GridItem: StoryObj = {
             >
               ${i + 1}
             </div>
-          </diamond-grid-item>
+          </dmd-grid-item>
         `,
       )}
-    </diamond-grid>
+    </dmd-grid>
   `,
 };
 

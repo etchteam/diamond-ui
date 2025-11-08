@@ -1,9 +1,9 @@
-diamond-img {
+dmd-img {
   display: inline-block;
 
   &[block],
   &[block] img,
-  &[block] diamond-loading-img {
+  &[block] dmd-loading-img {
     display: block;
   }
 
@@ -11,30 +11,30 @@ diamond-img {
     width: 100%;
 
     img,
-    diamond-loading-img {
+    dmd-loading-img {
       height: auto;
       width: 100%;
     }
   }
 
   &[radius] {
-    border-radius: var(--diamond-radius);
+    border-radius: var(--dmd-radius);
     overflow: hidden;
   }
 
   &[aspect-ratio],
   &[aspect-ratio] img,
-  &[aspect-ratio] diamond-loading-img {
-    aspect-ratio: var(--diamond-img-aspect-ratio);
+  &[aspect-ratio] dmd-loading-img {
+    aspect-ratio: var(--dmd-img-aspect-ratio);
   }
 
   &[object-fit] img,
-  &[object-fit] diamond-loading-img {
-    object-fit: var(--diamond-img-object-fit);
+  &[object-fit] dmd-loading-img {
+    object-fit: var(--dmd-img-object-fit);
   }
 
   &[object-position] img,
-  &[object-position] diamond-loading-img {
-    object-position: var(--diamond-img-object-position);
+  &[object-position] dmd-loading-img {
+    object-position: var(--dmd-img-object-position);
   }
 }

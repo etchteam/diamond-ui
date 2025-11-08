@@ -9,7 +9,7 @@ such as making it responsive or fitting a specific aspect ratio.
 `;
 
 export default {
-  component: 'diamond-img',
+  component: 'dmd-img',
   argTypes: {
     objectFit: {
       control: {
@@ -29,7 +29,7 @@ export default {
 
 export const Img: StoryObj = {
   render: (args) => html`
-    <diamond-img
+    <dmd-img
       ?block="${args.block}"
       ?responsive="${args.responsive}"
       aspect-ratio="${args.aspectRatio}"
@@ -43,7 +43,7 @@ export const Img: StoryObj = {
         width="300"
         height="300"
       />
-    </diamond-img>
+    </dmd-img>
   `,
 };
 

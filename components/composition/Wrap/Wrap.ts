@@ -7,14 +7,14 @@ export interface WrapAttributes {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'diamond-wrap': WrapAttributes;
+    'dmd-wrap': WrapAttributes;
   }
 }
 
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      'diamond-wrap': JSXCustomElement<WrapAttributes>;
+      'dmd-wrap': JSXCustomElement<WrapAttributes>;
     }
   }
 }
