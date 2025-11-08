@@ -11,7 +11,7 @@ export default {
     docs: {
       description: {
         component:
-          'Wraps an HTML input element to provide consistent styling and behavior.',
+          'Wraps an HTML input element to provide consistent styling and behaviour.',
       },
     },
   },

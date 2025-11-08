@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Diamond UI is a lightweight design system built with Lit web components, design tokens, and CSS. Components use minimal JavaScript and follow the "CSS web components" methodology (see https://etch.co/blog/css-web-components). The library is framework-agnostic and can be installed in any web project.
+Diamond UI is a lightweight design system built with Lit web components, design tokens, and CSS. Components use minimal JavaScript and follow the "CSS web components" methodology (see [https://etch.co/blog/css-web-components](https://etch.co/blog/css-web-components)). The library is framework-agnostic and can be installed in any web project.
 
 **Component naming convention**: All components are prefixed with `dmd-` (abbreviated from "diamond"). For example: `dmd-grid`, `dmd-card`, `dmd-button`.
 
@@ -46,21 +46,21 @@ Components are organized into four categories under `components/`:
 Diamond UI uses two component approaches:
 
 1. **Lit Components** - JavaScript web components built with Lit
-   - Located in `.ts` files
-   - Use `@customElement` decorator
-   - Extend `LitElement`
-   - Example: `Icon`, `LoadingButton`
+  - Located in `.ts` files
+  - Use `@customElement` decorator
+  - Extend `LitElement`
+  - Example: `Icon`, `LoadingButton`
 
 2. **CSS Web Components** - Pure CSS components with only TypeScript interfaces
-   - Have a `.ts` file that ONLY exports TypeScript types/interfaces (no implementation)
-   - All styling and behavior in corresponding `.css` file
-   - Example: `Card`, `Button`, `Grid`
+  - Have a `.ts` file that ONLY exports TypeScript types/interfaces (no implementation)
+  - All styling and behaviour in corresponding `.css` file
+  - Example: `Card`, `Button`, `Grid`
 
 ### Component Structure Pattern
 
 Each component follows this structure:
 
-```
+```text
 components/[category]/[ComponentName]/
 ├── ComponentName.ts         # Lit component OR type definitions only
 ├── ComponentName.css        # Component styles (always present)
@@ -112,7 +112,7 @@ All design tokens are defined as CSS custom properties in `styles/tokens/`:
 
 Tokens can be overridden by defining CSS custom properties on `:root`.
 
-### Build System
+### Build Tool
 
 Rollup is configured to output three bundles:
 1. **JavaScript components** - All `.ts` files from `components/` (excluding `.stories.ts`)

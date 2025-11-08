@@ -9,7 +9,7 @@ export default {
     docs: {
       description: {
         component:
-          'Wraps an HTML input type radio or checkbox element to provide consistent styling and behavior.',
+          'Wraps an HTML input type radio or checkbox element to provide consistent styling and behaviour.',
       },
     },
   },

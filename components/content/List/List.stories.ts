@@ -78,7 +78,7 @@ Unstyled.args = {
 const unstyledDescription = `
 Removes the list styles. This is useful for semantic lists that we don't want to see visually.
 
-**Note**: Safari does not recognize ordered or unordered lists as lists in the accessibility tree if they have a list-style value of none, unless the list is nested within the <nav> navigation element. This behavior is intentional and is not considered a bug.
+**Note**: Safari does not recognize ordered or unordered lists as lists in the accessibility tree if they have a list-style value of none, unless the list is nested within the <nav> navigation element. This behaviour is intentional and is not considered a bug.
 
 To ensure lists are announced as lists, include \`role="list"\` to \`<ol>\` and \`<ul>\` elements, especially if the list is not nested in a \`<nav>\`. This restores list semantics without affecting the design.
 `;
