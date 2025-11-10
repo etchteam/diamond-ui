@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/etchteam/diamond-ui/compare/v2.0.0...v2.0.1) (2025-11-10)
+
+
+### Bug Fixes
+
+* update abbreviated selectors ([4b7ef43](https://github.com/etchteam/diamond-ui/commit/4b7ef437df76938f64f235cbdf56622de416a4a1))
+
 ## [2.0.0](https://github.com/etchteam/diamond-ui/compare/v1.37.2...v2.0.0) (2025-11-10)
 
 
