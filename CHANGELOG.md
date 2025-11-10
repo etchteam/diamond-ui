@@ -1,3 +1,20 @@
+## [2.0.0](https://github.com/etchteam/diamond-ui/compare/v1.37.2...v2.0.0) (2025-11-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* abbreviate diamond to dmd
+
+### Features
+
+* abbreviate diamond to dmd ([b7e4701](https://github.com/etchteam/diamond-ui/commit/b7e4701d382eeccbd710bcf11bffdf76f28bb87f))
+* add token tables ([5ca4aac](https://github.com/etchteam/diamond-ui/commit/5ca4aac52d6bcafe4da61e5d2dd9f7d3b49f58f5))
+
+
+### Bug Fixes
+
+* linting ([275d44a](https://github.com/etchteam/diamond-ui/commit/275d44a39ac0d2656ff9be1a1136093b0ef87a82))
+
 ## [1.37.2](https://github.com/etchteam/diamond-ui/compare/v1.37.1...v1.37.2) (2024-10-16)
 
 
