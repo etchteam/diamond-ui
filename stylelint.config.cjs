@@ -19,5 +19,11 @@ module.exports = {
         ignoreAtRules: ['starting-style'],
       },
     ],
+    'property-no-unknown': [
+      true,
+      {
+        ignoreProperties: ['animation-timeline', 'animation-range'],
+      },
+    ],
   },
 };
