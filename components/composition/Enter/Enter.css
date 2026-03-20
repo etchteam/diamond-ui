@@ -33,20 +33,36 @@
 }
 
 dmd-enter {
-  animation-duration: var(--dmd-transition-duration-enter);
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-  animation-name: var(--dmd-transition-enter-animation);
-  animation-timing-function: var(--dmd-transition-timing-enter);
   display: block;
   opacity: 0;
 
-  &[delay] {
-    animation-delay: var(--dmd-transition-enter-delay);
+  &[type='fade'] {
+    animation-name: fade;
+  }
+
+  &[type='fade-in-up'] {
+    animation-name: fade-in-up;
   }
 
   &[type='boing'] {
+    animation-name: boing;
     animation-timing-function: var(--dmd-transition-timing-boing);
+  }
+
+  &[type] {
+    animation-duration: var(--dmd-transition-duration-enter);
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: var(--dmd-transition-timing-enter);
+  }
+
+  &[delay] {
+    animation-delay: attr(delay s, 0s);
+  }
+
+  &[enter-on-scroll]:not([enter-on-scroll='false']) {
+    animation-range: entry 0% entry 25%;
+    animation-timeline: view();
   }
 
   &[fill] {
