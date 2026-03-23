@@ -1,8 +1,6 @@
 import { StoryObj } from '@storybook/web-components';
 import { html } from 'lit';
 
-import './Enter';
-
 export default {
   component: 'dmd-enter',
   argTypes: {
@@ -49,8 +47,9 @@ export const OnScroll: StoryObj = {
       enter-on-scroll="${args.enterOnScroll}"
       delay="${args.delay}"
     >
-      <div style="background-color: #eee; height: 400px;"></div>
+      <div style="background-color: #eee; height: 100px;"></div>
     </dmd-enter>
+    <div style="height: 120vh;">Scroll down</div>
   `,
 };
 
