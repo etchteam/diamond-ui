@@ -1,0 +1,12 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'daily'
+    open-pull-requests-limit: 0
+    ignore:
+      # v5+ is ESM-only and can't be loaded by .eslintrc.cjs / ESLint 8
+      # in super-linter v5. Unpin once we move to flat config.
+      - dependency-name: 'eslint-plugin-lit-a11y'
+        update-types: ['version-update:semver-major']
